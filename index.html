@@ -1,19 +1,3 @@
-// ===== LOGIN =====
-function register() {
-  const email = document.getElementById("email").value;
-  const password = document.getElementById("password").value;
-
-  auth.createUserWithEmailAndPassword(email, password)
-    .catch(e => alert(e.message));
-}
-
-function login() {
-  const email = document.getElementById("email").value;
-  const password = document.getElementById("password").value;
-
-  auth.signInWithEmailAndPassword(email, password)
-    .catch(e => alert(e.message));
-}
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -24,19 +8,50 @@ function login() {
 </head>
 <body>
 
-  <h1>Cuestionario tipo test</h1>
+<h1>Cuestionario tipo test</h1>
 
+<!-- LOGIN -->
+<div id="login">
+  <input id="email" placeholder="Email">
+  <input id="password" type="password" placeholder="Contraseña">
+  <button onclick="register()">Registrarse</button>
+  <button onclick="login()">Entrar</button>
+</div>
+
+<!-- TEST -->
+<div id="test" style="display:none">
   <div id="stats">
-    Preguntas acertadas: <strong><span id="correctCount">0</span></strong>
+    Preguntas acertadas:
+    <strong><span id="correctCount">0</span></strong>
   </div>
 
-  <div id="quiz">
-    <h2 id="question"></h2>
-    <div id="options"></div>
-    <button id="nextBtn" disabled>Siguiente</button>
-  </div>
+  <h2 id="question"></h2>
+  <div id="options"></div>
+  <button id="nextBtn" disabled>Siguiente</button>
+</div>
 
-  <script src="questions.js"></script>
-  <script src="app.js"></script>
+<!-- FIREBASE (SIN NPM) -->
+<script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-firestore-compat.js"></script>
+
+<script>
+  const firebaseConfig = {
+    apiKey: "AIzaSyBg6x6x0BS1m9ysIsk-ADAn0QM_8z0dddI",
+    authDomain: "test-2026-d2d80.firebaseapp.com",
+    projectId: "test-2026-d2d80",
+    storageBucket: "test-2026-d2d80.firebasestorage.app",
+    messagingSenderId: "711197555818",
+    appId: "1:711197555818:web:76cc8993337e1085b09e13"
+  };
+
+  firebase.initializeApp(firebaseConfig);
+  const auth = firebase.auth();
+  const db = firebase.firestore();
+</script>
+
+<script src="questions.js"></script>
+<script src="app.js"></script>
+
 </body>
 </html>
