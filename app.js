@@ -14,6 +14,8 @@ function login() {
   auth.signInWithEmailAndPassword(email, password)
     .catch(e => alert(e.message));
 }
+
+// ===== TEST =====
 const BLOCK_SIZE = 30;
 
 let currentBlock = 0;
@@ -29,17 +31,38 @@ const optionsEl = document.getElementById("options");
 const nextBtn = document.getElementById("nextBtn");
 const correctCountEl = document.getElementById("correctCount");
 
+// ===== FIRESTORE =====
+function saveProgress(user) {
+  return db.collection("progress").doc(user.uid).set({
+    currentBlock,
+    currentIndex,
+    correctCount
+  });
+}
+
+async function loadProgress(user) {
+  const doc = await db.collection("progress").doc(user.uid).get();
+
+  if (doc.exists) {
+    const data = doc.data();
+    currentBlock = data.currentBlock ?? 0;
+    currentIndex = data.currentIndex ?? 0;
+    correctCount = data.correctCount ?? 0;
+    correctCountEl.textContent = correctCount;
+  }
+}
+
+// ===== TEST LOGIC =====
 function loadBlock() {
   const start = currentBlock * BLOCK_SIZE;
   const end = start + BLOCK_SIZE;
 
   blockQuestions = questions.slice(start, end);
   failedQuestions = [];
-  currentIndex = 0;
+  currentIndex = currentIndex || 0;
 
   if (blockQuestions.length === 0) {
     questionEl.textContent = "Cuestionario finalizado 🎉";
-    questionEl.style.color = "black";
     optionsEl.innerHTML = "";
     nextBtn.style.display = "none";
     return;
@@ -54,7 +77,6 @@ function loadQuestion() {
   optionsEl.innerHTML = "";
 
   const q = blockQuestions[currentIndex];
-
   questionEl.textContent = q.question;
   questionEl.style.color = q.__failed ? "red" : "black";
 
@@ -67,7 +89,7 @@ function loadQuestion() {
 }
 
 function selectAnswer(event, selected, correct) {
-  if (answered) return;      // 🔒 BLOQUEO REAL
+  if (answered) return;
   answered = true;
 
   const clickedButton = event.target;
@@ -75,7 +97,6 @@ function selectAnswer(event, selected, correct) {
 
   buttons.forEach(btn => {
     btn.disabled = true;
-
     if (btn.textContent.startsWith(correct + ")")) {
       btn.classList.add("correct");
     }
@@ -87,7 +108,6 @@ function selectAnswer(event, selected, correct) {
     correctCountEl.textContent = correctCount;
   } else {
     clickedButton.classList.add("incorrect");
-
     failedQuestions.push({
       ...blockQuestions[currentIndex],
       __failed: true
@@ -97,8 +117,11 @@ function selectAnswer(event, selected, correct) {
   nextBtn.disabled = false;
 }
 
-nextBtn.onclick = () => {
+nextBtn.onclick = async () => {
   currentIndex++;
+
+  const user = auth.currentUser;
+  if (user) await saveProgress(user);
 
   if (currentIndex < blockQuestions.length) {
     loadQuestion();
@@ -115,15 +138,18 @@ function endBlock() {
     loadQuestion();
   } else {
     currentBlock++;
+    currentIndex = 0;
     loadBlock();
   }
 }
 
-auth.onAuthStateChanged(user => {
+// ===== AUTH =====
+auth.onAuthStateChanged(async user => {
   if (!user) return;
 
   document.getElementById("login").style.display = "none";
   document.getElementById("test").style.display = "block";
 
-  loadBlock(); // 👈 ahora el test empieza AQUÍ
+  await loadProgress(user);
+  loadBlock();
 });
