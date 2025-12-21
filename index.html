@@ -1,3 +1,19 @@
+// ===== LOGIN =====
+function register() {
+  const email = document.getElementById("email").value;
+  const password = document.getElementById("password").value;
+
+  auth.createUserWithEmailAndPassword(email, password)
+    .catch(e => alert(e.message));
+}
+
+function login() {
+  const email = document.getElementById("email").value;
+  const password = document.getElementById("password").value;
+
+  auth.signInWithEmailAndPassword(email, password)
+    .catch(e => alert(e.message));
+}
 <!DOCTYPE html>
 <html lang="es">
 <head>
