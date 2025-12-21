@@ -21,6 +21,25 @@
   </div>
 
   <script src="questions.js"></script>
+  <!-- Firebase (versión sencilla, SIN npm) -->
+<script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-firestore-compat.js"></script>
+
+<script>
+  const firebaseConfig = {
+    apiKey: "AIzaSyBg6x6x0BS1m9ysIsk-ADAn0QM_8z0dddI",
+    authDomain: "test-2026-d2d80.firebaseapp.com",
+    projectId: "test-2026-d2d80",
+    storageBucket: "test-2026-d2d80.firebasestorage.app",
+    messagingSenderId: "711197555818",
+    appId: "1:711197555818:web:76cc8993337e1085b09e13"
+  };
+
+  firebase.initializeApp(firebaseConfig);
+  const auth = firebase.auth();
+  const db = firebase.firestore();
+</script>
   <script src="app.js"></script>
 </body>
 </html>
