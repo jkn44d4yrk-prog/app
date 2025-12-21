@@ -119,10 +119,11 @@ function endBlock() {
   }
 }
 
-loadBlock();
 auth.onAuthStateChanged(user => {
   if (!user) return;
 
   document.getElementById("login").style.display = "none";
   document.getElementById("test").style.display = "block";
+
+  loadBlock(); // 👈 ahora el test empieza AQUÍ
 });
