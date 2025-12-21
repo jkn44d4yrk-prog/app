@@ -1,0 +1,53 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: auto;
+  padding: 15px;
+}
+
+h1 {
+  text-align: center;
+}
+
+#stats {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+#question {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+#options button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 6px 0;
+  text-align: left;
+  cursor: pointer;
+  font-size: 17px; /* +1 punto */
+}
+
+#options button:disabled {
+  cursor: default;
+  opacity: 1;
+}
+
+button.correct {
+  background-color: #c8f7c5;
+  border: 2px solid #2ecc71;
+  color: #1e7e34;
+}
+
+button.incorrect {
+  background-color: #f7c5c5;
+  border: 2px solid #e74c3c;
+  color: #7e1e1e;
+}
+
+#nextBtn {
+  margin-top: 15px;
+  padding: 10px;
+  width: 100%;
+}
