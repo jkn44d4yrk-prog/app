@@ -15,7 +15,7 @@ function login() {
     .catch(e => alert(e.message));
 }
 
-// ===== TEST =====
+// ===== TEST CONFIG =====
 let BLOCK_SIZE = 10;
 
 let currentBlock = 0;
@@ -55,13 +55,25 @@ async function loadProgress(user) {
   }
 }
 
-// ===== TEST LOGIC =====
+// ===== TEST FLOW =====
+function startTest() {
+  BLOCK_SIZE = parseInt(
+    document.getElementById("blockSizeInput").value,
+    10
+  );
+
+  document.getElementById("login").style.display = "none";
+  document.getElementById("test").style.display = "block";
+
+  loadBlock();
+}
+
 function loadBlock() {
   const start = currentBlock * BLOCK_SIZE;
   const end = start + BLOCK_SIZE;
 
   blockQuestions = questions.slice(start, end);
-  currentIndex = currentIndex || 0;
+  currentIndex = 0;
 
   if (blockQuestions.length === 0) {
     questionEl.textContent = "Cuestionario finalizado 🎉";
@@ -124,7 +136,6 @@ nextBtn.onclick = async () => {
     loadQuestion();
   } else {
     currentBlock++;
-    currentIndex = 0;
     loadBlock();
   }
 };
@@ -133,11 +144,7 @@ nextBtn.onclick = async () => {
 auth.onAuthStateChanged(async user => {
   if (!user) return;
 
-  BLOCK_SIZE = parseInt(document.getElementById("blockSizeInput").value, 10);
-
-  document.getElementById("login").style.display = "none";
-  document.getElementById("test").style.display = "block";
-
   await loadProgress(user);
-  loadBlock();
+
+  document.getElementById("startBtn").style.display = "inline-block";
 });
