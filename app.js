@@ -15,11 +15,12 @@ function login() {
     .catch(e => alert(e.message));
 }
 
-// ===== CONFIG =====
+// ===== TEST =====
 let BLOCK_SIZE = 10;
 
 let currentBlock = 0;
 let blockQuestions = [];
+let failedQuestions = [];
 let currentIndex = 0;
 
 let correctCount = 0;
@@ -47,32 +48,17 @@ async function loadProgress(user) {
     currentBlock = data.currentBlock ?? 0;
     currentIndex = data.currentIndex ?? 0;
     correctCount = data.correctCount ?? 0;
-
     correctCountEl.textContent = correctCount;
   }
 }
 
-// ===== TEST FLOW =====
-function startTest() {
-  BLOCK_SIZE = parseInt(
-    document.getElementById("blockSizeInput").value,
-    10
-  );
-
-  currentBlock = 0;
-  currentIndex = 0;
-
-  document.getElementById("login").style.display = "none";
-  document.getElementById("test").style.display = "block";
-
-  loadBlock();
-}
-
+// ===== TEST LOGIC =====
 function loadBlock() {
   const start = currentBlock * BLOCK_SIZE;
   const end = start + BLOCK_SIZE;
 
   blockQuestions = questions.slice(start, end);
+  failedQuestions = [];
   currentIndex = 0;
 
   if (blockQuestions.length === 0) {
@@ -92,6 +78,7 @@ function loadQuestion() {
 
   const q = blockQuestions[currentIndex];
   questionEl.textContent = q.question;
+  questionEl.style.color = q.__failed ? "red" : "black";
 
   Object.entries(q.options).forEach(([letter, text]) => {
     const btn = document.createElement("button");
@@ -119,11 +106,17 @@ function selectAnswer(event, selected, correct) {
     clickedButton.classList.add("correct");
     correctCount++;
     correctCountEl.textContent = correctCount;
-    nextBtn.disabled = false;
   } else {
     clickedButton.classList.add("incorrect");
-    nextBtn.disabled = true;
+
+    // 🔴 CLAVE: volvemos a meterla SIEMPRE
+    failedQuestions.push({
+      ...blockQuestions[currentIndex],
+      __failed: true
+    });
   }
+
+  nextBtn.disabled = false;
 }
 
 nextBtn.onclick = async () => {
@@ -135,16 +128,29 @@ nextBtn.onclick = async () => {
   if (currentIndex < blockQuestions.length) {
     loadQuestion();
   } else {
-    currentBlock++;
-    loadBlock();
+    endBlock();
   }
 };
+
+function endBlock() {
+  if (failedQuestions.length > 0) {
+    // 🔁 REPETIMOS LAS FALLADAS (otra vez, y las que vuelvas a fallar)
+    blockQuestions = [...failedQuestions];
+    failedQuestions = [];
+    currentIndex = 0;
+    loadQuestion();
+  } else {
+    // ✅ SOLO AQUÍ PASAMOS DE RONDA
+    currentBlock++;
+    currentIndex = 0;
+    loadBlock();
+  }
+}
 
 // ===== AUTH =====
 auth.onAuthStateChanged(async user => {
   if (!user) return;
 
   await loadProgress(user);
-
-  document.getElementById("startBtn").style.display = "inline-block";
+  loadBlock();
 });
