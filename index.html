@@ -14,6 +14,12 @@
 <div id="login">
   <input id="email" placeholder="Email">
   <input id="password" type="password" placeholder="Contraseña">
+  <br><br>
+  <label>
+    Preguntas por ronda:
+    <input id="blockSizeInput" type="number" value="10" min="1" max="100">
+  </label>
+  <br><br>
   <button onclick="register()">Registrarse</button>
   <button onclick="login()">Entrar</button>
 </div>
@@ -30,7 +36,7 @@
   <button id="nextBtn" disabled>Siguiente</button>
 </div>
 
-<!-- FIREBASE (SIN NPM) -->
+<!-- FIREBASE -->
 <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-auth-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-firestore-compat.js"></script>
