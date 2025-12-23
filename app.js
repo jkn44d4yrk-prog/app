@@ -16,11 +16,10 @@ function login() {
 }
 
 // ===== TEST =====
-const BLOCK_SIZE = 30;
+let BLOCK_SIZE = 10;
 
 let currentBlock = 0;
 let blockQuestions = [];
-let failedQuestions = [];
 let currentIndex = 0;
 
 let correctCount = 0;
@@ -36,7 +35,8 @@ function saveProgress(user) {
   return db.collection("progress").doc(user.uid).set({
     currentBlock,
     currentIndex,
-    correctCount
+    correctCount,
+    BLOCK_SIZE
   });
 }
 
@@ -48,7 +48,10 @@ async function loadProgress(user) {
     currentBlock = data.currentBlock ?? 0;
     currentIndex = data.currentIndex ?? 0;
     correctCount = data.correctCount ?? 0;
+    BLOCK_SIZE = data.BLOCK_SIZE ?? BLOCK_SIZE;
+
     correctCountEl.textContent = correctCount;
+    document.getElementById("blockSizeInput").value = BLOCK_SIZE;
   }
 }
 
@@ -58,7 +61,6 @@ function loadBlock() {
   const end = start + BLOCK_SIZE;
 
   blockQuestions = questions.slice(start, end);
-  failedQuestions = [];
   currentIndex = currentIndex || 0;
 
   if (blockQuestions.length === 0) {
@@ -78,7 +80,6 @@ function loadQuestion() {
 
   const q = blockQuestions[currentIndex];
   questionEl.textContent = q.question;
-  questionEl.style.color = q.__failed ? "red" : "black";
 
   Object.entries(q.options).forEach(([letter, text]) => {
     const btn = document.createElement("button");
@@ -106,15 +107,11 @@ function selectAnswer(event, selected, correct) {
     clickedButton.classList.add("correct");
     correctCount++;
     correctCountEl.textContent = correctCount;
+    nextBtn.disabled = false;
   } else {
     clickedButton.classList.add("incorrect");
-    failedQuestions.push({
-      ...blockQuestions[currentIndex],
-      __failed: true
-    });
+    nextBtn.disabled = true;
   }
-
-  nextBtn.disabled = false;
 }
 
 nextBtn.onclick = async () => {
@@ -126,26 +123,17 @@ nextBtn.onclick = async () => {
   if (currentIndex < blockQuestions.length) {
     loadQuestion();
   } else {
-    endBlock();
-  }
-};
-
-function endBlock() {
-  if (failedQuestions.length > 0) {
-    blockQuestions = [...failedQuestions];
-    failedQuestions = [];
-    currentIndex = 0;
-    loadQuestion();
-  } else {
     currentBlock++;
     currentIndex = 0;
     loadBlock();
   }
-}
+};
 
 // ===== AUTH =====
 auth.onAuthStateChanged(async user => {
   if (!user) return;
+
+  BLOCK_SIZE = parseInt(document.getElementById("blockSizeInput").value, 10);
 
   document.getElementById("login").style.display = "none";
   document.getElementById("test").style.display = "block";
