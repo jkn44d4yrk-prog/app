@@ -15,7 +15,7 @@ function login() {
     .catch(e => alert(e.message));
 }
 
-// ===== TEST CONFIG =====
+// ===== CONFIG =====
 let BLOCK_SIZE = 10;
 
 let currentBlock = 0;
@@ -35,8 +35,7 @@ function saveProgress(user) {
   return db.collection("progress").doc(user.uid).set({
     currentBlock,
     currentIndex,
-    correctCount,
-    BLOCK_SIZE
+    correctCount
   });
 }
 
@@ -48,10 +47,8 @@ async function loadProgress(user) {
     currentBlock = data.currentBlock ?? 0;
     currentIndex = data.currentIndex ?? 0;
     correctCount = data.correctCount ?? 0;
-    BLOCK_SIZE = data.BLOCK_SIZE ?? BLOCK_SIZE;
 
     correctCountEl.textContent = correctCount;
-    document.getElementById("blockSizeInput").value = BLOCK_SIZE;
   }
 }
 
@@ -61,6 +58,9 @@ function startTest() {
     document.getElementById("blockSizeInput").value,
     10
   );
+
+  currentBlock = 0;
+  currentIndex = 0;
 
   document.getElementById("login").style.display = "none";
   document.getElementById("test").style.display = "block";
