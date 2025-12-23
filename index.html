@@ -10,18 +10,27 @@
 
 <h1>Cuestionario tipo test</h1>
 
-<!-- LOGIN -->
+<!-- LOGIN / CONFIGURACIÓN -->
 <div id="login">
   <input id="email" placeholder="Email">
   <input id="password" type="password" placeholder="Contraseña">
   <br><br>
+
   <label>
     Preguntas por ronda:
     <input id="blockSizeInput" type="number" value="10" min="1" max="100">
   </label>
+
   <br><br>
+
   <button onclick="register()">Registrarse</button>
   <button onclick="login()">Entrar</button>
+
+  <br><br>
+
+  <button id="startBtn" onclick="startTest()" style="display:none">
+    Empezar test
+  </button>
 </div>
 
 <!-- TEST -->
