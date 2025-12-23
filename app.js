@@ -102,6 +102,20 @@ function selectAnswer(event, selected, correct) {
     }
   });
 
+  function selectAnswer(event, selected, correct) {
+  if (answered) return;
+  answered = true;
+
+  const clickedButton = event.target;
+  const buttons = optionsEl.querySelectorAll("button");
+
+  buttons.forEach(btn => {
+    btn.disabled = true;
+    if (btn.textContent.startsWith(correct + ")")) {
+      btn.classList.add("correct");
+    }
+  });
+
   if (selected === correct) {
     clickedButton.classList.add("correct");
     correctCount++;
@@ -109,14 +123,16 @@ function selectAnswer(event, selected, correct) {
   } else {
     clickedButton.classList.add("incorrect");
 
-    // 🔴 CLAVE: volvemos a meterla SIEMPRE
+    // Se guarda SIEMPRE si se falla
     failedQuestions.push({
       ...blockQuestions[currentIndex],
       __failed: true
     });
   }
 
+  // ✅ SIEMPRE se puede pasar a la siguiente
   nextBtn.disabled = false;
+}
 }
 
 nextBtn.onclick = async () => {
