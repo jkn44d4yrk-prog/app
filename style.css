@@ -99,7 +99,7 @@ button:disabled{
   align-items: center;
   justify-content: space-between;
   margin-bottom: 12px;
-  flex-wrap: wrap; /* ✅ para móvil */
+  flex-wrap: wrap;
 }
 
 #logoutBtn{
@@ -108,9 +108,7 @@ button:disabled{
 }
 
 @media (max-width: 520px){
-  #logoutBtn{
-    width: 100%; /* ✅ en móvil no descuadra */
-  }
+  #logoutBtn{ width: 100%; }
 }
 
 /* ===== Menú por bloque ===== */
@@ -163,6 +161,7 @@ button:disabled{
 }
 
 .block-mini{ white-space: nowrap; }
+
 .block-reset{
   white-space: nowrap;
   background: rgba(255,255,255,0.08);
@@ -192,9 +191,7 @@ button:disabled{
 }
 
 @media (max-width: 520px){
-  #backToMenuBtn, #logoutBtnTest{
-    width: 100%;
-  }
+  #backToMenuBtn, #logoutBtnTest{ width: 100%; }
 }
 
 #question{
@@ -215,7 +212,9 @@ button:disabled{
   background: rgba(255,255,255,0.08);
 }
 
-#options button:hover{ background: rgba(255,255,255,0.12); }
+#options button:hover{
+  background: rgba(255,255,255,0.12);
+}
 
 #nextBtn{
   margin-top: 14px;
@@ -224,7 +223,10 @@ button:disabled{
   background: rgba(99,102,241,0.26);
   border-color: rgba(99,102,241,0.40);
 }
-#nextBtn:hover{ background: rgba(99,102,241,0.33); }
+
+#nextBtn:hover{
+  background: rgba(99,102,241,0.33);
+}
 
 button.correct{
   background: rgba(16,185,129,0.22) !important;
@@ -238,11 +240,17 @@ button.incorrect{
   color: rgba(254,242,242,0.98) !important;
 }
 
-#blockMsg h2{ margin: 0 0 12px; }
+#blockMsg h2{
+  margin: 0 0 12px;
+}
+
 #blockMsg button{
   width: 100%;
   padding: 12px;
   background: rgba(16,185,129,0.18);
   border-color: rgba(16,185,129,0.38);
 }
-#blockMsg button:hover{ background: rgba(16,185,129,0.24); }
+
+#blockMsg button:hover{
+  background: rgba(16,185,129,0.24);
+}
