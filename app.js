@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
     attempts: {},       // {questionId: nIntentos}
   };
 
-  let currentBlock = [];  // preguntas actuales del bloque
+  let currentBlock = [];
   let currentIndex = 0;
   let currentMode = null;  // "NORMAL" | "FAILED" | "FIRST_OK"
 
@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const questionEl = document.getElementById("question");
   const optionsEl = document.getElementById("options");
   const nextBtn = document.getElementById("nextBtn");
-  const blockMsgEl = document.getElementById("blockMsg"); // pantalla "BLOQUE SUPERADO"
+  const blockMsgEl = document.getElementById("blockMsg");
 
   // ================= FIRESTORE =================
   async function saveProgress(user) {
@@ -78,13 +78,11 @@ document.addEventListener("DOMContentLoaded", () => {
     menuEl.style.display = "block";
     menuEl.innerHTML = "<h2>Selecciona un bloque</h2>";
 
-    // Generar botones de bloques
     const numBlocks = Math.ceil(questions.length / BLOCK_SIZE);
     for (let i = 0; i < numBlocks; i++) {
       const start = i * BLOCK_SIZE + 1;
       const end = Math.min((i + 1) * BLOCK_SIZE, questions.length);
 
-      // Calcular porcentaje acertado en el bloque (primera respuesta correcta)
       const blockQuestions = questions.slice(i * BLOCK_SIZE, (i + 1) * BLOCK_SIZE);
       let correctCount = 0;
       blockQuestions.forEach(q => {
@@ -103,7 +101,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     menuEl.appendChild(document.createElement("br"));
 
-    // Botón de repaso de falladas
     const failedBtn = document.createElement("button");
     failedBtn.textContent = "Responder preguntas falladas";
     failedBtn.onclick = () => startBlock(0, "FAILED");
@@ -111,7 +108,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     menuEl.appendChild(document.createElement("br"));
 
-    // Botón de repaso de aciertos a la primera
     const firstOkBtn = document.createElement("button");
     firstOkBtn.textContent = "Responder preguntas acertadas a la primera";
     firstOkBtn.onclick = () => startBlock(0, "FIRST_OK");
@@ -166,14 +162,11 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function answer(event, selected, correct, qId) {
-    // Deshabilitar botones
     optionsEl.querySelectorAll("button").forEach(btn => btn.disabled = true);
 
-    // Colores
     if (selected === correct) event.target.classList.add("correct");
     else event.target.classList.add("incorrect");
 
-    // Registrar historial
     state.history.push({
       questionId: qId,
       selected,
@@ -181,7 +174,6 @@ document.addEventListener("DOMContentLoaded", () => {
       date: new Date().toISOString()
     });
 
-    // Registrar intentos
     state.attempts[qId] = (state.attempts[qId] || 0) + 1;
 
     nextBtn.disabled = false;
@@ -191,7 +183,6 @@ document.addEventListener("DOMContentLoaded", () => {
   nextBtn.onclick = async () => {
     currentIndex++;
     if (currentIndex >= currentBlock.length) {
-      // BLOQUE SUPERADO
       testEl.style.display = "none";
       blockMsgEl.style.display = "block";
       blockMsgEl.innerHTML = `
