@@ -99,11 +99,18 @@ button:disabled{
   align-items: center;
   justify-content: space-between;
   margin-bottom: 12px;
+  flex-wrap: wrap; /* ✅ para móvil */
 }
 
 #logoutBtn{
   white-space: nowrap;
   background: rgba(255,255,255,0.08);
+}
+
+@media (max-width: 520px){
+  #logoutBtn{
+    width: 100%; /* ✅ en móvil no descuadra */
+  }
 }
 
 /* ===== Menú por bloque ===== */
@@ -150,7 +157,6 @@ button:disabled{
   background: rgba(239,68,68,0.16);
   border-color: rgba(239,68,68,0.42);
 }
-/* Neutral cuando aún no se ha empezado */
 .block-percent.pct-none{
   background: rgba(255,255,255,0.06);
   border-color: rgba(255,255,255,0.12);
@@ -176,12 +182,19 @@ button:disabled{
   justify-content: space-between;
   gap: 10px;
   margin-bottom: 10px;
+  flex-wrap: wrap;
 }
 
 #backToMenuBtn,
 #logoutBtnTest{
   background: rgba(255,255,255,0.08);
   white-space: nowrap;
+}
+
+@media (max-width: 520px){
+  #backToMenuBtn, #logoutBtnTest{
+    width: 100%;
+  }
 }
 
 #question{
