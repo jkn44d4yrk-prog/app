@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // =================== SOLO TÚ ===================
   // ✅ Pon aquí TU email (el que usa tu cuenta de Firebase Auth)
-  const ALLOWED_EMAIL = "robertobacallado@gmail.com";
+  const ALLOWED_EMAIL = "TU_EMAIL_AQUI@ejemplo.com";
 
   function isAuthorized(user) {
     if (!user || !user.email) return false;
@@ -147,7 +147,6 @@ document.addEventListener("DOMContentLoaded", () => {
       await ensurePersistence();
       const cred = await auth.signInWithEmailAndPassword(email, password);
 
-      // ✅ Bloqueo “solo yo”
       if (!isAuthorized(cred.user)) {
         await auth.signOut();
         showLoginError("No autorizado.");
@@ -169,22 +168,12 @@ document.addEventListener("DOMContentLoaded", () => {
   if (logoutBtnTest) logoutBtnTest.onclick = logout;
 
   // ================= MENU =================
-  function renderMenuTopbar(userEmail) {
+  function renderMenuTopbar() {
     const top = document.createElement("div");
     top.className = "menu-topbar";
 
     const h2 = document.createElement("h2");
     h2.textContent = "Selecciona un bloque";
-
-    const right = document.createElement("div");
-    right.style.display = "flex";
-    right.style.gap = "10px";
-    right.style.alignItems = "center";
-
-    const who = document.createElement("span");
-    who.style.opacity = "0.8";
-    who.style.fontSize = "14px";
-    who.textContent = userEmail || "";
 
     const logoutBtn = document.createElement("button");
     logoutBtn.id = "logoutBtn";
@@ -192,12 +181,8 @@ document.addEventListener("DOMContentLoaded", () => {
     logoutBtn.textContent = "Cerrar sesión";
     logoutBtn.onclick = logout;
 
-    right.appendChild(who);
-    right.appendChild(logoutBtn);
-
     top.appendChild(h2);
-    top.appendChild(right);
-
+    top.appendChild(logoutBtn);
     return top;
   }
 
@@ -208,9 +193,7 @@ document.addEventListener("DOMContentLoaded", () => {
     menuEl.style.display = "block";
 
     menuEl.innerHTML = "";
-
-    const user = auth.currentUser;
-    menuEl.appendChild(renderMenuTopbar(user?.email));
+    menuEl.appendChild(renderMenuTopbar());
 
     const numBlocks = Math.ceil(questions.length / BLOCK_SIZE);
     const first = getFirstAttemptsMap();
@@ -248,7 +231,6 @@ document.addEventListener("DOMContentLoaded", () => {
       percentEl.className = "block-percent";
       percentEl.textContent = `${correctCount}/${blockQuestions.length} (${percent}%)`;
 
-      // ✅ Neutral si aún no se ha empezado
       if (answeredCount === 0) percentEl.classList.add("pct-none");
       else if (percent >= 80) percentEl.classList.add("pct-good");
       else if (percent >= 50) percentEl.classList.add("pct-mid");
@@ -388,7 +370,6 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    // ✅ Bloqueo “solo yo” también aquí (por si alguien entra por sesión vieja)
     if (!isAuthorized(user)) {
       await auth.signOut();
       showLoginError("No autorizado.");
