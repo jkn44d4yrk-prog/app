@@ -33,20 +33,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // ================= STATE =================
   let state = {
-    phase: "BLOCK",       // "BLOCK" | "RETRY" | "FINISHED"
-    block: 0,
-    index: 0,
-    failed: [],           // Preguntas falladas para repasar
-    attempts: {},         // { questionId: nIntentos }
-    history: []           // [{questionId, selected, correct, date}]
+    history: [],        // {questionId, selected, correct, date}
+    attempts: {},       // {questionId: nIntentos}
   };
 
-  let answered = false;
+  let currentBlock = [];  // preguntas actuales del bloque
+  let currentIndex = 0;
+  let currentMode = null;  // "NORMAL" | "FAILED" | "FIRST_OK"
 
   // ================= DOM =================
+  const loginEl = document.getElementById("login");
+  const menuEl = document.getElementById("menu");
+  const testEl = document.getElementById("test");
   const questionEl = document.getElementById("question");
   const optionsEl = document.getElementById("options");
   const nextBtn = document.getElementById("nextBtn");
+  const blockMsgEl = document.getElementById("blockMsg"); // pantalla "BLOQUE SUPERADO"
 
   // ================= FIRESTORE =================
   async function saveProgress(user) {
@@ -68,47 +70,92 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  // ================= STATE HELPERS =================
-  function getQuestionsForState() {
-    if (state.phase === "BLOCK") {
-      const start = state.block * BLOCK_SIZE;
-      const end = start + BLOCK_SIZE;
-      return questions.slice(start, end);
+  // ================= MENU =================
+  function showMenu() {
+    loginEl.style.display = "none";
+    testEl.style.display = "none";
+    blockMsgEl.style.display = "none";
+    menuEl.style.display = "block";
+    menuEl.innerHTML = "<h2>Selecciona un bloque</h2>";
+
+    // Generar botones de bloques
+    const numBlocks = Math.ceil(questions.length / BLOCK_SIZE);
+    for (let i = 0; i < numBlocks; i++) {
+      const start = i * BLOCK_SIZE + 1;
+      const end = Math.min((i + 1) * BLOCK_SIZE, questions.length);
+
+      // Calcular porcentaje acertado en el bloque (primera respuesta correcta)
+      const blockQuestions = questions.slice(i * BLOCK_SIZE, (i + 1) * BLOCK_SIZE);
+      let correctCount = 0;
+      blockQuestions.forEach(q => {
+        const firstAttempt = state.history.find(h => h.questionId === q.id);
+        if (firstAttempt && firstAttempt.selected === firstAttempt.correct) {
+          correctCount++;
+        }
+      });
+      const percent = Math.round((correctCount / blockQuestions.length) * 100);
+
+      const btn = document.createElement("button");
+      btn.textContent = `${start}-${end} (${percent}%)`;
+      btn.onclick = () => startBlock(i * BLOCK_SIZE, "NORMAL");
+      menuEl.appendChild(btn);
     }
 
-    if (state.phase === "RETRY") {
-      // Priorizar preguntas con más intentos
-      return state.failed.sort((a, b) => {
-        return (state.attempts[b.id] || 0) - (state.attempts[a.id] || 0);
-      }).slice(0, BLOCK_SIZE);
-    }
+    menuEl.appendChild(document.createElement("br"));
 
-    return [];
+    // Botón de repaso de falladas
+    const failedBtn = document.createElement("button");
+    failedBtn.textContent = "Responder preguntas falladas";
+    failedBtn.onclick = () => startBlock(0, "FAILED");
+    menuEl.appendChild(failedBtn);
+
+    menuEl.appendChild(document.createElement("br"));
+
+    // Botón de repaso de aciertos a la primera
+    const firstOkBtn = document.createElement("button");
+    firstOkBtn.textContent = "Responder preguntas acertadas a la primera";
+    firstOkBtn.onclick = () => startBlock(0, "FIRST_OK");
+    menuEl.appendChild(firstOkBtn);
   }
 
-  // ================= RENDER =================
+  // ================= BLOQUE =================
+  function startBlock(startIndex, mode) {
+    menuEl.style.display = "none";
+    testEl.style.display = "block";
+    blockMsgEl.style.display = "none";
+    currentIndex = 0;
+    currentMode = mode;
+
+    if (mode === "NORMAL") {
+      currentBlock = questions.slice(startIndex, startIndex + BLOCK_SIZE);
+    } else if (mode === "FAILED") {
+      const failedQuestions = state.history
+        .filter(h => h.selected !== h.correct)
+        .map(h => questions.find(q => q.id === h.questionId))
+        .filter(q => q != null);
+      currentBlock = failedQuestions.slice(0, BLOCK_SIZE);
+    } else if (mode === "FIRST_OK") {
+      const okQuestions = state.history
+        .filter(h => h.selected === h.correct)
+        .map(h => questions.find(q => q.id === h.questionId))
+        .filter(q => q != null);
+      currentBlock = okQuestions.slice(0, BLOCK_SIZE);
+    }
+
+    if (currentBlock.length === 0) {
+      alert("No hay preguntas para este bloque.");
+      showMenu();
+      return;
+    }
+
+    loadQuestion();
+  }
+
   function loadQuestion() {
-    if (state.phase === "FINISHED") {
-      questionEl.textContent = "Cuestionario finalizado 🎉";
-      optionsEl.innerHTML = "";
-      nextBtn.style.display = "none";
-      return;
-    }
-
-    const currentQuestions = getQuestionsForState();
-    const q = currentQuestions[state.index];
-
-    if (!q) {
-      advanceState();
-      return;
-    }
-
-    answered = false;
-    nextBtn.disabled = true;
-    optionsEl.innerHTML = "";
-
+    const q = currentBlock[currentIndex];
     questionEl.textContent = q.question;
-    questionEl.style.color = q.__failed ? "red" : "black";
+    optionsEl.innerHTML = "";
+    nextBtn.disabled = true;
 
     Object.entries(q.options).forEach(([letter, text]) => {
       const btn = document.createElement("button");
@@ -118,32 +165,13 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // ================= ANSWER =================
   function answer(event, selected, correct, qId) {
-    if (answered) return;
-    answered = true;
+    // Deshabilitar botones
+    optionsEl.querySelectorAll("button").forEach(btn => btn.disabled = true);
 
-    const buttons = optionsEl.querySelectorAll("button");
-    buttons.forEach(btn => {
-      btn.disabled = true;
-      if (btn.textContent.startsWith(correct + ")")) {
-        btn.classList.add("correct");
-      }
-    });
-
-    if (selected !== correct) {
-      event.target.classList.add("incorrect");
-
-      // Añadir a failed si no está ya
-      const currentQuestions = getQuestionsForState();
-      const q = currentQuestions[state.index];
-      if (!state.failed.find(f => f.id === q.id)) {
-        state.failed.push({ ...q, __failed: true });
-      }
-    }
-
-    // Registrar intentos
-    state.attempts[qId] = (state.attempts[qId] || 0) + 1;
+    // Colores
+    if (selected === correct) event.target.classList.add("correct");
+    else event.target.classList.add("incorrect");
 
     // Registrar historial
     state.history.push({
@@ -153,74 +181,45 @@ document.addEventListener("DOMContentLoaded", () => {
       date: new Date().toISOString()
     });
 
+    // Registrar intentos
+    state.attempts[qId] = (state.attempts[qId] || 0) + 1;
+
     nextBtn.disabled = false;
   }
 
-  // ================= STATE MACHINE =================
-  function advanceState() {
-    const currentQuestions = getQuestionsForState();
-    state.index++;
-
-    // Aún quedan preguntas en este estado
-    if (state.index < currentQuestions.length) {
-      loadQuestion();
-      return;
-    }
-
-    // Fin del estado actual
-    if (state.phase === "BLOCK") {
-      if (state.failed.length > 0) {
-        state.phase = "RETRY";
-        state.index = 0;
-      } else {
-        state.block++;
-        state.index = 0;
-      }
-    } else if (state.phase === "RETRY") {
-      state.phase = "BLOCK";
-      state.block++;
-      state.index = 0;
-      state.failed = [];
-    }
-
-    // Comprobar si quedan bloques
-    const nextBlock = questions.slice(
-      state.block * BLOCK_SIZE,
-      (state.block + 1) * BLOCK_SIZE
-    );
-
-    if (nextBlock.length === 0 && state.failed.length === 0) {
-      state.phase = "FINISHED";
-    }
-
-    loadQuestion();
-  }
-
+  // ================= AVANZAR =================
   nextBtn.onclick = async () => {
-    advanceState();
+    currentIndex++;
+    if (currentIndex >= currentBlock.length) {
+      // BLOQUE SUPERADO
+      testEl.style.display = "none";
+      blockMsgEl.style.display = "block";
+      blockMsgEl.innerHTML = `
+        <h2>BLOQUE SUPERADO 🎉</h2>
+        <button id="continueBtn">Continuar</button>
+      `;
+      document.getElementById("continueBtn").onclick = showMenu;
+    } else {
+      loadQuestion();
+    }
+
     const user = auth.currentUser;
     if (user) await saveProgress(user);
   };
 
-  // ================= SAVE ON CLOSE =================
-  window.addEventListener("beforeunload", () => {
-    const user = auth.currentUser;
-    if (user) saveProgress(user);
-  });
-
   // ================= AUTH STATE =================
   auth.onAuthStateChanged(async user => {
     if (!user) {
-      document.getElementById("login").style.display = "block";
-      document.getElementById("test").style.display = "none";
+      loginEl.style.display = "block";
+      testEl.style.display = "none";
+      menuEl.style.display = "none";
+      blockMsgEl.style.display = "none";
       return;
     }
 
-    document.getElementById("login").style.display = "none";
-    document.getElementById("test").style.display = "block";
-
+    loginEl.style.display = "none";
     await loadProgress(user);
-    loadQuestion();
+    showMenu();
   });
 
 });
