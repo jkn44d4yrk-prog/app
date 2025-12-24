@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     try {
       await auth.setPersistence(firebase.auth.Auth.Persistence.LOCAL);
       await auth.signInWithEmailAndPassword(email, password);
+      console.log("Logged in successfully!");
     } catch (e) {
       alert(e.message);
     }
@@ -20,6 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
     try {
       await auth.setPersistence(firebase.auth.Auth.Persistence.LOCAL);
       await auth.createUserWithEmailAndPassword(email, password);
+      console.log("User registered successfully!");
     } catch (e) {
       alert(e.message);
     }
