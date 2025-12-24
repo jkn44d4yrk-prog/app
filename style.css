@@ -51,3 +51,26 @@ button.incorrect {
   padding: 10px;
   width: 100%;
 }
+
+/* ===== MENÚ POR BLOQUE (NUEVO) ===== */
+.block-row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.block-main {
+  flex: 1 1 160px;
+}
+
+.block-percent {
+  min-width: 120px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.block-mini {
+  flex: 0 0 auto;
+}
