@@ -1,11 +1,14 @@
 document.addEventListener("DOMContentLoaded", () => {
 
   // =================== SOLO TÚ ===================
-  const ALLOWED_EMAIL = "robertobacallado@gmail.com"; // <-- pon tu email real
+  // ✅ PON AQUÍ TU EMAIL REAL (con @), el mismo que uses para loguearte en Firebase Auth
+  const ALLOWED_EMAILS = [
+    "robertobacallado@gmail.com"
+  ].map(e => e.trim().toLowerCase()).filter(Boolean);
 
   function isAuthorized(user) {
     const userEmail = (user?.email || "").trim().toLowerCase();
-    return userEmail !== "" && userEmail === ALLOWED_EMAIL.trim().toLowerCase();
+    return userEmail && ALLOWED_EMAILS.includes(userEmail);
   }
   // ==============================================
 
@@ -39,10 +42,18 @@ document.addEventListener("DOMContentLoaded", () => {
     loginErrorEl.style.display = "block";
     loginErrorEl.textContent = msg;
   }
+
   function clearLoginError() {
     if (!loginErrorEl) return;
     loginErrorEl.style.display = "none";
     loginErrorEl.textContent = "";
+  }
+
+  function showLoginScreen() {
+    loginEl.style.display = "block";
+    testEl.style.display = "none";
+    menuEl.style.display = "none";
+    blockMsgEl.style.display = "none";
   }
 
   // ================= HELPERS =================
@@ -109,6 +120,12 @@ document.addEventListener("DOMContentLoaded", () => {
       state = doc.exists ? normalizeState(doc.data()) : normalizeState(state);
     } catch (e) {
       console.error("Error loading progress:", e);
+      if (e?.code === "permission-denied") {
+        await auth.signOut();
+        showLoginScreen();
+        showLoginError("No autorizado (reglas Firestore). Revisa el email de la regla.");
+        return;
+      }
       state = normalizeState(state);
     }
   }
@@ -304,12 +321,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const buttons = optionsEl.querySelectorAll("button");
     buttons.forEach(btn => btn.disabled = true);
 
-    // Correcta en verde
+    // marcar correcta
     buttons.forEach(btn => {
       if (btn.dataset.letter === correct) btn.classList.add("correct");
     });
 
-    // Pulsada: verde si acierta, rojo si falla
+    // marcar pulsada
     if (selected === correct) event.target.classList.add("correct");
     else event.target.classList.add("incorrect");
 
@@ -321,7 +338,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     state.attempts[qId] = (state.attempts[qId] || 0) + 1;
-
     nextBtn.disabled = false;
   }
 
@@ -355,16 +371,13 @@ document.addEventListener("DOMContentLoaded", () => {
   // ================= AUTH STATE =================
   auth.onAuthStateChanged(async user => {
     if (!user) {
-      loginEl.style.display = "block";
-      testEl.style.display = "none";
-      menuEl.style.display = "none";
-      blockMsgEl.style.display = "none";
+      showLoginScreen();
       return;
     }
 
     if (!isAuthorized(user)) {
-      console.warn("Sesión no autorizada:", user?.email);
       await auth.signOut();
+      showLoginScreen();
       showLoginError("No autorizado.");
       return;
     }
