@@ -9,9 +9,11 @@ document.addEventListener("DOMContentLoaded", () => {
   const nextBtn = document.getElementById("nextBtn");
   const blockMsgEl = document.getElementById("blockMsg");
 
+  const backToMenuBtn = document.getElementById("backToMenuBtn");
+
   const emailEl = document.getElementById("email");
   const passwordEl = document.getElementById("password");
-  const loginErrorEl = document.getElementById("loginError"); // opcional (si no existe, no pasa nada)
+  const loginErrorEl = document.getElementById("loginError"); // existe en el index de arriba
 
   // ================= CONFIG =================
   const BLOCK_SIZE = 10;
@@ -205,7 +207,7 @@ document.addEventListener("DOMContentLoaded", () => {
       percentEl.className = "block-percent";
       percentEl.textContent = `${correctCount}/${blockQuestions.length} (${percent}%)`;
 
-      // ✅ Color del chip según %
+      // Color del chip según %
       if (percent >= 80) percentEl.classList.add("pct-good");
       else if (percent >= 50) percentEl.classList.add("pct-mid");
       else percentEl.classList.add("pct-bad");
@@ -257,17 +259,31 @@ document.addEventListener("DOMContentLoaded", () => {
 
     Object.entries(q.options).forEach(([letter, text]) => {
       const btn = document.createElement("button");
+      btn.dataset.letter = letter; // ✅ más robusto que parsear textContent
       btn.textContent = `${letter}) ${text}`;
       btn.onclick = (e) => answer(e, letter, q.correct, q.id);
       optionsEl.appendChild(btn);
     });
   }
 
+  // ✅ Marca correcta siempre; si fallas, tu elección queda en rojo
   function answer(event, selected, correct, qId) {
-    optionsEl.querySelectorAll("button").forEach(btn => btn.disabled = true);
+    const buttons = optionsEl.querySelectorAll("button");
 
-    if (selected === correct) event.target.classList.add("correct");
-    else event.target.classList.add("incorrect");
+    // Deshabilitar todas
+    buttons.forEach(btn => btn.disabled = true);
+
+    // Marcar la correcta en verde
+    buttons.forEach(btn => {
+      if (btn.dataset.letter === correct) btn.classList.add("correct");
+    });
+
+    // Marcar la pulsada: verde si acierta, rojo si falla
+    if (selected === correct) {
+      event.target.classList.add("correct");
+    } else {
+      event.target.classList.add("incorrect");
+    }
 
     state.history.push({
       questionId: qId,
@@ -279,6 +295,15 @@ document.addEventListener("DOMContentLoaded", () => {
     state.attempts[qId] = (state.attempts[qId] || 0) + 1;
 
     nextBtn.disabled = false;
+  }
+
+  // Botón volver al menú durante el bloque
+  if (backToMenuBtn) {
+    backToMenuBtn.onclick = async () => {
+      const user = auth.currentUser;
+      if (user) await saveProgress(user);
+      showMenu();
+    };
   }
 
   // ================= AVANZAR =================
