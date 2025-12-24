@@ -1,32 +1,17 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-  // ================= AUTH =================
-  async function login() {
-    const email = document.getElementById("email").value;
-    const password = document.getElementById("password").value;
+  // ================= DOM =================
+  const loginEl = document.getElementById("login");
+  const menuEl = document.getElementById("menu");
+  const testEl = document.getElementById("test");
+  const questionEl = document.getElementById("question");
+  const optionsEl = document.getElementById("options");
+  const nextBtn = document.getElementById("nextBtn");
+  const blockMsgEl = document.getElementById("blockMsg");
 
-    try {
-      await auth.setPersistence(firebase.auth.Auth.Persistence.LOCAL);
-      await auth.signInWithEmailAndPassword(email, password);
-    } catch (e) {
-      alert(e.message);
-    }
-  }
-
-  async function register() {
-    const email = document.getElementById("email").value;
-    const password = document.getElementById("password").value;
-
-    try {
-      await auth.setPersistence(firebase.auth.Auth.Persistence.LOCAL);
-      await auth.createUserWithEmailAndPassword(email, password);
-    } catch (e) {
-      alert(e.message);
-    }
-  }
-
-  window.login = login;
-  window.register = register;
+  const emailEl = document.getElementById("email");
+  const passwordEl = document.getElementById("password");
+  const loginErrorEl = document.getElementById("loginError"); // opcional (si no existe, no pasa nada)
 
   // ================= CONFIG =================
   const BLOCK_SIZE = 10;
@@ -39,16 +24,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let currentBlock = [];
   let currentIndex = 0;
-  let currentMode = null;  // "NORMAL" | "FAILED" | "FIRST_OK"
 
-  // ================= DOM =================
-  const loginEl = document.getElementById("login");
-  const menuEl = document.getElementById("menu");
-  const testEl = document.getElementById("test");
-  const questionEl = document.getElementById("question");
-  const optionsEl = document.getElementById("options");
-  const nextBtn = document.getElementById("nextBtn");
-  const blockMsgEl = document.getElementById("blockMsg");
+  // ================= UI HELPERS =================
+  function showLoginError(msg) {
+    if (!loginErrorEl) {
+      alert(msg);
+      return;
+    }
+    loginErrorEl.style.display = "block";
+    loginErrorEl.textContent = msg;
+  }
+
+  function clearLoginError() {
+    if (!loginErrorEl) return;
+    loginErrorEl.style.display = "none";
+    loginErrorEl.textContent = "";
+  }
 
   // ================= HELPERS =================
   function normalizeState(loaded) {
@@ -59,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
     };
   }
 
-  // Primer intento por pregunta (para % y para “acertadas a la primera” de verdad)
+  // Primer intento por pregunta
   function getFirstAttemptsMap() {
     const first = new Map();
     for (const h of state.history) {
@@ -107,16 +98,69 @@ document.addEventListener("DOMContentLoaded", () => {
   async function loadProgress(user) {
     try {
       const doc = await db.collection("progress").doc(user.uid).get();
-      if (doc.exists) {
-        state = normalizeState(doc.data());
-      } else {
-        state = normalizeState(state);
-      }
+      if (doc.exists) state = normalizeState(doc.data());
+      else state = normalizeState(state);
     } catch (e) {
       console.error("Error loading progress:", e);
       state = normalizeState(state);
     }
   }
+
+  // ================= AUTH (móvil friendly) =================
+  async function ensurePersistence() {
+    const tries = [
+      firebase.auth.Auth.Persistence.LOCAL,
+      firebase.auth.Auth.Persistence.SESSION,
+      firebase.auth.Auth.Persistence.NONE,
+    ];
+
+    for (const p of tries) {
+      try {
+        await auth.setPersistence(p);
+        return;
+      } catch (e) {
+        // seguimos probando
+      }
+    }
+  }
+
+  async function login() {
+    clearLoginError();
+    const email = (emailEl?.value || "").trim();
+    const password = (passwordEl?.value || "");
+
+    try {
+      await ensurePersistence();
+      await auth.signInWithEmailAndPassword(email, password);
+    } catch (e) {
+      console.error(e);
+      showLoginError(e.message || "No se pudo iniciar sesión.");
+    }
+  }
+
+  async function register() {
+    clearLoginError();
+    const email = (emailEl?.value || "").trim();
+    const password = (passwordEl?.value || "");
+
+    try {
+      await ensurePersistence();
+      await auth.createUserWithEmailAndPassword(email, password);
+    } catch (e) {
+      console.error(e);
+      showLoginError(e.message || "No se pudo registrar.");
+    }
+  }
+
+  window.login = login;
+  window.register = register;
+
+  // Enter para iniciar sesión
+  [emailEl, passwordEl].filter(Boolean).forEach(el => {
+    el.addEventListener("keydown", (ev) => {
+      if (ev.key === "Enter") login();
+    });
+  });
 
   // ================= MENU =================
   function showMenu() {
@@ -137,20 +181,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const blockQuestions = getBlockQuestions(startIndex);
 
-      let correctCount = 0;     // correctas en el primer intento
-      let failedCount = 0;       // falladas en el primer intento
-      let firstOkCount = 0;      // igual que correctCount, pero lo dejamos explícito
+      let correctCount = 0;
+      let failedCount = 0;
 
       for (const q of blockQuestions) {
         const a = first.get(q.id);
         if (!a) continue;
-
-        if (a.selected === a.correct) {
-          correctCount++;
-          firstOkCount++;
-        } else {
-          failedCount++;
-        }
+        if (a.selected === a.correct) correctCount++;
+        else failedCount++;
       }
 
       const percent = Math.round((correctCount / blockQuestions.length) * 100);
@@ -158,29 +196,30 @@ document.addEventListener("DOMContentLoaded", () => {
       const row = document.createElement("div");
       row.className = "block-row";
 
-      // Botón principal del bloque
       const mainBtn = document.createElement("button");
       mainBtn.className = "block-main";
       mainBtn.textContent = `${start}-${end}`;
       mainBtn.onclick = () => startBlock(startIndex, "NORMAL");
 
-      // Texto % + ratio
       const percentEl = document.createElement("span");
       percentEl.className = "block-percent";
       percentEl.textContent = `${correctCount}/${blockQuestions.length} (${percent}%)`;
 
-      // Botón rehacer falladas del bloque
+      // ✅ Color del chip según %
+      if (percent >= 80) percentEl.classList.add("pct-good");
+      else if (percent >= 50) percentEl.classList.add("pct-mid");
+      else percentEl.classList.add("pct-bad");
+
       const failedBtn = document.createElement("button");
       failedBtn.className = "block-mini";
       failedBtn.textContent = `Rehacer falladas (${failedCount})`;
       failedBtn.disabled = failedCount === 0;
       failedBtn.onclick = () => startBlock(startIndex, "FAILED");
 
-      // Botón rehacer acertadas a la primera del bloque
       const firstOkBtn = document.createElement("button");
       firstOkBtn.className = "block-mini";
-      firstOkBtn.textContent = `Rehacer acertadas (${firstOkCount})`;
-      firstOkBtn.disabled = firstOkCount === 0;
+      firstOkBtn.textContent = `Rehacer acertadas (${correctCount})`;
+      firstOkBtn.disabled = correctCount === 0;
       firstOkBtn.onclick = () => startBlock(startIndex, "FIRST_OK");
 
       row.appendChild(mainBtn);
@@ -198,7 +237,6 @@ document.addEventListener("DOMContentLoaded", () => {
     testEl.style.display = "block";
     blockMsgEl.style.display = "none";
     currentIndex = 0;
-    currentMode = mode;
 
     currentBlock = getQuestionsForMode(startIndex, mode);
 
@@ -246,6 +284,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // ================= AVANZAR =================
   nextBtn.onclick = async () => {
     currentIndex++;
+
     if (currentIndex >= currentBlock.length) {
       testEl.style.display = "none";
       blockMsgEl.style.display = "block";
