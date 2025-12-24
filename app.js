@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
 
   // =================== SOLO TÚ ===================
-  const ALLOWED_EMAIL = "TU_EMAIL_AQUI@ejemplo.com"; // <-- pon tu email real
+  const ALLOWED_EMAIL = "robertobacallado@gmail.com"; // <-- pon tu email real
 
   function isAuthorized(user) {
     const userEmail = (user?.email || "").trim().toLowerCase();
