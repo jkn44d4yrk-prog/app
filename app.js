@@ -16,7 +16,7 @@ function login() {
 }
 
 // ===== TEST =====
-let BLOCK_SIZE = 10;
+const BLOCK_SIZE = 30;
 
 let currentBlock = 0;
 let blockQuestions = [];
@@ -59,7 +59,7 @@ function loadBlock() {
 
   blockQuestions = questions.slice(start, end);
   failedQuestions = [];
-  currentIndex = 0;
+  currentIndex = currentIndex || 0;
 
   if (blockQuestions.length === 0) {
     questionEl.textContent = "Cuestionario finalizado 🎉";
@@ -102,37 +102,19 @@ function selectAnswer(event, selected, correct) {
     }
   });
 
-  function selectAnswer(event, selected, correct) {
-  if (answered) return;
-  answered = true;
-
-  const clickedButton = event.target;
-  const buttons = optionsEl.querySelectorAll("button");
-
-  buttons.forEach(btn => {
-    btn.disabled = true;
-    if (btn.textContent.startsWith(correct + ")")) {
-      btn.classList.add("correct");
-    }
-  });
-
   if (selected === correct) {
     clickedButton.classList.add("correct");
     correctCount++;
     correctCountEl.textContent = correctCount;
   } else {
     clickedButton.classList.add("incorrect");
-
-    // Se guarda SIEMPRE si se falla
     failedQuestions.push({
       ...blockQuestions[currentIndex],
       __failed: true
     });
   }
 
-  // ✅ SIEMPRE se puede pasar a la siguiente
   nextBtn.disabled = false;
-}
 }
 
 nextBtn.onclick = async () => {
@@ -150,13 +132,11 @@ nextBtn.onclick = async () => {
 
 function endBlock() {
   if (failedQuestions.length > 0) {
-    // 🔁 REPETIMOS LAS FALLADAS (otra vez, y las que vuelvas a fallar)
     blockQuestions = [...failedQuestions];
     failedQuestions = [];
     currentIndex = 0;
     loadQuestion();
   } else {
-    // ✅ SOLO AQUÍ PASAMOS DE RONDA
     currentBlock++;
     currentIndex = 0;
     loadBlock();
@@ -166,6 +146,9 @@ function endBlock() {
 // ===== AUTH =====
 auth.onAuthStateChanged(async user => {
   if (!user) return;
+
+  document.getElementById("login").style.display = "none";
+  document.getElementById("test").style.display = "block";
 
   await loadProgress(user);
   loadBlock();
