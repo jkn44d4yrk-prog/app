@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const emailEl = document.getElementById("email");
   const passwordEl = document.getElementById("password");
-  const loginErrorEl = document.getElementById("loginError"); // existe en el index de arriba
+  const loginErrorEl = document.getElementById("loginError");
 
   // ================= CONFIG =================
   const BLOCK_SIZE = 10;
@@ -88,6 +88,18 @@ document.addEventListener("DOMContentLoaded", () => {
     return [];
   }
 
+  // ✅ Resetear un bloque: elimina historial e intentos de esas preguntas
+  function resetBlockData(startIndex) {
+    const blockQuestions = getBlockQuestions(startIndex);
+    const ids = new Set(blockQuestions.map(q => q.id));
+
+    state.history = state.history.filter(h => !ids.has(h.questionId));
+
+    for (const id of ids) {
+      delete state.attempts[id];
+    }
+  }
+
   // ================= FIRESTORE =================
   async function saveProgress(user) {
     try {
@@ -120,9 +132,7 @@ document.addEventListener("DOMContentLoaded", () => {
       try {
         await auth.setPersistence(p);
         return;
-      } catch (e) {
-        // seguimos probando
-      }
+      } catch (e) { /* seguimos probando */ }
     }
   }
 
@@ -157,7 +167,6 @@ document.addEventListener("DOMContentLoaded", () => {
   window.login = login;
   window.register = register;
 
-  // Enter para iniciar sesión
   [emailEl, passwordEl].filter(Boolean).forEach(el => {
     el.addEventListener("keydown", (ev) => {
       if (ev.key === "Enter") login();
@@ -185,10 +194,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
       let correctCount = 0;
       let failedCount = 0;
+      let answeredCount = 0; // ✅ cuántas tienen “primer intento”
 
       for (const q of blockQuestions) {
         const a = first.get(q.id);
         if (!a) continue;
+        answeredCount++;
         if (a.selected === a.correct) correctCount++;
         else failedCount++;
       }
@@ -207,10 +218,16 @@ document.addEventListener("DOMContentLoaded", () => {
       percentEl.className = "block-percent";
       percentEl.textContent = `${correctCount}/${blockQuestions.length} (${percent}%)`;
 
-      // Color del chip según %
-      if (percent >= 80) percentEl.classList.add("pct-good");
-      else if (percent >= 50) percentEl.classList.add("pct-mid");
-      else percentEl.classList.add("pct-bad");
+      // ✅ Color del chip: si no hay intentos, neutral (no rojo)
+      if (answeredCount === 0) {
+        percentEl.classList.add("pct-none");
+      } else if (percent >= 80) {
+        percentEl.classList.add("pct-good");
+      } else if (percent >= 50) {
+        percentEl.classList.add("pct-mid");
+      } else {
+        percentEl.classList.add("pct-bad");
+      }
 
       const failedBtn = document.createElement("button");
       failedBtn.className = "block-mini";
@@ -224,10 +241,28 @@ document.addEventListener("DOMContentLoaded", () => {
       firstOkBtn.disabled = correctCount === 0;
       firstOkBtn.onclick = () => startBlock(startIndex, "FIRST_OK");
 
+      // ✅ NUEVO: Reset bloque y empezar de nuevo
+      const resetBtn = document.createElement("button");
+      resetBtn.className = "block-reset";
+      resetBtn.textContent = "Reset";
+      resetBtn.disabled = answeredCount === 0;
+      resetBtn.onclick = async () => {
+        const ok = confirm(`¿Resetear el bloque ${start}-${end} a 0 y empezarlo de nuevo?`);
+        if (!ok) return;
+
+        resetBlockData(startIndex);
+
+        const user = auth.currentUser;
+        if (user) await saveProgress(user);
+
+        startBlock(startIndex, "NORMAL");
+      };
+
       row.appendChild(mainBtn);
       row.appendChild(percentEl);
       row.appendChild(failedBtn);
       row.appendChild(firstOkBtn);
+      row.appendChild(resetBtn);
 
       menuEl.appendChild(row);
     }
@@ -259,31 +294,26 @@ document.addEventListener("DOMContentLoaded", () => {
 
     Object.entries(q.options).forEach(([letter, text]) => {
       const btn = document.createElement("button");
-      btn.dataset.letter = letter; // ✅ más robusto que parsear textContent
+      btn.dataset.letter = letter;
       btn.textContent = `${letter}) ${text}`;
       btn.onclick = (e) => answer(e, letter, q.correct, q.id);
       optionsEl.appendChild(btn);
     });
   }
 
-  // ✅ Marca correcta siempre; si fallas, tu elección queda en rojo
+  // Marca la correcta siempre; si fallas, tu elección en rojo
   function answer(event, selected, correct, qId) {
     const buttons = optionsEl.querySelectorAll("button");
-
-    // Deshabilitar todas
     buttons.forEach(btn => btn.disabled = true);
 
-    // Marcar la correcta en verde
+    // Correcta en verde
     buttons.forEach(btn => {
       if (btn.dataset.letter === correct) btn.classList.add("correct");
     });
 
-    // Marcar la pulsada: verde si acierta, rojo si falla
-    if (selected === correct) {
-      event.target.classList.add("correct");
-    } else {
-      event.target.classList.add("incorrect");
-    }
+    // Pulsada: verde si acierta, rojo si falla
+    if (selected === correct) event.target.classList.add("correct");
+    else event.target.classList.add("incorrect");
 
     state.history.push({
       questionId: qId,
