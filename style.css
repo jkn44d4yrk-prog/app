@@ -2,7 +2,6 @@
 :root{
   --bg: #0b1220;
   --panel: rgba(255,255,255,0.06);
-  --panel-2: rgba(255,255,255,0.08);
   --stroke: rgba(255,255,255,0.10);
   --text: rgba(255,255,255,0.92);
   --muted: rgba(255,255,255,0.70);
@@ -32,7 +31,7 @@ h1{
   letter-spacing: 0.2px;
 }
 
-/* “Card” para cada pantalla (login/menu/test/msg) */
+/* Cards por pantalla */
 #login, #menu, #test, #blockMsg{
   max-width: 860px;
   margin: 0 auto 16px;
@@ -93,7 +92,7 @@ button:disabled{
   cursor: not-allowed;
 }
 
-/* Botones del login uno al lado del otro en pantallas anchas */
+/* Login: botones en 2 columnas */
 #login button{
   width: calc(50% - 6px);
   margin-top: 8px;
@@ -103,7 +102,7 @@ button:disabled{
   #login button{ width: 100%; margin-right: 0; }
 }
 
-/* ============ Menú por bloque (fila bonita) ============ */
+/* ============ Menú por bloque ============ */
 .block-row{
   display: grid;
   grid-template-columns: 1fr auto auto auto;
@@ -131,15 +130,29 @@ button:disabled{
   border-radius: 999px;
   border: 1px solid rgba(255,255,255,0.12);
   background: rgba(255,255,255,0.06);
-  font-weight: 700;
+  font-weight: 800;
   color: var(--text);
+}
+
+/* Colores del chip (%) */
+.block-percent.pct-good{
+  background: rgba(16,185,129,0.18);
+  border-color: rgba(16,185,129,0.40);
+}
+.block-percent.pct-mid{
+  background: rgba(245,158,11,0.16);
+  border-color: rgba(245,158,11,0.40);
+}
+.block-percent.pct-bad{
+  background: rgba(239,68,68,0.16);
+  border-color: rgba(239,68,68,0.42);
 }
 
 .block-mini{
   white-space: nowrap;
 }
 
-/* Responsive: apila botones en móvil */
+/* Responsive: apila en móvil */
 @media (max-width: 720px){
   .block-row{
     grid-template-columns: 1fr 1fr;
