@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
 
   // =================== SOLO TÚ ===================
-  // ✅ PON AQUÍ TU EMAIL REAL (con @), el mismo que uses para loguearte en Firebase Auth
   const ALLOWED_EMAILS = [
     "robertobacallado@gmail.com"
   ].map(e => e.trim().toLowerCase()).filter(Boolean);
@@ -30,11 +29,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // ================= CONFIG =================
   const BLOCK_SIZE = 10;
+  const MOST_FAILED_COUNT = 40; // ✅ TOP 40 global (o menos si no hay)
 
   // ================= STATE =================
   let state = { history: [], attempts: {} };
   let currentBlock = [];
   let currentIndex = 0;
+  let currentSessionTitle = "BLOQUE";
 
   // ================= UI HELPERS =================
   function showLoginError(msg) {
@@ -108,6 +109,34 @@ document.addEventListener("DOMContentLoaded", () => {
     for (const id of ids) delete state.attempts[id];
   }
 
+  // ✅ Top N preguntas más falladas (global, contando todos los intentos)
+  //    Si hay menos de N, devuelve las que haya.
+  function getMostFailedQuestionsTopN(n) {
+    const failCount = new Map(); // questionId -> nº fallos
+
+    for (const h of state.history) {
+      if (!h || !h.questionId) continue;
+      if (h.selected !== h.correct) {
+        failCount.set(h.questionId, (failCount.get(h.questionId) || 0) + 1);
+      }
+    }
+
+    const sortedIds = Array.from(failCount.entries())
+      .sort((a, b) => b[1] - a[1])
+      .map(([id]) => id);
+
+    const byId = new Map(questions.map(q => [q.id, q]));
+    const top = [];
+
+    for (const id of sortedIds) {
+      const q = byId.get(id);
+      if (q) top.push(q);
+      if (top.length >= n) break;
+    }
+
+    return top;
+  }
+
   // ================= FIRESTORE =================
   async function saveProgress(user) {
     try { await db.collection("progress").doc(user.uid).set(state); }
@@ -157,7 +186,6 @@ document.addEventListener("DOMContentLoaded", () => {
       const cred = await auth.signInWithEmailAndPassword(email, password);
 
       if (!isAuthorized(cred.user)) {
-        console.warn("No autorizado. Email logueado:", cred.user?.email);
         await auth.signOut();
         showLoginError("No autorizado.");
       }
@@ -194,6 +222,37 @@ document.addEventListener("DOMContentLoaded", () => {
     top.appendChild(h2);
     top.appendChild(logoutBtn);
     return top;
+  }
+
+  function renderMenuFooter() {
+    const footer = document.createElement("div");
+    footer.className = "menu-footer";
+
+    const mostFailed = getMostFailedQuestionsTopN(MOST_FAILED_COUNT);
+
+    const btn = document.createElement("button");
+    btn.id = "repeatMostFailedBtn";
+    btn.type = "button";
+
+    // Texto dinámico: "Top 40" pero si hay menos, muestra cuántas hay
+    const n = mostFailed.length;
+    btn.textContent = n > 0
+      ? `Repetir más falladas (${n} pregunta${n === 1 ? "" : "s"})`
+      : `Repetir más falladas (${MOST_FAILED_COUNT})`;
+
+    btn.disabled = n === 0;
+
+    btn.onclick = () => {
+      const qs = getMostFailedQuestionsTopN(MOST_FAILED_COUNT);
+      if (qs.length === 0) {
+        alert("Todavía no hay fallos registrados.");
+        return;
+      }
+      startCustomQuestions(qs, "REPASO");
+    };
+
+    footer.appendChild(btn);
+    return footer;
   }
 
   function showMenu() {
@@ -282,10 +341,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
       menuEl.appendChild(row);
     }
+
+    menuEl.appendChild(renderMenuFooter());
   }
 
-  // ================= TEST =================
+  // ================= SESIONES DE PREGUNTAS =================
   function startBlock(startIndex, mode) {
+    currentSessionTitle = "BLOQUE";
     menuEl.style.display = "none";
     testEl.style.display = "block";
     blockMsgEl.style.display = "none";
@@ -295,6 +357,24 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (currentBlock.length === 0) {
       alert("No hay preguntas para este bloque.");
+      showMenu();
+      return;
+    }
+
+    loadQuestion();
+  }
+
+  function startCustomQuestions(qs, title) {
+    currentSessionTitle = title || "REPASO";
+    menuEl.style.display = "none";
+    testEl.style.display = "block";
+    blockMsgEl.style.display = "none";
+    currentIndex = 0;
+
+    currentBlock = Array.isArray(qs) ? qs.slice() : [];
+
+    if (currentBlock.length === 0) {
+      alert("No hay preguntas para repasar.");
       showMenu();
       return;
     }
@@ -321,12 +401,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const buttons = optionsEl.querySelectorAll("button");
     buttons.forEach(btn => btn.disabled = true);
 
-    // marcar correcta
     buttons.forEach(btn => {
       if (btn.dataset.letter === correct) btn.classList.add("correct");
     });
 
-    // marcar pulsada
     if (selected === correct) event.target.classList.add("correct");
     else event.target.classList.add("incorrect");
 
@@ -356,8 +434,8 @@ document.addEventListener("DOMContentLoaded", () => {
       testEl.style.display = "none";
       blockMsgEl.style.display = "block";
       blockMsgEl.innerHTML = `
-        <h2>BLOQUE SUPERADO 🎉</h2>
-        <button id="continueBtn">Continuar</button>
+        <h2>${currentSessionTitle} COMPLETADO 🎉</h2>
+        <button id="continueBtn">Volver al menú</button>
       `;
       document.getElementById("continueBtn").onclick = showMenu;
     } else {
