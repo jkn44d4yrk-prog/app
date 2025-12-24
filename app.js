@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
   window.register = register;
 
   // ================= CONFIG =================
-  const BLOCK_SIZE = 30;
+  const BLOCK_SIZE = 10;
 
   // ================= STATE (ÚNICA FUENTE DE VERDAD) =================
   let state = {
