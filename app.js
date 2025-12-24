@@ -1,5 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
 
+  // 🔐 FORZAR PERSISTENCIA DE SESIÓN
+  auth.setPersistence(firebase.auth.Auth.Persistence.LOCAL)
+    .catch(err => {
+      console.error("Error al establecer persistencia:", err);
+    });
+
   // ===== LOGIN =====
   function register() {
     const email = document.getElementById("email").value;
@@ -110,4 +116,62 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (selected === correct) {
       clickedButton.classList.add("correct");
-      correct
+      correctCount++;
+      correctCountEl.textContent = correctCount;
+    } else {
+      clickedButton.classList.add("incorrect");
+      failedQuestions.push({
+        ...blockQuestions[currentIndex],
+        __failed: true
+      });
+    }
+
+    nextBtn.disabled = false;
+  }
+
+  nextBtn.onclick = () => {
+    currentIndex++;
+
+    if (currentIndex < blockQuestions.length) {
+      loadQuestion();
+    } else {
+      endBlock();
+    }
+  };
+
+  async function endBlock() {
+    const user = auth.currentUser;
+
+    if (failedQuestions.length > 0) {
+      blockQuestions = [...failedQuestions];
+      failedQuestions = [];
+      currentIndex = 0;
+      loadQuestion();
+    } else {
+      currentBlock++;
+      currentIndex = 0;
+
+      if (user) await saveProgress(user);
+
+      loadBlock();
+    }
+  }
+
+  // ===== GUARDAR AL CERRAR =====
+  window.addEventListener("beforeunload", () => {
+    const user = auth.currentUser;
+    if (user) saveProgress(user);
+  });
+
+  // ===== AUTH =====
+  auth.onAuthStateChanged(async user => {
+    if (!user) return;
+
+    document.getElementById("login").style.display = "none";
+    document.getElementById("test").style.display = "block";
+
+    await loadProgress(user);
+    loadBlock();
+  });
+
+});
