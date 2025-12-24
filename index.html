@@ -18,17 +18,18 @@
   <button onclick="login()">Entrar</button>
 </div>
 
+<!-- MENÚ DE BLOQUES -->
+<div id="menu" style="display:none"></div>
+
 <!-- TEST -->
 <div id="test" style="display:none">
-  <div id="stats">
-    Preguntas acertadas:
-    <strong><span id="correctCount">0</span></strong>
-  </div>
-
   <h2 id="question"></h2>
   <div id="options"></div>
   <button id="nextBtn" disabled>Siguiente</button>
 </div>
+
+<!-- PANTALLA BLOQUE SUPERADO -->
+<div id="blockMsg" style="display:none"></div>
 
 <!-- FIREBASE (SIN NPM) -->
 <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-app-compat.js"></script>
