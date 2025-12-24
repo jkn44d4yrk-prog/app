@@ -104,7 +104,7 @@ button:disabled{
 /* ============ Menú por bloque ============ */
 .block-row{
   display: grid;
-  grid-template-columns: 1fr auto auto auto;
+  grid-template-columns: 1fr auto auto auto auto; /* + Reset */
   gap: 10px;
   align-items: center;
   margin: 10px 0;
@@ -146,11 +146,21 @@ button:disabled{
   background: rgba(239,68,68,0.16);
   border-color: rgba(239,68,68,0.42);
 }
+/* ✅ NUEVO: cuando el bloque aún no se ha hecho */
+.block-percent.pct-none{
+  background: rgba(255,255,255,0.06);
+  border-color: rgba(255,255,255,0.12);
+}
 
 .block-mini{ white-space: nowrap; }
 
+.block-reset{
+  white-space: nowrap;
+  background: rgba(255,255,255,0.08);
+}
+
 /* Responsive: apila en móvil */
-@media (max-width: 720px){
+@media (max-width: 840px){
   .block-row{
     grid-template-columns: 1fr 1fr;
   }
