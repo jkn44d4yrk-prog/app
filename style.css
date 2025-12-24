@@ -1,76 +1,213 @@
-body {
-  font-family: Arial, sans-serif;
-  max-width: 800px;
-  margin: auto;
-  padding: 15px;
+/* ============ Base ============ */
+:root{
+  --bg: #0b1220;
+  --panel: rgba(255,255,255,0.06);
+  --panel-2: rgba(255,255,255,0.08);
+  --stroke: rgba(255,255,255,0.10);
+  --text: rgba(255,255,255,0.92);
+  --muted: rgba(255,255,255,0.70);
+  --shadow: 0 16px 50px rgba(0,0,0,0.45);
+  --radius: 16px;
 }
 
-h1 {
+* { box-sizing: border-box; }
+
+body{
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: var(--text);
+  background:
+    radial-gradient(1200px 800px at 15% 10%, rgba(99,102,241,0.35), transparent 60%),
+    radial-gradient(900px 700px at 90% 20%, rgba(16,185,129,0.28), transparent 55%),
+    radial-gradient(800px 700px at 40% 95%, rgba(236,72,153,0.20), transparent 55%),
+    var(--bg);
+  min-height: 100vh;
+  padding: 18px;
+}
+
+h1{
   text-align: center;
+  margin: 10px 0 18px;
+  font-size: clamp(22px, 2.6vw, 30px);
+  letter-spacing: 0.2px;
 }
 
-#stats {
-  margin-bottom: 20px;
+/* “Card” para cada pantalla (login/menu/test/msg) */
+#login, #menu, #test, #blockMsg{
+  max-width: 860px;
+  margin: 0 auto 16px;
+  background: var(--panel);
+  border: 1px solid var(--stroke);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 18px;
+  backdrop-filter: blur(10px);
+}
+
+#menu h2{
+  margin: 0 0 12px;
   font-size: 18px;
+  color: var(--text);
 }
 
-#question {
-  font-size: 20px;
-  margin-bottom: 15px;
-}
-
-#options button {
-  display: block;
+/* Inputs */
+input{
   width: 100%;
-  padding: 10px;
+  padding: 12px 12px;
+  border-radius: 12px;
+  border: 1px solid var(--stroke);
+  background: rgba(255,255,255,0.06);
+  color: var(--text);
+  outline: none;
   margin: 6px 0;
-  text-align: left;
+}
+
+input::placeholder { color: rgba(255,255,255,0.55); }
+
+input:focus{
+  border-color: rgba(99,102,241,0.55);
+  box-shadow: 0 0 0 4px rgba(99,102,241,0.20);
+}
+
+/* Botones base */
+button{
+  border: 1px solid var(--stroke);
+  background: rgba(255,255,255,0.10);
+  color: var(--text);
+  padding: 11px 12px;
+  border-radius: 12px;
   cursor: pointer;
-  font-size: 17px; /* +1 punto */
+  transition: transform 0.08s ease, background 0.2s ease, border-color 0.2s ease, opacity 0.2s ease;
+  font-weight: 600;
 }
 
-#options button:disabled {
-  cursor: default;
-  opacity: 1;
+button:hover{
+  background: rgba(255,255,255,0.14);
+  border-color: rgba(255,255,255,0.18);
 }
 
-button.correct {
-  background-color: #c8f7c5;
-  border: 2px solid #2ecc71;
-  color: #1e7e34;
+button:active{ transform: translateY(1px); }
+
+button:disabled{
+  opacity: 0.55;
+  cursor: not-allowed;
 }
 
-button.incorrect {
-  background-color: #f7c5c5;
-  border: 2px solid #e74c3c;
-  color: #7e1e1e;
+/* Botones del login uno al lado del otro en pantallas anchas */
+#login button{
+  width: calc(50% - 6px);
+  margin-top: 8px;
+}
+#login button:first-of-type{ margin-right: 8px; }
+@media (max-width: 520px){
+  #login button{ width: 100%; margin-right: 0; }
 }
 
-#nextBtn {
-  margin-top: 15px;
-  padding: 10px;
-  width: 100%;
-}
-
-/* ===== MENÚ POR BLOQUE (NUEVO) ===== */
-.block-row {
-  display: flex;
+/* ============ Menú por bloque (fila bonita) ============ */
+.block-row{
+  display: grid;
+  grid-template-columns: 1fr auto auto auto;
   gap: 10px;
   align-items: center;
   margin: 10px 0;
-  flex-wrap: wrap;
+  padding: 10px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 14px;
 }
 
-.block-main {
-  flex: 1 1 160px;
+.block-main{
+  width: 100%;
+  text-align: left;
+  background: rgba(255,255,255,0.10);
 }
 
-.block-percent {
-  min-width: 120px;
-  font-weight: bold;
-  text-align: center;
+.block-percent{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 130px;
+  padding: 10px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(255,255,255,0.06);
+  font-weight: 700;
+  color: var(--text);
 }
 
-.block-mini {
-  flex: 0 0 auto;
+.block-mini{
+  white-space: nowrap;
+}
+
+/* Responsive: apila botones en móvil */
+@media (max-width: 720px){
+  .block-row{
+    grid-template-columns: 1fr 1fr;
+  }
+  .block-percent{
+    grid-column: 1 / -1;
+    justify-self: start;
+  }
+}
+
+/* ============ Test ============ */
+#question{
+  font-size: 20px;
+  line-height: 1.25;
+  margin: 0 0 14px;
+}
+
+#options{
+  display: grid;
+  gap: 10px;
+}
+
+#options button{
+  width: 100%;
+  text-align: left;
+  padding: 12px 12px;
+  background: rgba(255,255,255,0.08);
+}
+
+#options button:hover{
+  background: rgba(255,255,255,0.12);
+}
+
+#nextBtn{
+  margin-top: 14px;
+  width: 100%;
+  padding: 12px;
+  background: rgba(99,102,241,0.26);
+  border-color: rgba(99,102,241,0.40);
+}
+
+#nextBtn:hover{
+  background: rgba(99,102,241,0.33);
+}
+
+/* Feedback correcto/incorrecto */
+button.correct{
+  background: rgba(16,185,129,0.22) !important;
+  border: 1px solid rgba(16,185,129,0.55) !important;
+  color: rgba(236,253,245,0.98) !important;
+}
+
+button.incorrect{
+  background: rgba(239,68,68,0.20) !important;
+  border: 1px solid rgba(239,68,68,0.55) !important;
+  color: rgba(254,242,242,0.98) !important;
+}
+
+/* Fin de bloque */
+#blockMsg h2{
+  margin: 0 0 12px;
+}
+#blockMsg button{
+  width: 100%;
+  padding: 12px;
+  background: rgba(16,185,129,0.18);
+  border-color: rgba(16,185,129,0.38);
+}
+#blockMsg button:hover{
+  background: rgba(16,185,129,0.24);
 }
