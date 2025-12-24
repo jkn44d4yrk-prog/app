@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const password = document.getElementById("password").value;
 
     try {
-      // 🔐 IMPORTANTE: esperar a la persistencia ANTES de loguear
       await auth.setPersistence(firebase.auth.Auth.Persistence.LOCAL);
       await auth.signInWithEmailAndPassword(email, password);
     } catch (e) {
@@ -26,7 +25,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  // necesarios para los botones inline
   window.login = login;
   window.register = register;
 
@@ -37,11 +35,12 @@ document.addEventListener("DOMContentLoaded", () => {
   let blockQuestions = [];
   let failedQuestions = [];
   let currentIndex = 0;
+  let hasFailed = false;
 
   let correctCount = 0;
   let answered = false;
 
-  // ===== ELEMENTOS DOM =====
+  // ===== DOM =====
   const questionEl = document.getElementById("question");
   const optionsEl = document.getElementById("options");
   const nextBtn = document.getElementById("nextBtn");
@@ -52,7 +51,8 @@ document.addEventListener("DOMContentLoaded", () => {
     return db.collection("progress").doc(user.uid).set({
       currentBlock,
       currentIndex,
-      correctCount
+      correctCount,
+      hasFailed
     });
   }
 
@@ -64,6 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
       currentBlock = data.currentBlock ?? 0;
       currentIndex = data.currentIndex ?? 0;
       correctCount = data.correctCount ?? 0;
+      hasFailed = data.hasFailed ?? false;
       correctCountEl.textContent = correctCount;
     }
   }
@@ -74,8 +75,14 @@ document.addEventListener("DOMContentLoaded", () => {
     const end = start + BLOCK_SIZE;
 
     blockQuestions = questions.slice(start, end);
-    failedQuestions = [];
-    currentIndex = currentIndex || 0;
+
+    if (!hasFailed) {
+      failedQuestions = [];
+    }
+
+    if (currentIndex < 0 || currentIndex >= blockQuestions.length) {
+      currentIndex = 0;
+    }
 
     if (blockQuestions.length === 0) {
       questionEl.textContent = "Cuestionario finalizado 🎉";
@@ -88,11 +95,19 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function loadQuestion() {
+    const q = blockQuestions[currentIndex];
+
+    if (!q) {
+      console.error("Pregunta inválida", currentIndex, blockQuestions);
+      currentIndex = 0;
+      loadQuestion();
+      return;
+    }
+
     answered = false;
     nextBtn.disabled = true;
     optionsEl.innerHTML = "";
 
-    const q = blockQuestions[currentIndex];
     questionEl.textContent = q.question;
     questionEl.style.color = q.__failed ? "red" : "black";
 
@@ -128,13 +143,17 @@ document.addEventListener("DOMContentLoaded", () => {
         ...blockQuestions[currentIndex],
         __failed: true
       });
+      hasFailed = true;
     }
 
     nextBtn.disabled = false;
   }
 
-  nextBtn.onclick = () => {
+  nextBtn.onclick = async () => {
     currentIndex++;
+
+    const user = auth.currentUser;
+    if (user) await saveProgress(user);
 
     if (currentIndex < blockQuestions.length) {
       loadQuestion();
@@ -150,13 +169,14 @@ document.addEventListener("DOMContentLoaded", () => {
       blockQuestions = [...failedQuestions];
       failedQuestions = [];
       currentIndex = 0;
+      hasFailed = true;
       loadQuestion();
     } else {
       currentBlock++;
       currentIndex = 0;
+      hasFailed = false;
 
       if (user) await saveProgress(user);
-
       loadBlock();
     }
   }
@@ -169,7 +189,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // ===== AUTH =====
   auth.onAuthStateChanged(async user => {
-    if (!user) return;
+    if (!user) {
+      document.getElementById("login").style.display = "block";
+      document.getElementById("test").style.display = "none";
+      return;
+    }
 
     document.getElementById("login").style.display = "none";
     document.getElementById("test").style.display = "block";
