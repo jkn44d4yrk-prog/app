@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-  // ===== LOGIN =====
+  // ================= AUTH =================
   async function login() {
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
@@ -28,79 +28,67 @@ document.addEventListener("DOMContentLoaded", () => {
   window.login = login;
   window.register = register;
 
-  // ===== TEST =====
+  // ================= CONFIG =================
   const BLOCK_SIZE = 30;
 
-  let currentBlock = 0;
-  let blockQuestions = [];
-  let failedQuestions = [];
-  let currentIndex = 0;
-  let hasFailed = false;
+  // ================= STATE (ÚNICA FUENTE DE VERDAD) =================
+  let state = {
+    phase: "BLOCK",       // "BLOCK" | "RETRY" | "FINISHED"
+    block: 0,
+    index: 0,
+    failed: [],
+    correctCount: 0
+  };
 
-  let correctCount = 0;
   let answered = false;
 
-  // ===== DOM =====
+  // ================= DOM =================
   const questionEl = document.getElementById("question");
   const optionsEl = document.getElementById("options");
   const nextBtn = document.getElementById("nextBtn");
   const correctCountEl = document.getElementById("correctCount");
 
-  // ===== FIRESTORE =====
+  // ================= FIRESTORE =================
   function saveProgress(user) {
-    return db.collection("progress").doc(user.uid).set({
-      currentBlock,
-      currentIndex,
-      correctCount,
-      hasFailed
-    });
+    return db.collection("progress").doc(user.uid).set(state);
   }
 
   async function loadProgress(user) {
     const doc = await db.collection("progress").doc(user.uid).get();
-
     if (doc.exists) {
-      const data = doc.data();
-      currentBlock = data.currentBlock ?? 0;
-      currentIndex = data.currentIndex ?? 0;
-      correctCount = data.correctCount ?? 0;
-      hasFailed = data.hasFailed ?? false;
-      correctCountEl.textContent = correctCount;
+      state = doc.data();
     }
   }
 
-  // ===== TEST LOGIC =====
-  function loadBlock() {
-    const start = currentBlock * BLOCK_SIZE;
-    const end = start + BLOCK_SIZE;
-
-    blockQuestions = questions.slice(start, end);
-
-    if (!hasFailed) {
-      failedQuestions = [];
+  // ================= STATE HELPERS =================
+  function getQuestionsForState() {
+    if (state.phase === "BLOCK") {
+      const start = state.block * BLOCK_SIZE;
+      const end = start + BLOCK_SIZE;
+      return questions.slice(start, end);
     }
 
-    if (currentIndex < 0 || currentIndex >= blockQuestions.length) {
-      currentIndex = 0;
+    if (state.phase === "RETRY") {
+      return state.failed;
     }
 
-    if (blockQuestions.length === 0) {
+    return [];
+  }
+
+  // ================= RENDER =================
+  function loadQuestion() {
+    if (state.phase === "FINISHED") {
       questionEl.textContent = "Cuestionario finalizado 🎉";
       optionsEl.innerHTML = "";
       nextBtn.style.display = "none";
       return;
     }
 
-    loadQuestion();
-  }
-
-  function loadQuestion() {
-    const q = blockQuestions[currentIndex];
+    const currentQuestions = getQuestionsForState();
+    const q = currentQuestions[state.index];
 
     if (!q) {
-      console.error("Pregunta inválida", currentIndex, blockQuestions);
-      currentIndex = 0;
-      loadQuestion();
+      advanceState();
       return;
     }
 
@@ -110,22 +98,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
     questionEl.textContent = q.question;
     questionEl.style.color = q.__failed ? "red" : "black";
+    correctCountEl.textContent = state.correctCount;
 
     Object.entries(q.options).forEach(([letter, text]) => {
       const btn = document.createElement("button");
       btn.textContent = `${letter}) ${text}`;
-      btn.onclick = (e) => selectAnswer(e, letter, q.correct);
+      btn.onclick = (e) => answer(e, letter, q.correct);
       optionsEl.appendChild(btn);
     });
   }
 
-  function selectAnswer(event, selected, correct) {
+  // ================= ANSWER =================
+  function answer(event, selected, correct) {
     if (answered) return;
     answered = true;
 
-    const clickedButton = event.target;
     const buttons = optionsEl.querySelectorAll("button");
-
     buttons.forEach(btn => {
       btn.disabled = true;
       if (btn.textContent.startsWith(correct + ")")) {
@@ -134,60 +122,73 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     if (selected === correct) {
-      clickedButton.classList.add("correct");
-      correctCount++;
-      correctCountEl.textContent = correctCount;
+      state.correctCount++;
+      event.target.classList.add("correct");
     } else {
-      clickedButton.classList.add("incorrect");
-      failedQuestions.push({
-        ...blockQuestions[currentIndex],
+      event.target.classList.add("incorrect");
+      state.failed.push({
+        ...getQuestionsForState()[state.index],
         __failed: true
       });
-      hasFailed = true;
     }
 
     nextBtn.disabled = false;
   }
 
-  nextBtn.onclick = async () => {
-    currentIndex++;
+  // ================= STATE MACHINE =================
+  function advanceState() {
+    const currentQuestions = getQuestionsForState();
+    state.index++;
 
-    const user = auth.currentUser;
-    if (user) await saveProgress(user);
-
-    if (currentIndex < blockQuestions.length) {
+    // Aún quedan preguntas en este estado
+    if (state.index < currentQuestions.length) {
       loadQuestion();
-    } else {
-      endBlock();
+      return;
     }
-  };
 
-  async function endBlock() {
-    const user = auth.currentUser;
-
-    if (failedQuestions.length > 0) {
-      blockQuestions = [...failedQuestions];
-      failedQuestions = [];
-      currentIndex = 0;
-      hasFailed = true;
-      loadQuestion();
-    } else {
-      currentBlock++;
-      currentIndex = 0;
-      hasFailed = false;
-
-      if (user) await saveProgress(user);
-      loadBlock();
+    // Fin del estado actual
+    if (state.phase === "BLOCK") {
+      if (state.failed.length > 0) {
+        state.phase = "RETRY";
+        state.index = 0;
+      } else {
+        state.block++;
+        state.index = 0;
+      }
     }
+    else if (state.phase === "RETRY") {
+      state.phase = "BLOCK";
+      state.block++;
+      state.index = 0;
+      state.failed = [];
+    }
+
+    // ¿Quedan bloques?
+    const nextBlock = questions.slice(
+      state.block * BLOCK_SIZE,
+      (state.block + 1) * BLOCK_SIZE
+    );
+
+    if (nextBlock.length === 0) {
+      state.phase = "FINISHED";
+    }
+
+    loadQuestion();
   }
 
-  // ===== GUARDAR AL CERRAR =====
+  nextBtn.onclick = async () => {
+    advanceState();
+    const user = auth.currentUser;
+    if (user) await saveProgress(user);
+  };
+
+  // ================= SAVE ON CLOSE =================
   window.addEventListener("beforeunload", () => {
     const user = auth.currentUser;
     if (user) saveProgress(user);
   });
 
-  // ===== AUTH =====
+  // ================= AUTH STATE =================
   auth.onAuthStateChanged(async user => {
     if (!user) {
       document.getElementById("login").style.display = "block";
@@ -199,7 +200,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("test").style.display = "block";
 
     await loadProgress(user);
-    loadBlock();
+    loadQuestion();
   });
 
 });
