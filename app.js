@@ -50,6 +50,51 @@ document.addEventListener("DOMContentLoaded", () => {
   const nextBtn = document.getElementById("nextBtn");
   const blockMsgEl = document.getElementById("blockMsg");
 
+  // ================= HELPERS =================
+  function normalizeState(loaded) {
+    const safe = loaded && typeof loaded === "object" ? loaded : {};
+    return {
+      history: Array.isArray(safe.history) ? safe.history : [],
+      attempts: safe.attempts && typeof safe.attempts === "object" ? safe.attempts : {},
+    };
+  }
+
+  // Primer intento por pregunta (para % y para “acertadas a la primera” de verdad)
+  function getFirstAttemptsMap() {
+    const first = new Map();
+    for (const h of state.history) {
+      if (!first.has(h.questionId)) first.set(h.questionId, h);
+    }
+    return first;
+  }
+
+  function getBlockQuestions(startIndex) {
+    return questions.slice(startIndex, startIndex + BLOCK_SIZE);
+  }
+
+  function getQuestionsForMode(startIndex, mode) {
+    const blockQs = getBlockQuestions(startIndex);
+    const first = getFirstAttemptsMap();
+
+    if (mode === "NORMAL") return blockQs;
+
+    if (mode === "FAILED") {
+      return blockQs.filter(q => {
+        const a = first.get(q.id);
+        return a && a.selected !== a.correct;
+      });
+    }
+
+    if (mode === "FIRST_OK") {
+      return blockQs.filter(q => {
+        const a = first.get(q.id);
+        return a && a.selected === a.correct;
+      });
+    }
+
+    return [];
+  }
+
   // ================= FIRESTORE =================
   async function saveProgress(user) {
     try {
@@ -63,10 +108,13 @@ document.addEventListener("DOMContentLoaded", () => {
     try {
       const doc = await db.collection("progress").doc(user.uid).get();
       if (doc.exists) {
-        state = doc.data();
+        state = normalizeState(doc.data());
+      } else {
+        state = normalizeState(state);
       }
     } catch (e) {
       console.error("Error loading progress:", e);
+      state = normalizeState(state);
     }
   }
 
@@ -76,42 +124,72 @@ document.addEventListener("DOMContentLoaded", () => {
     testEl.style.display = "none";
     blockMsgEl.style.display = "none";
     menuEl.style.display = "block";
+
     menuEl.innerHTML = "<h2>Selecciona un bloque</h2>";
 
     const numBlocks = Math.ceil(questions.length / BLOCK_SIZE);
-    for (let i = 0; i < numBlocks; i++) {
-      const start = i * BLOCK_SIZE + 1;
-      const end = Math.min((i + 1) * BLOCK_SIZE, questions.length);
+    const first = getFirstAttemptsMap();
 
-      const blockQuestions = questions.slice(i * BLOCK_SIZE, (i + 1) * BLOCK_SIZE);
-      let correctCount = 0;
-      blockQuestions.forEach(q => {
-        const firstAttempt = state.history.find(h => h.questionId === q.id);
-        if (firstAttempt && firstAttempt.selected === firstAttempt.correct) {
+    for (let i = 0; i < numBlocks; i++) {
+      const startIndex = i * BLOCK_SIZE;
+      const start = startIndex + 1;
+      const end = Math.min(startIndex + BLOCK_SIZE, questions.length);
+
+      const blockQuestions = getBlockQuestions(startIndex);
+
+      let correctCount = 0;     // correctas en el primer intento
+      let failedCount = 0;       // falladas en el primer intento
+      let firstOkCount = 0;      // igual que correctCount, pero lo dejamos explícito
+
+      for (const q of blockQuestions) {
+        const a = first.get(q.id);
+        if (!a) continue;
+
+        if (a.selected === a.correct) {
           correctCount++;
+          firstOkCount++;
+        } else {
+          failedCount++;
         }
-      });
+      }
+
       const percent = Math.round((correctCount / blockQuestions.length) * 100);
 
-      const btn = document.createElement("button");
-      btn.textContent = `${start}-${end} (${percent}%)`;
-      btn.onclick = () => startBlock(i * BLOCK_SIZE, "NORMAL");
-      menuEl.appendChild(btn);
+      const row = document.createElement("div");
+      row.className = "block-row";
+
+      // Botón principal del bloque
+      const mainBtn = document.createElement("button");
+      mainBtn.className = "block-main";
+      mainBtn.textContent = `${start}-${end}`;
+      mainBtn.onclick = () => startBlock(startIndex, "NORMAL");
+
+      // Texto % + ratio
+      const percentEl = document.createElement("span");
+      percentEl.className = "block-percent";
+      percentEl.textContent = `${correctCount}/${blockQuestions.length} (${percent}%)`;
+
+      // Botón rehacer falladas del bloque
+      const failedBtn = document.createElement("button");
+      failedBtn.className = "block-mini";
+      failedBtn.textContent = `Rehacer falladas (${failedCount})`;
+      failedBtn.disabled = failedCount === 0;
+      failedBtn.onclick = () => startBlock(startIndex, "FAILED");
+
+      // Botón rehacer acertadas a la primera del bloque
+      const firstOkBtn = document.createElement("button");
+      firstOkBtn.className = "block-mini";
+      firstOkBtn.textContent = `Rehacer acertadas (${firstOkCount})`;
+      firstOkBtn.disabled = firstOkCount === 0;
+      firstOkBtn.onclick = () => startBlock(startIndex, "FIRST_OK");
+
+      row.appendChild(mainBtn);
+      row.appendChild(percentEl);
+      row.appendChild(failedBtn);
+      row.appendChild(firstOkBtn);
+
+      menuEl.appendChild(row);
     }
-
-    menuEl.appendChild(document.createElement("br"));
-
-    const failedBtn = document.createElement("button");
-    failedBtn.textContent = "Responder preguntas falladas";
-    failedBtn.onclick = () => startBlock(0, "FAILED");
-    menuEl.appendChild(failedBtn);
-
-    menuEl.appendChild(document.createElement("br"));
-
-    const firstOkBtn = document.createElement("button");
-    firstOkBtn.textContent = "Responder preguntas acertadas a la primera";
-    firstOkBtn.onclick = () => startBlock(0, "FIRST_OK");
-    menuEl.appendChild(firstOkBtn);
   }
 
   // ================= BLOQUE =================
@@ -122,21 +200,7 @@ document.addEventListener("DOMContentLoaded", () => {
     currentIndex = 0;
     currentMode = mode;
 
-    if (mode === "NORMAL") {
-      currentBlock = questions.slice(startIndex, startIndex + BLOCK_SIZE);
-    } else if (mode === "FAILED") {
-      const failedQuestions = state.history
-        .filter(h => h.selected !== h.correct)
-        .map(h => questions.find(q => q.id === h.questionId))
-        .filter(q => q != null);
-      currentBlock = failedQuestions.slice(0, BLOCK_SIZE);
-    } else if (mode === "FIRST_OK") {
-      const okQuestions = state.history
-        .filter(h => h.selected === h.correct)
-        .map(h => questions.find(q => q.id === h.questionId))
-        .filter(q => q != null);
-      currentBlock = okQuestions.slice(0, BLOCK_SIZE);
-    }
+    currentBlock = getQuestionsForMode(startIndex, mode);
 
     if (currentBlock.length === 0) {
       alert("No hay preguntas para este bloque.");
