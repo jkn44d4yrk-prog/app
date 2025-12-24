@@ -1,12 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
 
   // =================== SOLO TÚ ===================
-  // ✅ Pon aquí TU email (el que usa tu cuenta de Firebase Auth)
-  const ALLOWED_EMAIL = "TU_EMAIL_AQUI@ejemplo.com";
+  const ALLOWED_EMAIL = "TU_EMAIL_AQUI@ejemplo.com"; // <-- pon tu email real
 
   function isAuthorized(user) {
-    if (!user || !user.email) return false;
-    return user.email.toLowerCase() === ALLOWED_EMAIL.toLowerCase();
+    const userEmail = (user?.email || "").trim().toLowerCase();
+    return userEmail !== "" && userEmail === ALLOWED_EMAIL.trim().toLowerCase();
   }
   // ==============================================
 
@@ -30,11 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const BLOCK_SIZE = 10;
 
   // ================= STATE =================
-  let state = {
-    history: [],
-    attempts: {},
-  };
-
+  let state = { history: [], attempts: {} };
   let currentBlock = [];
   let currentIndex = 0;
 
@@ -44,7 +39,6 @@ document.addEventListener("DOMContentLoaded", () => {
     loginErrorEl.style.display = "block";
     loginErrorEl.textContent = msg;
   }
-
   function clearLoginError() {
     if (!loginErrorEl) return;
     loginErrorEl.style.display = "none";
@@ -105,11 +99,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // ================= FIRESTORE =================
   async function saveProgress(user) {
-    try {
-      await db.collection("progress").doc(user.uid).set(state);
-    } catch (e) {
-      console.error("Error saving progress:", e);
-    }
+    try { await db.collection("progress").doc(user.uid).set(state); }
+    catch (e) { console.error("Error saving progress:", e); }
   }
 
   async function loadProgress(user) {
@@ -140,6 +131,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   async function login() {
     clearLoginError();
+
     const email = (emailEl?.value || "").trim();
     const password = (passwordEl?.value || "");
 
@@ -148,6 +140,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const cred = await auth.signInWithEmailAndPassword(email, password);
 
       if (!isAuthorized(cred.user)) {
+        console.warn("No autorizado. Email logueado:", cred.user?.email);
         await auth.signOut();
         showLoginError("No autorizado.");
       }
@@ -159,13 +152,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
   window.login = login;
 
+  if (logoutBtnTest) logoutBtnTest.onclick = logout;
+
   [emailEl, passwordEl].filter(Boolean).forEach(el => {
     el.addEventListener("keydown", (ev) => {
       if (ev.key === "Enter") login();
     });
   });
-
-  if (logoutBtnTest) logoutBtnTest.onclick = logout;
 
   // ================= MENU =================
   function renderMenuTopbar() {
@@ -274,7 +267,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  // ================= BLOQUE =================
+  // ================= TEST =================
   function startBlock(startIndex, mode) {
     menuEl.style.display = "none";
     testEl.style.display = "block";
@@ -340,7 +333,6 @@ document.addEventListener("DOMContentLoaded", () => {
     };
   }
 
-  // ================= AVANZAR =================
   nextBtn.onclick = async () => {
     currentIndex++;
 
@@ -371,6 +363,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     if (!isAuthorized(user)) {
+      console.warn("Sesión no autorizada:", user?.email);
       await auth.signOut();
       showLoginError("No autorizado.");
       return;
