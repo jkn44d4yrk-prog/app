@@ -82,12 +82,6 @@ document.addEventListener("DOMContentLoaded", () => {
     blockMsgEl.style.display = "none";
     menuEl.style.display = "block";
 
-    // Verificamos si el contenedor existe
-    if (menuBlocksEl === null) {
-      console.error("El elemento menuBlocksEl no se encuentra.");
-      return;
-    }
-
     // Pintar bloques
     menuBlocksEl.innerHTML = "";
     const numBlocks = Math.ceil(questions.length / BLOCK_SIZE);
