@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>Cuestionario tipo test</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=20251224-3">
 </head>
 <body>
 
@@ -30,7 +30,6 @@
 
   <div id="loginError" style="margin-top:10px; color:#ffb4b4; display:none;"></div>
 
-  <!-- Solo login (sin registrarse) -->
   <button onclick="login()">Entrar</button>
 </div>
 
@@ -49,7 +48,7 @@
   <button id="nextBtn" disabled>Siguiente</button>
 </div>
 
-<!-- PANTALLA BLOQUE SUPERADO -->
+<!-- FIN BLOQUE -->
 <div id="blockMsg" style="display:none"></div>
 
 <!-- FIREBASE (SIN NPM) -->
@@ -72,8 +71,8 @@
   const db = firebase.firestore();
 </script>
 
-<script src="questions.js"></script>
-<script src="app.js"></script>
+<script src="questions.js?v=20251224-3"></script>
+<script src="app.js?v=20251224-3"></script>
 
 </body>
 </html>
