@@ -4,7 +4,7 @@
 const questions = [
   {
     "id": 1,
-    "question": "LAS MUTUAS DEBEN FIGURAR INSCRITAS:",
+    "question": "1. LAS MUTUAS DEBEN FIGURAR INSCRITAS:",
     "options": {
       "A": "En el Registro de Entidades autorizadas para colaborar en la gestión de la Seguridad Social.",
       "B": "En el Registro Mercantil.",
@@ -15,7 +15,7 @@ const questions = [
   },
   {
     "id": 2,
-    "question": "LAS MUTUAS REALIZAN SU ACTIVIDAD DE COLABORACIÓN CON LA SEGURIDAD SOCIAL:",
+    "question": "2. LAS MUTUAS REALIZAN SU ACTIVIDAD DE COLABORACIÓN CON LA SEGURIDAD SOCIAL:",
     "options": {
       "A": "Sólo en la provincia donde radique su domicilio social.",
       "B": "Sólo en la Comunidad Autónoma donde radique su domicilio social.",
@@ -26,7 +26,7 @@ const questions = [
   },
   {
     "id": 3,
-    "question": "LOS INGRESOS PROCEDENTES DE LAS CUOTAS DE ACCIDENTES DE TRABAJO Y ENFERMEDADES PROFESIONALES FORMAN PARTE DEL PATRIMONIO DE LA SEGURIDAD SOCIAL Y ESTÁN AFECTADAS A:",
+    "question": "3. LOS INGRESOS PROCEDENTES DE LAS CUOTAS DE ACCIDENTES DE TRABAJO Y ENFERMEDADES PROFESIONALES FORMAN PARTE DEL PATRIMONIO DE LA SEGURIDAD SOCIAL Y ESTÁN AFECTADAS A:",
     "options": {
       "A": "Al cumplimiento de los fines de la Seguridad Social.",
       "B": "Al cumplimiento de los fines de la Mutua.",
@@ -37,7 +37,7 @@ const questions = [
   },
   {
     "id": 4,
-    "question": "EL PATRIMONIO HISTÓRICO DE LAS MUTUAS SE HALLA AFECTADO A:",
+    "question": "4. EL PATRIMONIO HISTÓRICO DE LAS MUTUAS SE HALLA AFECTADO A:",
     "options": {
       "A": "A los fines del Ministerio de Trabajo, Migraciones y Seguridad Social.",
       "B": "Al fin social de la entidad.",
@@ -48,7 +48,7 @@ const questions = [
   },
   {
     "id": 5,
-    "question": "EL MINISTERIO DE EMPLEO Y SEGURIDAD SOCIAL PODRÁ AUTORIZAR A LAS MUTUAS QUE CUENTEN CON BIENES INMUEBLES EN SU PATRIMONIO HISTÓRICO PARA LA UBICACIÓN EN LOS MISMOS DE CENTROS Y SERVICIOS AFECTOS A LA GESTIÓN MEDIANTE:",
+    "question": "5. EL MINISTERIO DE EMPLEO Y SEGURIDAD SOCIAL PODRÁ AUTORIZAR A LAS MUTUAS QUE CUENTEN CON BIENES INMUEBLES EN SU PATRIMONIO HISTÓRICO PARA LA UBICACIÓN EN LOS MISMOS DE CENTROS Y SERVICIOS AFECTOS A LA GESTIÓN MEDIANTE:",
     "options": {
       "A": "El pago de un alquiler previamente convenido entre las partes, al precio de mercado.",
       "B": "El pago de un alquiler fijado por un informe de un Agente de la Propiedad Inmobiliaria.",
@@ -59,7 +59,7 @@ const questions = [
   },
   {
     "id": 6,
-    "question": "LAS MUTUAS GOZARÁN DE EXENCIÓN TRIBUTARIA:",
+    "question": "6. LAS MUTUAS GOZARÁN DE EXENCIÓN TRIBUTARIA:",
     "options": {
       "A": "En los términos que se establecen para las Entidades Colaboradoras, en el artículo 65 de la Ley General de la Seguridad Social.",
       "B": "En los términos que se establecen para las Entidades Gestoras, en el artículo 1 de la Ley del Impuesto sobre Sociedades.",
@@ -70,7 +70,7 @@ const questions = [
   },
   {
     "id": 7,
-    "question": "PARA CONSTITUIRSE Y COLABORAR EN LA GESTIÓN DE LA SEGURIDAD SOCIAL LAS MUTUAS HABRÁN DE REUNIR, ENTRE OTRAS, LAS SIGUIENTES CONDICIONES:",
+    "question": "7. PARA CONSTITUIRSE Y COLABORAR EN LA GESTIÓN DE LA SEGURIDAD SOCIAL LAS MUTUAS HABRÁN DE REUNIR, ENTRE OTRAS, LAS SIGUIENTES CONDICIONES:",
     "options": {
       "A": "Que concurran como mínimo 50 empresarios y 30.000 trabajadores con un volumen anual de cuotas no inferior a 20.000.000 €.",
       "B": "Que concurran como mínimo 100 empresarios y 50.000 trabajadores con un volumen anual de cuotas no inferior a 15.515.181,56 €.",
@@ -81,7 +81,7 @@ const questions = [
   },
   {
     "id": 8,
-    "question": "LAS MUTUAS HABRÁN DE ACEPTAR LAS SIGUIENTES PROPUESTAS DE ASOCIACIÓN Y ADHESIÓN QUE LES FORMULEN:",
+    "question": "8. LAS MUTUAS HABRÁN DE ACEPTAR LAS SIGUIENTES PROPUESTAS DE ASOCIACIÓN Y ADHESIÓN QUE LES FORMULEN:",
     "options": {
       "A": "Todas.",
       "B": "Las de aquellas empresas que se encuentran al corriente en el pago de cuotas a la Seguridad Social.",
@@ -92,7 +92,7 @@ const questions = [
   },
   {
     "id": 9,
-    "question": "PARA CONSTITUIRSE Y COLABORAR EN LA GESTIÓN DE LA SEGURIDAD SOCIAL LAS MUTUAS HABRÁN DE CONSTITUIR FIANZA:",
+    "question": "9. PARA CONSTITUIRSE Y COLABORAR EN LA GESTIÓN DE LA SEGURIDAD SOCIAL LAS MUTUAS HABRÁN DE CONSTITUIR FIANZA:",
     "options": {
       "A": "Que no podrá ser inferior a 200.000 €.",
       "B": "Que no podrá ser inferior a 180.303,63 €.",
@@ -103,7 +103,7 @@ const questions = [
   },
   {
     "id": 10,
-    "question": "LA FIANZA QUE LAS MUTUAS DEBERÁN REALIZAR PARA CONSTITUIRSE Y COLABORAR EN LA GESTIÓN DE LA SEGURIDAD SOCIAL SERÁ:",
+    "question": "10. LA FIANZA QUE LAS MUTUAS DEBERÁN REALIZAR PARA CONSTITUIRSE Y COLABORAR EN LA GESTIÓN DE LA SEGURIDAD SOCIAL SERÁ:",
     "options": {
       "A": "Una cantidad fija e inalterable.",
       "B": "Una cantidad que se actualiza cada año en la variación experimentada en el IPC.",
@@ -114,7 +114,7 @@ const questions = [
   },
   {
     "id": 11,
-    "question": "LAS MUTUAS PODRÁN HACER EFECTIVAS LAS PRESTACIONES SANITARIAS Y RECUPERADORAS A SU CARGO MEDIANTE EL CONCIERTO CON MEDIOS PRIVADOS, YA SEAN PERSONAS FÍSICAS O JURÍDICAS. ESTOS CONCIERTOS:",
+    "question": "11. LAS MUTUAS PODRÁN HACER EFECTIVAS LAS PRESTACIONES SANITARIAS Y RECUPERADORAS A SU CARGO MEDIANTE EL CONCIERTO CON MEDIOS PRIVADOS, YA SEAN PERSONAS FÍSICAS O JURÍDICAS. ESTOS CONCIERTOS:",
     "options": {
       "A": "Las prestaciones sanitarias y recuperadoras de las Mutuas, no pueden prestarse con medios privados.",
       "B": "Se comunicarán al Ministerio de Inclusión, Seguridad Social y Migraciones en el plazo de tres meses desde su formalización y se tramitarán, en cuanto sea de aplicación, de conformidad con la Ley de Régimen Jurídico de las Administraciones Públicas y del Procedimiento Administrativo Común.",
@@ -125,7 +125,7 @@ const questions = [
   },
   {
     "id": 12,
-    "question": "LAS INSCRIPCIONES DE LA MUTUA EN EL REGISTRO CORRESPONDIENTE SE PUBLICARÁN EN:",
+    "question": "12. LAS INSCRIPCIONES DE LA MUTUA EN EL REGISTRO CORRESPONDIENTE SE PUBLICARÁN EN:",
     "options": {
       "A": "En el Boletín Oficial del Ministerio de Trabajo, Migraciones y Seguridad Social.",
       "B": "En el Boletín Oficial del Estado y en el de la Comunidad Autónoma donde radique el domicilio social.",
@@ -136,7 +136,7 @@ const questions = [
   },
   {
     "id": 13,
-    "question": "LOS ÓRGANOS DE GOBIERNO COLEGIADOS DE LAS MUTUAS, SON:",
+    "question": "13. LOS ÓRGANOS DE GOBIERNO COLEGIADOS DE LAS MUTUAS, SON:",
     "options": {
       "A": "La Junta General, la Junta Directiva, la Comisión de Control y Seguimiento y la Comisión de Prestaciones Especiales.",
       "B": "La Junta General, la Junta Directiva y el Director Gerente.",
@@ -147,7 +147,7 @@ const questions = [
   },
   {
     "id": 14,
-    "question": "LA DESIGNACIÓN Y REMOCIÓN DE LOS ASOCIADOS QUE HAYAN DE CONSTITUIR LA JUNTA DIRECTIVA DE LA MUTUA, ES COMPETENCIA DE:",
+    "question": "14. LA DESIGNACIÓN Y REMOCIÓN DE LOS ASOCIADOS QUE HAYAN DE CONSTITUIR LA JUNTA DIRECTIVA DE LA MUTUA, ES COMPETENCIA DE:",
     "options": {
       "A": "El Director Gerente.",
       "B": "La Junta Directiva.",
@@ -158,7 +158,7 @@ const questions = [
   },
   {
     "id": 15,
-    "question": "CUÁNTOS MIEMBROS INTEGRAN LA COMISIÓN DE CONTROL Y SEGUIMIENTO DE LAS MUTUAS.",
+    "question": "15. CUÁNTOS MIEMBROS INTEGRAN LA COMISIÓN DE CONTROL Y SEGUIMIENTO DE LAS MUTUAS.",
     "options": {
       "A": "Hasta un máximo de doce miembros, en la que también estarán representadas las asociaciones profesionales de trabajadores autónomos.",
       "B": "Diez.",
@@ -169,7 +169,7 @@ const questions = [
   },
   {
     "id": 16,
-    "question": "LA PARTICIPACIÓN DE LOS TRABAJADORES PROTEGIDOS POR LA MUTUA EN LA DISPENSA DE LAS PRESTACIONES Y BENEFICIOS DE ASISTENCIA SOCIAL QUE OTORGA LA MISMA, SE REALIZARÁ A TRAVÉS DE:",
+    "question": "16. LA PARTICIPACIÓN DE LOS TRABAJADORES PROTEGIDOS POR LA MUTUA EN LA DISPENSA DE LAS PRESTACIONES Y BENEFICIOS DE ASISTENCIA SOCIAL QUE OTORGA LA MISMA, SE REALIZARÁ A TRAVÉS DE:",
     "options": {
       "A": "La Junta Directiva.",
       "B": "La Junta General.",
@@ -180,7 +180,7 @@ const questions = [
   },
   {
     "id": 17,
-    "question": "LA COMISIÓN DE PRESTACIONES ESPECIALES ESTÁ CONSTITUIDA POR:",
+    "question": "17. LA COMISIÓN DE PRESTACIONES ESPECIALES ESTÁ CONSTITUIDA POR:",
     "options": {
       "A": "Diez miembros elegidos, por mitades, por los sindicatos y las organizaciones empresariales.",
       "B": "Diez miembros designados por el Ministerio de Trabajo, Migraciones y Seguridad Social.",
@@ -191,7 +191,7 @@ const questions = [
   },
   {
     "id": 18,
-    "question": "LA DESIGNACIÓN DEL DIRECTOR GERENTE DE LA MUTUA ES COMPETENCIA DE:",
+    "question": "18. LA DESIGNACIÓN DEL DIRECTOR GERENTE DE LA MUTUA ES COMPETENCIA DE:",
     "options": {
       "A": "La Junta General.",
       "B": "La Junta Directiva.",
@@ -202,7 +202,7 @@ const questions = [
   },
   {
     "id": 19,
-    "question": "PREVIA DESIGNACIÓN POR EL ÓRGANO COMPETENTE, EL DIRECTOR GERENTE DE LA MUTUA NO COMENZARÁ A EJERCER SUS FUNCIONES HASTA QUE SU NOMBRAMIENTO SEA CONFIRMADO POR:",
+    "question": "19. PREVIA DESIGNACIÓN POR EL ÓRGANO COMPETENTE, EL DIRECTOR GERENTE DE LA MUTUA NO COMENZARÁ A EJERCER SUS FUNCIONES HASTA QUE SU NOMBRAMIENTO SEA CONFIRMADO POR:",
     "options": {
       "A": "La Junta General.",
       "B": "La Junta Directiva.",
@@ -213,7 +213,7 @@ const questions = [
   },
   {
     "id": 20,
-    "question": "EL PRESIDENTE DE LA COMISIÓN DE CONTROL Y SEGUIMIENTO SERÁ:",
+    "question": "20. EL PRESIDENTE DE LA COMISIÓN DE CONTROL Y SEGUIMIENTO SERÁ:",
     "options": {
       "A": "Quien designen sus miembros.",
       "B": "Quien designe la Junta Directiva de la Mutua.",
@@ -224,7 +224,7 @@ const questions = [
   },
   {
     "id": 21,
-    "question": "LAS MUTUAS ESTÁN SUJETAS A CONTROL FINANCIERO POR PARTE DE:",
+    "question": "21. LAS MUTUAS ESTÁN SUJETAS A CONTROL FINANCIERO POR PARTE DE:",
     "options": {
       "A": "La Intervención General de la Seguridad Social.",
       "B": "La Intervención General del Estado.",
@@ -235,7 +235,7 @@ const questions = [
   },
   {
     "id": 22,
-    "question": "EL CONTROL FINANCIERO DE LAS MUTUAS PODRÁ REALIZARSE:",
+    "question": "22. EL CONTROL FINANCIERO DE LAS MUTUAS PODRÁ REALIZARSE:",
     "options": {
       "A": "A través de la revisión de las cuentas y presupuestos anuales.",
       "B": "A través de la comprobación de la gestión de las contingencias profesionales.",
@@ -246,7 +246,7 @@ const questions = [
   },
   {
     "id": 23,
-    "question": "LAS MUTUAS PODRÁN TOMAR EN ARRENDAMIENTO LOS BIENES INMUEBLES QUE PRECISEN PARA EL CUMPLIMIENTO DE SUS FINES:",
+    "question": "23. LAS MUTUAS PODRÁN TOMAR EN ARRENDAMIENTO LOS BIENES INMUEBLES QUE PRECISEN PARA EL CUMPLIMIENTO DE SUS FINES:",
     "options": {
       "A": "Previa autorización del Ministerio Inclusión, Seguridad Social y Migraciones.",
       "B": "Directamente, quedando obligada a enviar al Ministerio de Trabajo, Migraciones y Seguridad Social, una copia del contrato de arrendamiento dentro del plazo de un mes, acompañando certificación de Agente de la Propiedad Inmobiliaria que acredite los precios usuales de arrendamiento en la zona de ubicación de los bienes arrendados",
@@ -257,18 +257,18 @@ const questions = [
   },
   {
     "id": 24,
-    "question": "LA JUNTA DIRECTIVA DE LAS MUTUAS SE COMPONDRÁ DE:",
+    "question": "24. LA JUNTA DIRECTIVA DE LAS MUTUAS SE COMPONDRÁ DE:",
     "options": {
       "A": "20 miembros.",
       "B": "10 miembros",
-      "C": "Entre 10 y 20 empresarios asociados, de los cuales el 30% corresponderá a aquellas empresas que cuenten con mayor número de trabajadores, un\ntrabajador por cuenta propia adherido, y un representante de los trabajadores dependientes de la Mutua.",
+      "C": "Entre 10 y 20 empresarios asociados, de los cuales el 30% corresponderá a aquellas empresas que cuenten con mayor número de trabajadores, un trabajador por cuenta propia adherido, y un representante de los trabajadores dependientes de la Mutua.",
       "D": "El número de asociados que señalen los Estatutos sin que en ningún caso pueda ser superior a 10."
     },
     "correct": "C"
   },
   {
     "id": 25,
-    "question": "LA REFORMA DE LOS ESTATUTOS DE LA MUTUA ES COMPETENCIA DE:",
+    "question": "25. LA REFORMA DE LOS ESTATUTOS DE LA MUTUA ES COMPETENCIA DE:",
     "options": {
       "A": "La Junta Directiva.",
       "B": "La Junta General.",
@@ -279,7 +279,7 @@ const questions = [
   },
   {
     "id": 26,
-    "question": "LOS ACUERDOS RELATIVOS A LA FUSIÓN, ABSORCIÓN O DISOLUCIÓN DE LA ENTIDAD, DEBEN SER TOMADOS:",
+    "question": "26. LOS ACUERDOS RELATIVOS A LA FUSIÓN, ABSORCIÓN O DISOLUCIÓN DE LA ENTIDAD, DEBEN SER TOMADOS:",
     "options": {
       "A": "Por el Ministerio de Trabajo, Migraciones y Seguridad Social.",
       "B": "En Junta General Extraordinaria.",
@@ -290,7 +290,7 @@ const questions = [
   },
   {
     "id": 27,
-    "question": "LOS BIENES INCORPORADOS AL PATRIMONIO DE LAS MUTUAS CON ANTERIORIDAD AL 1 DE ENERO DE 1967 FORMAN PARTE DE:",
+    "question": "27. LOS BIENES INCORPORADOS AL PATRIMONIO DE LAS MUTUAS CON ANTERIORIDAD AL 1 DE ENERO DE 1967 FORMAN PARTE DE:",
     "options": {
       "A": "El Patrimonio de la Seguridad Social.",
       "B": "El Patrimonio histórico de la Mutua.",
@@ -301,10 +301,10 @@ const questions = [
   },
   {
     "id": 28,
-    "question": "SE CONSIDERAN MUTUAS COLABORADORAS CON LA SEGURIDAD SOCIAL:",
+    "question": "28. SE CONSIDERAN MUTUAS COLABORADORAS CON LA SEGURIDAD SOCIAL:",
     "options": {
       "A": "Las asociaciones de cualquier naturaleza que, debidamente autorizadas por el Ministerio de Inclusión, Seguridad Social y Migraciones, y con tal denominación, se constituyan con el objeto de colaborar, bajo la dirección y tutela de dicho Ministerio, en la gestión de las contingencias de accidentes de trabajo y enfermedades profesionales del personal a su servicio, sin ánimo de lucro, con sujeción a las normas del presente Reglamento y con la responsabilidad mancomunada de sus miembros.",
-      "B": "Las asociaciones de empresarios que, debidamente autorizadas por el Ministerio de Inclusión, Seguridad Social y Migraciones, y con tal denominación, se constituyan con el objeto de colaborar, bajo la dirección y\ntutela de dicho Ministerio, en la gestión de las contingencias de accidentes de trabajo y enfermedades profesionales del personal a su servicio, con ánimo de lucro, con sujeción a las normas del presente Reglamento y con la responsabilidad mancomunada de sus miembros.",
+      "B": "Las asociaciones de empresarios que, debidamente autorizadas por el Ministerio de Inclusión, Seguridad Social y Migraciones, y con tal denominación, se constituyan con el objeto de colaborar, bajo la dirección y tutela de dicho Ministerio, en la gestión de las contingencias de accidentes de trabajo y enfermedades profesionales del personal a su servicio, con ánimo de lucro, con sujeción a las normas del presente Reglamento y con la responsabilidad mancomunada de sus miembros.",
       "C": "Las asociaciones privadas de empresarios constituidas mediante autorización del Ministerio de Inclusión, Seguridad Social y Migraciones, e inscripción en el registro especial dependiente de éste, que tienen por finalidad colaborar en la gestión de la Seguridad Social, bajo la dirección y tutela del mismo, sin ánimo de lucro y asumiendo sus asociados responsabilidad mancomunada en los supuestos y con el alcance establecidos en la Ley General de la Seguridad Social.",
       "D": "Las asociaciones de empresarios que, debidamente autorizados por el Ministerio de Inclusión, Seguridad Social y Migraciones, con tal denominación, se constituyan con el objeto de colaborar, bajo la dirección y tutela de dicho Ministerio, en la gestión de las contingencias de accidentes de trabajo y enfermedades profesionales del personal a su servicio, sin ánimo de lucro, con sujeción a las normas del presente Reglamento y con la responsabilidad solidaria de sus miembros."
     },
@@ -312,7 +312,7 @@ const questions = [
   },
   {
     "id": 29,
-    "question": "LAS MUTUAS OBTIENEN LA PERSONALIDAD JURÍDICA PROPIA:",
+    "question": "29. LAS MUTUAS OBTIENEN LA PERSONALIDAD JURÍDICA PROPIA:",
     "options": {
       "A": "Una vez inscritas en el Registro Mercantil.",
       "B": "Una vez inscritas en el Registro de Mutuas Colaboradoras con la Seguridad Social dependiente del Ministerio de Inclusión, Seguridad Social y Migraciones.",
@@ -323,7 +323,7 @@ const questions = [
   },
   {
     "id": 30,
-    "question": "LAS MUTUAS VENDRÁN OBLIGADAS A LLEVAR AL DÍA ENTRE OTROS LIBROS:",
+    "question": "30. LAS MUTUAS VENDRÁN OBLIGADAS A LLEVAR AL DÍA ENTRE OTROS LIBROS:",
     "options": {
       "A": "Libro de visitas de la Comisión de control y de la comisión de prestaciones especiales.",
       "B": "Libro de incidencias del órgano de gobierno y de la Comisión de prestaciones especiales.",
@@ -334,7 +334,7 @@ const questions = [
   },
   {
     "id": 31,
-    "question": "LAS MUTUAS LLEVARÁN OBLIGATORIAMENTE LOS SIGUIENTES REGISTROS:",
+    "question": "31. LAS MUTUAS LLEVARÁN OBLIGATORIAMENTE LOS SIGUIENTES REGISTROS:",
     "options": {
       "A": "De reconocimientos médicos, de contingencias, de empresas asociadas y de trabajadores por cuenta propia adheridos.",
       "B": "De reconocimientos médicos por enfermedades profesionales.",
@@ -345,7 +345,7 @@ const questions = [
   },
   {
     "id": 32,
-    "question": "LA JUNTA DIRECTIVA:",
+    "question": "32. LA JUNTA DIRECTIVA:",
     "options": {
       "A": "Es el único y superior órgano de gobierno de la entidad.",
       "B": "Es el órgano colegiado al que corresponde el gobierno directo de la Mutua.",
@@ -356,7 +356,7 @@ const questions = [
   },
   {
     "id": 33,
-    "question": "LA INSPECCIÓN DE LAS MUTUAS SE REALIZARÁ:",
+    "question": "33. LA INSPECCIÓN DE LAS MUTUAS SE REALIZARÁ:",
     "options": {
       "A": "A través de la Intervención de la Seguridad Social.",
       "B": "A través de la Inspección de Trabajo y Seguridad Social.",
@@ -367,7 +367,7 @@ const questions = [
   },
   {
     "id": 34,
-    "question": "LAS MUTUAS CONSTITUIRÁN OBLIGATORIAMENTE, AL FINAL DE CADA EJERCICIO Y CON CARGO A LA GESTIÓN:",
+    "question": "34. LAS MUTUAS CONSTITUIRÁN OBLIGATORIAMENTE, AL FINAL DE CADA EJERCICIO Y CON CARGO A LA GESTIÓN:",
     "options": {
       "A": "Provisión para contingencias en tramitación, y reserva de estabilización.",
       "B": "Sólo provisión de contingencias en tramitación.",
@@ -378,10 +378,10 @@ const questions = [
   },
   {
     "id": 35,
-    "question": "LA COMISIÓN DE PRESTACIONES ESPECIALES ESTARÁ CONSTITUIDA POR EL NÚMERO DE MIEMBROS ESTABLECIDOS EN LOS ESTATUTOS:",
+    "question": "35. LA COMISIÓN DE PRESTACIONES ESPECIALES ESTARÁ CONSTITUIDA POR EL NÚMERO DE MIEMBROS ESTABLECIDOS EN LOS ESTATUTOS:",
     "options": {
       "A": "De los que la mitad corresponderá a representantes de los trabajadores empleados por las empresas asociadas y la otra mitad a representantes de los empresarios asociados, designados por la Junta General.",
-      "B": "De los que la mitad corresponderá a representantes de los trabajadores empleados por las empresas asociadas y la otra mitad a representantes de los\nempresarios asociados, designados por la Junta Directiva y ratificados por la Junta General.",
+      "B": "De los que la mitad corresponderá a representantes de los trabajadores empleados por las empresas asociadas y la otra mitad a representantes de los empresarios asociados, designados por la Junta Directiva y ratificados por la Junta General.",
       "C": "De los que la mitad corresponderá a representantes de los trabajadores empleados por las empresas asociadas y la otra mitad a representantes de los empresarios asociados, designados por la Junta Directiva a propuesta de la Junta General.",
       "D": "De los que la mitad corresponderá a representantes de los trabajadores empleados por las empresas asociadas y la otra mitad a representantes de los empresarios asociados, designados por la Junta Directiva."
     },
@@ -389,7 +389,7 @@ const questions = [
   },
   {
     "id": 36,
-    "question": "LA FALTA DE PAGO DE LAS CUOTAS POR UN EMPRESARIO ASOCIADO A UNA MUTUA:",
+    "question": "36. LA FALTA DE PAGO DE LAS CUOTAS POR UN EMPRESARIO ASOCIADO A UNA MUTUA:",
     "options": {
       "A": "Podrá dar lugar a la resolución del convenio de asociación, siempre que obtengamos la autorización del Ministerio de Trabajo, Migraciones y Seguridad Social.",
       "B": "Podrá dar lugar a la resolución del convenio de asociación por falta de pago de las cuotas.",
@@ -400,7 +400,7 @@ const questions = [
   },
   {
     "id": 37,
-    "question": "LAS MUTUAS ACEPTARÁN LAS SIGUIENTES PROPUESTAS DE ASOCIACIÓN Y ADHESIÓN QUE LES FORMULEN:",
+    "question": "37. LAS MUTUAS ACEPTARÁN LAS SIGUIENTES PROPUESTAS DE ASOCIACIÓN Y ADHESIÓN QUE LES FORMULEN:",
     "options": {
       "A": "Aceptarán toda proposición de asociación y de adhesión que se les formule.",
       "B": "Aceptarán toda proposición de asociación y de adhesión y consiguiente protección que se formule de aquellas empresas que se encuentran al corriente en el pago de cuotas a la Seguridad Social.",
@@ -411,7 +411,7 @@ const questions = [
   },
   {
     "id": 38,
-    "question": "LA RECLAMACIÓN PREVIA DEBERÁ INTERPONERSE ANTE EL ÓRGANO COMPETENTE QUE DICTÓ LA RESOLUCIÓN SOBRE LA SOLICITUD INICIAL DEL INTERESADO:",
+    "question": "38. LA RECLAMACIÓN PREVIA DEBERÁ INTERPONERSE ANTE EL ÓRGANO COMPETENTE QUE DICTÓ LA RESOLUCIÓN SOBRE LA SOLICITUD INICIAL DEL INTERESADO:",
     "options": {
       "A": "En el plazo de quince días desde la notificación de la misma, si es expresa, o desde la fecha en que, conforme a la normativa reguladora del procedimiento de que se trate, deba entenderse producido el silencio administrativo.",
       "B": "En el plazo de treinta días desde la notificación de la misma, si es expresa, o desde la fecha en que, conforme a la normativa reguladora del procedimiento de que se trate, deba entenderse producido el silencio administrativo.",
@@ -422,7 +422,7 @@ const questions = [
   },
   {
     "id": 39,
-    "question": "RESPECTO A LAS RECLAMACIONES PREVIAS EN MATERIA DE SEGURIDAD SOCIAL, EL SILENCIO ADMINISTRATIVO SE PRODUCE:",
+    "question": "39. RESPECTO A LAS RECLAMACIONES PREVIAS EN MATERIA DE SEGURIDAD SOCIAL, EL SILENCIO ADMINISTRATIVO SE PRODUCE:",
     "options": {
       "A": "En el plazo de cuarenta y cinco días desde su formulación.",
       "B": "En el plazo de treinta días desde su formulación.",
@@ -433,7 +433,7 @@ const questions = [
   },
   {
     "id": 40,
-    "question": "EN LAS DEMANDAS FORMULADAS EN MATERIA DE SEGURIDAD SOCIAL CONTRA LAS ENTIDADES GESTORAS O SERVICIOS COMUNES, EN CASO DE OMITIRSE LA ACREDITACIÓN DE HABER CUMPLIDO EL TRÁMITE DE LA RECLAMACIÓN PREVIA:",
+    "question": "40. EN LAS DEMANDAS FORMULADAS EN MATERIA DE SEGURIDAD SOCIAL CONTRA LAS ENTIDADES GESTORAS O SERVICIOS COMUNES, EN CASO DE OMITIRSE LA ACREDITACIÓN DE HABER CUMPLIDO EL TRÁMITE DE LA RECLAMACIÓN PREVIA:",
     "options": {
       "A": "El juez no admitirá la demanda.",
       "B": "En el acto del juicio, el juez desestimará la demanda.",
@@ -444,7 +444,7 @@ const questions = [
   },
   {
     "id": 41,
-    "question": "EN LOS PROCESOS POR ACCIDENTE DE TRABAJO O ENFERMEDAD PROFESIONAL:",
+    "question": "41. EN LOS PROCESOS POR ACCIDENTE DE TRABAJO O ENFERMEDAD PROFESIONAL:",
     "options": {
       "A": "Deberá ser parte el empresario del trabajador accidentado o enfermo.",
       "B": "Deberá ser parte el empresario del trabajador accidentado o enfermo, en los casos de falta de afiliación o alta y de infracotización.",
@@ -455,7 +455,7 @@ const questions = [
   },
   {
     "id": 42,
-    "question": "EN LOS PROCESOS POR ACCIDENTES DE TRABAJO:",
+    "question": "42. EN LOS PROCESOS POR ACCIDENTES DE TRABAJO:",
     "options": {
       "A": "El Juez, después de la celebración del juicio, deberá interesar de la Inspección Provincial de Trabajo y Seguridad Social, si no figurase ya en los autos, informe relativo a las circunstancias en que sobrevino el accidente, trabajo que realizaba el accidentado, salario que percibía y base de cotización, que será expedido necesariamente en el plazo máximo de diez días.",
       "B": "El Juez, antes de la celebración del juicio, deberá interesar de la Inspección Provincial de Trabajo y Seguridad Social, si no figurase ya en los autos, informe relativo a las circunstancias en que sobrevino el accidente, trabajo que realizaba el accidentado, salario que percibía y base de cotización, que será expedido necesariamente en el plazo máximo de diez días.",
@@ -466,7 +466,7 @@ const questions = [
   },
   {
     "id": 43,
-    "question": "AL ADMITIR A TRÁMITE LA DEMANDA EN MATERIA DE SEGURIDAD SOCIAL:",
+    "question": "43. AL ADMITIR A TRÁMITE LA DEMANDA EN MATERIA DE SEGURIDAD SOCIAL:",
     "options": {
       "A": "El Juez reclamará de oficio a la entidad gestora o servicio común la remisión del expediente original o copia del mismo.",
       "B": "El Juez reclamará de oficio a la Mutua de Accidentes de Trabajo y Enfermedades Profesionales de la Seguridad Social la remisión del expediente original o copia del mismo.",
@@ -477,7 +477,7 @@ const questions = [
   },
   {
     "id": 44,
-    "question": "EN EL PROCESO DE SEGURIDAD SOCIAL:",
+    "question": "44. EN EL PROCESO DE SEGURIDAD SOCIAL:",
     "options": {
       "A": "Podrán aducirse cuantos hechos y fundamentos de derecho sean necesarios para la decisión judicial.",
       "B": "No podrán aducirse hechos distintos de los alegados en los partes de accidentes.",
@@ -488,7 +488,7 @@ const questions = [
   },
   {
     "id": 45,
-    "question": "EL RECURSO DE SUPLICACIÓN SE RESUELVE:",
+    "question": "45. EL RECURSO DE SUPLICACIÓN SE RESUELVE:",
     "options": {
       "A": "Por los Juzgados de lo Social.",
       "B": "Por las Salas de lo Social de los Tribunales Superiores de Justicia.",
@@ -499,7 +499,7 @@ const questions = [
   },
   {
     "id": 46,
-    "question": "EL RECURSO DE SUPLICACIÓN DEBERÁ ANUNCIARSE:",
+    "question": "46. EL RECURSO DE SUPLICACIÓN DEBERÁ ANUNCIARSE:",
     "options": {
       "A": "En el plazo de los cinco días siguientes a la notificación de la sentencia.",
       "B": "En el plazo de los diez días siguientes a la notificación de la sentencia.",
@@ -510,7 +510,7 @@ const questions = [
   },
   {
     "id": 47,
-    "question": "SI LA RESOLUCIÓN IMPUGNADA NO FUERA RECURRIBLE EN SUPLICACIÓN; SI EL RECURRENTE INFRINGIERA SU DEBER DE CONSIGNAR O DE ASEGURAR LA CANTIDAD OBJETO DE CONDENA; O SI EL RECURSO NO SE HUBIERA ANUNCIADO EN TIEMPO Y FORMA:",
+    "question": "47. SI LA RESOLUCIÓN IMPUGNADA NO FUERA RECURRIBLE EN SUPLICACIÓN; SI EL RECURRENTE INFRINGIERA SU DEBER DE CONSIGNAR O DE ASEGURAR LA CANTIDAD OBJETO DE CONDENA; O SI EL RECURSO NO SE HUBIERA ANUNCIADO EN TIEMPO Y FORMA:",
     "options": {
       "A": "El órgano judicial concederá plazo de cinco días para subsanar los defectos.",
       "B": "El órgano judicial remitirá los autos a la Sala de lo Social del Tribunal Superior de Justicia correspondiente para que se pronuncie sobre los defectos apreciados, en orden a la tramitación del recurso.",
@@ -521,7 +521,7 @@ const questions = [
   },
   {
     "id": 48,
-    "question": "SI EL RECURRENTE EN SUPLICACIÓN HUBIERA INCURRIDO EN DEFECTOS U OMISIONES CONSISTENTES EN LA INSUFICIENCIA DE CONSIGNAR LA CONDENA O DE ASEGURARLA, DE PRESENTAR EL RESGUARDO DEL DEPÓSITO DE 300,00 EUROS, O NO SE ACREDITASE LA REPRESENTACIÓN DEBIDA POR EL QUE ANUNCIA EL RECURSO:",
+    "question": "48. SI EL RECURRENTE EN SUPLICACIÓN HUBIERA INCURRIDO EN DEFECTOS U OMISIONES CONSISTENTES EN LA INSUFICIENCIA DE CONSIGNAR LA CONDENA O DE ASEGURARLA, DE PRESENTAR EL RESGUARDO DEL DEPÓSITO DE 300,00 EUROS, O NO SE ACREDITASE LA REPRESENTACIÓN DEBIDA POR EL QUE ANUNCIA EL RECURSO:",
     "options": {
       "A": "El Juez concederá a la parte el tiempo que considere pertinente para la aportación de los documentos omitidos o para la subsanación de los defectos apreciados, que en ningún caso será superior a cinco días.",
       "B": "No existen defectos u omisiones subsanables, en el recurso de suplicación.",
@@ -532,7 +532,7 @@ const questions = [
   },
   {
     "id": 49,
-    "question": "EN EL RECURSO DE SUPLICACIÓN, LAS PARTES RECURRENTES Y RECURRIDAS DEBERÁN HACER CONSTAR, EN LOS ESCRITOS DE INTERPOSICIÓN E IMPUGNACIÓN DEL RECURSO:",
+    "question": "49. EN EL RECURSO DE SUPLICACIÓN, LAS PARTES RECURRENTES Y RECURRIDAS DEBERÁN HACER CONSTAR, EN LOS ESCRITOS DE INTERPOSICIÓN E IMPUGNACIÓN DEL RECURSO:",
     "options": {
       "A": "Su domicilio social a efectos de notificación.",
       "B": "Un domicilio en la sede del Juzgado de lo Social a efectos de notificación.",
@@ -543,7 +543,7 @@ const questions = [
   },
   {
     "id": 50,
-    "question": "EL RECURSO DE CASACIÓN PARA LA UNIFICACIÓN DE DOCTRINA TENDRÁ POR OBJETO:",
+    "question": "50. EL RECURSO DE CASACIÓN PARA LA UNIFICACIÓN DE DOCTRINA TENDRÁ POR OBJETO:",
     "options": {
       "A": "La unificación de doctrina con ocasión de sentencias dictadas en suplicación por las Salas de lo Social de los Tribunales Superiores de Justicia, que fueran contradictorias entre sí, con la de otra u otras Salas de los referidos Tribunales Superiores o con sentencias del Tribunal Supremo, respecto de los mismos litigantes u otros diferentes en idéntica situación donde, en mérito a hechos, fundamentos y pretensiones sustancialmente iguales, se hubiere llegado a pronunciamientos distintos.",
       "B": "La unificación de doctrina con ocasión de sentencias dictadas por los jueces y tribunales de la Jurisdicción Social, que fueran contradictorias entre sí, con la de otra u otras Salas de los referidos Tribunales Superiores o con sentencias del Tribunal Supremo, respecto de los mismos litigantes u otros idéntica situación donde, en mérito a hechos, fundamentos y pretensiones sustancialmente iguales, se hubiere llegado a pronunciamientos distintos.",
@@ -554,7 +554,7 @@ const questions = [
   },
   {
     "id": 51,
-    "question": "EL RECURSO DE CASACIÓN PARA LA UNIFICACIÓN DE DOCTRINA PODRÁ PREPARARLO:",
+    "question": "51. EL RECURSO DE CASACIÓN PARA LA UNIFICACIÓN DE DOCTRINA PODRÁ PREPARARLO:",
     "options": {
       "A": "Cualquiera de las partes.",
       "B": "Cualquiera de las partes y el Ministerio Fiscal.",
@@ -565,7 +565,7 @@ const questions = [
   },
   {
     "id": 52,
-    "question": "EL RECURSO DE CASACIÓN PARA LA UNIFICACIÓN DE DOCTRINA SE PREPARA MEDIANTE ESCRITO DIRIGIDO:",
+    "question": "52. EL RECURSO DE CASACIÓN PARA LA UNIFICACIÓN DE DOCTRINA SE PREPARA MEDIANTE ESCRITO DIRIGIDO:",
     "options": {
       "A": "A la Sala de lo Social del Tribunal Supremo.",
       "B": "A la Sala de lo Social del Tribunal Superior de Justicia que dictó la sentencia de suplicación.",
@@ -576,7 +576,7 @@ const questions = [
   },
   {
     "id": 53,
-    "question": "LA PARTE QUE HUBIERA PREPARADO EL RECURSO DE CASACIÓN PARA LA UNIFICACIÓN DE DOCTRINA, PRESENTARÁ EL ESCRITO DE INTERPOSICIÓN:",
+    "question": "53. LA PARTE QUE HUBIERA PREPARADO EL RECURSO DE CASACIÓN PARA LA UNIFICACIÓN DE DOCTRINA, PRESENTARÁ EL ESCRITO DE INTERPOSICIÓN:",
     "options": {
       "A": "Dentro de los diez días siguientes a la fecha en que se le hizo el emplazamiento.",
       "B": "Dentro de los diez días siguientes a la fecha en que se le notificó la sentencia de suplicación.",
@@ -587,7 +587,7 @@ const questions = [
   },
   {
     "id": 54,
-    "question": "LAS MUTUAS, PARA RECURRIR EN CASACIÓN INCLUIDO EL RECURSO DE CASACIÓN PARA LA UNIFICACIÓN DE DOCTRINA:",
+    "question": "54. LAS MUTUAS, PARA RECURRIR EN CASACIÓN INCLUIDO EL RECURSO DE CASACIÓN PARA LA UNIFICACIÓN DE DOCTRINA:",
     "options": {
       "A": "Deberán consignar como depósito 300,50 euros.",
       "B": "Deberán consignar como depósito 600,00 euros.",
@@ -598,7 +598,7 @@ const questions = [
   },
   {
     "id": 55,
-    "question": "SI LAS MUTUAS SON VENCIDAS EN LOS RECURSOS DE SUPLICACIÓN Y CASACIÓN QUE INTERPONGAN:",
+    "question": "55. SI LAS MUTUAS SON VENCIDAS EN LOS RECURSOS DE SUPLICACIÓN Y CASACIÓN QUE INTERPONGAN:",
     "options": {
       "A": "Serán condenadas al pago de las costas, que incluirá los honorarios del abogado, procurador y perito de la parte contraria que hubieran actuado en el recurso, sin que dichos honorarios puedan superar la cantidad de 601,01 euros, en recursos de suplicación, y de 901,51 euros, en recursos de casación.",
       "B": "Serán condenadas al pago de las costas, que incluirá los honorarios del abogado de la parte contraria que hubiera actuado en el recurso, sin que dichos honorarios puedan superar la cantidad de 1.200,00 euros, en recursos de suplicación, y de 1.800,00 euros, en recursos de casación.",
@@ -609,7 +609,7 @@ const questions = [
   },
   {
     "id": 56,
-    "question": "NO SERÁ NECESARIO AGOTAR LA VÍA ADMINISTRATIVA PARA INTERPONER:",
+    "question": "56. NO SERÁ NECESARIO AGOTAR LA VÍA ADMINISTRATIVA PARA INTERPONER:",
     "options": {
       "A": "Demanda de tutela de derechos fundamentales y libertades públicas frente a actos de las Administraciones Públicas en el ejercicio de sus potestades en materia laboral y sindical, si bien el plazo para la interposición de la demanda será de 20 días desde el día siguiente a la notificación del acto o al transcurso del plazo fijado para la resolución.",
       "B": "Demanda de tutela de derechos fundamentales y libertades públicas frente a actos de las Administraciones Públicas en el ejercicio de sus potestades en materia laboral y sindical, si bien el plazo para la interposición de la demanda será de 30 días desde el día siguiente a la notificación del acto.",
@@ -620,7 +620,7 @@ const questions = [
   },
   {
     "id": 57,
-    "question": "LA LEY DE PROCEDIMIENTO LABORAL HA SIDO DEROGADA POR:",
+    "question": "57. LA LEY DE PROCEDIMIENTO LABORAL HA SIDO DEROGADA POR:",
     "options": {
       "A": "El Estatuto de los Trabajadores.",
       "B": "La Ley General de la Seguridad Social.",
@@ -631,7 +631,7 @@ const questions = [
   },
   {
     "id": 58,
-    "question": "LOS ORGANOS JURISDICCIONALES DEL ORDEN SOCIAL CONOCERÁN DE LAS PRETENSIONES QUE SE PROMUEVAN DENTRO DE LA RAMA SOCIAL DEL DERECHO, TANTO EN SU VERTIENTE INDIVIDUAL COMO COLECTIVA:",
+    "question": "58. LOS ORGANOS JURISDICCIONALES DEL ORDEN SOCIAL CONOCERÁN DE LAS PRETENSIONES QUE SE PROMUEVAN DENTRO DE LA RAMA SOCIAL DEL DERECHO, TANTO EN SU VERTIENTE INDIVIDUAL COMO COLECTIVA:",
     "options": {
       "A": "Incluyendo aquellas que versen sobre materias laborales y de Seguridad Social, así como de las impugnaciones de las actuaciones de las Administraciones públicas realizadas en el ejercicio de sus potestades y funciones sobre las anteriores materias.",
       "B": "Incluyendo aquellas que versen sobre materias laborales, civiles y actividades de prevención de riesgos laborales.",
@@ -642,7 +642,7 @@ const questions = [
   },
   {
     "id": 59,
-    "question": "EL PROCESO MONITORIO:",
+    "question": "59. EL PROCESO MONITORIO:",
     "options": {
       "A": "Se utiliza en reclamaciones frente a empresarios que no se encuentren en situación de concurso, referidas a cantidades vencidas, exigibles y de cuantía indeterminada, derivadas de su relación laboral, excluyendo las reclamaciones de carácter colectivo que se pudieran formular por la representación de los trabajadores, así como las que se interpongan contra las Entidades gestoras o colaboradoras de la Seguridad Social, que no excedan de 6.000 euros.",
       "B": "Se utiliza en reclamaciones frente a empresarios que se encuentren en situación de concurso, referidas a cantidades no vencidas, y de cuantía determinada, derivadas de su relación laboral, excluyendo las reclamaciones de carácter colectivo que se pudieran formular por la representación de los trabajadores, así como las que se interpongan contra las Entidades gestoras o colaboradoras de la Seguridad Social, que no excedan de 6.000 euros.",
@@ -653,9 +653,9 @@ const questions = [
   },
   {
     "id": 60,
-    "question": "EN EL PROCESO MONITORIO:",
+    "question": "60. EN EL PROCESO MONITORIO:",
     "options": {
-      "A": "De ser admisible la petición (si reúne los requisitos), el juzgado requerirá al empresario para que, en el plazo de 10 días, pague al trabajador, acreditándolo ante el juzgado, o comparezca ante éste y alegue sucintamente, en escrito de oposición, las razones por las que a su entender, no debe, en todo o en parte, la cantidad reclamada, con apercibimiento de que de no pagar la cantidad\nreclamada ni comparecer alegando las razones de la negativa al pago, se despachará ejecución contra él. Este requerimiento no podrá practicarse mediante edictos.",
+      "A": "De ser admisible la petición (si reúne los requisitos), el juzgado requerirá al empresario para que, en el plazo de 10 días, pague al trabajador, acreditándolo ante el juzgado, o comparezca ante éste y alegue sucintamente, en escrito de oposición, las razones por las que a su entender, no debe, en todo o en parte, la cantidad reclamada, con apercibimiento de que de no pagar la cantidad reclamada ni comparecer alegando las razones de la negativa al pago, se despachará ejecución contra él. Este requerimiento no podrá practicarse mediante edictos.",
       "B": "De ser admisible la petición (si reúne los requisitos), el juzgado requerirá al empresario para que, en el plazo de 20 días, pague al trabajador, acreditándolo ante el juzgado, o comparezca ante éste y alegue sucintamente, en escrito de oposición, las razones por las que a su entender, no debe, en todo o en parte, la cantidad reclamada, con apercibimiento de que de no pagar la cantidad reclamada ni comparecer alegando las razones de la negativa al pago, se despachará ejecución contra él. Este requerimiento no podrá practicarse mediante edictos.",
       "C": "De ser admisible la petición (si reúne los requisitos), el juzgado requerirá al empresario para que, en el plazo de 10 días, pague al trabajador, acreditándolo ante el juzgado, o comparezca ante éste y alegue sucintamente, en escrito de oposición, las razones por las que a su entender, no debe, en todo o en parte, la cantidad reclamada, con apercibimiento de que de no pagar la cantidad reclamada ni comparecer alegando las razones de la negativa al pago, se despachará ejecución contra él. Este requerimiento podrá practicarse mediante edictos.",
       "D": "De ser admisible la petición (si reúne los requisitos), el juzgado requerirá al empresario para que, en el plazo de 30 días, pague al trabajador, acreditándolo ante el juzgado, o comparezca ante éste y alegue sucintamente, en escrito de oposición, las razones por las que a su entender, no debe, en todo o en parte, la cantidad reclamada, con apercibimiento de que de no pagar la cantidad reclamada ni comparecer alegando las razones de la negativa al pago, se despachará ejecución contra él. Este requerimiento no podrá practicarse mediante edictos."
@@ -664,7 +664,7 @@ const questions = [
   },
   {
     "id": 61,
-    "question": "A PARTIR DE LA LEY 35/2014 DE 26 DE DICIEMBRE, LAS MUTUAS DE ACCIDENTES DE TRABAJO Y ENFERMEDADES PROFESIONALES DE LA SEGURIDAD SOCIAL, PASAN A DENOMINARSE:",
+    "question": "61. A PARTIR DE LA LEY 35/2014 DE 26 DE DICIEMBRE, LAS MUTUAS DE ACCIDENTES DE TRABAJO Y ENFERMEDADES PROFESIONALES DE LA SEGURIDAD SOCIAL, PASAN A DENOMINARSE:",
     "options": {
       "A": "Mutuas Colaboradoras con la Seguridad Social.",
       "B": "Mutuas Colaboradoras de la Seguridad Social.",
@@ -675,7 +675,7 @@ const questions = [
   },
   {
     "id": 62,
-    "question": "ACTIVIDADES DE LAS MUTUAS:",
+    "question": "62. ACTIVIDADES DE LAS MUTUAS:",
     "options": {
       "A": "Una de las actividades de las Mutuas, es la Gestión de las prestaciones sociales y de la asistencia sanitaria incluida la rehabilitación, comprendidas en la protección de las contingencias profesionales, así como las actividades de prevención de las mismas contingencias que dispensa la acción protectora.",
       "B": "Una de las actividades de las Mutuas, es la Gestión de las prestaciones económicas y de la asistencia sanitaria sin incluida la rehabilitación, comprendidas en la protección de las contingencias profesionales, así como las actividades de prevención de las mismas contingencias que dispensa la acción protectora.",
@@ -686,7 +686,7 @@ const questions = [
   },
   {
     "id": 63,
-    "question": "LAS MUTUAS FORMAN PARTE:",
+    "question": "63. LAS MUTUAS FORMAN PARTE:",
     "options": {
       "A": "Del Sector Público estatal de carácter legal, de conformidad con la naturaleza jurídica de sus funciones y de los recursos públicos que gestionan, sin perjuicio de la naturaleza privada de la entidad.",
       "B": "Del Sector Público estatal de carácter administrativo, de conformidad con la naturaleza jurídica de sus funciones y de los recursos públicos que gestionan, sin perjuicio de la naturaleza privada de la entidad.",
@@ -697,7 +697,7 @@ const questions = [
   },
   {
     "id": 64,
-    "question": "LAS ACTIVIDADES DE LAS MUTUAS COLABORADORAS CON LA SEGURIDAD SOCIAL SE REGULAN:",
+    "question": "64. LAS ACTIVIDADES DE LAS MUTUAS COLABORADORAS CON LA SEGURIDAD SOCIAL SE REGULAN:",
     "options": {
       "A": "En el artículo 68.2 del Estatuto de los trabajadores.",
       "B": "En el Estatuto de los trabajadores y en la Ley General de la Seguridad Social.",
@@ -708,7 +708,7 @@ const questions = [
   },
   {
     "id": 65,
-    "question": "EN LA PREVENCIÓN CON CARGO A CUOTAS:",
+    "question": "65. EN LA PREVENCIÓN CON CARGO A CUOTAS:",
     "options": {
       "A": "La planificación periódica de las actividades preventivas corresponderá al órgano de dirección y tutela de las mutuas, dependiente del Ministerio de Inclusión, Seguridad Social y Migraciones.",
       "B": "No es posible realizar la planificación con cargo a cuotas, por la desinversión de la sociedad de prevención.",
@@ -719,7 +719,7 @@ const questions = [
   },
   {
     "id": 66,
-    "question": "EN RELACIÓN A LA DETERMINACIÓN INICIAL DEL CARACTER PROFESIONAL DE LA CONTINGENCIA:",
+    "question": "66. EN RELACIÓN A LA DETERMINACIÓN INICIAL DEL CARACTER PROFESIONAL DE LA CONTINGENCIA:",
     "options": {
       "A": "Le corresponde a la Mutua Colaboradora con la Seguridad Social.",
       "B": "Le corresponde al órgano competente de la Seguridad Social.",
@@ -730,7 +730,7 @@ const questions = [
   },
   {
     "id": 67,
-    "question": "ENTRE LAS ACTIVIDADES DE LAS MUTUAS COLABORADORAS CON LA SEGURIDAD SOCIAL:",
+    "question": "67. ENTRE LAS ACTIVIDADES DE LAS MUTUAS COLABORADORAS CON LA SEGURIDAD SOCIAL:",
     "options": {
       "A": "No se encuentra la gestión de las prestaciones por riesgo durante el embarazo y riesgo durante la lactancia natural.",
       "B": "Si Se encuentra la gestión de las prestaciones por riesgo durante el embarazo y riesgo durante la lactancia natural.",
@@ -741,7 +741,7 @@ const questions = [
   },
   {
     "id": 68,
-    "question": "LAS MUTUAS COLABORADORAS CON LA SEGURIDAD SOCIAL DARÁN CONTESTACIÓN DIRECTAMENTE A LAS QUEJAS Y RECLAMACIONES QUE RECIBAN:",
+    "question": "68. LAS MUTUAS COLABORADORAS CON LA SEGURIDAD SOCIAL DARÁN CONTESTACIÓN DIRECTAMENTE A LAS QUEJAS Y RECLAMACIONES QUE RECIBAN:",
     "options": {
       "A": "Pero deberán comunicar las quejas y reclamaciones junto con su respuesta, al órgano de dirección y tutela.",
       "B": "Pero deberán comunicar las quejas y reclamaciones, al órgano de dirección y tutela.",
@@ -752,7 +752,7 @@ const questions = [
   },
   {
     "id": 69,
-    "question": "LAS MUTUAS COLABORADORAS CON LA SEGURIDAD SOCIAL:",
+    "question": "69. LAS MUTUAS COLABORADORAS CON LA SEGURIDAD SOCIAL:",
     "options": {
       "A": "Mantendrán en todos sus Centros asistenciales Libros de Reclamaciones.",
       "B": "Mantendrán en todos sus Centros administrativos Libros de Reclamaciones.",
@@ -763,7 +763,7 @@ const questions = [
   },
   {
     "id": 70,
-    "question": "EL DIRECTOR GERENTE:",
+    "question": "70. EL DIRECTOR GERENTE:",
     "options": {
       "A": "Tiene delegadas las funciones de acuerdo a los estatutos por la Junta Directiva y Junta General.",
       "B": "Concurrirá con voz y con voto en las reuniones de la Junta Directiva.",
@@ -774,7 +774,7 @@ const questions = [
   },
   {
     "id": 71,
-    "question": "ADEMÁS DE LOS ASOCIADOS QUE INTEGRAN LA JUNTA DIRECTIVA DE UNA MUTUA FORMA PARTE DE LA MISMA:",
+    "question": "71. ADEMÁS DE LOS ASOCIADOS QUE INTEGRAN LA JUNTA DIRECTIVA DE UNA MUTUA FORMA PARTE DE LA MISMA:",
     "options": {
       "A": "Un representante del Ministerio de Empleo y Seguridad Social designado por éste para que pueda asistir a la celebración de las reuniones de la Junta Directiva.",
       "B": "Un representante de las Organizaciones Sindicales más representativas, elegido entre los miembros de la Comisión de Control y Seguimiento de la Mutua.",
@@ -785,7 +785,7 @@ const questions = [
   },
   {
     "id": 72,
-    "question": "LAS MUTUAS:",
+    "question": "72. LAS MUTUAS:",
     "options": {
       "A": "Serán objeto, anualmente, de una auditoría de cuentas, que será realizada obligatoriamente por la Intervención General de la Seguridad Social.",
       "B": "Serán objeto, anualmente, de una auditoría de cuentas, que será realizada por la Intervención General de la Seguridad Social, que podrá recabar la colaboración de empresas privadas, en caso de insuficiencia de sus servicios.",
@@ -796,7 +796,7 @@ const questions = [
   },
   {
     "id": 73,
-    "question": "LA PREVENCIÓN CON CARGO A CUOTAS:",
+    "question": "73. LA PREVENCIÓN CON CARGO A CUOTAS:",
     "options": {
       "A": "No es posible establecer ninguna planificación ya que se ha realizado la desinversión de la sociedad de prevención.",
       "B": "No es posible realizar la prevención con cargo a cuotas, por la desinversión de la sociedad de prevención.",
@@ -807,7 +807,7 @@ const questions = [
   },
   {
     "id": 74,
-    "question": "LAS RECLAMACIONES A LAS MUTUAS QUE TENGAN POR OBJETO PRESTACIONES Y SERVICIOS DE LA SEGURIDAD SOCIAL OBJETO DE LA COLABORACIÓN EN SU GESTIÓN, O QUE TENGAN SU FUNDAMENTO EN LAS MISMAS, INCLUIDAS LAS DE CARÁCTER INDEMNIZATORIO, SE SUSTANCIARÁN ANTE:",
+    "question": "74. LAS RECLAMACIONES A LAS MUTUAS QUE TENGAN POR OBJETO PRESTACIONES Y SERVICIOS DE LA SEGURIDAD SOCIAL OBJETO DE LA COLABORACIÓN EN SU GESTIÓN, O QUE TENGAN SU FUNDAMENTO EN LAS MISMAS, INCLUIDAS LAS DE CARÁCTER INDEMNIZATORIO, SE SUSTANCIARÁN ANTE:",
     "options": {
       "A": "Ante el orden jurisdiccional civil, de conformidad con lo establecido en el Código Civil.",
       "B": "Ante el orden jurisdiccional social, de conformidad con lo establecido en la Ley Reguladora de la Jurisdicción Social.",
@@ -818,7 +818,7 @@ const questions = [
   },
   {
     "id": 75,
-    "question": "CUANDO LA PRESTACIÓN HAYA TENIDO COMO ORIGEN SUPUESTOS DE HECHO QUE IMPLIQUEN RESPONSABILIDAD CRIMINAL O CIVIL DE ALGUNA PERSONA, INCLUIDO EL EMPRESARIO:",
+    "question": "75. CUANDO LA PRESTACIÓN HAYA TENIDO COMO ORIGEN SUPUESTOS DE HECHO QUE IMPLIQUEN RESPONSABILIDAD CRIMINAL O CIVIL DE ALGUNA PERSONA, INCLUIDO EL EMPRESARIO:",
     "options": {
       "A": "Será hecha efectiva, en su caso, por la mutua, que tendrá derecho a reclamar a la entidad gestora el coste de las prestaciones sanitarias que hubiese satisfecho.",
       "B": "Será hecha efectiva, en su caso, por la mutua, que tendrá derecho a reclamar a la entidad gestora o al servicio común el coste de las prestaciones sanitarias que hubiese satisfecho.",
@@ -829,7 +829,7 @@ const questions = [
   },
   {
     "id": 76,
-    "question": "LA CONSTITUCIÓN DE UNA MUTUA COLABORADORA CON LA SEGURIDAD SOCIAL EXIGE:",
+    "question": "76. LA CONSTITUCIÓN DE UNA MUTUA COLABORADORA CON LA SEGURIDAD SOCIAL EXIGE:",
     "options": {
       "A": "Que exista autorización del Ministerio de Inclusión, Seguridad Social y Migraciones, previa aprobación de los estatutos de la mutua, e inscripción en el registro administrativo dependiente del mismo.",
       "B": "Que exista autorización de la Intervención General de la Seguridad Social, previa aprobación de los estatutos de la mutua, e inscripción en el registro administrativo dependiente de la misma.",
@@ -840,7 +840,7 @@ const questions = [
   },
   {
     "id": 77,
-    "question": "EL PROCESO DE IMPUGNACIÓN DE ALTA MÉDICA:",
+    "question": "77. EL PROCESO DE IMPUGNACIÓN DE ALTA MÉDICA:",
     "options": {
       "A": "Exigirá en todo caso demandar al servicio público de salud.",
       "B": "Será acumulable a otras acciones relativas a prestaciones de la Seguridad Social.",
@@ -851,7 +851,7 @@ const questions = [
   },
   {
     "id": 78,
-    "question": "EL CONVENIO DE ASOCIACIÓN:",
+    "question": "78. EL CONVENIO DE ASOCIACIÓN:",
     "options": {
       "A": "Tendrá un período de vigencia de un año, que podrá prorrogarse por períodos de igual duración, hasta un máximo de tres años.",
       "B": "Tendrá duración indefinida, pero podrá ser resuelto por cualquiera de las partes a partir del primer año.",
@@ -862,7 +862,7 @@ const questions = [
   },
   {
     "id": 79,
-    "question": "EN LA GESTIÓN DE LA PRESTACIÓN ECONÓMICA POR INCAPACIDAD TEMPORAL DERIVADA DE CONTINGENCIAS COMUNES",
+    "question": "79. EN LA GESTIÓN DE LA PRESTACIÓN ECONÓMICA POR INCAPACIDAD TEMPORAL DERIVADA DE CONTINGENCIAS COMUNES",
     "options": {
       "A": "Las mutuas podrán desarrollar sus funciones a través de medios concertados, sin perjuicio de poder recabar los servicios de los centros sanitarios autorizados para realizar pruebas diagnósticas o tratamientos terapéuticos y rehabilitadores que las mismas soliciten.",
       "B": "Las mutuas podrán desarrollar las funciones de gestión de la prestación a través de medios concertados.",
@@ -873,7 +873,7 @@ const questions = [
   },
   {
     "id": 80,
-    "question": "PUEDE INTERPONERSE RECURSO DE REPOSICIÓN…",
+    "question": "80. PUEDE INTERPONERSE RECURSO DE REPOSICIÓN…",
     "options": {
       "A": "Contra sentencias de los juzgados de lo social.",
       "B": "Contra providencias y autos, ante el mismo juez o tribunal que dictó la resolución recurrida.",
@@ -884,7 +884,7 @@ const questions = [
   },
   {
     "id": 81,
-    "question": "LAS MUTUAS COLABORADORAS CON LA SEGURIDAD SOCIAL TIENEN ATRIBUIDAS LAS SIGUIENTES ACTIVIDADES DE LA SEGURIDAD SOCIAL:",
+    "question": "81. LAS MUTUAS COLABORADORAS CON LA SEGURIDAD SOCIAL TIENEN ATRIBUIDAS LAS SIGUIENTES ACTIVIDADES DE LA SEGURIDAD SOCIAL:",
     "options": {
       "A": "La gestión de todas las contingencias.",
       "B": "La gestión de las prestaciones económicas y de la asistencia sanitaria en la contingencia de accidente de trabajo, la gestión de la prestación económica por incapacidad temporal derivada de enfermedades profesionales y de contingencias comunes, la gestión de las prestaciones por riesgo durante el embarazo y la lactancia natural, la gestión de la prestación por cuidado de menores afectados con cáncer u otra enfermedad grave y la gestión de la prestación por cese de actividad en los trabajadores por cuenta propia.",
@@ -895,7 +895,7 @@ const questions = [
   },
   {
     "id": 82,
-    "question": "LA BASE REGULADORA DE LA INCAPACIDAD TEMPORAL DERIVADA DE CONTINGENCIAS COMUNES, SALVO EN ALGUNOS CASOS EXCEPCIONALES (ALGUNOS TIPOS DE CONTRATOS ESPECIALES, REGÍMENES ESPECIALES, ETC.):",
+    "question": "82. LA BASE REGULADORA DE LA INCAPACIDAD TEMPORAL DERIVADA DE CONTINGENCIAS COMUNES, SALVO EN ALGUNOS CASOS EXCEPCIONALES (ALGUNOS TIPOS DE CONTRATOS ESPECIALES, REGÍMENES ESPECIALES, ETC.):",
     "options": {
       "A": "Será la base de cotización por contingencias comunes del mes de la baja médica dividida por el número de días cotizados.",
       "B": "Será la base de cotización por contingencias comunes del mes de la baja médica dividido por el número de días que comprenda.",
@@ -906,7 +906,7 @@ const questions = [
   },
   {
     "id": 83,
-    "question": "EN EL CASO CONCRETO DE LOS CONTRATOS A TIEMPO PARCIAL, LA BASE REGULADORA DE LA I.T.:",
+    "question": "83. EN EL CASO CONCRETO DE LOS CONTRATOS A TIEMPO PARCIAL, LA BASE REGULADORA DE LA I.T.:",
     "options": {
       "A": "Se calcula de igual forma que la de otros contratos.",
       "B": "Se toma la suma de las bases de cotización de los tres meses anteriores y se divide por el número de días naturales que comprenda.",
@@ -917,7 +917,7 @@ const questions = [
   },
   {
     "id": 84,
-    "question": "CUANDO UN TRABAJADOR ESTANDO EN IT SE LE EXTINGUE SU CONTRATO DE TRABAJO:",
+    "question": "84. CUANDO UN TRABAJADOR ESTANDO EN IT SE LE EXTINGUE SU CONTRATO DE TRABAJO:",
     "options": {
       "A": "Pasa directamente a depender del Organismo de Empleo.",
       "B": "Pasa a depender directamente de la Mutua, pero sólo cobrará IT si tuviera derecho al desempleo.",
@@ -928,7 +928,7 @@ const questions = [
   },
   {
     "id": 85,
-    "question": "LA INCAPACIDAD TEMPORAL EN PAGO DIRECTO POR PARTE DE LA MUTUA:",
+    "question": "85. LA INCAPACIDAD TEMPORAL EN PAGO DIRECTO POR PARTE DE LA MUTUA:",
     "options": {
       "A": "Está sujeta a retención del IRPF, y el porcentaje a retener variará en función de las condiciones personales y económicas del beneficiario (pudiendo ser 0%)",
       "B": "Será objeto de retención por la Mutua sólo si lo estaba por la empresa y por igual porcentaje.",
@@ -939,7 +939,7 @@ const questions = [
   },
   {
     "id": 86,
-    "question": "EL PAGO DELEGADO DE LA IT EFECTUADO POR LAS EMPRESAS A SUS TRABAJADORES, ¿CÓMO LO RECUPERAN DE LA MUTUA? :",
+    "question": "86. EL PAGO DELEGADO DE LA IT EFECTUADO POR LAS EMPRESAS A SUS TRABAJADORES, ¿CÓMO LO RECUPERAN DE LA MUTUA? :",
     "options": {
       "A": "No lo recuperan, es a su cargo.",
       "B": "Sí, lo recuperan a través de la Mutua, que le emite una transferencia por el importe de la prestación adelantada.",
@@ -950,7 +950,7 @@ const questions = [
   },
   {
     "id": 87,
-    "question": "SI LAS EMPRESAS ESTÁN DE ACUERDO EN EL ERROR PADECIDO Y DESEAN ABONAR LAS DEDUCCIONES EFECTUADAS INDEBIDAMENTE:",
+    "question": "87. SI LAS EMPRESAS ESTÁN DE ACUERDO EN EL ERROR PADECIDO Y DESEAN ABONAR LAS DEDUCCIONES EFECTUADAS INDEBIDAMENTE:",
     "options": {
       "A": "Se les puede admitir el pago en las Dirección Provinciales de la Mutua, mediante cheque o transferencia.",
       "B": "No se les puede admitir el pago directamente, pues tiene que ser a través de boletines de cotización a la Seguridad Social con el recargo de mora.",
@@ -961,7 +961,7 @@ const questions = [
   },
   {
     "id": 88,
-    "question": "LOS PARTES DE CONFIRMACIÓN DE LA BAJA MÉDICA, ¿EN QUÉ CONTINGENCIAS ES OBLIGATORIA SU EXPEDICIÓN?:",
+    "question": "88. LOS PARTES DE CONFIRMACIÓN DE LA BAJA MÉDICA, ¿EN QUÉ CONTINGENCIAS ES OBLIGATORIA SU EXPEDICIÓN?:",
     "options": {
       "A": "No es obligatorio aunque es un práctica extendida.",
       "B": "Solo en la IT derivada de contingencias comunes.",
@@ -972,7 +972,7 @@ const questions = [
   },
   {
     "id": 89,
-    "question": "LA DURACIÓN MÁXIMA DE LA INCAPACIDAD TEMPORAL ES DE:",
+    "question": "89. LA DURACIÓN MÁXIMA DE LA INCAPACIDAD TEMPORAL ES DE:",
     "options": {
       "A": "18 meses prorrogables por 6 meses más.",
       "B": "12 meses, prorrogables por 6 meses más y con la posibilidad de una demora de calificación que nunca podrá superar los 24 meses.",
@@ -983,7 +983,7 @@ const questions = [
   },
   {
     "id": 90,
-    "question": "LA EMISIÓN DE UN PARTE MÉDICO DE ALTA, EXTINGUE LA SITUACIÓN DE INCAPACIDAD TEMPORAL…",
+    "question": "90. LA EMISIÓN DE UN PARTE MÉDICO DE ALTA, EXTINGUE LA SITUACIÓN DE INCAPACIDAD TEMPORAL…",
     "options": {
       "A": "Siempre.",
       "B": "Siempre que la causa del alta no sea por propuesta de incapacidad permanente.",
@@ -994,7 +994,7 @@ const questions = [
   },
   {
     "id": 91,
-    "question": "¿QUÉ TIPO DE INCIDENCIAS EN LA GESTIÓN DE PAGO DELEGADO SE RESUELVEN HABITUALMENTE MEDIANTE LA GENERACIÓN DE UN TC14/9?",
+    "question": "91. ¿QUÉ TIPO DE INCIDENCIAS EN LA GESTIÓN DE PAGO DELEGADO SE RESUELVEN HABITUALMENTE MEDIANTE LA GENERACIÓN DE UN TC14/9?",
     "options": {
       "A": "Deducción no practicada por la empresa en TC2.",
       "B": "Deducción no practicada por la empresa en TC1.",
@@ -1005,7 +1005,7 @@ const questions = [
   },
   {
     "id": 92,
-    "question": "¿QUÉ INFORMACIÓN SE RECOGE EN EL CUESTIONARIO DE SOLICITUD DE ASISTENCIA?",
+    "question": "92. ¿QUÉ INFORMACIÓN SE RECOGE EN EL CUESTIONARIO DE SOLICITUD DE ASISTENCIA?",
     "options": {
       "A": "La declaración del trabajador accidentado respecto a las circunstancias del accidente.",
       "B": "La declaración de la empresa respecto a las circunstancias del accidente.",
@@ -1016,7 +1016,7 @@ const questions = [
   },
   {
     "id": 93,
-    "question": "¿QUÉ ES EL CUESTIONARIO DE SOLICITUD DE ASISTENCIA?",
+    "question": "93. ¿QUÉ ES EL CUESTIONARIO DE SOLICITUD DE ASISTENCIA?",
     "options": {
       "A": "Es el documento que cumplimenta el trabajador accidentado que acude a un centro asistencial de la mutua por primera vez.",
       "B": "Es el documento que cumplimenta el trabajador accidentado cada vez que acude a un centro asistencial de la mutua.",
@@ -1027,7 +1027,7 @@ const questions = [
   },
   {
     "id": 94,
-    "question": "¿QUÉ ES EL VOLANTE DE SOLICITUD DE ASISTENCIA?",
+    "question": "94. ¿QUÉ ES EL VOLANTE DE SOLICITUD DE ASISTENCIA?",
     "options": {
       "A": "Es el documento por el que el trabajador solicita asistencia sanitaria a la empresa.",
       "B": "Es el documento por el que la empresa solicita asistencia sanitaria a la mutua para un trabajador accidentado.",
@@ -1038,7 +1038,7 @@ const questions = [
   },
   {
     "id": 95,
-    "question": "¿DÓNDE SE CUMPLIMENTA HABITUALMENTE EL CUESTIONARIO DE SOLICITUD DE ASISTENCIA?",
+    "question": "95. ¿DÓNDE SE CUMPLIMENTA HABITUALMENTE EL CUESTIONARIO DE SOLICITUD DE ASISTENCIA?",
     "options": {
       "A": "En la consulta del médico.",
       "B": "En los servicios administrativos de la Delegación.",
@@ -1049,7 +1049,7 @@ const questions = [
   },
   {
     "id": 96,
-    "question": "¿SIEMPRE QUE UN TRABAJADOR ESTÉ ENFERMO, HA DE ESTAR EN SITUACIÓN DE BAJA LABORAL?",
+    "question": "96. ¿SIEMPRE QUE UN TRABAJADOR ESTÉ ENFERMO, HA DE ESTAR EN SITUACIÓN DE BAJA LABORAL?",
     "options": {
       "A": "Sí, siempre.",
       "B": "Sí, si está recibiendo asistencia sanitaria.",
@@ -1060,7 +1060,7 @@ const questions = [
   },
   {
     "id": 97,
-    "question": "CUANDO UN TRABAJADOR TRABAJA EN MÁS DE UNA EMPRESA DENTRO DEL MISMO RÉGIMEN Y CAUSA BAJA MÉDICA…",
+    "question": "97. CUANDO UN TRABAJADOR TRABAJA EN MÁS DE UNA EMPRESA DENTRO DEL MISMO RÉGIMEN Y CAUSA BAJA MÉDICA…",
     "options": {
       "A": "Solo es necesario emitir un Parte Médico de Baja.",
       "B": "Se deberá emitir un parte médico de baja por cada una de las empresas en las que se encuentre dado de alta el trabajador.",
@@ -1071,7 +1071,7 @@ const questions = [
   },
   {
     "id": 98,
-    "question": "CUANDO UN TRABAJADOR DESARROLLA TRABAJOS POR CUENTA PROPIA Y POR CUENTA AJENA SE DICE QUE ESTÁ EN SITUACIÓN…",
+    "question": "98. CUANDO UN TRABAJADOR DESARROLLA TRABAJOS POR CUENTA PROPIA Y POR CUENTA AJENA SE DICE QUE ESTÁ EN SITUACIÓN…",
     "options": {
       "A": "De pluriempleo.",
       "B": "De irregularidad de afiliación.",
@@ -1082,7 +1082,7 @@ const questions = [
   },
   {
     "id": 99,
-    "question": "¿CÓMO PUEDE PASAR UN PROCESO A PRÓRROGA DE IT TRAS LAS MODIFICACIONES DEL ART. 170 DE LA LGSS INTRODUCIDAS EN EL RD- LEY 2/2023?",
+    "question": "99. ¿CÓMO PUEDE PASAR UN PROCESO A PRÓRROGA DE IT TRAS LAS MODIFICACIONES DEL ART. 170 DE LA LGSS INTRODUCIDAS EN EL RD- LEY 2/2023?",
     "options": {
       "A": "Tras resolución explícita de la mutua.",
       "B": "Tras resolución explícita del Instituto Nacional de la Seguridad Social.",
@@ -1093,7 +1093,7 @@ const questions = [
   },
   {
     "id": 100,
-    "question": "EN BASE A LOS ACUERDOS DE AMAT, EN CASO DE RECAÍDA CON CAMBIO DE ASEGURAMIENTO, SI HAN TRASCURRIDO MENOS DE 6 MESES DESDE QUE SE PRODUJO EL ALTA MÉDICA ANTERIOR…",
+    "question": "100. EN BASE A LOS ACUERDOS DE AMAT, EN CASO DE RECAÍDA CON CAMBIO DE ASEGURAMIENTO, SI HAN TRASCURRIDO MENOS DE 6 MESES DESDE QUE SE PRODUJO EL ALTA MÉDICA ANTERIOR…",
     "options": {
       "A": "Será responsable de asumir el coste de la prestación de asistencia sanitaria la entidad que tuviera cubierta la contingencia en el momento de producirse la recaída.",
       "B": "Será responsable de asumir el coste de la prestación de asistencia sanitaria la entidad que tuviera cubierta la contingencia en el momento de producirse la baja inicial.",
@@ -1104,7 +1104,7 @@ const questions = [
   },
   {
     "id": 101,
-    "question": "LOS MOTIVOS POR LOS QUE SE PUEDE IMPUTAR RESPONSABILIDAD EMPRESARIAL SON…",
+    "question": "101. LOS MOTIVOS POR LOS QUE SE PUEDE IMPUTAR RESPONSABILIDAD EMPRESARIAL SON…",
     "options": {
       "A": "La empresa ha cambiado de Mutua y no nos ha sido notificado.",
       "B": "Morosidad de la Empresa: no ingresar puntualmente las cotizaciones durante dos meses.",
@@ -1115,7 +1115,7 @@ const questions = [
   },
   {
     "id": 102,
-    "question": "A PARTIR DE LAS MODIFICACIONES OPERADAS POR EL RD-L 28/2018, LA NORMA GENERAL ES QUE LOS AUTÓNOMOS, EXCLUYENDO A LOS AGRARIOS CUENTA PROPIA Y ALGÚN COLECTIVO ESPECIAL, TENDRÁN LA OBLIGACIÓN DE CUBRIR CON UNA MUTUA LAS SIGUIENTES CONTINGENCIAS:",
+    "question": "102. A PARTIR DE LAS MODIFICACIONES OPERADAS POR EL RD-L 28/2018, LA NORMA GENERAL ES QUE LOS AUTÓNOMOS, EXCLUYENDO A LOS AGRARIOS CUENTA PROPIA Y ALGÚN COLECTIVO ESPECIAL, TENDRÁN LA OBLIGACIÓN DE CUBRIR CON UNA MUTUA LAS SIGUIENTES CONTINGENCIAS:",
     "options": {
       "A": "Las contingencias comunes y profesionales y cese de actividad articulándose su gestión a través de las Mutuas Colaboradoras con la Seguridad Social.",
       "B": "Las contingencias profesionales y cese de actividad articulándose su gestión a través de las Mutuas Colaboradoras con la Seguridad Social.",
@@ -1126,10 +1126,10 @@ const questions = [
   },
   {
     "id": 103,
-    "question": "LOS REGIMENES ESPECIALES DE LA SEGURIDAD SOCIAL SON…",
+    "question": "103. LOS REGIMENES ESPECIALES DE LA SEGURIDAD SOCIAL SON…",
     "options": {
       "A": "El R.E. de Trabajadores Autónomos, el R.E. del Mar, el R.E. de la Minería y el Carbón y el R.E. de Estudiantes.",
-      "B": "El Régimen General, el R.E. de Trabajadores Autónomos, el R.E. Agrario, el\nR.E. del Mar, el R.E. de la Minería y el Carbón, el R.E. de Empleadas del Hogar, el R.E. de Estudiantes.",
+      "B": "El Régimen General, el R.E. de Trabajadores Autónomos, el R.E. Agrario, el R.E. del Mar, el R.E. de la Minería y el Carbón, el R.E. de Empleadas del Hogar, el R.E. de Estudiantes.",
       "C": "El R.E. de Trabajadores Autónomos, el R.E. Agrario, el R.E. del Mar, el R.E. de la Minería y el Carbón, el R.E. de Empleadas del Hogar, el R.E. de Estudiantes.",
       "D": "El R.E. de Trabajadores Autónomos, el R.E. agrario, el R.E. del Mar y el R.E. de la Minería y el Carbón."
     },
@@ -1137,7 +1137,7 @@ const questions = [
   },
   {
     "id": 104,
-    "question": "EN EL CASO CONCRETO DE LOS CONTRATOS DE APRENDIZAJE, LA BASE REGULADORA DE LA INCAPACIDAD TEMPORAL:",
+    "question": "104. EN EL CASO CONCRETO DE LOS CONTRATOS DE APRENDIZAJE, LA BASE REGULADORA DE LA INCAPACIDAD TEMPORAL:",
     "options": {
       "A": "Se calculará de la misma forma que la de cualquier otro trabajador.",
       "B": "Será el 75% del salario mínimo interprofesional.",
@@ -1148,7 +1148,7 @@ const questions = [
   },
   {
     "id": 105,
-    "question": "SEGÚN ESTABLECE EL ART. 14.4.1º DEL REGLAMENTO GENERAL SOBRE INSCRIPCIÓN DE EMPRESAS, Y COMO EXCEPCIÓN A LA NORMA GENERAL, EL PERIODO DE UN AÑO SE SUPRIME EN EL MOMENTO DE QUE UNA EMPRESA CESE EN SU ACTIVIDAD, SIEMPRE QUE DICHO CESE TENGA UNA DURACIÓN MÍNIMA DE:",
+    "question": "105. SEGÚN ESTABLECE EL ART. 14.4.1º DEL REGLAMENTO GENERAL SOBRE INSCRIPCIÓN DE EMPRESAS, Y COMO EXCEPCIÓN A LA NORMA GENERAL, EL PERIODO DE UN AÑO SE SUPRIME EN EL MOMENTO DE QUE UNA EMPRESA CESE EN SU ACTIVIDAD, SIEMPRE QUE DICHO CESE TENGA UNA DURACIÓN MÍNIMA DE:",
     "options": {
       "A": "Cinco días hábiles",
       "B": "Quince días",
@@ -1159,7 +1159,7 @@ const questions = [
   },
   {
     "id": 106,
-    "question": "EL DOCUMENTO DE PROPOSICIÓN DE ASOCIACIÓN DEBE FORMALIZARSE ENTRE LA EMPRESA Y LA MUTUA:",
+    "question": "106. EL DOCUMENTO DE PROPOSICIÓN DE ASOCIACIÓN DEBE FORMALIZARSE ENTRE LA EMPRESA Y LA MUTUA:",
     "options": {
       "A": "Siempre que la empresa quiera asociarse con la Mutua",
       "B": "Nunca",
@@ -1170,7 +1170,7 @@ const questions = [
   },
   {
     "id": 107,
-    "question": "¿EN QUÉ DOCUMENTO SE FORMALIZA LA COBERTURA DE LA PRESTACIÓN ECONÓMICA POR ITCC PARA LOS TRABAJADORES DEL RÉGIMEN GENERAL?",
+    "question": "107. ¿EN QUÉ DOCUMENTO SE FORMALIZA LA COBERTURA DE LA PRESTACIÓN ECONÓMICA POR ITCC PARA LOS TRABAJADORES DEL RÉGIMEN GENERAL?",
     "options": {
       "A": "En el documento de asociación",
       "B": "En el documento de adhesión",
@@ -1181,7 +1181,7 @@ const questions = [
   },
   {
     "id": 108,
-    "question": "¿EN QUÉ DOCUMENTO SE FORMALIZA LA COBERTURA DE LA PRESTACIÓN ECONÓMICA POR ITCC PARA LOS TRABAJADORES DEL RÉGIMEN ESPECIAL DE LA MINERÍA DEL CARBÓN?",
+    "question": "108. ¿EN QUÉ DOCUMENTO SE FORMALIZA LA COBERTURA DE LA PRESTACIÓN ECONÓMICA POR ITCC PARA LOS TRABAJADORES DEL RÉGIMEN ESPECIAL DE LA MINERÍA DEL CARBÓN?",
     "options": {
       "A": "En el documento de asociación",
       "B": "En el documento de adhesión",
@@ -1192,7 +1192,7 @@ const questions = [
   },
   {
     "id": 109,
-    "question": "¿CUÁNDO ESPECIFICARA EL DOCUMENTO DE ASOCIACIÓN LA FECHA Y HORA EN QUE COMIENZAN SUS EFECTOS?",
+    "question": "109. ¿CUÁNDO ESPECIFICARA EL DOCUMENTO DE ASOCIACIÓN LA FECHA Y HORA EN QUE COMIENZAN SUS EFECTOS?",
     "options": {
       "A": "Siempre",
       "B": "Nunca",
@@ -1203,7 +1203,7 @@ const questions = [
   },
   {
     "id": 110,
-    "question": "EL PRINCIPIO OBLIGATORIO DE INTEGRIDAD DE ASEGURAMIENTO DE LAS EMPRESAS CON LAS MUTUAS ES:",
+    "question": "110. EL PRINCIPIO OBLIGATORIO DE INTEGRIDAD DE ASEGURAMIENTO DE LAS EMPRESAS CON LAS MUTUAS ES:",
     "options": {
       "A": "A nivel nacional",
       "B": "A nivel provincial.",
@@ -1214,7 +1214,7 @@ const questions = [
   },
   {
     "id": 111,
-    "question": "LA FECHA DE EFECTO DEL DOCUMENTO DE ASOCIACIÓN:",
+    "question": "111. LA FECHA DE EFECTO DEL DOCUMENTO DE ASOCIACIÓN:",
     "options": {
       "A": "Coincide siempre con la fecha de vencimiento del documento de asociación",
       "B": "Coincide siempre con la fecha de alta de la empresa en TGSS",
@@ -1225,9 +1225,9 @@ const questions = [
   },
   {
     "id": 112,
-    "question": "SE DENOMINAN EMPRESAS COLABORADORAS EN A.T. Y E.P. CON LA SEGURIDAD SOCIAL:",
+    "question": "112. SE DENOMINAN EMPRESAS COLABORADORAS EN A.T. Y E.P. CON LA SEGURIDAD SOCIAL:",
     "options": {
-      "A": "A las empresas que asumen a su cargo el pago de la prestación por IT de\nA.T y EP y la prestación de la asistencia sanitaria",
+      "A": "A las empresas que asumen a su cargo el pago de la prestación por IT de A.T y EP y la prestación de la asistencia sanitaria",
       "B": "A las empresas que asumen a su cargo el pago de la prestación por IT derivada de enfermedad común",
       "C": "A las empresas que asumen a cargo de la entidad gestora el pago de las prestación por IT de A.T y EP",
       "D": "A las empresas que asumen a su cargo la prestación económica por IT de enfermedad común, maternidad o accidente no laboral"
@@ -1236,7 +1236,7 @@ const questions = [
   },
   {
     "id": 113,
-    "question": "LA FECHA DE VENCIMIENTO DEL DOCUMENTO DE ASOCIACIÓN SERÁ:",
+    "question": "113. LA FECHA DE VENCIMIENTO DEL DOCUMENTO DE ASOCIACIÓN SERÁ:",
     "options": {
       "A": "Siempre el día de cese de la actividad",
       "B": "El último día del mes del año en que se cumple la vigencia o el día del cese de actividad",
@@ -1247,7 +1247,7 @@ const questions = [
   },
   {
     "id": 114,
-    "question": "LOS TRABAJADORES DEL SISTEMA ESPECIAL DE TRABAJADORES AGRARIOS POR CUENTA PROPIA TIENEN QUE ASEGURAR OBLIGATORIAMENTE CON LA SEGURIDAD SOCIAL:",
+    "question": "114. LOS TRABAJADORES DEL SISTEMA ESPECIAL DE TRABAJADORES AGRARIOS POR CUENTA PROPIA TIENEN QUE ASEGURAR OBLIGATORIAMENTE CON LA SEGURIDAD SOCIAL:",
     "options": {
       "A": "La I.M.S y la IT de A.T.",
       "B": "La ITCC",
@@ -1258,7 +1258,7 @@ const questions = [
   },
   {
     "id": 115,
-    "question": "CADA VEZ QUE SE MODIFICA UNA EMPRESA, DANDO DE ALTA UN C.C.C., EN LA APLICACIÓN:",
+    "question": "115. CADA VEZ QUE SE MODIFICA UNA EMPRESA, DANDO DE ALTA UN C.C.C., EN LA APLICACIÓN:",
     "options": {
       "A": "Se emitirá una nueva actualización del documento de asociación",
       "B": "Se hará un nuevo documento de asociación con el mismo número",
@@ -1269,7 +1269,7 @@ const questions = [
   },
   {
     "id": 116,
-    "question": "LA FECHA DE EFECTO DE LAS EMPRESAS DE NUEVA CREACIÓN SERÁ:",
+    "question": "116. LA FECHA DE EFECTO DE LAS EMPRESAS DE NUEVA CREACIÓN SERÁ:",
     "options": {
       "A": "El día siguiente al alta en TGSS",
       "B": "El mismo día del alta en TGSS",
@@ -1280,7 +1280,7 @@ const questions = [
   },
   {
     "id": 117,
-    "question": "A TRAVÉS DEL DOCUMENTO DE ASOCIACIÓN SE PUEDEN ASOCIAR CON LA MUTUA:",
+    "question": "117. A TRAVÉS DEL DOCUMENTO DE ASOCIACIÓN SE PUEDEN ASOCIAR CON LA MUTUA:",
     "options": {
       "A": "Todas las empresas excepto las afectadas por el antiguo art. 204.2 de la Ley General de la Seguridad Social",
       "B": "Las empresas con trabajadores por cuenta ajena y los trabajadores por cuenta propia del REA. para la cobertura de las contingencias de A.T.",
@@ -1291,7 +1291,7 @@ const questions = [
   },
   {
     "id": 118,
-    "question": "UNA EMPRESA ASOCIADA A UNA MUTUA, SOLICITA UNA DEVOLUCIÓN DE INGRESOS CORRESPONDIENTE A CUOTAS DE\nACCIDENTES DE TRABAJO, ANTE QUÉ ENTIDAD TENDRÁ QUE SOLICITAR DICHA DEVOLUCIÓN:",
+    "question": "118. UNA EMPRESA ASOCIADA A UNA MUTUA, SOLICITA UNA DEVOLUCIÓN DE INGRESOS CORRESPONDIENTE A CUOTAS DE ACCIDENTES DE TRABAJO, ANTE QUÉ ENTIDAD TENDRÁ QUE SOLICITAR DICHA DEVOLUCIÓN:",
     "options": {
       "A": "La T.G.S.S.",
       "B": "La Mutua con la que está asociada",
@@ -1302,7 +1302,7 @@ const questions = [
   },
   {
     "id": 119,
-    "question": "CUANDO UNA EMPRESA CAMBIE EL DOMICILIO DE ALGÚN C.C.C., LA MUTUA LO INCLUIRÁ:",
+    "question": "119. CUANDO UNA EMPRESA CAMBIE EL DOMICILIO DE ALGÚN C.C.C., LA MUTUA LO INCLUIRÁ:",
     "options": {
       "A": "En un nuevo documento de asociación con el mismo número",
       "B": "En un nuevo documento de asociación con distinto número",
@@ -1313,7 +1313,7 @@ const questions = [
   },
   {
     "id": 120,
-    "question": "TODOS LOS C.C.C. DE UNA EMPRESA ASOCIADOS CON LA MUTUA:",
+    "question": "120. TODOS LOS C.C.C. DE UNA EMPRESA ASOCIADOS CON LA MUTUA:",
     "options": {
       "A": "Tienen que tener la misma fecha de efecto",
       "B": "Heredan la fecha de vencimiento del primer C.C.C. asociado con la Mutua",
@@ -1324,7 +1324,7 @@ const questions = [
   },
   {
     "id": 121,
-    "question": "¿PUEDE RENUNCIAR LA EMPRESA A LA COBERTURA DE LA PRESTACIÓN ECONÓMICA POR CONTINGENCIAS COMUNES CON UNA MUTUA?",
+    "question": "121. ¿PUEDE RENUNCIAR LA EMPRESA A LA COBERTURA DE LA PRESTACIÓN ECONÓMICA POR CONTINGENCIAS COMUNES CON UNA MUTUA?",
     "options": {
       "A": "Sí, notificándolo con un mes de antelación al vencimiento del documento de asociación",
       "B": "No, sólo la Mutua puede rescindir este contrato",
@@ -1335,7 +1335,7 @@ const questions = [
   },
   {
     "id": 122,
-    "question": "¿A QUÉ C.C.C.S SE PUEDE CONCEDER EL CERTIFICADO DE CESE EN UNA PROVINCIA?",
+    "question": "122. ¿A QUÉ C.C.C.S SE PUEDE CONCEDER EL CERTIFICADO DE CESE EN UNA PROVINCIA?",
     "options": {
       "A": "A los C.C.C.s de la empresa y provincia afectada",
       "B": "A todos los C.C.C.s de la empresa",
@@ -1346,7 +1346,7 @@ const questions = [
   },
   {
     "id": 123,
-    "question": "LAS EMPRESAS PUEDEN COLABORAR EN LA GESTIÓN DE:",
+    "question": "123. LAS EMPRESAS PUEDEN COLABORAR EN LA GESTIÓN DE:",
     "options": {
       "A": "La Seguridad Social",
       "B": "La TGSS",
@@ -1357,7 +1357,7 @@ const questions = [
   },
   {
     "id": 124,
-    "question": "LA DENUNCIA DEL EMPRESARIO PARA DEJAR SIN EFECTO EL DOCUMENTO DE ASOCIACIÓN DEBERÁ NOTIFICARSE A FM:",
+    "question": "124. LA DENUNCIA DEL EMPRESARIO PARA DEJAR SIN EFECTO EL DOCUMENTO DE ASOCIACIÓN DEBERÁ NOTIFICARSE A FM:",
     "options": {
       "A": "Con 45 días de antelación, como mínimo, a la fecha de vencimiento",
       "B": "Con un mes de antelación, como mínimo, a la fecha de efecto",
@@ -1368,7 +1368,7 @@ const questions = [
   },
   {
     "id": 125,
-    "question": "SEGÚN EL REGLAMENTO GENERAL SOBRE INSCRIPCIÓN DE EMPRESAS Y AFILIACIÓN, ALTAS, BAJAS Y VARIACIONES DE DATOS DE TRABAJADORES EN LA SEGURIDAD SOCIAL, LA INSCRIPCIÓN DE EMPRESAS ES COMPETENCIA DE:",
+    "question": "125. SEGÚN EL REGLAMENTO GENERAL SOBRE INSCRIPCIÓN DE EMPRESAS Y AFILIACIÓN, ALTAS, BAJAS Y VARIACIONES DE DATOS DE TRABAJADORES EN LA SEGURIDAD SOCIAL, LA INSCRIPCIÓN DE EMPRESAS ES COMPETENCIA DE:",
     "options": {
       "A": "La TGSS",
       "B": "El INSS",
@@ -1379,7 +1379,7 @@ const questions = [
   },
   {
     "id": 126,
-    "question": "UN EMPRESARIO QUE INICIA SUS ACTIVIDADES, EN EL MOMENTO DE SU INSCRIPCIÓN EN EL SISTEMA DE SEGURIDAD SOCIAL DEBERÁ CONCERTAR LA COBERTURA DE RIESGOS PROFESIONALES CON:",
+    "question": "126. UN EMPRESARIO QUE INICIA SUS ACTIVIDADES, EN EL MOMENTO DE SU INSCRIPCIÓN EN EL SISTEMA DE SEGURIDAD SOCIAL DEBERÁ CONCERTAR LA COBERTURA DE RIESGOS PROFESIONALES CON:",
     "options": {
       "A": "Una Mutua de A.T. y E.P. obligatoriamente",
       "B": "Una Entidad Gestora durante el primer año",
@@ -1390,7 +1390,7 @@ const questions = [
   },
   {
     "id": 127,
-    "question": "UN EMPRESARIO QUE INICIA SUS ACTIVIDADES, EN EL MOMENTO DE SU INSCRIPCIÓN EN EL SISTEMA DE SEGURIDAD SOCIAL DEBERÁ CONCERTAR OBLIGATORIAMENTE LA COBERTURA DE PRESTACIÓN ECONÓMICA POR INCAPACIDAD TEMPORAL POR CONTINGENCIAS COMUNES CON:",
+    "question": "127. UN EMPRESARIO QUE INICIA SUS ACTIVIDADES, EN EL MOMENTO DE SU INSCRIPCIÓN EN EL SISTEMA DE SEGURIDAD SOCIAL DEBERÁ CONCERTAR OBLIGATORIAMENTE LA COBERTURA DE PRESTACIÓN ECONÓMICA POR INCAPACIDAD TEMPORAL POR CONTINGENCIAS COMUNES CON:",
     "options": {
       "A": "La misma Entidad con la que contrató las contingencias profesionales",
       "B": "Una Entidad Gestora en todo caso",
@@ -1401,7 +1401,7 @@ const questions = [
   },
   {
     "id": 128,
-    "question": "CUANDO UNA EMPRESA QUE ESTÁ ASEGURADA CON UNA ENTIDAD GESTORA DECIDE CAMBIAR DE ENTIDAD ASEGURADORA, LA PRIMERA, DEBERÁ EXTENDER Y ENTREGAR A LA EMPRESA CERTIFICADO DE CESE EN UN PLAZO DE:",
+    "question": "128. CUANDO UNA EMPRESA QUE ESTÁ ASEGURADA CON UNA ENTIDAD GESTORA DECIDE CAMBIAR DE ENTIDAD ASEGURADORA, LA PRIMERA, DEBERÁ EXTENDER Y ENTREGAR A LA EMPRESA CERTIFICADO DE CESE EN UN PLAZO DE:",
     "options": {
       "A": "10 días desde la notificación de la denuncia",
       "B": "Un mes desde la notificación de la denuncia",
@@ -1412,7 +1412,7 @@ const questions = [
   },
   {
     "id": 129,
-    "question": "UNA EMPRESA TIENE CUBIERTA LA PRESTACIÓN ECONÓMICA DE ITCC CON UNA ENTIDAD GESTORA Y QUIERE SUSCRIBIRLA CON UNA MUTUA, PARA ELLO ES IMPRESCINDIBLE:",
+    "question": "129. UNA EMPRESA TIENE CUBIERTA LA PRESTACIÓN ECONÓMICA DE ITCC CON UNA ENTIDAD GESTORA Y QUIERE SUSCRIBIRLA CON UNA MUTUA, PARA ELLO ES IMPRESCINDIBLE:",
     "options": {
       "A": "Que tenga asegurados los riesgos profesionales con cualquier Mutua",
       "B": "Que tenga asegurados los riesgos profesionales con la Mutua con la que quiere optar",
@@ -1423,7 +1423,7 @@ const questions = [
   },
   {
     "id": 130,
-    "question": "UN TRABAJADOR AUTÓNOMO QUE ESTANDO ACOGIDO A LA COBERTURA DE ITCC CON UNA MUTUA DESEE CAMBIAR SU ADHESIÓN A OTRA, DEBERÁ COMUNICARLO:",
+    "question": "130. UN TRABAJADOR AUTÓNOMO QUE ESTANDO ACOGIDO A LA COBERTURA DE ITCC CON UNA MUTUA DESEE CAMBIAR SU ADHESIÓN A OTRA, DEBERÁ COMUNICARLO:",
     "options": {
       "A": "Con un mes de antelación al vencimiento del contrato",
       "B": "Hasta el 30 de Septiembre del año en el que vence el documento de adhesión",
@@ -1434,7 +1434,7 @@ const questions = [
   },
   {
     "id": 131,
-    "question": "UNA EMPRESA QUE TIENE AUTORIZADA POR EL MINISTERIO DE TRABAJO, MIGRACIONES Y SEGURIDAD SOCIAL LA COLABORACIÓN VOLUNTARIA EN LA GESTIÓN DE ACCIDENTES DE TRABAJO Y ENFERMEDADES PROFESIONALES Y QUIERE SUSCRIBIR CONVENIO DE ASOCIACIÓN CON UNA MUTUA PARA LA COBERTURA DE LA I.M.S., PUEDE HACERLO:",
+    "question": "131. UNA EMPRESA QUE TIENE AUTORIZADA POR EL MINISTERIO DE TRABAJO, MIGRACIONES Y SEGURIDAD SOCIAL LA COLABORACIÓN VOLUNTARIA EN LA GESTIÓN DE ACCIDENTES DE TRABAJO Y ENFERMEDADES PROFESIONALES Y QUIERE SUSCRIBIR CONVENIO DE ASOCIACIÓN CON UNA MUTUA PARA LA COBERTURA DE LA I.M.S., PUEDE HACERLO:",
     "options": {
       "A": "Siempre que la empresa a asociar sea una empresa publica",
       "B": "No puede hacerlo si no cubre también la I.T. de A.T.",
@@ -1445,7 +1445,7 @@ const questions = [
   },
   {
     "id": 132,
-    "question": "UNA EMPRESA ASOCIADA QUE TIENE AUTORIZADA POR EL MINISTERIO DE TRABAJO, MIGRACIONES Y SEGURIDAD SOCIAL LA COLABORACIÓN VOLUNTARIA EN LA GESTIÓN DE ACCIDENTES DE TRABAJO Y ENFERMEDADES PROFESIONALES Y QUIERE SUSCRIBIR CONVENIO DE ASOCIACIÓN CON UNA MUTUA PARA LA COBERTURA DE LA PRESTACIÓN PARA I.T. POR CONTINGENCIAS COMUNES PUEDE HACERLO:",
+    "question": "132. UNA EMPRESA ASOCIADA QUE TIENE AUTORIZADA POR EL MINISTERIO DE TRABAJO, MIGRACIONES Y SEGURIDAD SOCIAL LA COLABORACIÓN VOLUNTARIA EN LA GESTIÓN DE ACCIDENTES DE TRABAJO Y ENFERMEDADES PROFESIONALES Y QUIERE SUSCRIBIR CONVENIO DE ASOCIACIÓN CON UNA MUTUA PARA LA COBERTURA DE LA PRESTACIÓN PARA I.T. POR CONTINGENCIAS COMUNES PUEDE HACERLO:",
     "options": {
       "A": "Sí, en cualquier caso",
       "B": "No, salvo que también suscriba la I.T. por A.T.",
@@ -1456,7 +1456,7 @@ const questions = [
   },
   {
     "id": 133,
-    "question": "UNA EMPRESA ASOCIADA A UNA MUTUA VARÍA SU DENOMINACIÓN SOCIAL, POR TAL MOTIVO, LA TESORERÍA GENERAL LE ASIGNA NUEVO CÓDIGO CUENTA COTIZACIÓN, ES NECESARIO QUE LA MUTUA FORMALICE UN NUEVO DOCUMENTO DE ASOCIACIÓN.",
+    "question": "133. UNA EMPRESA ASOCIADA A UNA MUTUA VARÍA SU DENOMINACIÓN SOCIAL, POR TAL MOTIVO, LA TESORERÍA GENERAL LE ASIGNA NUEVO CÓDIGO CUENTA COTIZACIÓN, ES NECESARIO QUE LA MUTUA FORMALICE UN NUEVO DOCUMENTO DE ASOCIACIÓN.",
     "options": {
       "A": "Sí, en cualquier caso",
       "B": "Solamente en el caso de que la empresa lo solicite a la Mutua",
@@ -1467,7 +1467,7 @@ const questions = [
   },
   {
     "id": 134,
-    "question": "UNA EMPRESA QUE TIENE CENTROS DE TRABAJO EN TODO EL TERRITORIO NACIONAL, PUEDE FORMALIZAR CONVENIO DE ASOCIACIÓN CON:",
+    "question": "134. UNA EMPRESA QUE TIENE CENTROS DE TRABAJO EN TODO EL TERRITORIO NACIONAL, PUEDE FORMALIZAR CONVENIO DE ASOCIACIÓN CON:",
     "options": {
       "A": "Distintas Mutuas en la misma provincia",
       "B": "La misma Mutua siempre que sea dentro de la misma Comunidad Autónoma",
@@ -1478,7 +1478,7 @@ const questions = [
   },
   {
     "id": 135,
-    "question": "UNA EMPRESA TIENE AUTORIZADA POR EL MINISTERIO DE TRABAJO, MIGRACIONES Y SEGURIDAD SOCIAL LA COLABORACIÓN VOLUNTARIA EN LA GESTIÓN DE I.T. POR ACCIDENTES DE TRABAJO Y\nENFERMEDADES PROFESIONALES Y QUIERE CUBRIR DICHA CONTINGENCIA CON LA MISMA MUTUA CON LA QUE TIENE SUSCRITA COBERTURA DE LA I.M.S., TENDRÁ QUE:",
+    "question": "135. UNA EMPRESA TIENE AUTORIZADA POR EL MINISTERIO DE TRABAJO, MIGRACIONES Y SEGURIDAD SOCIAL LA COLABORACIÓN VOLUNTARIA EN LA GESTIÓN DE I.T. POR ACCIDENTES DE TRABAJO Y ENFERMEDADES PROFESIONALES Y QUIERE CUBRIR DICHA CONTINGENCIA CON LA MISMA MUTUA CON LA QUE TIENE SUSCRITA COBERTURA DE LA I.M.S., TENDRÁ QUE:",
     "options": {
       "A": "Solicitarlo antes del 30 de Septiembre del año anterior a aquel en que deba tener efectividad ante la TGSS",
       "B": "Solicitarlo antes del 30 de Septiembre del año anterior a aquel en que deba tener efectividad ante la Dirección General de Ordenación de la Seguridad Social",
@@ -1489,7 +1489,7 @@ const questions = [
   },
   {
     "id": 136,
-    "question": "UNA EMPRESA ASOCIADA A UNA MUTUA QUE TIENE CUBIERTAS LAS CONTINGENCIAS PROFESIONALES Y LA PROTECCIÓN POR CONTINGENCIAS COMUNES ABRE UN NUEVO CENTRO DE TRABAJO AL QUE LA TESORERÍA LE ASIGNA UN NUEVO CÓDIGO CUENTA COTIZACIÓN, LA PROTECCIÓN POR CONTINGENCIAS COMUNES INCLUIRÁ A LOS NUEVOS TRABAJADORES:",
+    "question": "136. UNA EMPRESA ASOCIADA A UNA MUTUA QUE TIENE CUBIERTAS LAS CONTINGENCIAS PROFESIONALES Y LA PROTECCIÓN POR CONTINGENCIAS COMUNES ABRE UN NUEVO CENTRO DE TRABAJO AL QUE LA TESORERÍA LE ASIGNA UN NUEVO CÓDIGO CUENTA COTIZACIÓN, LA PROTECCIÓN POR CONTINGENCIAS COMUNES INCLUIRÁ A LOS NUEVOS TRABAJADORES:",
     "options": {
       "A": "No, a no ser que la empresa lo solicite",
       "B": "Sí, aunque la empresa no lo solicite expresamente",
@@ -1500,7 +1500,7 @@ const questions = [
   },
   {
     "id": 137,
-    "question": "¿EN QUE DOCUMENTO SE FORMALIZA LA COBERTURA DE LA PRESTACIÓN ECONÓMICA POR A.T. PARA EL RÉGIMEN ESPECIAL DE TRABAJADORES POR CUENTA PROPIA O AUTÓNOMOS?",
+    "question": "137. ¿EN QUE DOCUMENTO SE FORMALIZA LA COBERTURA DE LA PRESTACIÓN ECONÓMICA POR A.T. PARA EL RÉGIMEN ESPECIAL DE TRABAJADORES POR CUENTA PROPIA O AUTÓNOMOS?",
     "options": {
       "A": "En el documento de asociación",
       "B": "En el documento de adhesión",
@@ -1511,7 +1511,7 @@ const questions = [
   },
   {
     "id": 138,
-    "question": "¿PARA TODOS LOS C.C.C. DE UNA EMPRESA SE EMITIRÁ UN SOLO DOCUMENTO DE ASOCIACIÓN?",
+    "question": "138. ¿PARA TODOS LOS C.C.C. DE UNA EMPRESA SE EMITIRÁ UN SOLO DOCUMENTO DE ASOCIACIÓN?",
     "options": {
       "A": "Sí.",
       "B": "No",
@@ -1522,7 +1522,7 @@ const questions = [
   },
   {
     "id": 139,
-    "question": "EN EL CASO DE EMPRESAS DE NUEVA CREACIÓN, EL DOCUMENTO DE PROPOSICIÓN DE ASOCIACIÓN:",
+    "question": "139. EN EL CASO DE EMPRESAS DE NUEVA CREACIÓN, EL DOCUMENTO DE PROPOSICIÓN DE ASOCIACIÓN:",
     "options": {
       "A": "Se hará siempre en papel por duplicado para que quede constancia escrita para la Mutua",
       "B": "Se presentará en TGSS por un empleado de la Unidad de Afiliación de la Mutua",
@@ -1533,7 +1533,7 @@ const questions = [
   },
   {
     "id": 140,
-    "question": "TODOS LOS C.C.C. DE UNA EMPRESA INCLUIDOS EN EL MISMO DOCUMENTO DE ASOCIACIÓN:",
+    "question": "140. TODOS LOS C.C.C. DE UNA EMPRESA INCLUIDOS EN EL MISMO DOCUMENTO DE ASOCIACIÓN:",
     "options": {
       "A": "Tienen que tener la misma fecha de efecto",
       "B": "Heredan la fecha de vencimiento del primer C.C.C. asociado",
@@ -1544,7 +1544,7 @@ const questions = [
   },
   {
     "id": 141,
-    "question": "LA CIRCULAR DE LA TGSS NÚMERO 3-005 DE 11-03-2004 TRATA SOBRE:",
+    "question": "141. LA CIRCULAR DE LA TGSS NÚMERO 3-005 DE 11-03-2004 TRATA SOBRE:",
     "options": {
       "A": "Las empresas colaboradoras en la gestión de la Seguridad Social",
       "B": "El Régimen Especial Agrario",
@@ -1555,7 +1555,7 @@ const questions = [
   },
   {
     "id": 142,
-    "question": "¿CUÁL DE LAS SIGUIENTES AFIRMACIONES ES VERDADERA?",
+    "question": "142. ¿CUÁL DE LAS SIGUIENTES AFIRMACIONES ES VERDADERA?",
     "options": {
       "A": "La fecha de efecto será el último día del mes en que se cumple cada año de vigencia",
       "B": "El documento de asociación tendrá un plazo de vigencia de un mes prorrogado tácitamente por períodos anuales",
@@ -1566,7 +1566,7 @@ const questions = [
   },
   {
     "id": 143,
-    "question": "CUANDO UNA EMPRESA QUE ESTÁ ASEGURADA CON UNA MUTUA DECIDE CAMBIAR DE ENTIDAD ASEGURADORA, DEBERÁ DENUNCIAR EL CONVENIO ANTE LA MUTUA ACTUAL EN UN PLAZO DE:",
+    "question": "143. CUANDO UNA EMPRESA QUE ESTÁ ASEGURADA CON UNA MUTUA DECIDE CAMBIAR DE ENTIDAD ASEGURADORA, DEBERÁ DENUNCIAR EL CONVENIO ANTE LA MUTUA ACTUAL EN UN PLAZO DE:",
     "options": {
       "A": "No existe plazo",
       "B": "Exactamente con un mes de antelación a la fecha de vencimiento",
@@ -1577,7 +1577,7 @@ const questions = [
   },
   {
     "id": 144,
-    "question": "SE CONSIDERA QUE LA DENUNCIA DEL CONVENIO ANTE LA MUTUA ACTUAL ESTA DEBIDAMENTE NOTIFICADO CUANDO:",
+    "question": "144. SE CONSIDERA QUE LA DENUNCIA DEL CONVENIO ANTE LA MUTUA ACTUAL ESTA DEBIDAMENTE NOTIFICADO CUANDO:",
     "options": {
       "A": "Solamente cuando se ha enviado con acuse de recibo",
       "B": "Solamente cuando se ha presentado en alguna oficina de la Mutua",
@@ -1588,7 +1588,7 @@ const questions = [
   },
   {
     "id": 145,
-    "question": "SEGÚN EL ESTATUTO DEL TRABAJADOR AUTÓNOMO, SE DENOMINA TRABAJADOR AUTÓNOMO ECONÓMICAMENTE DEPENDIENTE (TRADE):",
+    "question": "145. SEGÚN EL ESTATUTO DEL TRABAJADOR AUTÓNOMO, SE DENOMINA TRABAJADOR AUTÓNOMO ECONÓMICAMENTE DEPENDIENTE (TRADE):",
     "options": {
       "A": "Al que recibe, al menos, el 50% de sus ingresos de una misma persona física o jurídica",
       "B": "Al que recibe, al menos, el 75% de sus ingresos de una misma persona física o jurídica",
@@ -1599,7 +1599,7 @@ const questions = [
   },
   {
     "id": 146,
-    "question": "¿QUÉ DIFERENCIA EXISTE EN QUE UN TRABAJADOR ESTÉ EN SITUACIÓN DE PLURIACTIVIDAD O DE PLURIEMPLEO?",
+    "question": "146. ¿QUÉ DIFERENCIA EXISTE EN QUE UN TRABAJADOR ESTÉ EN SITUACIÓN DE PLURIACTIVIDAD O DE PLURIEMPLEO?",
     "options": {
       "A": "Ninguna, son dos formas de denominar una misma situación",
       "B": "El pluriactividad no es necesario estar dado de alta en la seguridad social y en pluriempleo sí",
@@ -1610,7 +1610,7 @@ const questions = [
   },
   {
     "id": 147,
-    "question": "¿QUÉ ES EL CÓDIGO CUENTA COTIZACIÓN (C.C.C.)? :",
+    "question": "147. ¿QUÉ ES EL CÓDIGO CUENTA COTIZACIÓN (C.C.C.)? :",
     "options": {
       "A": "Código numérico que la Tesorería General de la Seguridad Social asigna a los empresarios y demás sujetos responsables del pago de cuotas al Sistema de la Seguridad Social",
       "B": "Es el código numérico que la Tesorería General de la Seguridad Social asigna a las empresas de la construcción para controlar las obras",
@@ -1621,7 +1621,7 @@ const questions = [
   },
   {
     "id": 148,
-    "question": "¿PUEDE TENER UN EMPRESARIO MÁS DE UN CÓDIGO CUENTA DE COTIZACIÓN (C.C.C.) IGUAL? :",
+    "question": "148. ¿PUEDE TENER UN EMPRESARIO MÁS DE UN CÓDIGO CUENTA DE COTIZACIÓN (C.C.C.) IGUAL? :",
     "options": {
       "A": "No, el C.C.C. es único para cada empresario dentro de cada provincia",
       "B": "Sí, puede tener varios iguales siempre que el CNAE de cada uno de ellos sea distinto a otro",
@@ -1632,7 +1632,7 @@ const questions = [
   },
   {
     "id": 149,
-    "question": "LA INSCRIPCIÓN DE EMPRESAS, AFILIACIÓN, ALTAS Y BAJAS DE LOS TRABAJADORES EN LA SEGURIDAD SOCIAL, ES COMPETENCIA DE:",
+    "question": "149. LA INSCRIPCIÓN DE EMPRESAS, AFILIACIÓN, ALTAS Y BAJAS DE LOS TRABAJADORES EN LA SEGURIDAD SOCIAL, ES COMPETENCIA DE:",
     "options": {
       "A": "Instituto Nacional de la Seguridad Social (INSS)",
       "B": "Tesorería General de la Seguridad Social (TGSS)",
@@ -1643,7 +1643,7 @@ const questions = [
   },
   {
     "id": 150,
-    "question": "SI UNA EMPRESA SOLICITA AUTORIZACIÓN AL MINISTERIO DE TRABAJO, MIGRACIONES Y SEGURIDAD SOCIAL PARA COLABORAR VOLUNTARIAMENTE EN LA GESTIÓN DE I.T. POR ACCIDENTES DE TRABAJO Y ENFERMEDADES PROFESIONALES, ¿LA PETICIÓN TIENE QUE ABARCAR A TODOS SUS CENTROS DE TRABAJO?",
+    "question": "150. SI UNA EMPRESA SOLICITA AUTORIZACIÓN AL MINISTERIO DE TRABAJO, MIGRACIONES Y SEGURIDAD SOCIAL PARA COLABORAR VOLUNTARIAMENTE EN LA GESTIÓN DE I.T. POR ACCIDENTES DE TRABAJO Y ENFERMEDADES PROFESIONALES, ¿LA PETICIÓN TIENE QUE ABARCAR A TODOS SUS CENTROS DE TRABAJO?",
     "options": {
       "A": "Solamente en aquellos para los que lo solicite",
       "B": "Para todos los que estén ubicados dentro de la misma provincia",
@@ -1654,7 +1654,7 @@ const questions = [
   },
   {
     "id": 151,
-    "question": "¿EXISTE LA POSIBILIDAD DE QUE UN TRABAJADOR ESTÉ AFILIADO A LA VEZ EN MÁS DE UN REGIMEN EN LA SEGURIDAD SOCIAL?",
+    "question": "151. ¿EXISTE LA POSIBILIDAD DE QUE UN TRABAJADOR ESTÉ AFILIADO A LA VEZ EN MÁS DE UN REGIMEN EN LA SEGURIDAD SOCIAL?",
     "options": {
       "A": "No es posible, tendría que darse de baja en uno y de alta en otro",
       "B": "Si es posible siempre que sea en dos regímenes por cuenta ajena",
@@ -1665,7 +1665,7 @@ const questions = [
   },
   {
     "id": 152,
-    "question": "CUANDO UN TRABAJADOR ESTÁ AFILIADO A LA SEGURIDAD SOCIAL Y EN SITUACIÓN DE ALTA EN EL REGIMEN GENERAL Y EN EL REGIMEN ESPECIAL DE TRABAJADORES POR CUENTA PROPIA O AUTÓNOMO, SE DICE QUE ESTÁ EN SITUACIÓN DE:",
+    "question": "152. CUANDO UN TRABAJADOR ESTÁ AFILIADO A LA SEGURIDAD SOCIAL Y EN SITUACIÓN DE ALTA EN EL REGIMEN GENERAL Y EN EL REGIMEN ESPECIAL DE TRABAJADORES POR CUENTA PROPIA O AUTÓNOMO, SE DICE QUE ESTÁ EN SITUACIÓN DE:",
     "options": {
       "A": "No es posible dicha situación, tendría que darse de baja en un régimen y de alta en otro",
       "B": "En situación de pluriempleo",
@@ -1676,7 +1676,7 @@ const questions = [
   },
   {
     "id": 153,
-    "question": "UN EMPRESARIO SE INSCRIBE EN LA SEGURIDAD SOCIAL, ASIGNANDOLE LA TESORERÍA GENERAL UN CODIGO DE CUENTA DE COTIZACIÓN (C.C.C.), EN ESTE SE INCLUIRÁN:",
+    "question": "153. UN EMPRESARIO SE INSCRIBE EN LA SEGURIDAD SOCIAL, ASIGNANDOLE LA TESORERÍA GENERAL UN CODIGO DE CUENTA DE COTIZACIÓN (C.C.C.), EN ESTE SE INCLUIRÁN:",
     "options": {
       "A": "Solamente los trabajadores que en ese momento estén afiliados en la Seguridad Social y prestando servicios para el empresario",
       "B": "Los trabajadores que en ese momento estén afiliados en la Seguridad Social y prestando servicios para el empresario y los que un futuro sean contratados",
@@ -1687,7 +1687,7 @@ const questions = [
   },
   {
     "id": 154,
-    "question": "LAS CUOTAS DE A.T. Y E.P. QUE EN CONCEPTO DE INGRESOS RECIBE UNA MUTUA COMO CONSECUENCIA DE LAS COTIZACIONES DE SUS EMPRESAS ASOCIADAS, ESTÁN DISTRIBUIDAS:",
+    "question": "154. LAS CUOTAS DE A.T. Y E.P. QUE EN CONCEPTO DE INGRESOS RECIBE UNA MUTUA COMO CONSECUENCIA DE LAS COTIZACIONES DE SUS EMPRESAS ASOCIADAS, ESTÁN DISTRIBUIDAS:",
     "options": {
       "A": "Cuotas de I.T. de A.T.",
       "B": "Cuotas de I.T.C.C. y cuotas de I.M.S.",
@@ -1698,7 +1698,7 @@ const questions = [
   },
   {
     "id": 155,
-    "question": "LA CUOTA DE A.T. Y E.P., ES UNA CANTIDAD RESULTANTE DE APLICAR EL TIPO SOBRE LAS BASES DE COTIZACIÓN PARA DICHA CONTINGENCIA, EL TIPO ESTÁ FIJADO EN FUNCIÓN DE:",
+    "question": "155. LA CUOTA DE A.T. Y E.P., ES UNA CANTIDAD RESULTANTE DE APLICAR EL TIPO SOBRE LAS BASES DE COTIZACIÓN PARA DICHA CONTINGENCIA, EL TIPO ESTÁ FIJADO EN FUNCIÓN DE:",
     "options": {
       "A": "La actividad que desarrolla la empresa",
       "B": "El número de trabajadores cotizantes en cada periodo",
@@ -1709,7 +1709,7 @@ const questions = [
   },
   {
     "id": 156,
-    "question": "LA CUOTA DE CONTINGENCIAS COMUNES QUE MENSUALMENTE RECIBE LA MUTUA COMO INGRESO ESTÁ CALCULADA:",
+    "question": "156. LA CUOTA DE CONTINGENCIAS COMUNES QUE MENSUALMENTE RECIBE LA MUTUA COMO INGRESO ESTÁ CALCULADA:",
     "options": {
       "A": "Aplicando un % a la cuota de A.T. y E.P. del mismo periodo",
       "B": "Aplicando un % a la cuota total de contingencias comunes ingresada por la empresa (cuota patronal + cuota obrera)",
@@ -1720,7 +1720,7 @@ const questions = [
   },
   {
     "id": 157,
-    "question": "EN EL MAESTRO DE AFILIACIÓN DE LA MUTUA, UNA EMPRESA FIGURA COMO ASOCIADA, SIN EMBARGO EN EL FICHERO DE AFILIACIÓN DE LA T.G.S.S. (CExSIL), FIGURA CON OTRA ENTIDAD DISTINTA, LA RECAUDACIÓN CORRESPONDIENTE A ESE MES LA RECIBIRÁ:",
+    "question": "157. EN EL MAESTRO DE AFILIACIÓN DE LA MUTUA, UNA EMPRESA FIGURA COMO ASOCIADA, SIN EMBARGO EN EL FICHERO DE AFILIACIÓN DE LA T.G.S.S. (CExSIL), FIGURA CON OTRA ENTIDAD DISTINTA, LA RECAUDACIÓN CORRESPONDIENTE A ESE MES LA RECIBIRÁ:",
     "options": {
       "A": "La propia Mutua, ya que prevalecen los datos de su fichero ante la T.G.S.S.",
       "B": "Ninguna de las dos anteriores, se la queda la T.G.S.S. hasta que se aclare la situación",
@@ -1731,7 +1731,7 @@ const questions = [
   },
   {
     "id": 158,
-    "question": "EN LA RECAUDACIÓN DE UN MES, LA MUTUA RECIBE LAS CUOTAS DE UNA EMPRESA QUE NO ESTÁ INCLUIDA COMO ASOCIADA EN SU FICHERO DE AFILIACIÓN, ANTE ESTA SITUACIÓN EL PROCEDIMIENTO A SEGUIR, SERÍA:",
+    "question": "158. EN LA RECAUDACIÓN DE UN MES, LA MUTUA RECIBE LAS CUOTAS DE UNA EMPRESA QUE NO ESTÁ INCLUIDA COMO ASOCIADA EN SU FICHERO DE AFILIACIÓN, ANTE ESTA SITUACIÓN EL PROCEDIMIENTO A SEGUIR, SERÍA:",
     "options": {
       "A": "Ninguno, la Mutua se queda con la cuota",
       "B": "La Mutua se queda con la cuota y de oficio da de alta a la empresa como suya",
@@ -1742,7 +1742,7 @@ const questions = [
   },
   {
     "id": 159,
-    "question": "CUANDO UNA EMPRESA QUE ESTÁ ASOCIADA CON UNA MUTUA, REALIZA UNA COTIZACIÓN MENSUAL EN TIEMPO Y FORMA, PERO LA RECAUDACIÓN LA RECIBE OTRA ENTIDAD DISTINTA, LA PRIMERA, PARA RECUPERAR LA CUOTA:",
+    "question": "159. CUANDO UNA EMPRESA QUE ESTÁ ASOCIADA CON UNA MUTUA, REALIZA UNA COTIZACIÓN MENSUAL EN TIEMPO Y FORMA, PERO LA RECAUDACIÓN LA RECIBE OTRA ENTIDAD DISTINTA, LA PRIMERA, PARA RECUPERAR LA CUOTA:",
     "options": {
       "A": "Dirige un escrito a la T.G.S.S. reclamando la cuota",
       "B": "Emite un documento de traspaso de cuotas (TC14/9) a la mutua receptora y una vez conformado por esta, se remite el documento a la T.G.S.S",
@@ -1753,7 +1753,7 @@ const questions = [
   },
   {
     "id": 160,
-    "question": "UNA EMPRESA ESTÁ ASOCIADA CON UNA MUTUA HASTA EL 31 DE MARZO DE 2.015. A PARTIR DEL 1 DE ABRIL DE ESE AÑO SE ASOCIA CON OTRA DISTINTA. EN LA RECAUDACIÓN DEL MES DE JULIO DE 2.015, LA EMPRESA REALIZA UNA COTIZACIÓN COMPLEMENTARIA CON MOTIVO DE LA APROBACIÓN DE SU CONVENIO COLECTIVO QUE ABARCA DESDE 1 DE ENERO DE 2.015 HASTA 31 DE MAYO DEL MISMO, LAS CUOTAS CORRESPONDEN A:",
+    "question": "160. UNA EMPRESA ESTÁ ASOCIADA CON UNA MUTUA HASTA EL 31 DE MARZO DE 2.015. A PARTIR DEL 1 DE ABRIL DE ESE AÑO SE ASOCIA CON OTRA DISTINTA. EN LA RECAUDACIÓN DEL MES DE JULIO DE 2.015, LA EMPRESA REALIZA UNA COTIZACIÓN COMPLEMENTARIA CON MOTIVO DE LA APROBACIÓN DE SU CONVENIO COLECTIVO QUE ABARCA DESDE 1 DE ENERO DE 2.015 HASTA 31 DE MAYO DEL MISMO, LAS CUOTAS CORRESPONDEN A:",
     "options": {
       "A": "A la primera Mutua porque el 1 de enero la empresa estaba asociada con la misma",
       "B": "A la Mutua actual puesto que el 31 de mayo la empresa estaba asociada con ella",
@@ -1764,7 +1764,7 @@ const questions = [
   },
   {
     "id": 161,
-    "question": "CUANDO UNA MUTUA CUMPLIMENTA UN DOCUMENTO TC14/9 DE TRASPASO PARA RECLAMAR CUOTAS DE I.T.C.C. CORRESPONDIENTES A UNA EMPRESA QUE ANTERIORMENTE ESTABA ASOCIADA CON EL INSTITUTO NACIONAL DE LA SEGURIDAD SOCIAL, SE DIRIGIRÁ:",
+    "question": "161. CUANDO UNA MUTUA CUMPLIMENTA UN DOCUMENTO TC14/9 DE TRASPASO PARA RECLAMAR CUOTAS DE I.T.C.C. CORRESPONDIENTES A UNA EMPRESA QUE ANTERIORMENTE ESTABA ASOCIADA CON EL INSTITUTO NACIONAL DE LA SEGURIDAD SOCIAL, SE DIRIGIRÁ:",
     "options": {
       "A": "A la Entidad Gestora, para que ésta nos lo devuelva conformado y remitirlo posteriormente a la T.G.S.S.",
       "B": "A la T.G.S.S., para que ésta nos haga el traspaso directamente",
@@ -1775,7 +1775,7 @@ const questions = [
   },
   {
     "id": 162,
-    "question": "UNA MUTUA DETECTA MEDIANTE LA CINTA DE RECAUDACIÓN MENSUAL QUE UNA EMPRESA ASOCIADA A LA MISMA EN EL RÉGIMEN GENERAL LLEVA SEIS MESES SIN COTIZAR, EL PROCEDIMIENTO A SEGUIR SERÍA:",
+    "question": "162. UNA MUTUA DETECTA MEDIANTE LA CINTA DE RECAUDACIÓN MENSUAL QUE UNA EMPRESA ASOCIADA A LA MISMA EN EL RÉGIMEN GENERAL LLEVA SEIS MESES SIN COTIZAR, EL PROCEDIMIENTO A SEGUIR SERÍA:",
     "options": {
       "A": "Presentar una denuncia ante el Juzgado para que la embarguen y de esta manera recuperar las cuotas",
       "B": "Comunicárselo a la T.G.S.S. para que esta se encargue de cobrarle",
@@ -1786,7 +1786,7 @@ const questions = [
   },
   {
     "id": 163,
-    "question": "CUANDO UNA EMPRESA TIENE TRABAJADORES EN BAJA POR ACCIDENTE DE TRABAJO, AL CONFECCIONAR EL BOLETÍN DE COTIZACIÓN, PUEDE CAMBIAR SUS CNAE/OCUPACIONES:",
+    "question": "163. CUANDO UNA EMPRESA TIENE TRABAJADORES EN BAJA POR ACCIDENTE DE TRABAJO, AL CONFECCIONAR EL BOLETÍN DE COTIZACIÓN, PUEDE CAMBIAR SUS CNAE/OCUPACIONES:",
     "options": {
       "A": "No, debe seguir con las mismas que cotizaban antes del accidente",
       "B": "Sí, por una ocupación especifica",
@@ -1797,7 +1797,7 @@ const questions = [
   },
   {
     "id": 164,
-    "question": "LA T.G.S.S. ABONA MENSUALMENTE A LAS MUTUAS EN CONCEPTO DE A.T. Y E.P. UNA CANTIDAD INTEGRADA POR:",
+    "question": "164. LA T.G.S.S. ABONA MENSUALMENTE A LAS MUTUAS EN CONCEPTO DE A.T. Y E.P. UNA CANTIDAD INTEGRADA POR:",
     "options": {
       "A": "Cuotas íntegras",
       "B": "Cuotas íntegras menos deducciones de pago delegado",
@@ -1808,7 +1808,7 @@ const questions = [
   },
   {
     "id": 165,
-    "question": "LA T.G.S.S. ABONA MENSUALMENTE A LAS MUTUAS BAJO EL CONCEPTO DE RECAUDACIÓN POR CONTINGENCIAS COMUNES:",
+    "question": "165. LA T.G.S.S. ABONA MENSUALMENTE A LAS MUTUAS BAJO EL CONCEPTO DE RECAUDACIÓN POR CONTINGENCIAS COMUNES:",
     "options": {
       "A": "El total de cuotas que el empresario ingresa en la seguridad social en concepto de I.T.C.C.",
       "B": "El total de cuotas que el empresario ingresa en la seguridad social en concepto de I.T.C.C. menos deducciones de pago delegado",
@@ -1819,7 +1819,7 @@ const questions = [
   },
   {
     "id": 166,
-    "question": "LA LEY 42/2006, DE 28 DE DICIEMBRE, DE PRESUPUESTOS GENERALES DEL ESTADO PARA EL 2.007, EN SU DISPOSICIÓN ADICIONAL CUARTA APRUEBA LA NUEVA TARIFA DE A.T. Y E.P., EN BASE A QUE SE ESTRUCTURA:",
+    "question": "166. LA LEY 42/2006, DE 28 DE DICIEMBRE, DE PRESUPUESTOS GENERALES DEL ESTADO PARA EL 2.007, EN SU DISPOSICIÓN ADICIONAL CUARTA APRUEBA LA NUEVA TARIFA DE A.T. Y E.P., EN BASE A QUE SE ESTRUCTURA:",
     "options": {
       "A": "Solo según actividad principal de la empresa",
       "B": "Según actividad principal de la empresa y ocupaciones",
@@ -1830,7 +1830,7 @@ const questions = [
   },
   {
     "id": 167,
-    "question": "LA NUEVA TARIFA DE A.T. Y E.P. APROBADA POR LA LEY 42/2006, DE 28 DE DICIEMBRE, DE PRESUPUESTOS GENERALES DEL ESTADO PARA EL 2.007, ES DE APLICACIÓN:",
+    "question": "167. LA NUEVA TARIFA DE A.T. Y E.P. APROBADA POR LA LEY 42/2006, DE 28 DE DICIEMBRE, DE PRESUPUESTOS GENERALES DEL ESTADO PARA EL 2.007, ES DE APLICACIÓN:",
     "options": {
       "A": "Sólo a las empresas encuadradas en el régimen general por todo tipo de contingencias.",
       "B": "Solamente a empresas con trabajadores por cuenta ajena por contingencias de A.T.",
@@ -1841,7 +1841,7 @@ const questions = [
   },
   {
     "id": 168,
-    "question": "¿A QUIÉN CORRESPONDE FIJAR LA TARIFACIÓN DE LAS EMPRESAS RESPECTO A LAS CONTINGENCIAS DE ACCIDENTES DE TRABAJO Y ENFERMEDADES PROFESIONALES, EN LOS TÉRMINOS ESTABLECIDOS POR LA LEY?:",
+    "question": "168. ¿A QUIÉN CORRESPONDE FIJAR LA TARIFACIÓN DE LAS EMPRESAS RESPECTO A LAS CONTINGENCIAS DE ACCIDENTES DE TRABAJO Y ENFERMEDADES PROFESIONALES, EN LOS TÉRMINOS ESTABLECIDOS POR LA LEY?:",
     "options": {
       "A": "A las Direcciones Provinciales o Administraciones de la Tesorería General de la Seguridad Social",
       "B": "A la Entidad Gestora o Colaboradora",
@@ -1852,7 +1852,7 @@ const questions = [
   },
   {
     "id": 169,
-    "question": "UNA EMPRESA QUE ESTÁ ENCUADRADA A EFECTOS DE COTIZACIÓN EN EL CNAE “53” ACTIVIDADES POSTALES Y DE CORREOS, TIENE TRABAJADORES EN LA OCUPACIÓN “A” Y “D”, DEBERÁ COTIZAR POR:",
+    "question": "169. UNA EMPRESA QUE ESTÁ ENCUADRADA A EFECTOS DE COTIZACIÓN EN EL CNAE “53” ACTIVIDADES POSTALES Y DE CORREOS, TIENE TRABAJADORES EN LA OCUPACIÓN “A” Y “D”, DEBERÁ COTIZAR POR:",
     "options": {
       "A": "Siempre por el CNAE para todos sus trabajadores",
       "B": "Al tener ocupaciones cotizará por éstas para todos sus trabajadores",
@@ -1863,7 +1863,7 @@ const questions = [
   },
   {
     "id": 170,
-    "question": "CUANDO EN UNA EMPRESA CONCURREN, JUNTO CON LA ACTIVIDAD PRINCIPAL, OTRA U OTRAS QUE DEBAN SER CONSIDERADAS AUXILIARES, EL TIPO DE COTIZACIÓN SERÁ:",
+    "question": "170. CUANDO EN UNA EMPRESA CONCURREN, JUNTO CON LA ACTIVIDAD PRINCIPAL, OTRA U OTRAS QUE DEBAN SER CONSIDERADAS AUXILIARES, EL TIPO DE COTIZACIÓN SERÁ:",
     "options": {
       "A": "Dependerá del CNAE de cada una de las ocupaciones",
       "B": "El del principal por un CNAE y el de todas las ocupaciones por otro distinto",
@@ -1874,7 +1874,7 @@ const questions = [
   },
   {
     "id": 171,
-    "question": "EL TIPO DE COTIZACIÓN DE UNA EMPRESA POR EL CONCEPTO DE CONTINGENCIAS COMUNES ES:",
+    "question": "171. EL TIPO DE COTIZACIÓN DE UNA EMPRESA POR EL CONCEPTO DE CONTINGENCIAS COMUNES ES:",
     "options": {
       "A": "El mismo para todo tipo de empresas",
       "B": "Depende del CNAE de su actividad principal",
@@ -1885,7 +1885,7 @@ const questions = [
   },
   {
     "id": 172,
-    "question": "CUANDO UNA EMPRESA ASOCIADA NO COTIZA:",
+    "question": "172. CUANDO UNA EMPRESA ASOCIADA NO COTIZA:",
     "options": {
       "A": "La Mutua se dirige a ella reclamando el importe",
       "B": "La Mutua comunica a la Tesorería tal incidencia para que ésta reclame",
@@ -1896,7 +1896,7 @@ const questions = [
   },
   {
     "id": 173,
-    "question": "UNA EMPRESA NO INGRESA LA COTIZACIÓN DE UN MES DETERMINADO, ¿PUEDE DESCONTAR DE LA LIQUIDACIÓN EL PAGO DELEGADO?:",
+    "question": "173. UNA EMPRESA NO INGRESA LA COTIZACIÓN DE UN MES DETERMINADO, ¿PUEDE DESCONTAR DE LA LIQUIDACIÓN EL PAGO DELEGADO?:",
     "options": {
       "A": "No, si no ingresa cómo va a descontar nada",
       "B": "Sí, siempre que haya presentado los boletines de cotización en la Tesorería en tiempo y forma",
@@ -1907,7 +1907,7 @@ const questions = [
   },
   {
     "id": 174,
-    "question": "QUIÉN TIENE QUE COTIZAR POR ACCIDENTES DE TRABAJO Y ENFERMEDADES PROFESIONALES:",
+    "question": "174. QUIÉN TIENE QUE COTIZAR POR ACCIDENTES DE TRABAJO Y ENFERMEDADES PROFESIONALES:",
     "options": {
       "A": "El empresario y el trabajador por partes iguales",
       "B": "El empresario excepto cuando un trabajador está en I.T. que será este último el obligado",
@@ -1918,7 +1918,7 @@ const questions = [
   },
   {
     "id": 175,
-    "question": "LA FRACCION DE CUOTA DE CONTINGENCIAS COMUNES QUE MENSUALMENTE RECIBE LA MUTUA COMO INGRESO PROCEDENTE DE LOS TRABAJADORES AUTÓNOMOS ENCUADRADOS DENTRO DEL SISTEMA ESPECIAL PARA TRABAJADORES POR CUENTA PROPIA AGRARIOS ESTÁ CALCULADA:",
+    "question": "175. LA FRACCION DE CUOTA DE CONTINGENCIAS COMUNES QUE MENSUALMENTE RECIBE LA MUTUA COMO INGRESO PROCEDENTE DE LOS TRABAJADORES AUTÓNOMOS ENCUADRADOS DENTRO DEL SISTEMA ESPECIAL PARA TRABAJADORES POR CUENTA PROPIA AGRARIOS ESTÁ CALCULADA:",
     "options": {
       "A": "aplicando el 3,30% a la cuota de c.comunes ingresada en el mismo período",
       "B": "aplicando el 2,80% o el 3,30% según disponga o no de protección por contingencias profesionales o por cese de actividad a la cuota de c.comunes ingresada en el mismo período",
@@ -1929,7 +1929,7 @@ const questions = [
   },
   {
     "id": 176,
-    "question": "LA CUOTA DE ACCIDENTES DE TRABAJO QUE MENSUALMENTE RECIBE LA MUTUA COMO INGRESO PROCEDENTE DE LOS TRABAJADORES AUTÓNOMOS ESTÁ CALCULADA:",
+    "question": "176. LA CUOTA DE ACCIDENTES DE TRABAJO QUE MENSUALMENTE RECIBE LA MUTUA COMO INGRESO PROCEDENTE DE LOS TRABAJADORES AUTÓNOMOS ESTÁ CALCULADA:",
     "options": {
       "A": "según tarifa, de acuerdo con el CNAE genérico de los autónomos",
       "B": "aplicando el 29,80% a la base de cotización elegida para el mismo período",
@@ -1940,7 +1940,7 @@ const questions = [
   },
   {
     "id": 177,
-    "question": "LA CUOTA POR COTIZACIÓN ADICIONAL DE RIESGO DURANTE EL EMBARAZO Y LACTANCIA NATURAL DEL 0,10%, ES OBLIGATORIA PARA AQUELLOS TRABAJADORES AUTÓNOMOS:",
+    "question": "177. LA CUOTA POR COTIZACIÓN ADICIONAL DE RIESGO DURANTE EL EMBARAZO Y LACTANCIA NATURAL DEL 0,10%, ES OBLIGATORIA PARA AQUELLOS TRABAJADORES AUTÓNOMOS:",
     "options": {
       "A": "que llevan menos de 1 año afiliados a la Seguridad Social",
       "B": "que estén en situación de pluriactividad",
@@ -1951,7 +1951,7 @@ const questions = [
   },
   {
     "id": 178,
-    "question": "¿CUÁL ES EL PLAZO REGLAMENTARIO DE INGRESO DE CUOTAS DE UN TRABAJADOR AUTÓNOMO? :",
+    "question": "178. ¿CUÁL ES EL PLAZO REGLAMENTARIO DE INGRESO DE CUOTAS DE UN TRABAJADOR AUTÓNOMO? :",
     "options": {
       "A": "se devenga un mes y se ingresa al siguiente",
       "B": "las correspondientes al mes se ingresan ese mismo mes",
@@ -1962,7 +1962,7 @@ const questions = [
   },
   {
     "id": 179,
-    "question": "¿CUÁL ES EL PLAZO REGLAMENTARIO DE INGRESO DE CUOTAS DE UNA EMPRESA?:",
+    "question": "179. ¿CUÁL ES EL PLAZO REGLAMENTARIO DE INGRESO DE CUOTAS DE UNA EMPRESA?:",
     "options": {
       "A": "Siempre se devenga un mes y se ingresa al siguiente",
       "B": "Con carácter general se devenga un mes y se ingresa al siguiente, salvo que tenga una autorización especial de la TGSS para variar esta norma",
@@ -1973,7 +1973,7 @@ const questions = [
   },
   {
     "id": 180,
-    "question": "LA FRACCIÓN DE CUOTA DE CONTINGENCIAS COMUNES QUE MENSUALMENTE RECIBE LA MUTUA COMO INGRESO ESTÁ CALCULADA EN BASE A LA APLICACIÓN DE UN COEFICIENTE DE 0,06 SOBRE LA CUOTA INTEGRA DE CONTINGENCIAS COMUNES, DICHO PORCENTAJE PUEDE ELEVARSE:",
+    "question": "180. LA FRACCIÓN DE CUOTA DE CONTINGENCIAS COMUNES QUE MENSUALMENTE RECIBE LA MUTUA COMO INGRESO ESTÁ CALCULADA EN BASE A LA APLICACIÓN DE UN COEFICIENTE DE 0,06 SOBRE LA CUOTA INTEGRA DE CONTINGENCIAS COMUNES, DICHO PORCENTAJE PUEDE ELEVARSE:",
     "options": {
       "A": "no puede elevarse en ningún caso",
       "B": "puede elevarse al 0,07 siempre que la Mutua cumpla unos requisitos establecidos por la Dirección General de Ordenación de la Seguridad Social",
@@ -1984,7 +1984,7 @@ const questions = [
   },
   {
     "id": 181,
-    "question": "¿EN QUÉ CONSISTE EL SISTEMA RED DIRECTO?",
+    "question": "181. ¿EN QUÉ CONSISTE EL SISTEMA RED DIRECTO?",
     "options": {
       "A": "En la utilización de la Red de las Administraciones y Direcciones Provinciales de la TGSS a través de INTERNET de manera directa",
       "B": "En la utilización solamente de la Administraciones de la TGSS correspondientes a la provincia en que está inscrita la empresa mediante conexión directa",
@@ -1995,7 +1995,7 @@ const questions = [
   },
   {
     "id": 182,
-    "question": "LOS TOPES MAXIMO Y MINIMO DE COTIZACIÓN DE AT Y EP PARA EL AÑO 2.023 ESTÁN EN 4.495,50 Y 1.260,00 EUROS RESPECTIVAMENTE, SI UN TRABAJADOR TIENE UNA BASE DE COTIZACIÓN DE 3.120 EUROS TENDRÁ QUE COTIZAR POR:",
+    "question": "182. LOS TOPES MAXIMO Y MINIMO DE COTIZACIÓN DE AT Y EP PARA EL AÑO 2.023 ESTÁN EN 4.495,50 Y 1.260,00 EUROS RESPECTIVAMENTE, SI UN TRABAJADOR TIENE UNA BASE DE COTIZACIÓN DE 3.120 EUROS TENDRÁ QUE COTIZAR POR:",
     "options": {
       "A": "Por los 3.120 euros, ya que es lo que realmente percibe",
       "B": "Por la diferencia entre los 3.120 euros y el promedio entre bases máxima y mínima",
@@ -2006,7 +2006,7 @@ const questions = [
   },
   {
     "id": 183,
-    "question": "SI UN EMPRESARIO NO INGRESA SUS CUOTAS EN EL PLAZO REGLAMENTARIO, DEBERÁ AL MENOS PRESENTAR LOS DOCUMENTOS DE COTIZACIÓN:",
+    "question": "183. SI UN EMPRESARIO NO INGRESA SUS CUOTAS EN EL PLAZO REGLAMENTARIO, DEBERÁ AL MENOS PRESENTAR LOS DOCUMENTOS DE COTIZACIÓN:",
     "options": {
       "A": "Se negociará cada caso en particular con la TGSS de su provincia",
       "B": "Si, es obligatoria su presentación aunque no se haga efectivo el pago",
@@ -2017,7 +2017,7 @@ const questions = [
   },
   {
     "id": 184,
-    "question": "EL TIPO DE COTIZACIÓN ADICIONAL CORRESPONDIENTE A LA PROTECCIÓN POR CESE DE ACTIVIDAD PARA LOS TRABAJADORES AUTÓNOMOS ENCUADRADOS DENTRO DEL SISTEMA ESPECIAL PARA TRABAJADORES POR CUENTA PROPIA AGRARIOS ES DEL 2,20% APLICABLE SOBRE:",
+    "question": "184. EL TIPO DE COTIZACIÓN ADICIONAL CORRESPONDIENTE A LA PROTECCIÓN POR CESE DE ACTIVIDAD PARA LOS TRABAJADORES AUTÓNOMOS ENCUADRADOS DENTRO DEL SISTEMA ESPECIAL PARA TRABAJADORES POR CUENTA PROPIA AGRARIOS ES DEL 2,20% APLICABLE SOBRE:",
     "options": {
       "A": "La base mínima de cotización",
       "B": "La base máxima de cotización",
@@ -2028,7 +2028,7 @@ const questions = [
   },
   {
     "id": 185,
-    "question": "CUANDO UN TRABAJADOR SE ENCUENTRE EN SITUACIÓN DE PLURIEMPLEO:",
+    "question": "185. CUANDO UN TRABAJADOR SE ENCUENTRE EN SITUACIÓN DE PLURIEMPLEO:",
     "options": {
       "A": "Para las contingencias comunes, el tope máximo de las bases de cotización, establecido en 4.495,50 euros mensuales, para 2.023 se distribuirá entre todas las empresas en proporción a la remuneración abonada al trabajador en cada una de ellas",
       "B": "Para las contingencias comunes, cotizará aquella empresa en la que el trabajador perciba las retribuciones más altas",
@@ -2039,7 +2039,7 @@ const questions = [
   },
   {
     "id": 186,
-    "question": "QUE SIGNIFICA QUE UN TRABAJADOR ESTÉ EN SITUACIÓN DE PLURIACTIVIDAD:",
+    "question": "186. QUE SIGNIFICA QUE UN TRABAJADOR ESTÉ EN SITUACIÓN DE PLURIACTIVIDAD:",
     "options": {
       "A": "Está dado de alta en la seguridad social en distintas empresas como trabajador por cuenta ajena",
       "B": "Está dado de alta en la seguridad social en una sola empresa desarrolla distintas actividades dentro de dicha empresa",
@@ -2050,7 +2050,7 @@ const questions = [
   },
   {
     "id": 187,
-    "question": "LA OBLIGACIÓN DEL PAGO DE CUOTAS A LA SEGURIDAD SOCIAL Y DE LOS CONCEPTOS DE RECAUDACIÓN CONJUNTA, ASI COMO LOS RECARGOS SOBRE UNOS Y OTRAS:",
+    "question": "187. LA OBLIGACIÓN DEL PAGO DE CUOTAS A LA SEGURIDAD SOCIAL Y DE LOS CONCEPTOS DE RECAUDACIÓN CONJUNTA, ASI COMO LOS RECARGOS SOBRE UNOS Y OTRAS:",
     "options": {
       "A": "Prescribirá a los 5 años a contar desde la fecha en que finalice el plazo reglamentario de ingreso de aquéllas",
       "B": "No prescribe nunca",
@@ -2061,7 +2061,7 @@ const questions = [
   },
   {
     "id": 188,
-    "question": "CUANDO UNA EMPRESA QUE ESTÁ ASEGURADA CON UNA MUTUA DECIDE CAMBIAR DE ENTIDAD ASEGURADORA, LA PRIMERA, DEBERÁ EXTENDER Y ENTREGAR A LA EMPRESA CERTIFICADO DE CESE EN UN PLAZO DE:",
+    "question": "188. CUANDO UNA EMPRESA QUE ESTÁ ASEGURADA CON UNA MUTUA DECIDE CAMBIAR DE ENTIDAD ASEGURADORA, LA PRIMERA, DEBERÁ EXTENDER Y ENTREGAR A LA EMPRESA CERTIFICADO DE CESE EN UN PLAZO DE:",
     "options": {
       "A": "No existe plazo",
       "B": "15 días desde la notificación de la denuncia",
@@ -2072,7 +2072,7 @@ const questions = [
   },
   {
     "id": 189,
-    "question": "LOS TOPES MAXIMO Y MINIMO DE COTIZACIÓN DE AT Y EP PARA EL AÑO 2.023 ESTÁN EN 4.495,50 Y 1.260,00 EUROS RESPECTIVAMENTE, SI UN TRABAJADOR TIENE UNA BASE DE COTIZACIÓN DE 720 EUROS TENDRÁ QUE COTIZAR POR:",
+    "question": "189. LOS TOPES MAXIMO Y MINIMO DE COTIZACIÓN DE AT Y EP PARA EL AÑO 2.023 ESTÁN EN 4.495,50 Y 1.260,00 EUROS RESPECTIVAMENTE, SI UN TRABAJADOR TIENE UNA BASE DE COTIZACIÓN DE 720 EUROS TENDRÁ QUE COTIZAR POR:",
     "options": {
       "A": "Por los 720 euros, ya que es lo que realmente percibe",
       "B": "Por el tope mínimo",
@@ -2083,7 +2083,7 @@ const questions = [
   },
   {
     "id": 190,
-    "question": "¿EN QUÉ DOCUMENTO SE FORMALIZA LA COBERTURA DE LA MEJORA PRESTACIÓN ECONÓMICA POR IT PARA LOS TRABAJADORES DEL SISTEMA ESPECIAL DE TRABAJADORES AGRARIOS POR CUENTA PROPIA?",
+    "question": "190. ¿EN QUÉ DOCUMENTO SE FORMALIZA LA COBERTURA DE LA MEJORA PRESTACIÓN ECONÓMICA POR IT PARA LOS TRABAJADORES DEL SISTEMA ESPECIAL DE TRABAJADORES AGRARIOS POR CUENTA PROPIA?",
     "options": {
       "A": "En el documento de asociación",
       "B": "En el documento de adhesión",
@@ -2094,7 +2094,7 @@ const questions = [
   },
   {
     "id": 191,
-    "question": "EN REFRAN LA SITUACIÓN QUE SE ASIGNA A UNA EMPRESA EN UNA PROVINCIA TRAS LA COMUNICACIÓN POR PARTE DE LA TGSS DE QUE TODOS LOS C.C.C DE ESA PROVINCIA ESTÁN EN SITUACIÓN DE BAJA TEMPORAL SE LLAMA:",
+    "question": "191. EN REFRAN LA SITUACIÓN QUE SE ASIGNA A UNA EMPRESA EN UNA PROVINCIA TRAS LA COMUNICACIÓN POR PARTE DE LA TGSS DE QUE TODOS LOS C.C.C DE ESA PROVINCIA ESTÁN EN SITUACIÓN DE BAJA TEMPORAL SE LLAMA:",
     "options": {
       "A": "Situación de “potencial”",
       "B": "Situación de “asociada”",
@@ -2105,7 +2105,7 @@ const questions = [
   },
   {
     "id": 192,
-    "question": "UN TRABAJADOR DEL SISTEMA ESPECIAL DE TRABAJADORES AGRARIOS POR CUENTA PROPIA QUE QUIERA OPTAR POR ACOGERSE A LA COBERTURA DE LA MEJORA DE IT, DEBERÁ HACERLO:",
+    "question": "192. UN TRABAJADOR DEL SISTEMA ESPECIAL DE TRABAJADORES AGRARIOS POR CUENTA PROPIA QUE QUIERA OPTAR POR ACOGERSE A LA COBERTURA DE LA MEJORA DE IT, DEBERÁ HACERLO:",
     "options": {
       "A": "Con una Entidad Gestora",
       "B": "Con una Mutua de su elección",
@@ -2116,7 +2116,7 @@ const questions = [
   },
   {
     "id": 193,
-    "question": "¿EN QUÉ CONSISTE EL SISTEMA RED?:",
+    "question": "193. ¿EN QUÉ CONSISTE EL SISTEMA RED?:",
     "options": {
       "A": "En la utilización de la Red de las Administraciones y Direcciones Provinciales de la TGSS",
       "B": "En la utilización solamente de las Administraciones de la TGSS correspondientes a la provincia en que está inscrita la empresa",
@@ -2127,7 +2127,7 @@ const questions = [
   },
   {
     "id": 194,
-    "question": "SEGÚN EL ESTATUTO DEL TRABAJADOR AUTÓNOMO, A PARTIR DEL 1 DE ENERO DE 2.008, LA COBERTURA A LAS PRESTACIONES POR INCAPACIDAD TEMPORAL SERÁ DE CARÁCTER OBLIGATORIO PARA:",
+    "question": "194. SEGÚN EL ESTATUTO DEL TRABAJADOR AUTÓNOMO, A PARTIR DEL 1 DE ENERO DE 2.008, LA COBERTURA A LAS PRESTACIONES POR INCAPACIDAD TEMPORAL SERÁ DE CARÁCTER OBLIGATORIO PARA:",
     "options": {
       "A": "Todos los trabajadores autónomos",
       "B": "Todos los trabajadores autónomos con excepción de los incorporados al Sistema Especial de trabajadores agrarios por cuenta propia",
@@ -2138,7 +2138,7 @@ const questions = [
   },
   {
     "id": 195,
-    "question": "¿QUÉ ES EL NÚMERO DE AFILIACIÓN A LA SEGURIDAD SOCIAL (N.A.F)? :",
+    "question": "195. ¿QUÉ ES EL NÚMERO DE AFILIACIÓN A LA SEGURIDAD SOCIAL (N.A.F)? :",
     "options": {
       "A": "El que la Tesorería General de Seguridad Social asigna a las empresas para todos sus trabajadores",
       "B": "El que la Tesorería General de la Seguridad Social asigna a los trabajadores autónomos",
@@ -2149,7 +2149,7 @@ const questions = [
   },
   {
     "id": 196,
-    "question": "PARA RENUNCIAR A LA COBERTURA DE LA PRESTACIÓN ECONÓMICA POR ITCC, LA EMPRESA DEBERÁ COMUNICÁRSELO A LA MUTUA CON UNA ANTELACIÓN DE UN MES AL VENCIMIENTO DEL:",
+    "question": "196. PARA RENUNCIAR A LA COBERTURA DE LA PRESTACIÓN ECONÓMICA POR ITCC, LA EMPRESA DEBERÁ COMUNICÁRSELO A LA MUTUA CON UNA ANTELACIÓN DE UN MES AL VENCIMIENTO DEL:",
     "options": {
       "A": "Anexo al documento de asociación",
       "B": "Anexo al documento de proposición de asociación",
@@ -2160,7 +2160,7 @@ const questions = [
   },
   {
     "id": 197,
-    "question": "LAS COTIZACIONES ANTERIORES A LA ENTRADA EN VIGOR DE LA NUEVA TARIFA DE A.T. Y E.P. APROBADA POR LA LEY 42/2006, DE 28 DE DICIEMBRE, DE PRESUPUESTOS GENERALES DEL ESTADO PARA EL 2.007, QUE ESTÉN PENDIENTES DE INGRESO, COTIZARÁN:",
+    "question": "197. LAS COTIZACIONES ANTERIORES A LA ENTRADA EN VIGOR DE LA NUEVA TARIFA DE A.T. Y E.P. APROBADA POR LA LEY 42/2006, DE 28 DE DICIEMBRE, DE PRESUPUESTOS GENERALES DEL ESTADO PARA EL 2.007, QUE ESTÉN PENDIENTES DE INGRESO, COTIZARÁN:",
     "options": {
       "A": "Por los epígrafes correspondientes en los que estuvieran encuadrados los trabajadores en el momento de la liquidación",
       "B": "Por la actividad de la empresa a excepción de los trabajadores que estuvieran de baja por I.T.",
@@ -2171,7 +2171,7 @@ const questions = [
   },
   {
     "id": 198,
-    "question": "SEGÚN EL TEXTO REFUNDIDO DE LA LGSS, LOS SISTEMAS DE LIQUIDACIÓN E INGRESO DE CUOTAS A LA SEGURIDAD SOCIAL SON",
+    "question": "198. SEGÚN EL TEXTO REFUNDIDO DE LA LGSS, LOS SISTEMAS DE LIQUIDACIÓN E INGRESO DE CUOTAS A LA SEGURIDAD SOCIAL SON",
     "options": {
       "A": "Sistema de liquidación directa y sistema de liquidación simplificada",
       "B": "Sistema de liquidación directa y sistema de autoliquidación",
@@ -2182,7 +2182,7 @@ const questions = [
   },
   {
     "id": 199,
-    "question": "EL SISTEMA DE LIQUIDACIÓN DIRECTA CONSISTE:",
+    "question": "199. EL SISTEMA DE LIQUIDACIÓN DIRECTA CONSISTE:",
     "options": {
       "A": "Cálculo individualizado de cuotas correspondiente a cada trabajador realizado por la TGSS en función de la información que disponga en sus ficheros",
       "B": "Cálculo individualizado de cuotas correspondiente a cada trabajador realizado por la empresa en base a las a os trabajadores en alta",
@@ -2193,7 +2193,7 @@ const questions = [
   },
   {
     "id": 200,
-    "question": "PARA LA DETERMINACIÓN DE LAS CUOTAS DE LOS TRABAJADORES AUTÓNOMOS SE APLICARA EL SISTEMA:",
+    "question": "200. PARA LA DETERMINACIÓN DE LAS CUOTAS DE LOS TRABAJADORES AUTÓNOMOS SE APLICARA EL SISTEMA:",
     "options": {
       "A": "El sistema de liquidación simplificada",
       "B": "Sistema de liquidación directa o el sistema de autoliquidación",
@@ -2204,7 +2204,7 @@ const questions = [
   },
   {
     "id": 201,
-    "question": "LA TGSS A SOLICITUD DEL DEUDOR PUEDE CONCEDER APLAZAMIENTO DE PAGO DE LAS DEUDAS CON LA SEGURIDAD SOCIAL, PERO QUE CUOTAS SE CONSIDERAN APLAZABLES:",
+    "question": "201. LA TGSS A SOLICITUD DEL DEUDOR PUEDE CONCEDER APLAZAMIENTO DE PAGO DE LAS DEUDAS CON LA SEGURIDAD SOCIAL, PERO QUE CUOTAS SE CONSIDERAN APLAZABLES:",
     "options": {
       "A": "El total de cuotas que completan la deuda",
       "B": "Solamente las cuotas de accidentes de trabajo",
@@ -2215,7 +2215,7 @@ const questions = [
   },
   {
     "id": 202,
-    "question": "EL PLAZO PARA REALIZAR EL INGRESO DE CUOTAS EN LA TGSS ES:",
+    "question": "202. EL PLAZO PARA REALIZAR EL INGRESO DE CUOTAS EN LA TGSS ES:",
     "options": {
       "A": "A partir del día 20 de cada mes",
       "B": "El último día del mes",
@@ -2226,7 +2226,7 @@ const questions = [
   },
   {
     "id": 203,
-    "question": "EL PLAZO PARA PRESENTAR LA LIQUIDACIÓN DE CUOTAS EN LA TGSS ES:",
+    "question": "203. EL PLAZO PARA PRESENTAR LA LIQUIDACIÓN DE CUOTAS EN LA TGSS ES:",
     "options": {
       "A": "A partir del día 20 de cada mes",
       "B": "El último día del mes",
@@ -2237,18 +2237,18 @@ const questions = [
   },
   {
     "id": 204,
-    "question": "204.	POR EL SISTEMA DE LIQUIDACIÓN DIRECTA (SLD) DE CUOTAS, EL SUJETO RESPONSABLE DEBERÁ SOLICITAR A LA TGSS EL CÁLCULO DE LA LIQUIDACIÓN DE CADA TRABAJADOR Y TRANSMITIR POR MEDIOS ELECTRÓNICOS LOS DATOS QUE PERMITAN REALIZAR DICHO CÁLCULO:",
+    "question": "204. POR EL SISTEMA DE LIQUIDACIÓN DIRECTA (SLD) DE CUOTAS, EL SUJETO RESPONSABLE DEBERÁ SOLICITAR A LA TGSS EL CÁLCULO DE LA LIQUIDACIÓN DE CADA TRABAJADOR Y TRANSMITIR POR MEDIOS ELECTRÓNICOS LOS DATOS QUE PERMITAN REALIZAR DICHO CÁLCULO:",
     "options": {
       "A": "A partir del día 20 de cada mes.",
       "B": "El último día natural del mes.",
       "C": "Antes del penúltimo día natural del mes.",
-      "D": "Hasta el penúltimo día natural del mes."
+      "D": "DE CUOTAS, EL SUJETO RESPONSABLE DEBERÁ SOLICITAR A LA TGSS EL CÁLCULO DE LA LIQUIDACIÓN DE CADA TRABAJADOR Y TRANSMITIR POR MEDIOS ELECTRÓNICOS LOS DATOS QUE PERMITAN REALIZAR DICHO CÁLCULO:"
     },
     "correct": "D"
   },
   {
     "id": 205,
-    "question": "A PARTIR DE ENERO/2019 ES OBLIGATORIO EL CESE DE ACTIVIDAD PARA",
+    "question": "205. A PARTIR DE ENERO/2019 ES OBLIGATORIO EL CESE DE ACTIVIDAD PARA",
     "options": {
       "A": "Solamente los trabajadores autónomos incluidos dentro Régimen Especial de trabajadores del Mar",
       "B": "Solamente los trabajadores incluidos en el Régimen Especial de trabajadores autónomos",
@@ -2259,7 +2259,7 @@ const questions = [
   },
   {
     "id": 206,
-    "question": "A PARTIR DE ENERO/2019 ES OBLIGATORIA LA COBERTURA POR CONTINGENCIA PROFESIONAL PARA",
+    "question": "206. A PARTIR DE ENERO/2019 ES OBLIGATORIA LA COBERTURA POR CONTINGENCIA PROFESIONAL PARA",
     "options": {
       "A": "Solamente los trabajadores autónomos incluidos dentro Régimen Especial de trabajadores del Mar",
       "B": "Solamente los trabajadores incluidos en el Régimen Especial de trabajadores autónomos",
@@ -2270,7 +2270,7 @@ const questions = [
   },
   {
     "id": 207,
-    "question": "UNA POSIBLE ENFERMEDAD PROFESIONAL PUEDE SER COMUNICADA A LA MUTUA POR:",
+    "question": "207. UNA POSIBLE ENFERMEDAD PROFESIONAL PUEDE SER COMUNICADA A LA MUTUA POR:",
     "options": {
       "A": "Únicamente por los médicos de Atención Primaria del Servicio Público de Salud.",
       "B": "Únicamente los médicos de la propia mutua.",
@@ -2281,7 +2281,7 @@ const questions = [
   },
   {
     "id": 208,
-    "question": "EN CONTINGENCIAS COMUNES, ¿DURANTE QUÉ PERIODO SE TIENE DERECHO A LA PRESTACIÓN DE IT? :",
+    "question": "208. EN CONTINGENCIAS COMUNES, ¿DURANTE QUÉ PERIODO SE TIENE DERECHO A LA PRESTACIÓN DE IT? :",
     "options": {
       "A": "Desde el día de la baja médica y hasta el mismo del alta médica o el siguiente si es víspera de festivo.",
       "B": "Desde el siguiente al de la baja médica y hasta el mismo del alta médica o el siguiente si es víspera de festivo.",
@@ -2292,7 +2292,7 @@ const questions = [
   },
   {
     "id": 209,
-    "question": "¿PUEDE DECLARAR LA MUTUA LA EXTINCIÓN DEL SUBSIDO POR INCAPACIDAD TEMPORAL EN CONTINGENCIAS COMUNES?",
+    "question": "209. ¿PUEDE DECLARAR LA MUTUA LA EXTINCIÓN DEL SUBSIDO POR INCAPACIDAD TEMPORAL EN CONTINGENCIAS COMUNES?",
     "options": {
       "A": "Sí, si nos consta que el trabajador estaba efectuando trabajos por cuenta propia incompatibles con su situación de incapacidad temporal.",
       "B": "Sí, cuando exista un alta por propuesta de incapacidad permanente expedida por un médico del Servicio Público de Salud.",
@@ -2303,7 +2303,7 @@ const questions = [
   },
   {
     "id": 210,
-    "question": "¿EN QUÉ TEXTO LEGAL ESTÁ DEFINIDA LA INCAPACIDAD PERMANENTE Y SUS DISTINTOS GRADOS? :",
+    "question": "210. ¿EN QUÉ TEXTO LEGAL ESTÁ DEFINIDA LA INCAPACIDAD PERMANENTE Y SUS DISTINTOS GRADOS? :",
     "options": {
       "A": "Ley Reguladora de la Jurisdicción Social.",
       "B": "Estatuto de los Trabajadores.",
@@ -2314,7 +2314,7 @@ const questions = [
   },
   {
     "id": 211,
-    "question": "SEGÚN LA NORMATIVA DEL IRPF, ESTÁN EXENTAS DE TRIBUTAR POR ESTE IMPUESTO:",
+    "question": "211. SEGÚN LA NORMATIVA DEL IRPF, ESTÁN EXENTAS DE TRIBUTAR POR ESTE IMPUESTO:",
     "options": {
       "A": "Las prestaciones que se reconozcan como consecuencia de una Incapacidad Permanente Absoluta o Gran Invalidez.",
       "B": "Las prestaciones que se reconozcan como consecuencia de una Incapacidad Permanente Total Cualificada, Absoluta o Gran Invalidez.",
@@ -2325,7 +2325,7 @@ const questions = [
   },
   {
     "id": 212,
-    "question": "PARA ACCEDER A LA PRESTACIÍÓN ECONÓMICA DE INCAPACIDAD TEMPORAL SE EXIGE PERIODO DE CARENCIA...",
+    "question": "212. PARA ACCEDER A LA PRESTACIÍÓN ECONÓMICA DE INCAPACIDAD TEMPORAL SE EXIGE PERIODO DE CARENCIA...",
     "options": {
       "A": "En todas las contingencias.",
       "B": "En contingencias profesionales",
@@ -2336,7 +2336,7 @@ const questions = [
   },
   {
     "id": 213,
-    "question": "¿QUÉ TIPOS DE PARTES SE PUEDEN TRAMITAR A TRAVÉS DEL SISTEMA RED?",
+    "question": "213. ¿QUÉ TIPOS DE PARTES SE PUEDEN TRAMITAR A TRAVÉS DEL SISTEMA RED?",
     "options": {
       "A": "Ninguno, el sistema RED no se utiliza para tramitar partes, sólo para operaciones relacionadas con afiliación y recaudación.",
       "B": "Partes de Accidente de Trabajo.",
@@ -2347,7 +2347,7 @@ const questions = [
   },
   {
     "id": 214,
-    "question": "¿QUÉ DOCUMENTOS DEBE ADJUNTAR A LA SOLICITUD DE PAGO DIRECTO UN TRABAJADOR PERTENECIENTE AL RÉGIMEN ESPECIAL DE AUTÓNOMOS QUE ESTÁ DE BAJA POR UN ACCIDENTE NO LABORAL?",
+    "question": "214. ¿QUÉ DOCUMENTOS DEBE ADJUNTAR A LA SOLICITUD DE PAGO DIRECTO UN TRABAJADOR PERTENECIENTE AL RÉGIMEN ESPECIAL DE AUTÓNOMOS QUE ESTÁ DE BAJA POR UN ACCIDENTE NO LABORAL?",
     "options": {
       "A": "Con el Parte de Accidente de Trabajo y el Parte Médico de Baja es suficiente.",
       "B": "El Cuestionario de Solicitud de Asistencia, Parte de Accidente de Trabajo, Parte Médico de Baja, libro de familia y declaración de que no percibe otros ingresos.",
@@ -2358,7 +2358,7 @@ const questions = [
   },
   {
     "id": 215,
-    "question": "EN LA INCAPACIDAD TEMPORAL POR CONTINGENCIAS COMUNES,\nLA ASISTENCIA SANITARIA…",
+    "question": "215. EN LA INCAPACIDAD TEMPORAL POR CONTINGENCIAS COMUNES, LA ASISTENCIA SANITARIA…",
     "options": {
       "A": "Solo se puede recibir en el Sistema Público de Salud.",
       "B": "No se puede recibir en un seguro sanitario privado.",
@@ -2369,7 +2369,7 @@ const questions = [
   },
   {
     "id": 216,
-    "question": "EN INCAPACIDAD TEMPORAL POR CONTINGENCIAS COMUNES…",
+    "question": "216. EN INCAPACIDAD TEMPORAL POR CONTINGENCIAS COMUNES…",
     "options": {
       "A": "La baja y el alta laboral la emiten los Servicios Médicos de las Mutuas.",
       "B": "La baja la emiten los médicos de familia del Servicio Público de Salud y el alta los Servicios Médicos de las Mutuas.",
@@ -2380,7 +2380,7 @@ const questions = [
   },
   {
     "id": 217,
-    "question": "CUANDO SE EMITE UNA BAJA LABORAL POR ENFERMEDAD COMÚN…",
+    "question": "217. CUANDO SE EMITE UNA BAJA LABORAL POR ENFERMEDAD COMÚN…",
     "options": {
       "A": "No le corresponde a la Mutua comprobar los requisitos de acceso a la prestación puesto que la baja médica la ha expedido el Servicio Público de Salud.",
       "B": "Para devengar prestación económica, se ha de comprobar si cumple el período carencia.",
@@ -2391,7 +2391,7 @@ const questions = [
   },
   {
     "id": 218,
-    "question": "LOS PARTES MÉDICOS DE BAJA Y ALTA POR CONTINGENCIAS COMUNES PUEDEN LLEGAR A LA MUTUA…",
+    "question": "218. LOS PARTES MÉDICOS DE BAJA Y ALTA POR CONTINGENCIAS COMUNES PUEDEN LLEGAR A LA MUTUA…",
     "options": {
       "A": "Por Red desde la empresa.",
       "B": "Por Red desde el Servicio Público de Salud.",
@@ -2402,7 +2402,7 @@ const questions = [
   },
   {
     "id": 219,
-    "question": "EN CONTINGENCIAS COMUNES, EL ALTA MÉDICA LA PUEDEN EMITIR:",
+    "question": "219. EN CONTINGENCIAS COMUNES, EL ALTA MÉDICA LA PUEDEN EMITIR:",
     "options": {
       "A": "El médico de familia del Servicio Público de Salud.",
       "B": "El especialista del Servicio Público de salud.",
@@ -2413,7 +2413,7 @@ const questions = [
   },
   {
     "id": 220,
-    "question": "EN CONTINGENCIAS COMUNES, EL ALTA MÉDICA:",
+    "question": "220. EN CONTINGENCIAS COMUNES, EL ALTA MÉDICA:",
     "options": {
       "A": "La emite el médico del Servicio Público de Salud.",
       "B": "La propone siempre el médico de la mutua.",
@@ -2424,7 +2424,7 @@ const questions = [
   },
   {
     "id": 221,
-    "question": "LOS MÉDICOS DE LAS MUTUAS, EN PROCESOS DERIVADOS DE CONTINGENCIA COMÚN…",
+    "question": "221. LOS MÉDICOS DE LAS MUTUAS, EN PROCESOS DERIVADOS DE CONTINGENCIA COMÚN…",
     "options": {
       "A": "Pueden proponer el alta médica al Servicio Público de Salud.",
       "B": "Pueden dar el alta si han tratado al paciente.",
@@ -2435,7 +2435,7 @@ const questions = [
   },
   {
     "id": 222,
-    "question": "LAS MUTUAS, ¿PUEDEN REALIZAR UNA INTERVENCIÓN QUIRÚRGICA A UN TRABAJADOR EN BAJA POR CONTINGENCIAS COMUNES?",
+    "question": "222. LAS MUTUAS, ¿PUEDEN REALIZAR UNA INTERVENCIÓN QUIRÚRGICA A UN TRABAJADOR EN BAJA POR CONTINGENCIAS COMUNES?",
     "options": {
       "A": "Siempre que los médicos de la Mutua lo consideren necesario y pueda favorecer la recuperación del trabajador, sin precisar consentimiento expreso del trabajador.",
       "B": "Cuando la empresa nos lo solicite por escrito.",
@@ -2446,7 +2446,7 @@ const questions = [
   },
   {
     "id": 223,
-    "question": "EN FRATERNIDAD-MUPRESPA PODEMOS HACER ACTUACIONES DE SEGUIMIENTO Y CONTROL EN CONTINGENCIAS COMUNES…",
+    "question": "223. EN FRATERNIDAD-MUPRESPA PODEMOS HACER ACTUACIONES DE SEGUIMIENTO Y CONTROL EN CONTINGENCIAS COMUNES…",
     "options": {
       "A": "Nunca antes de los 15 días de baja.",
       "B": "Solo cuando nos lo diga la empresa.",
@@ -2457,7 +2457,7 @@ const questions = [
   },
   {
     "id": 224,
-    "question": "SI EL TRABAJADOR EN BAJA POR CONTINGENCIA COMÚN NO ACUDE A NUESTRA CITA DEBIDAMENTE ENTREGADA POR TELEGRAMA, BUROFAX O EN CONSULTA MÉDICA ANTERIOR…",
+    "question": "224. SI EL TRABAJADOR EN BAJA POR CONTINGENCIA COMÚN NO ACUDE A NUESTRA CITA DEBIDAMENTE ENTREGADA POR TELEGRAMA, BUROFAX O EN CONSULTA MÉDICA ANTERIOR…",
     "options": {
       "A": "Se le cita nuevamente sin más problema.",
       "B": "Se suspende cautelarmente la prestación.",
@@ -2468,7 +2468,7 @@ const questions = [
   },
   {
     "id": 225,
-    "question": "EN EL SUPUESTO DE QUE UNA EMPRESA QUE TENGA LA COBERTURA DE LAS CONTINGENCIAS COMUNES CON NUESTRA MUTUA, CESE EN DICHA COBERTURA, LA MUTUA DEBERÁ SOPORTAR EL PAGO DEL SUBSIDIO DE IT:",
+    "question": "225. EN EL SUPUESTO DE QUE UNA EMPRESA QUE TENGA LA COBERTURA DE LAS CONTINGENCIAS COMUNES CON NUESTRA MUTUA, CESE EN DICHA COBERTURA, LA MUTUA DEBERÁ SOPORTAR EL PAGO DEL SUBSIDIO DE IT:",
     "options": {
       "A": "De todos los procesos en baja médica por contingencia común que sigan abiertos.",
       "B": "De todos los procesos en baja médica por contingencia común que estando abiertos están cobrando la prestación en pago directo.",
@@ -2479,7 +2479,7 @@ const questions = [
   },
   {
     "id": 226,
-    "question": "SI UN TRABAJADOR AUTÓNOMO SE ENCUENTRA EN SITUACIÓN DE BAJA MÉDICA POR CONTINGENCIA COMÚN Y PRESENTA LA SOLICITUD DE PAGO DIRECTO CON UN RETRASO DE 4 MESES…",
+    "question": "226. SI UN TRABAJADOR AUTÓNOMO SE ENCUENTRA EN SITUACIÓN DE BAJA MÉDICA POR CONTINGENCIA COMÚN Y PRESENTA LA SOLICITUD DE PAGO DIRECTO CON UN RETRASO DE 4 MESES…",
     "options": {
       "A": "Tendrá derecho al percibo de la prestación por IT desde el cuarto día de la baja médica, pero con una reducción del 20% sobre la prestación que le hubiese correspondido de presentar la baja en tiempo.",
       "B": "Tendrá derecho al percibo de la prestación por IT a partir del cuarto día en que presente el Parte Médico de Baja en la Mutua y siempre que cumpla con el resto de requisitos para acceder a la prestación de IT.",
@@ -2490,7 +2490,7 @@ const questions = [
   },
   {
     "id": 227,
-    "question": "SEGÚN RECOGE EL ART. 170 DE LA LGSS, AL APROXIMARSE EL MES 12 DE LA BAJA POR CONTINGENCIAS COMUNES, FRATERNIDAD- MUPRESPA:",
+    "question": "227. SEGÚN RECOGE EL ART. 170 DE LA LGSS, AL APROXIMARSE EL MES 12 DE LA BAJA POR CONTINGENCIAS COMUNES, FRATERNIDAD- MUPRESPA:",
     "options": {
       "A": "Enviará un informe a la Inspección Médica, a través de medios telemáticos, para que ésta resuelva si procede prorrogar la IT, proponer una IP o emitir un Alta Médica",
       "B": "Enviará un informe a la CIP para que se valore una posible secuela.",
@@ -2501,7 +2501,7 @@ const questions = [
   },
   {
     "id": 228,
-    "question": "EN CASO DE QUE UN TRABAJADOR POR CUENTA AJENA NOS NOTIFIQUE QUE SE ENCUENTRA DE ALTA MÉDICA…",
+    "question": "228. EN CASO DE QUE UN TRABAJADOR POR CUENTA AJENA NOS NOTIFIQUE QUE SE ENCUENTRA DE ALTA MÉDICA…",
     "options": {
       "A": "Se procederá a grabar un Parte Médico de Alta por “Mejoría” con la fecha que nos diga el trabajador.",
       "B": "Se requerirá a la empresa que notifique a través del Sistema RED el PMA, si aún no lo ha enviado.",
@@ -2512,7 +2512,7 @@ const questions = [
   },
   {
     "id": 229,
-    "question": "¿EL TRABAJADOR DE BAJA POR CONTINGENCIA COMÚN TIENE DERECHO AL ABONO DE LOS TRANSPORTES?",
+    "question": "229. ¿EL TRABAJADOR DE BAJA POR CONTINGENCIA COMÚN TIENE DERECHO AL ABONO DE LOS TRANSPORTES?",
     "options": {
       "A": "No tiene derecho al abono de los transportes.",
       "B": "Únicamente se abonarán los gastos de transporte público colectivo.",
@@ -2523,7 +2523,7 @@ const questions = [
   },
   {
     "id": 230,
-    "question": "EN CONTINGENCIAS COMUNES, LOS SERVICIOS MÉDICOS DE FRATERNIDAD-MUPRESPA PUEDEN REALIZAR ESTUDIOS RADIOGRÁFICOS PARA EL DIAGNOSTICO Y COMPROBACIÓN DE LA INCAPACIDAD LABORAL…",
+    "question": "230. EN CONTINGENCIAS COMUNES, LOS SERVICIOS MÉDICOS DE FRATERNIDAD-MUPRESPA PUEDEN REALIZAR ESTUDIOS RADIOGRÁFICOS PARA EL DIAGNOSTICO Y COMPROBACIÓN DE LA INCAPACIDAD LABORAL…",
     "options": {
       "A": "En cualquier momento del proceso de baja laboral.",
       "B": "Solo antes del día 15 de baja.",
@@ -2534,7 +2534,7 @@ const questions = [
   },
   {
     "id": 231,
-    "question": "EN FRATERNIDAD-MUPRESPA, LAS INTERVENCIONES QUIRÚRGICAS EN CONTINGENCIAS COMUNES…",
+    "question": "231. EN FRATERNIDAD-MUPRESPA, LAS INTERVENCIONES QUIRÚRGICAS EN CONTINGENCIAS COMUNES…",
     "options": {
       "A": "Solo requieren la autorización del paciente y de la Inspección Médica del Servicio Público de Salud.",
       "B": "Solo requieren la autorización interna del Director Provincial.",
@@ -2545,7 +2545,7 @@ const questions = [
   },
   {
     "id": 232,
-    "question": "EN CONTINGENCIAS COMUNES, SI EL INSS HA EMITIDO UN ALTA MÉDICA EN UN PROCESO QUE HA SUPERADO LOS 365 DÍAS, Y EL TRABAJADOR VUELVE A CAUSAR BAJA MÉDICA POR CONTINGENCIAS COMUNES EN MENOS DE 6 MESES:",
+    "question": "232. EN CONTINGENCIAS COMUNES, SI EL INSS HA EMITIDO UN ALTA MÉDICA EN UN PROCESO QUE HA SUPERADO LOS 365 DÍAS, Y EL TRABAJADOR VUELVE A CAUSAR BAJA MÉDICA POR CONTINGENCIAS COMUNES EN MENOS DE 6 MESES:",
     "options": {
       "A": "La baja no tendrá efectos económicos hasta que sea refrendada por el INSS (resolución del INSS).",
       "B": "El médico de la mutua enviará, por medios telemáticos, un informe al INSS indicando si la nueva baja es por el mismo o diferente proceso.",
@@ -2556,7 +2556,7 @@ const questions = [
   },
   {
     "id": 233,
-    "question": "EN CONTINGENCIAS COMUNES, TRAS LOS 12 MESES DE BAJA, EL INSS HA CONCEDIDO UNA PRORROGA DE 6 MESES:",
+    "question": "233. EN CONTINGENCIAS COMUNES, TRAS LOS 12 MESES DE BAJA, EL INSS HA CONCEDIDO UNA PRORROGA DE 6 MESES:",
     "options": {
       "A": "No volveremos a citar y controlar al paciente pues ya está a cargo del INSS.",
       "B": "A pesar de estar controlado y ser responsable el INSS de su seguimiento, Fraternidad-Muprespa también le citará en consulta para seguimiento y control.",
@@ -2567,7 +2567,7 @@ const questions = [
   },
   {
     "id": 234,
-    "question": "EN CONTINGENCIAS COMUNES, LA PRIMERA CITA MÉDICA…",
+    "question": "234. EN CONTINGENCIAS COMUNES, LA PRIMERA CITA MÉDICA…",
     "options": {
       "A": "Se hará tras los primeros 15 días de baja.",
       "B": "Se puede tramitar por Prestaciones antes de los 15 días de la baja pero la fecha de la cita médica ha de ser posterior al día 15 de la baja.",
@@ -2578,7 +2578,7 @@ const questions = [
   },
   {
     "id": 235,
-    "question": "UNA VEZ AGOTADO EL PLAZO DE 545 DÍAS, HABIÉNDOSE EMITIDO RESOLUCIÓN ADMINISTRATIVA DENEGATORIA DE LA INCAPACIDAD PERMANENTE Y TRANSCURRIDOS 15 DÍAS DESDE LA RESOLUCIÓN, SI EL SERVICIO PÚBLICO DE SALUD EMITE NUEVA BAJA MÉDICA:",
+    "question": "235. UNA VEZ AGOTADO EL PLAZO DE 545 DÍAS, HABIÉNDOSE EMITIDO RESOLUCIÓN ADMINISTRATIVA DENEGATORIA DE LA INCAPACIDAD PERMANENTE Y TRANSCURRIDOS 15 DÍAS DESDE LA RESOLUCIÓN, SI EL SERVICIO PÚBLICO DE SALUD EMITE NUEVA BAJA MÉDICA:",
     "options": {
       "A": "La nueva baja tiene efectos económicos de forma inmediata.",
       "B": "Prestaciones debe dirigirse al INSS para informar del caso y ver si la baja tiene o no efectos económicos.",
@@ -2589,7 +2589,7 @@ const questions = [
   },
   {
     "id": 236,
-    "question": "EN EL INFORME DE SEGUIMIENO DE PROCESOS DE IT QUE A VECES PASAMOS A LOS DEPARTAMENTOS DE RRHH DE LAS GRANDES EMPRESAS…",
+    "question": "236. EN EL INFORME DE SEGUIMIENO DE PROCESOS DE IT QUE A VECES PASAMOS A LOS DEPARTAMENTOS DE RRHH DE LAS GRANDES EMPRESAS…",
     "options": {
       "A": "Incluimos los datos de las bajas, también el diagnóstico.",
       "B": "Debe marcarse la opción de no incluir información médica.",
@@ -2600,7 +2600,7 @@ const questions = [
   },
   {
     "id": 237,
-    "question": "EN MATERIA DE RECONOCIMIENTO DE PRESTACIONES DE MUERTE Y SUPERVIVENCIA DERIVADA DE ACCIDENTE DE TRABAJO. ¿ A QUIÉN SE LE ATRIBUYE LA COMPETENCIA?",
+    "question": "237. EN MATERIA DE RECONOCIMIENTO DE PRESTACIONES DE MUERTE Y SUPERVIVENCIA DERIVADA DE ACCIDENTE DE TRABAJO. ¿ A QUIÉN SE LE ATRIBUYE LA COMPETENCIA?",
     "options": {
       "A": "Al Instituto Nacional de la Seguridad Social.",
       "B": "A las empresas con el hecho de presentar la declaración del accidente.",
@@ -2611,7 +2611,7 @@ const questions = [
   },
   {
     "id": 238,
-    "question": "¿QUÉ DOCUMENTACIÓN SE DEBE APORTAR PARA PROCEDER A DETERMINAR LA CONTINGENCIA EN UN ACCIDENTE MORTAL OCURRIDO EN CENTRO DE TRABAJO? :",
+    "question": "238. ¿QUÉ DOCUMENTACIÓN SE DEBE APORTAR PARA PROCEDER A DETERMINAR LA CONTINGENCIA EN UN ACCIDENTE MORTAL OCURRIDO EN CENTRO DE TRABAJO? :",
     "options": {
       "A": "El parte de accidente es documento suficiente.",
       "B": "Solamente se precisa el certificado de defunción.",
@@ -2622,7 +2622,7 @@ const questions = [
   },
   {
     "id": 239,
-    "question": "¿QUÉ OCURRE CON LA PENSIÓN DE VIUDEDAD CUANDO EL FALLECIDO HA ESTADO CASADO CON MAS DE UN CÓNYUGE? :",
+    "question": "239. ¿QUÉ OCURRE CON LA PENSIÓN DE VIUDEDAD CUANDO EL FALLECIDO HA ESTADO CASADO CON MAS DE UN CÓNYUGE? :",
     "options": {
       "A": "El derecho en su totalidad corresponde al cónyuge superviviente, pero se detrae del importe total lo que a otros cónyuges pudiera corresponder, en función del tiempo real de convivencia. Garantizándose, en todo caso, el 40% a favor del cónyuge o superviviente de una pareja de hecho con derecho a pensión de viudedad.",
       "B": "El reparto se realiza por igual entre todos los que hubieran estado casados con el fallecido.",
@@ -2633,7 +2633,7 @@ const questions = [
   },
   {
     "id": 240,
-    "question": "¿QUÉ TIPO DE PRESTACIONES PUEDEN OTORGARSE COMO CONSECUENCIA DE UNA MUERTE POR ACCIDENTE LABORAL? :",
+    "question": "240. ¿QUÉ TIPO DE PRESTACIONES PUEDEN OTORGARSE COMO CONSECUENCIA DE UNA MUERTE POR ACCIDENTE LABORAL? :",
     "options": {
       "A": "Auxilio por defunción, pensión de viudedad, orfandad.",
       "B": "Auxilio por defunción, pensión de viudedad, orfandad, indemnización especial a tanto alzado.",
@@ -2644,7 +2644,7 @@ const questions = [
   },
   {
     "id": 241,
-    "question": "¿QUÉ INDEMNIZACIÓN A TANTO ALZADO PREVÉ LA NORMATIVA ACTUAL PARA LOS BENEFICIARIOS DE FALLECIMIENTO DERIVADO DE ACCIDENTE LABORAL?",
+    "question": "241. ¿QUÉ INDEMNIZACIÓN A TANTO ALZADO PREVÉ LA NORMATIVA ACTUAL PARA LOS BENEFICIARIOS DE FALLECIMIENTO DERIVADO DE ACCIDENTE LABORAL?",
     "options": {
       "A": "Seis mensualidades de la base reguladora para la viuda y una por cada uno de los hijos.",
       "B": "Doce mensualidades de la base reguladora anual.",
@@ -2655,7 +2655,7 @@ const questions = [
   },
   {
     "id": 242,
-    "question": "EN CASO DE FALLECIMIENTO DE UN TRABAJADOR SIN CÓNYUGE,\n¿TIENEN LOS PADRES DERECHO A PRESTACIONES DERIVADAS DE DICHO FALLECIMIENTO?",
+    "question": "242. EN CASO DE FALLECIMIENTO DE UN TRABAJADOR SIN CÓNYUGE, ¿TIENEN LOS PADRES DERECHO A PRESTACIONES DERIVADAS DE DICHO FALLECIMIENTO?",
     "options": {
       "A": "Sí, bajo ciertas circunstancias.",
       "B": "No, solo tienen derecho a prestaciones las viudas e hijos menores.",
@@ -2666,7 +2666,7 @@ const questions = [
   },
   {
     "id": 243,
-    "question": "¿QUÉ SALARIO SE TIENE EN CUENTA PARA ESTABLECER LA BASE REGULADORA ANUAL, A EFECTOS DE PRESTACIONES POR MUERTE Y SUPERVIVENCIA DERIVADAS DE CONTINGENCIA PROFESIONAL?",
+    "question": "243. ¿QUÉ SALARIO SE TIENE EN CUENTA PARA ESTABLECER LA BASE REGULADORA ANUAL, A EFECTOS DE PRESTACIONES POR MUERTE Y SUPERVIVENCIA DERIVADAS DE CONTINGENCIA PROFESIONAL?",
     "options": {
       "A": "El mismo que para un accidente leve.",
       "B": "El mismo que se establece para las pensiones de Incapacidad Permanente.",
@@ -2677,7 +2677,7 @@ const questions = [
   },
   {
     "id": 244,
-    "question": "¿PUEDEN SER DECLARADAS LAS EMPRESAS RESPONSABLES, TOTAL O PARCIALMENTE, DEL PAGO QUE SE DERIVE DE UN ACCIDENTE MORTAL? :",
+    "question": "244. ¿PUEDEN SER DECLARADAS LAS EMPRESAS RESPONSABLES, TOTAL O PARCIALMENTE, DEL PAGO QUE SE DERIVE DE UN ACCIDENTE MORTAL? :",
     "options": {
       "A": "Sí, de forma parcial pero nunca de forma total.",
       "B": "Pueden ser consideradas responsables totalmente, en el caso de falta de alta o aseguramiento o morosidad reiterada, entre otros, y parcialmente por infracotización de salarios o cotización inferior por la aplicación indebida de epígrafe diferente a aquél en que se produjo el accidente.",
@@ -2688,7 +2688,7 @@ const questions = [
   },
   {
     "id": 245,
-    "question": "EN CASO DE UN ACCIDENTE DE TRABAJO MORTAL…",
+    "question": "245. EN CASO DE UN ACCIDENTE DE TRABAJO MORTAL…",
     "options": {
       "A": "La empresa enviará el PAT por Delt@, dentro de los 9 días hábiles siguientes al accidente.",
       "B": "Se emitirá una baja y alta por fallecimiento el mismo día y se migrará el PAT al expediente creado.",
@@ -2699,7 +2699,7 @@ const questions = [
   },
   {
     "id": 246,
-    "question": "TRAS EL ALTA MÉDICA, CUANDO EXISTAN SECUELAS A VALORAR:",
+    "question": "246. TRAS EL ALTA MÉDICA, CUANDO EXISTAN SECUELAS A VALORAR:",
     "options": {
       "A": "Se debe cumplimentar el Historial Clínico inmediatamente.",
       "B": "Se debe cumplimentar el Historial Clínico en 15 días.",
@@ -2710,7 +2710,7 @@ const questions = [
   },
   {
     "id": 247,
-    "question": "EN FRATERNIDAD-MUPRESPA EXISTE UNA COMISIÓN INTERNA DE PRESTACIONES, EN LOS SERVICIOS CENTRALES, QUE DEBE VER LOS EXPEDIENTES E HISTORIALES CLÍNICOS…:",
+    "question": "247. EN FRATERNIDAD-MUPRESPA EXISTE UNA COMISIÓN INTERNA DE PRESTACIONES, EN LOS SERVICIOS CENTRALES, QUE DEBE VER LOS EXPEDIENTES E HISTORIALES CLÍNICOS…:",
     "options": {
       "A": "De los procesos de IT derivados de CP que estén durando más de 6 meses",
       "B": "De los procesos de IT derivados de cualquier contingencia que estén próximos a cumplir los 12 meses en situación de baja médica.",
@@ -2721,7 +2721,7 @@ const questions = [
   },
   {
     "id": 248,
-    "question": "CUANDO LA LGSS HABLA DE AQUELLA INCAPACIDAD PERMANENTE QUE “...POR CONSECUENCIA DE PÉRDIDAS ANATÓMICAS O FUNCIONALES, NECESITE LA ASISTENCIA DE OTRA PERSONA PARA LOS ACTOS MÁS ESENCIALES DE LA VIDA, TALES COMO VESTIRSE, DESPLAZARSE, COMER O ANÁLOGOS”, SE ESTÁ REFIRIENDO A:",
+    "question": "248. CUANDO LA LGSS HABLA DE AQUELLA INCAPACIDAD PERMANENTE QUE “...POR CONSECUENCIA DE PÉRDIDAS ANATÓMICAS O FUNCIONALES, NECESITE LA ASISTENCIA DE OTRA PERSONA PARA LOS ACTOS MÁS ESENCIALES DE LA VIDA, TALES COMO VESTIRSE, DESPLAZARSE, COMER O ANÁLOGOS”, SE ESTÁ REFIRIENDO A:",
     "options": {
       "A": "Incapacidad Permanente Absoluta.",
       "B": "Gran Invalidez.",
@@ -2732,7 +2732,7 @@ const questions = [
   },
   {
     "id": 249,
-    "question": "¿A QUÉ GRADO DE INCAPACIDAD PERMANENTE NO LE CORRESPONDE UNA PRESTACION ECONÒMICA CONSISTENTE EN UNA PENSIÓN VITALICIA?",
+    "question": "249. ¿A QUÉ GRADO DE INCAPACIDAD PERMANENTE NO LE CORRESPONDE UNA PRESTACION ECONÒMICA CONSISTENTE EN UNA PENSIÓN VITALICIA?",
     "options": {
       "A": "Incapacidad Permanente Total.",
       "B": "Incapacidad Permanente Absoluta.",
@@ -2743,7 +2743,7 @@ const questions = [
   },
   {
     "id": 250,
-    "question": "EL DERECHO A LAS PRESTACIONES DE INCAPACIDAD PERMANENTE, EN SUS DISTINTOS GRADOS, SERÁ REVISABLE:",
+    "question": "250. EL DERECHO A LAS PRESTACIONES DE INCAPACIDAD PERMANENTE, EN SUS DISTINTOS GRADOS, SERÁ REVISABLE:",
     "options": {
       "A": "Cuando se haya producido agravación o mejoría de las mismas lesiones que produjeron el estado invalidante.",
       "B": "Al pasar el incapacitado a la condición de jubilado.",
@@ -2754,7 +2754,7 @@ const questions = [
   },
   {
     "id": 251,
-    "question": "LA DEFINICIÓN QUE MEJOR DESCRIBE LAS LESIONES PERMANENTES NO INVALIDANTES:",
+    "question": "251. LA DEFINICIÓN QUE MEJOR DESCRIBE LAS LESIONES PERMANENTES NO INVALIDANTES:",
     "options": {
       "A": "Suponen una disminución en el rendimiento normal para la profesión del trabajador, no inferior al 33%.",
       "B": "Suponen una disminución o alteración de la integridad física del trabajador, sin llegar a constituir una incapacidad permanente.",
@@ -2765,7 +2765,7 @@ const questions = [
   },
   {
     "id": 252,
-    "question": "¿CUÁL ES EL ORGANISMO COMPETENTE PARA EL RECONOCIMIENTO DE UNA PENSIÓN DE INCAPACIDAD PERMANENTE?:",
+    "question": "252. ¿CUÁL ES EL ORGANISMO COMPETENTE PARA EL RECONOCIMIENTO DE UNA PENSIÓN DE INCAPACIDAD PERMANENTE?:",
     "options": {
       "A": "El Instituto Nacional de la Seguridad Social.",
       "B": "La Mutua Colaboradora con la Seguridad Social.",
@@ -2776,7 +2776,7 @@ const questions = [
   },
   {
     "id": 253,
-    "question": "EN CONTINGENCIA PROFESIONAL, ¿EN QUE PERÍODO SE DEVENGA LA PRESTACIÓN ECONÓMICA DE LA INCAPACIDAD TEMPORAL?",
+    "question": "253. EN CONTINGENCIA PROFESIONAL, ¿EN QUE PERÍODO SE DEVENGA LA PRESTACIÓN ECONÓMICA DE LA INCAPACIDAD TEMPORAL?",
     "options": {
       "A": "Desde el día de suceder el hecho y hasta el mismo del alta médica o el siguiente si es víspera de festivo.",
       "B": "Desde el día de la baja médica y hasta el mismo del alta médica o el siguiente si es víspera de festivo.",
@@ -2787,7 +2787,7 @@ const questions = [
   },
   {
     "id": 254,
-    "question": "¿SON COMPETENTES LOS TRABAJADORES PARA INSTAR UN EXPEDIENTE DE INCAPACIDAD PERMANENTE? :",
+    "question": "254. ¿SON COMPETENTES LOS TRABAJADORES PARA INSTAR UN EXPEDIENTE DE INCAPACIDAD PERMANENTE? :",
     "options": {
       "A": "Sí.",
       "B": "No, sólo son competentes las entidades colaboradoras con la Seguridad Social.",
@@ -2798,7 +2798,7 @@ const questions = [
   },
   {
     "id": 255,
-    "question": "EL COSTE DE LAS PENSIONES POR INCAPACIDAD PERMANENTE, EN CASO DE ENFERMEDAD PROFESIONAL, CORRERÁ A CARGO DE:",
+    "question": "255. EL COSTE DE LAS PENSIONES POR INCAPACIDAD PERMANENTE, EN CASO DE ENFERMEDAD PROFESIONAL, CORRERÁ A CARGO DE:",
     "options": {
       "A": "La empresa, siempre que ésta no hubiera cumplido con las medidas preventivas exigidas por la Ley de Prevención de Riesgos Laborales.",
       "B": "En función de las fechas de aseguramiento en que existía la exposición al riesgo, a las Mutuas Colaboradoras con la Seguridad Social o al INSS.",
@@ -2809,7 +2809,7 @@ const questions = [
   },
   {
     "id": 256,
-    "question": "¿CUÁL, DE LOS DISTINTOS GRADOS DE INCAPACIDAD PERMANENTE, SI BIEN IMPOSIBILITA LA REALIZACIÓN DE LAS TAREAS PROPIAS DE SU PROFESIÓN, ES COMPATIBLE CON EL DESEMPEÑO DE OTRA PROFESIÓN, DISTINTA DE LA HABITUAL?:",
+    "question": "256. ¿CUÁL, DE LOS DISTINTOS GRADOS DE INCAPACIDAD PERMANENTE, SI BIEN IMPOSIBILITA LA REALIZACIÓN DE LAS TAREAS PROPIAS DE SU PROFESIÓN, ES COMPATIBLE CON EL DESEMPEÑO DE OTRA PROFESIÓN, DISTINTA DE LA HABITUAL?:",
     "options": {
       "A": "Incapacidad Permanente Total.",
       "B": "Incapacidad Permanente Parcial.",
@@ -2820,7 +2820,7 @@ const questions = [
   },
   {
     "id": 257,
-    "question": "¿EN QUÉ CONSISTE LA INCAPACIDAD PERMANENTE TOTAL CUALIFICADA? :",
+    "question": "257. ¿EN QUÉ CONSISTE LA INCAPACIDAD PERMANENTE TOTAL CUALIFICADA? :",
     "options": {
       "A": "En un grado diferente de incapacidad, superior a la Total pero sin llegar a constituir una Absoluta.",
       "B": "En un Incapacidad Permanente Total, revisable transcurrido un plazo de tiempo.",
@@ -2831,7 +2831,7 @@ const questions = [
   },
   {
     "id": 258,
-    "question": "EL RECONOCIMIENTO DEL DERECHO A LAS PRESTACIONES DE INCAPACIDAD PERMANENTE, ¿REQUIERE EL CUMPLIMIENTO DE UN PERÍODO MÍNIMO DE COTIZACIÓN PREVIO AL HECHO CAUSANTE? :",
+    "question": "258. EL RECONOCIMIENTO DEL DERECHO A LAS PRESTACIONES DE INCAPACIDAD PERMANENTE, ¿REQUIERE EL CUMPLIMIENTO DE UN PERÍODO MÍNIMO DE COTIZACIÓN PREVIO AL HECHO CAUSANTE? :",
     "options": {
       "A": "Sí, siempre.",
       "B": "No, cuando la incapacidad permanente deriva de enfermedad común.",
@@ -2842,7 +2842,7 @@ const questions = [
   },
   {
     "id": 259,
-    "question": "¿POR QUÉ ORGANISMO HAN SIDO SUSTITUIDAS LAS ANTIGUAS UNIDADES DE VALORACIÓN MÉDICA DE INCAPACIDADES (UVMI)? :",
+    "question": "259. ¿POR QUÉ ORGANISMO HAN SIDO SUSTITUIDAS LAS ANTIGUAS UNIDADES DE VALORACIÓN MÉDICA DE INCAPACIDADES (UVMI)? :",
     "options": {
       "A": "Han asumido sus competencias los Servicios Médicos de las respectivas Mutuas.",
       "B": "Por los Servicios Médicos del Servicio Público de Salud, correspondientes a cada Comunidad Autónoma.",
@@ -2853,7 +2853,7 @@ const questions = [
   },
   {
     "id": 260,
-    "question": "¿QUÉ TIPO DE PRESTACIÓN ECONÓMICA SE ESTABLECE PARA LAS LESIONES PERMANENTE NO INVALIDANTES?",
+    "question": "260. ¿QUÉ TIPO DE PRESTACIÓN ECONÓMICA SE ESTABLECE PARA LAS LESIONES PERMANENTE NO INVALIDANTES?",
     "options": {
       "A": "Una pensión vitalicia, equivalente al 33% de su base reguladora.",
       "B": "Una indemnización a tanto alzado que se concede por una sola vez y cuya cuantía viene fijada en baremo.",
@@ -2864,7 +2864,7 @@ const questions = [
   },
   {
     "id": 261,
-    "question": "¿ES POSIBLE PERCIBIR SIMULTÁNEAMENTE LAS PRESTACIONES CORRESPONDIENTES A UNA PENSIÓN DE INCAPACIDAD PERMANENTE ABSOLUTA Y UNA PENSIÓN DE INCAPACIDAD PERMANENTE TOTAL? :",
+    "question": "261. ¿ES POSIBLE PERCIBIR SIMULTÁNEAMENTE LAS PRESTACIONES CORRESPONDIENTES A UNA PENSIÓN DE INCAPACIDAD PERMANENTE ABSOLUTA Y UNA PENSIÓN DE INCAPACIDAD PERMANENTE TOTAL? :",
     "options": {
       "A": "Si, es compatible la percepción de ambas pensiones siempre que sea para profesiones distintas.",
       "B": "No, es incompatible la percepción de ambas pensiones.",
@@ -2875,7 +2875,7 @@ const questions = [
   },
   {
     "id": 262,
-    "question": "EL RECONOCIMIENTO DE UNA PRESTACIÓN POR INCAPACIDAD PERMANENTE PARCIAL, ¿EXTINGUE LA RELACIÓN LABORAL DEL TRABAJADOR CON LA EMPRESA? :",
+    "question": "262. EL RECONOCIMIENTO DE UNA PRESTACIÓN POR INCAPACIDAD PERMANENTE PARCIAL, ¿EXTINGUE LA RELACIÓN LABORAL DEL TRABAJADOR CON LA EMPRESA? :",
     "options": {
       "A": "No, no extingue la relación laboral y es plenamente compatible con el mantenimiento del trabajo que se viniera desarrollando.",
       "B": "Si, extingue la relación laboral, pues el trabajador ya no tiene la capacidad suficiente para desempeñar las tareas fundamentales de la profesión que ejercía.",
@@ -2886,7 +2886,7 @@ const questions = [
   },
   {
     "id": 263,
-    "question": "EN EL SUPUESTO DE QUE UNA MUTUA COLABORADORA CON LA SEGURIDAD SOCIAL SEA DECLARADA RESPONSABLE DEL PAGO DE UNA PENSIÓN VITALICIA DE INCAPACIDAD PERMANENTE, ¿CÓMO SE EFECTÚA EL PAGO DE DICHA PRESTACIÓN?",
+    "question": "263. EN EL SUPUESTO DE QUE UNA MUTUA COLABORADORA CON LA SEGURIDAD SOCIAL SEA DECLARADA RESPONSABLE DEL PAGO DE UNA PENSIÓN VITALICIA DE INCAPACIDAD PERMANENTE, ¿CÓMO SE EFECTÚA EL PAGO DE DICHA PRESTACIÓN?",
     "options": {
       "A": "La Mutua realiza mensualmente el pago, por medio de transferencia bancaria al trabajador.",
       "B": "El INSS efectúa el pago, previa constitución en la TGSS por parte de la Mutua, del valor del capital coste de la pensión.",
@@ -2897,7 +2897,7 @@ const questions = [
   },
   {
     "id": 264,
-    "question": "CUANDO LA EMPRESA ES DECLARADA RESPONSABLE DEL PAGO DE UNA PRESTACIÓN DE INCAPACIDAD PERMANENTE DERIVADA DE AT, POR INCUMPLIMIENTO DE SUS OBLIGACIONES EN MATERIA DE SEGURIDAD SOCIAL (AFILIACIÓN, ALTAS Y BAJAS):",
+    "question": "264. CUANDO LA EMPRESA ES DECLARADA RESPONSABLE DEL PAGO DE UNA PRESTACIÓN DE INCAPACIDAD PERMANENTE DERIVADA DE AT, POR INCUMPLIMIENTO DE SUS OBLIGACIONES EN MATERIA DE SEGURIDAD SOCIAL (AFILIACIÓN, ALTAS Y BAJAS):",
     "options": {
       "A": "No existe ninguna obligación por parte de la Mutua Colaboradora con la Seguridad Social con respecto al pago de la prestación.",
       "B": "La Mutua es responsable del pago sólo en el supuesto de impago del empresario, por desaparición de la Empresa.",
@@ -2908,7 +2908,7 @@ const questions = [
   },
   {
     "id": 265,
-    "question": "¿QUÉ GRADO DE INVALIDEZ PERMANENTE SE DEFINE COMO AQUELLA INCAPACIDAD QUE INHABILITA AL TRABAJADOR POR COMPLETO PARA TODA PROFESIÓN U OFICIO?",
+    "question": "265. ¿QUÉ GRADO DE INVALIDEZ PERMANENTE SE DEFINE COMO AQUELLA INCAPACIDAD QUE INHABILITA AL TRABAJADOR POR COMPLETO PARA TODA PROFESIÓN U OFICIO?",
     "options": {
       "A": "Incapacidad Permanente Parcial.",
       "B": "Incapacidad Permanente Total.",
@@ -2919,7 +2919,7 @@ const questions = [
   },
   {
     "id": 266,
-    "question": "ES INCAPACIDAD PERMANENTE PARCIAL PARA LA PROFESIÓN HABITUAL, EN EL REGIMEN GRAL. DE LA S.S. :",
+    "question": "266. ES INCAPACIDAD PERMANENTE PARCIAL PARA LA PROFESIÓN HABITUAL, EN EL REGIMEN GRAL. DE LA S.S. :",
     "options": {
       "A": "La que inhabilite al trabajador para la realización de todas o las fundamentales tareas de dicha profesión, siempre que pueda dedicarse a otra distinta.",
       "B": "Aquella que, sin alcanzar el grado de total, ocasione al trabajador una disminución no inferior al 33% en su rendimiento normal para dicha profesión, sin impedirle la realización de las tareas fundamentales de la misma.",
@@ -2930,7 +2930,7 @@ const questions = [
   },
   {
     "id": 267,
-    "question": "¿SON LAS MUTUAS COLABORADORAS CON LA SEGURIDAD SOCIAL ORGANISMOS COMPETENTES PARA EL RECONOCIMIENTO DE UNA PENSIÓN DE INCAPACIDAD PERMANENTE? :",
+    "question": "267. ¿SON LAS MUTUAS COLABORADORAS CON LA SEGURIDAD SOCIAL ORGANISMOS COMPETENTES PARA EL RECONOCIMIENTO DE UNA PENSIÓN DE INCAPACIDAD PERMANENTE? :",
     "options": {
       "A": "Sí, pero sólo si dicha incapacidad es derivada de un accidente de trabajo o de una enfermedad profesional.",
       "B": "No, corresponde el reconocimiento de la prestación al Instituto Nacional de la Seguridad Social.",
@@ -2941,7 +2941,7 @@ const questions = [
   },
   {
     "id": 268,
-    "question": "LA PRESTACIÓN ECONÓMICA CORRESPONDIENTE A LA GRAN INVALIDEZ:",
+    "question": "268. LA PRESTACIÓN ECONÓMICA CORRESPONDIENTE A LA GRAN INVALIDEZ:",
     "options": {
       "A": "Consiste en una pensión cuya cuantía es equivalente al 150% de la base reguladora.",
       "B": "Sólo se concede en casos de accidente por contingencias profesionales.",
@@ -2952,7 +2952,7 @@ const questions = [
   },
   {
     "id": 269,
-    "question": "¿EN QUÉ CASOS SE CONSIDERA UN SINIESTRO COLECTIVO, A EFECTOS DE APLICAR EL LÍMITE DE RESPONSABILIDAD DE LA MUTUA? :",
+    "question": "269. ¿EN QUÉ CASOS SE CONSIDERA UN SINIESTRO COLECTIVO, A EFECTOS DE APLICAR EL LÍMITE DE RESPONSABILIDAD DE LA MUTUA? :",
     "options": {
       "A": "Cuando afecta a varios trabajadores, aunque sean de distintas empresas, que figuran como pasajeros en un transporte público, como avión, autobús, metro, etc.",
       "B": "A partir de que afecte a dos o más trabajadores, siempre que sean de una misma empresa y ésta esté asegurada en la Mutua.",
@@ -2963,7 +2963,7 @@ const questions = [
   },
   {
     "id": 270,
-    "question": "EL EXPEDIENTE DE INCAPACIDAD PERMANENTE.",
+    "question": "270. EL EXPEDIENTE DE INCAPACIDAD PERMANENTE.",
     "options": {
       "A": "Sólo debe iniciarse al cumplir los 18 meses de incapacidad temporal.",
       "B": "Necesariamente debe presentarse al cumplir los 12 meses de incapacidad temporal.",
@@ -2974,7 +2974,7 @@ const questions = [
   },
   {
     "id": 271,
-    "question": "SI SE TRATA DE UNA RECAÍDA DE UN ACCIDENTE DE TRABAJO ANTERIOR CON FRATERNIDAD-MUPRESPA, PERO ACTUALMENTE NO TRABAJA:",
+    "question": "271. SI SE TRATA DE UNA RECAÍDA DE UN ACCIDENTE DE TRABAJO ANTERIOR CON FRATERNIDAD-MUPRESPA, PERO ACTUALMENTE NO TRABAJA:",
     "options": {
       "A": "Le prestaremos asistencia sanitaria y abonaremos IT por el mismo importe que el AT anterior.",
       "B": "Le prestaremos asistencia sanitaria y abonaremos IT por el mismo importe que el AT anterior sólo si acredita estar en Desempleo total.",
@@ -2985,7 +2985,7 @@ const questions = [
   },
   {
     "id": 272,
-    "question": "EN ACCIDENTES DE TRABAJO, LAS EMPRESAS ESTÁN OBLIGADAS A TRAMITAR:",
+    "question": "272. EN ACCIDENTES DE TRABAJO, LAS EMPRESAS ESTÁN OBLIGADAS A TRAMITAR:",
     "options": {
       "A": "La empresa está obligada a cumplimentar el parte de accidente en todos los casos.",
       "B": "La empresa sólo está obligada a cumplimentar el parte de A.T. tanto si se ha producido baja médica como si no.",
@@ -2996,7 +2996,7 @@ const questions = [
   },
   {
     "id": 273,
-    "question": "CUANDO SE ATIENDA A UN TRABAJADOR EN LA MUTUA Y LLEGUE PROVISTO DE VOLANTE DE ASISTENCIA POR HABER TENIDO UN ACCIDENTE DE TRABAJO:",
+    "question": "273. CUANDO SE ATIENDA A UN TRABAJADOR EN LA MUTUA Y LLEGUE PROVISTO DE VOLANTE DE ASISTENCIA POR HABER TENIDO UN ACCIDENTE DE TRABAJO:",
     "options": {
       "A": "Se le dará la baja médica en todos los casos.",
       "B": "Se le dará la baja médica cuando se justifique clínicamente su incapacidad para trabajar.",
@@ -3007,7 +3007,7 @@ const questions = [
   },
   {
     "id": 274,
-    "question": "UNA VEZ RECIBIDO EN FRAGUA EL PARTE DE ACCIDENTE DE TRABAJO A TRAVÉS DE DELTA:",
+    "question": "274. UNA VEZ RECIBIDO EN FRAGUA EL PARTE DE ACCIDENTE DE TRABAJO A TRAVÉS DE DELTA:",
     "options": {
       "A": "Se codifica en el sistema informático, se imprime y se envía a la Autoridad Laboral Provincial.",
       "B": "Se escanea y se procede al pago del subsidio de incapacidad temporal.",
@@ -3018,7 +3018,7 @@ const questions = [
   },
   {
     "id": 275,
-    "question": "RECIBIDO EL PARTE DE ACCIDENTE DE TRABAJO, DETECTADO INCUMPLIMIENTO EMPRESARIAL EN MATERIA DE FALTA DE ALTA DEL TRABAJADOR O MOROSIDAD REITERADA EN EL PAGO DE LAS CUOTAS DE ACCIDENTES DE TRABAJO Y ENFERMEDADES PROFESIONALES:",
+    "question": "275. RECIBIDO EL PARTE DE ACCIDENTE DE TRABAJO, DETECTADO INCUMPLIMIENTO EMPRESARIAL EN MATERIA DE FALTA DE ALTA DEL TRABAJADOR O MOROSIDAD REITERADA EN EL PAGO DE LAS CUOTAS DE ACCIDENTES DE TRABAJO Y ENFERMEDADES PROFESIONALES:",
     "options": {
       "A": "La Mutua no puede hacer nada.",
       "B": "Procede rechazar el siniestro.",
@@ -3029,7 +3029,7 @@ const questions = [
   },
   {
     "id": 276,
-    "question": "A EFECTOS DEL CÓMPUTO DE LA DURACIÓN MÁXIMA DE UN PROCESO DE IT DE ACCIDENTE DE TRABAJO, CUANDO EXISTEN RECAÍDAS, LAS NUEVAS BAJAS MÉDICAS SON ACUMULABLES:",
+    "question": "276. A EFECTOS DEL CÓMPUTO DE LA DURACIÓN MÁXIMA DE UN PROCESO DE IT DE ACCIDENTE DE TRABAJO, CUANDO EXISTEN RECAÍDAS, LAS NUEVAS BAJAS MÉDICAS SON ACUMULABLES:",
     "options": {
       "A": "Si no han pasado más de 3 meses desde el alta médica anterior.",
       "B": "Si no han pasado más de 6 meses desde que ocurrió la baja médica anterior.",
@@ -3040,7 +3040,7 @@ const questions = [
   },
   {
     "id": 277,
-    "question": "¿QUÉ PLAZO EXISTE PARA LA NOTIFICACIÓN DE LOS ACCIDENTES GRAVES O MORTALES A LA AUTORIDAD LABORAL COMPETENTE? :",
+    "question": "277. ¿QUÉ PLAZO EXISTE PARA LA NOTIFICACIÓN DE LOS ACCIDENTES GRAVES O MORTALES A LA AUTORIDAD LABORAL COMPETENTE? :",
     "options": {
       "A": "Cuarenta y ocho horas desde que la empresa declara el accidente.",
       "B": "Cinco días a partir de la presentación del parte de accidente.",
@@ -3051,7 +3051,7 @@ const questions = [
   },
   {
     "id": 278,
-    "question": "¿CÓMO SE REALIZA LA NOTIFICACION DE LOS ACCIDENTES GRAVES O MORTALES A LA AUTORIDAD LABORAL COMPETENTE?",
+    "question": "278. ¿CÓMO SE REALIZA LA NOTIFICACION DE LOS ACCIDENTES GRAVES O MORTALES A LA AUTORIDAD LABORAL COMPETENTE?",
     "options": {
       "A": "Por teléfono.",
       "B": "Mediante la comunicación urgente del sistema DELTA",
@@ -3062,7 +3062,7 @@ const questions = [
   },
   {
     "id": 279,
-    "question": "¿PARA QUÉ SIRVE EL SISTEMA DELTA?",
+    "question": "279. ¿PARA QUÉ SIRVE EL SISTEMA DELTA?",
     "options": {
       "A": "Para gestionar los partes de accidente de trabajo a través de internet.",
       "B": "Para gestionar las relaciones de accidentes de trabajo ocurridos sin baja médica a través de internet.",
@@ -3073,7 +3073,7 @@ const questions = [
   },
   {
     "id": 280,
-    "question": "¿EN QUÉ CIRCUNSTANCIAS PROCEDE CALIFICAR COMO CONTINGENCIA PROFESIONAL LAS ENFERMEDADES CARDIOVASCULARES COMO INFARTO DE MIOCARDIO, CEREBRALES, ETC.?.:",
+    "question": "280. ¿EN QUÉ CIRCUNSTANCIAS PROCEDE CALIFICAR COMO CONTINGENCIA PROFESIONAL LAS ENFERMEDADES CARDIOVASCULARES COMO INFARTO DE MIOCARDIO, CEREBRALES, ETC.?.:",
     "options": {
       "A": "Solo cuando el suceso ocurre en lugar y tiempo de trabajo y se trata de un trabajador por cuenta ajena.",
       "B": "Cuando el suceso ocurre en lugar y tiempo de trabajo y se trata exclusivamente de un trabajador por cuenta propia.",
@@ -3084,7 +3084,7 @@ const questions = [
   },
   {
     "id": 281,
-    "question": "¿QUÉ ENTIDADES INTERVIENEN EN EL SISTEMA DELTA?",
+    "question": "281. ¿QUÉ ENTIDADES INTERVIENEN EN EL SISTEMA DELTA?",
     "options": {
       "A": "Trabajadores, representantes de empresa, empresas y Dirección General de Ordenación Económica del Ministerio de Trabajo, Migraciones y Seguridad Social.",
       "B": "Empresas, Mutuas Colaboradoras con la Seguridad Social y Ministerio de Trabajo, Migraciones y Seguridad Social.",
@@ -3095,7 +3095,7 @@ const questions = [
   },
   {
     "id": 282,
-    "question": "EL CUADRO DE ENFERMEDADES PROFESIONALES QUE ACTUALMENTE SE HALLA EN VIGOR FUE APROBADO POR:",
+    "question": "282. EL CUADRO DE ENFERMEDADES PROFESIONALES QUE ACTUALMENTE SE HALLA EN VIGOR FUE APROBADO POR:",
     "options": {
       "A": "El Real Decreto 1299/2006, de 10 de noviembre.",
       "B": "El Real Decreto 1995/1978, de 12 de mayo.",
@@ -3106,7 +3106,7 @@ const questions = [
   },
   {
     "id": 283,
-    "question": "EL NUEVO PARTE DE ENFERMEDAD PROFESIONAL:",
+    "question": "283. EL NUEVO PARTE DE ENFERMEDAD PROFESIONAL:",
     "options": {
       "A": "Se trasmite por DELTA.",
       "B": "Lo realiza la empresa.",
@@ -3117,7 +3117,7 @@ const questions = [
   },
   {
     "id": 284,
-    "question": "¿CUÁNDO HAY QUE COMUNICAR AL INSS EL RECHAZO DE UNA ENFERMEDAD PROFESIONAL?",
+    "question": "284. ¿CUÁNDO HAY QUE COMUNICAR AL INSS EL RECHAZO DE UNA ENFERMEDAD PROFESIONAL?",
     "options": {
       "A": "Siempre que se rechace un expediente de Enfermedad profesional.",
       "B": "Solo en los casos con Baja y Alta Médica.",
@@ -3128,7 +3128,7 @@ const questions = [
   },
   {
     "id": 285,
-    "question": "LA MUTUA EMITIRÁ UN PARTE MÉDICO DE ALTA POR INCOMPARECENCIA CUANDO…",
+    "question": "285. LA MUTUA EMITIRÁ UN PARTE MÉDICO DE ALTA POR INCOMPARECENCIA CUANDO…",
     "options": {
       "A": "Se trate de cualquier contingencia y el trabajador, sin causa justificada, no haya acudido a alguna de las consultas de seguimiento, intervenciones o sesiones de rehabilitación que le hayan sido pautadas por nuestros servicios médicos",
       "B": "Se trate de una contingencia por accidente de trabajo y el trabajador, sin causa justificada, no haya acudido a alguna de las consultas de seguimiento, intervenciones o sesiones de rehabilitación que le hayan sido pautadas por nuestros servicios médicos.",
@@ -3139,7 +3139,7 @@ const questions = [
   },
   {
     "id": 286,
-    "question": "EN CASO DE AGRESIÓN EN TIEMPO Y LUGAR DE TRABAJO…",
+    "question": "286. EN CASO DE AGRESIÓN EN TIEMPO Y LUGAR DE TRABAJO…",
     "options": {
       "A": "Para considerar una agresión como accidente de trabajo debe existir siempre una relación aunque sea indirecta entre la agresión y la realización del trabajo.",
       "B": "En virtud del art. 156.3 de la LGSS siempre se asumirá que si es tiempo y lugar de trabajo es un Accidente de Trabajo.",
@@ -3150,7 +3150,7 @@ const questions = [
   },
   {
     "id": 287,
-    "question": "EN CASO DE NO RECONOCER LA EXISTENCIA DE UN ACCIDENTE DE TRABAJO, ¿A QUIÉN SE LO DEBEMOS COMUNICAR Y QUÉ DOCUMENTACION SE DEBE ENTREGAR AL TRABAJADOR?",
+    "question": "287. EN CASO DE NO RECONOCER LA EXISTENCIA DE UN ACCIDENTE DE TRABAJO, ¿A QUIÉN SE LO DEBEMOS COMUNICAR Y QUÉ DOCUMENTACION SE DEBE ENTREGAR AL TRABAJADOR?",
     "options": {
       "A": "Se debe comunicar por escrito a la empresa y al trabajador, facilitándole el facultativo el informe médico pertinente con las pruebas diagnósticas que estime oportunas. Así mismo, se debe hacer un contacto telefónico inmediato con la empresa para explicarles los motivos de la no aceptación. .",
       "B": "Se le comunica verbalmente y se le facilita un informe médico del facultativo.",
@@ -3161,7 +3161,7 @@ const questions = [
   },
   {
     "id": 288,
-    "question": "EL ACCIDENTE QUE SUFRE UN TRABAJADOR DURANTE SU JORNADA DE TRABAJO DIRIGIÉNDOSE DESDE SU CENTRO DE TRABAJO HABITUAL A LA CONSULTA DEL DENTISTA ¿SE CONSIDERA ACCIDENTE DE TRABAJO?",
+    "question": "288. EL ACCIDENTE QUE SUFRE UN TRABAJADOR DURANTE SU JORNADA DE TRABAJO DIRIGIÉNDOSE DESDE SU CENTRO DE TRABAJO HABITUAL A LA CONSULTA DEL DENTISTA ¿SE CONSIDERA ACCIDENTE DE TRABAJO?",
     "options": {
       "A": "Sí, siempre y cuando lo haya notificado a su superior y éste le hubiera autorizado. En ese supuesto se trataría de un accidente de trabajo en desplazamiento dentro de la jornada laboral.",
       "B": "Sí, ya que se cumple el requisito estipulado en el art. 156.3 LGSS de presunción de laboralidad si el accidente se produce en tiempo de trabajo.",
@@ -3172,18 +3172,18 @@ const questions = [
   },
   {
     "id": 289,
-    "question": "TRABAJADOR AUTÓNOMO QUE SUFRE UN ACCIDENTE DE TRABAJO Y ACUDE A LA MUTUA POCOS DÍAS DESPUÉS A SOLICITAR EL PAGO DIRECTO. SE VERIFICA AFILIACIÓN Y CARENCIA PERO SE DETECTA NO ESTAR AL CORRIENTE EN EL PAGO DE CUOTAS, ¿CÓMO PROCEDEMOS?.",
+    "question": "289. TRABAJADOR AUTÓNOMO QUE SUFRE UN ACCIDENTE DE TRABAJO Y ACUDE A LA MUTUA POCOS DÍAS DESPUÉS A SOLICITAR EL PAGO DIRECTO. SE VERIFICA AFILIACIÓN Y CARENCIA PERO SE DETECTA NO ESTAR AL CORRIENTE EN EL PAGO DE CUOTAS, ¿CÓMO PROCEDEMOS?.",
     "options": {
       "A": "Se le informará que al no estar al corriente de pago con la TGSS en el momento del accidente no tiene derecho a prestación de IT. No obstante se le deberá hacer la invitación al pago para que la próxima vez que sufra un accidente tenga derecho a la prestación de IT.",
       "B": "Se le realizará la invitación al pago de modo que si en el plazo de 30 días naturales se pusiera al corriente de pago o consiguiera un aplazamiento de la deuda pudiera cobrar la prestación de IT.",
-      "C": "Se le realizará la invitación al pago y se le informará que al no haber cumplido con el requisito de estar al corriente de pago con la TGSS en el\nmomento del accidente, si ahora se pone al corriente únicamente tendrá derecho a cobrar el 80% de la prestación de IT.",
+      "C": "Se le realizará la invitación al pago y se le informará que al no haber cumplido con el requisito de estar al corriente de pago con la TGSS en el momento del accidente, si ahora se pone al corriente únicamente tendrá derecho a cobrar el 80% de la prestación de IT.",
       "D": "Se le realiza la invitación al pago. Si en el plazo de 30 días naturales se pone al corriente de pago cobrará íntegramente la prestación de IT que le correspondería, pero si se pone al corriente de pago superado esos 30 días naturales, únicamente se le abonará el 80% de la prestación de IT que le correspondería."
     },
     "correct": "D"
   },
   {
     "id": 290,
-    "question": "EL CERTIFICADO MÉDICO QUE DESCARTA EL EMBARAZO DE RIESGO Y QUE SE DEBE APORTAR JUNTO A LA SOLICITUD DE LA PRESTACION ECONÓMICA DE RIESGO POR EMBARAZO, ¿QUIÉN DEBE EXPEDIRLO?.",
+    "question": "290. EL CERTIFICADO MÉDICO QUE DESCARTA EL EMBARAZO DE RIESGO Y QUE SE DEBE APORTAR JUNTO A LA SOLICITUD DE LA PRESTACION ECONÓMICA DE RIESGO POR EMBARAZO, ¿QUIÉN DEBE EXPEDIRLO?.",
     "options": {
       "A": "El Servicio Público de Salud.",
       "B": "El Equipo de Valoración de Incapacidades.",
@@ -3194,7 +3194,7 @@ const questions = [
   },
   {
     "id": 291,
-    "question": "CUANDO UNA MUJER EMBARAZADA DA A LUZ…",
+    "question": "291. CUANDO UNA MUJER EMBARAZADA DA A LUZ…",
     "options": {
       "A": "Se inicia el periodo de IT por baja maternal.",
       "B": "El médico de familia emite parte médico de baja por parto.",
@@ -3205,7 +3205,7 @@ const questions = [
   },
   {
     "id": 292,
-    "question": "EN PRINCIPIO PODRÍAN SER SUSCEPTIBLES DE APLICACIÓN NORMATIVA DEL RIESGO DURANTE EL EMBARAZO LAS SIGUIENTES ACTIVIDADES:",
+    "question": "292. EN PRINCIPIO PODRÍAN SER SUSCEPTIBLES DE APLICACIÓN NORMATIVA DEL RIESGO DURANTE EL EMBARAZO LAS SIGUIENTES ACTIVIDADES:",
     "options": {
       "A": "Manipuladoras de basuras.",
       "B": "Actividades con cambios bruscos de temperatura y/o permanencia de mucho tiempo en bipedestación.",
@@ -3216,7 +3216,7 @@ const questions = [
   },
   {
     "id": 293,
-    "question": "LA PRESTACIÓN POR RIESGO DURANTE EL EMBARAZO Y LA LACTANCIA NATURAL:",
+    "question": "293. LA PRESTACIÓN POR RIESGO DURANTE EL EMBARAZO Y LA LACTANCIA NATURAL:",
     "options": {
       "A": "La solicita la empresa.",
       "B": "La solicita la mutua.",
@@ -3227,7 +3227,7 @@ const questions = [
   },
   {
     "id": 294,
-    "question": "LA PRESTACIÓN POR RIESGO DURANTE EL EMBARAZO Y LA LACTANCIA NATURAL:",
+    "question": "294. LA PRESTACIÓN POR RIESGO DURANTE EL EMBARAZO Y LA LACTANCIA NATURAL:",
     "options": {
       "A": "Tiene la naturaleza de contingencia profesional.",
       "B": "Tiene la naturaleza de contingencia común.",
@@ -3238,7 +3238,7 @@ const questions = [
   },
   {
     "id": 295,
-    "question": "LA PRESTACIÓN POR LACTANCIA NATURAL FINALIZA:",
+    "question": "295. LA PRESTACIÓN POR LACTANCIA NATURAL FINALIZA:",
     "options": {
       "A": "A los 5 meses de que haya nacido del hijo.",
       "B": "Al extinguirse el permiso por maternidad.",
@@ -3249,7 +3249,7 @@ const questions = [
   },
   {
     "id": 296,
-    "question": "FRATERNIDAD-MUPRESPA PUEDE CUBRIR LA PRESTACIÓN ECONÓMICA POR RIESGO DURANTE EL EMBARAZO A:",
+    "question": "296. FRATERNIDAD-MUPRESPA PUEDE CUBRIR LA PRESTACIÓN ECONÓMICA POR RIESGO DURANTE EL EMBARAZO A:",
     "options": {
       "A": "Las trabajadoras por cuenta ajena vinculadas a la mutua.",
       "B": "Las trabajadoras de empresas autoaseguradoras vinculadas a la mutua.",
@@ -3260,7 +3260,7 @@ const questions = [
   },
   {
     "id": 297,
-    "question": "LA PRESTACIÓN ECONÓMICA POR RIESGO DURANTE EL EMBARAZO Y LA LACTANCIA NATURAL:",
+    "question": "297. LA PRESTACIÓN ECONÓMICA POR RIESGO DURANTE EL EMBARAZO Y LA LACTANCIA NATURAL:",
     "options": {
       "A": "Consiste en un subsidio del 75% de la base reguladora de contingencias profesionales.",
       "B": "Consiste en un subsidio del 75% de la base reguladora de contingencias comunes.",
@@ -3271,7 +3271,7 @@ const questions = [
   },
   {
     "id": 298,
-    "question": "¿CUÁNDO SE EXTINGUE LA PRESTACIÓN ECONÓMICA POR RIESGO DE EMBARAZO?",
+    "question": "298. ¿CUÁNDO SE EXTINGUE LA PRESTACIÓN ECONÓMICA POR RIESGO DE EMBARAZO?",
     "options": {
       "A": "Cuando se extinga el contrato de trabajo en virtud de las causas legalmente establecidas.",
       "B": "Por reincorporación de la mujer trabajadora a su puesto de trabajo anterior o a otro compatible con su estado.",
@@ -3282,7 +3282,7 @@ const questions = [
   },
   {
     "id": 299,
-    "question": "PARA CONCEDER O DENEGAR LAS PRESTACIONES ECONÓMICA DE RIESGO POR EMBARAZO Y LACTANCIA NATURAL, CON CARÁCTER PRINCIPAL DEBEMOS SEGUIR LAS INDICACIONES DE:",
+    "question": "299. PARA CONCEDER O DENEGAR LAS PRESTACIONES ECONÓMICA DE RIESGO POR EMBARAZO Y LACTANCIA NATURAL, CON CARÁCTER PRINCIPAL DEBEMOS SEGUIR LAS INDICACIONES DE:",
     "options": {
       "A": "El Director Provincial.",
       "B": "Del médico de familia de la mujer, siempre que figuren por escrito. .",
@@ -3293,7 +3293,7 @@ const questions = [
   },
   {
     "id": 300,
-    "question": "EN LA PRESTACIÓN DE RIESGO POR LACTANCIA NATURAL…",
+    "question": "300. EN LA PRESTACIÓN DE RIESGO POR LACTANCIA NATURAL…",
     "options": {
       "A": "Solo pediremos un informe del pediatra cuando se solicite la prestación.",
       "B": "Serán necesarios un informe del pediatra al solicitarla y al finalizar la prestación.",
@@ -3304,7 +3304,7 @@ const questions = [
   },
   {
     "id": 301,
-    "question": "SI EN LA DECLARACIÓN EMPRESARIAL DE UNA SOLICITUD DE RIESGO POR EMBARAZO NOS SEÑALAN TEXTUALMENTE: “RIESGOS QUÍMICOS”…",
+    "question": "301. SI EN LA DECLARACIÓN EMPRESARIAL DE UNA SOLICITUD DE RIESGO POR EMBARAZO NOS SEÑALAN TEXTUALMENTE: “RIESGOS QUÍMICOS”…",
     "options": {
       "A": "Concedemos sin más la prestación.",
       "B": "Denegamos sin más la prestación, es excesivamente genérico el riesgo.",
@@ -3315,7 +3315,7 @@ const questions = [
   },
   {
     "id": 302,
-    "question": "LAS TRABAJADORAS AUTÓNOMAS…",
+    "question": "302. LAS TRABAJADORAS AUTÓNOMAS…",
     "options": {
       "A": "No tienen derecho a la prestación por riesgo por embarazo.",
       "B": "Solo tiene derecho al riesgo por embarazo pero no al riesgo por lactancia natural.",
@@ -3326,7 +3326,7 @@ const questions = [
   },
   {
     "id": 303,
-    "question": "SE DEBE CONDECER LA PRESTACIÓN DE RIESGO POR EMBARAZO…",
+    "question": "303. SE DEBE CONDECER LA PRESTACIÓN DE RIESGO POR EMBARAZO…",
     "options": {
       "A": "Siempre que la soliciten porque hay que proteger al feto.",
       "B": "Siempre que haya riesgo en el puesto de trabajo, aunque el empresario señale que “Hay otro puesto compatible con su estado”.",
@@ -3337,7 +3337,7 @@ const questions = [
   },
   {
     "id": 304,
-    "question": "ANTE CUALQUIER SOLICITUD DE RIESGO POR EMBARAZO…",
+    "question": "304. ANTE CUALQUIER SOLICITUD DE RIESGO POR EMBARAZO…",
     "options": {
       "A": "Hay que dar una respuesta sobre su concesión de forma inmediata para no inquietar a la embarazada.",
       "B": "Está establecido un plazo máximo de una semana para tomar una decisión y dar una respuesta.",
@@ -3348,7 +3348,7 @@ const questions = [
   },
   {
     "id": 305,
-    "question": "CUANDO UNA MUJER EMBARAZADA TIENE DOS PUESTOS DE TRABAJO (PLURIEMPLEO)…",
+    "question": "305. CUANDO UNA MUJER EMBARAZADA TIENE DOS PUESTOS DE TRABAJO (PLURIEMPLEO)…",
     "options": {
       "A": "La prestación de riesgo por embarazo afecta siempre a los dos puestos de trabajo.",
       "B": "Afecta a los dos trabajos sólo si las dos empresas están con la misma mutua.",
@@ -3359,7 +3359,7 @@ const questions = [
   },
   {
     "id": 306,
-    "question": "SEGÚN EL PROCEDIMIENTO INTERNO DE LA MUTUA, EL PAGO DIRECTO A LOS TRABAJADORES SE REALIZARÁ:",
+    "question": "306. SEGÚN EL PROCEDIMIENTO INTERNO DE LA MUTUA, EL PAGO DIRECTO A LOS TRABAJADORES SE REALIZARÁ:",
     "options": {
       "A": "Por cheque o metálico, según criterio del trabajador.",
       "B": "Por transferencia a la cuenta designada por el trabajador, y sólo excepcionalmente por cheque nominativo.",
@@ -3370,9 +3370,9 @@ const questions = [
   },
   {
     "id": 307,
-    "question": "LA AUSENCIA AL TRABAJO SIN ENCONTRARSE EN SITUACIÓN DE BAJA MÉDICA (CONSULTA MÉDICA, REALIZACIÓN DE PRUEBAS AMBULATORIAS, ACOMPAÑAR A FAMILIARES A CONSULTA)….",
+    "question": "307. LA AUSENCIA AL TRABAJO SIN ENCONTRARSE EN SITUACIÓN DE BAJA MÉDICA (CONSULTA MÉDICA, REALIZACIÓN DE PRUEBAS AMBULATORIAS, ACOMPAÑAR A FAMILIARES A CONSULTA)….",
     "options": {
-      "A": "Siempre debe justificarse con una baja laboral.",
+      "A": "….",
       "B": "Nunca debe justificarse con una baja laboral.",
       "C": "Debe justificarse con un documento del centro donde asiste.",
       "D": "Son ciertas la B y la C."
@@ -3381,7 +3381,7 @@ const questions = [
   },
   {
     "id": 308,
-    "question": "EXPEDIENTES CON RESERVA Y SIN SITUACIÓN",
+    "question": "308. EXPEDIENTES CON RESERVA Y SIN SITUACIÓN",
     "options": {
       "A": "Se deben controlar mensualmente.",
       "B": "Se debe realizar un seguimiento diario de los expedientes y mientras que se resuelven se deben apuntar las incidencias en el curso administrativo.",
@@ -3392,7 +3392,7 @@ const questions = [
   },
   {
     "id": 309,
-    "question": "EL ACUERDO DE COLABORACIÓN DE ASISTENCIA SANITARIA ENTRE FRATERNIDAD-MUPRESPA Y ASEPEYO…",
+    "question": "309. EL ACUERDO DE COLABORACIÓN DE ASISTENCIA SANITARIA ENTRE FRATERNIDAD-MUPRESPA Y ASEPEYO…",
     "options": {
       "A": "Es sólo para atender los casos de Accidente de Trabajo.",
       "B": "Es sólo para atender los casos de Contingencias Comunes.",
@@ -3403,7 +3403,7 @@ const questions = [
   },
   {
     "id": 310,
-    "question": "CUANDO SE ATIENDA A UN TRABAJADOR DE UNA EMPRESA ASOCIADA CON ASEPEYO QUE ACUDA A UN CENTRO PROPIO DE LA MUTUA DICIENDO HABER SUFRIDO UN ACCIDENTE DE TRABAJO…",
+    "question": "310. CUANDO SE ATIENDA A UN TRABAJADOR DE UNA EMPRESA ASOCIADA CON ASEPEYO QUE ACUDA A UN CENTRO PROPIO DE LA MUTUA DICIENDO HABER SUFRIDO UN ACCIDENTE DE TRABAJO…",
     "options": {
       "A": "Se abrirá un expediente tipo trabajador",
       "B": "Se abrirá un expediente del tipo: privado por concierto – ASEPEYO",
@@ -3414,7 +3414,7 @@ const questions = [
   },
   {
     "id": 311,
-    "question": "LAS ASISTENCIAS MÉDICAS REALIZADAS A TRABAJADORES DE EMPRESAS ASOCIADAS CON ASEPEYO CON MEDIOS PROPIOS DE LA MUTUA…",
+    "question": "311. LAS ASISTENCIAS MÉDICAS REALIZADAS A TRABAJADORES DE EMPRESAS ASOCIADAS CON ASEPEYO CON MEDIOS PROPIOS DE LA MUTUA…",
     "options": {
       "A": "Desde la firma del acuerdo ya no se facturarán a ASEPEYO.",
       "B": "Desde la firma del acuerdo, se facturarán únicamente en aquellas provincias en las que ASEPEYO no tengan centros propios.",
@@ -3425,7 +3425,7 @@ const questions = [
   },
   {
     "id": 312,
-    "question": "SI UN TRABAJADOR DE UNA EMPRESA ASOCIADA CON ASEPEYO ACUDE A UN CENTRO PROPIO DE LA MUTUA DICIENDO HABER SUFRIDO UN ACCIDENTE DE TRABAJO Y SIN APORTAR VSA…",
+    "question": "312. SI UN TRABAJADOR DE UNA EMPRESA ASOCIADA CON ASEPEYO ACUDE A UN CENTRO PROPIO DE LA MUTUA DICIENDO HABER SUFRIDO UN ACCIDENTE DE TRABAJO Y SIN APORTAR VSA…",
     "options": {
       "A": "Se contactará con su empresa para recabar información sobre el accidente y proceder a grabar el correspondiente VSA (actuando de la misma forma que con los trabajadores afiliados a la propia mutua).",
       "B": "Se contactará inmediatamente con el personal de ASEPEYO para que sean ellos quienes recaben la información del VSA de la empresa, o en su defecto, para que nos autoricen a aceptar o rechazar el accidente.",
@@ -3436,7 +3436,7 @@ const questions = [
   },
   {
     "id": 313,
-    "question": "SI UN TRABAJADOR DE UNA EMPRESA ASOCIADA CON ASEPEYO ACUDE A UN CENTRO PROPIO DE LA MUTUA DETECTÁNDOSE PATOLOGÍA DE CONTINGENCIA COMÚN…",
+    "question": "313. SI UN TRABAJADOR DE UNA EMPRESA ASOCIADA CON ASEPEYO ACUDE A UN CENTRO PROPIO DE LA MUTUA DETECTÁNDOSE PATOLOGÍA DE CONTINGENCIA COMÚN…",
     "options": {
       "A": "Se le atenderá en consulta y posteriormente se le remitirá a un centro propio de ASEPEYO.",
       "B": "Se le derivará a un centro propio o concertado de ASEPEYO.",
@@ -3447,7 +3447,7 @@ const questions = [
   },
   {
     "id": 314,
-    "question": "SI UN TRABAJADOR DE UNA EMPRESA ASOCIADA CON ASEPEYO ACUDE A UN CENTRO PROPIO DE LA MUTUA DICIENDO HABER SUFRIDO UN ACCIDENTE DE TRABAJO, LA PRIMERA ACCIÓN A REALIZAR ES:",
+    "question": "314. SI UN TRABAJADOR DE UNA EMPRESA ASOCIADA CON ASEPEYO ACUDE A UN CENTRO PROPIO DE LA MUTUA DICIENDO HABER SUFRIDO UN ACCIDENTE DE TRABAJO, LA PRIMERA ACCIÓN A REALIZAR ES:",
     "options": {
       "A": "Verificar en la GISS que dicho trabajador tiene la cobertura “E. IT-AT” con ASEPEYO.",
       "B": "Verificar en la GISS que dicho trabajador tiene la cobertura “E. IMS-AT” con ASEPEYO.",
@@ -3458,7 +3458,7 @@ const questions = [
   },
   {
     "id": 315,
-    "question": "A UN TRABAJADOR DE UNA EMPRESA ASOCIADA CON ASEPEYO QUE ACUDA A UN CENTRO PROPIO DE LA MUTUA TRAS HABER SUFRIDO UN ACCIDENTE DE TRABAJO, QUE PRECISA BAJA MÉDICA …",
+    "question": "315. A UN TRABAJADOR DE UNA EMPRESA ASOCIADA CON ASEPEYO QUE ACUDA A UN CENTRO PROPIO DE LA MUTUA TRAS HABER SUFRIDO UN ACCIDENTE DE TRABAJO, QUE PRECISA BAJA MÉDICA …",
     "options": {
       "A": "Nuestros servicios médicos le expedirán un Parte Médico de Baja con el logotipo de Fraternidad-Muprespa y de no haber aportado VSA le informarán que deberá presentar dicho VSA en el centro administrativo de ASEPEYO más cercano.",
       "B": "Nuestros servicios médicos le expedirán un Parte Médico de Baja con el logotipo de ASEPEYO y de no haber aportado VSA le informarán que deberá presentar dicho VSA en el centro administrativo de ASEPEYO más cercano.",
@@ -3469,7 +3469,7 @@ const questions = [
   },
   {
     "id": 316,
-    "question": "LA PROTECCIÓN POR CESE DE ACTIVIDAD DE LOS TRABAJADORES AUTÓNOMOS:",
+    "question": "316. LA PROTECCIÓN POR CESE DE ACTIVIDAD DE LOS TRABAJADORES AUTÓNOMOS:",
     "options": {
       "A": "La cubre el Servicio Público Empleo Estatal",
       "B": "La cubre el ISM.",
@@ -3480,7 +3480,7 @@ const questions = [
   },
   {
     "id": 317,
-    "question": "LA PROTECCIÓN POR CESE DE ACTIVIDAD DE LOS TRABAJADORES AUTÓNOMOS TIENE COMO FINALIDAD:",
+    "question": "317. LA PROTECCIÓN POR CESE DE ACTIVIDAD DE LOS TRABAJADORES AUTÓNOMOS TIENE COMO FINALIDAD:",
     "options": {
       "A": "Proteger a aquellos que hayan cesado en la actividad por cualquier causa.",
       "B": "Proteger solo a los que hayan cesado por motivos no voluntarios.",
@@ -3491,7 +3491,7 @@ const questions = [
   },
   {
     "id": 318,
-    "question": "LA PROTECCIÓN POR CESE DE ACTIVIDAD DE LOS TRABAJADORES AUTÓNOMOS:",
+    "question": "318. LA PROTECCIÓN POR CESE DE ACTIVIDAD DE LOS TRABAJADORES AUTÓNOMOS:",
     "options": {
       "A": "Protege cuando el cese es de carácter definitivo.",
       "B": "Protege cuando el cese es temporal.",
@@ -3502,7 +3502,7 @@ const questions = [
   },
   {
     "id": 319,
-    "question": "LA PROTECCIÓN POR CESE DE ACTIVIDAD DE LOS TRABAJADORES AUTÓNOMOS:",
+    "question": "319. LA PROTECCIÓN POR CESE DE ACTIVIDAD DE LOS TRABAJADORES AUTÓNOMOS:",
     "options": {
       "A": "Solo comprende una prestación económica durante un periodo de tiempo.",
       "B": "Comprende una prestación económica temporal y la cotización a la SS",
@@ -3513,7 +3513,7 @@ const questions = [
   },
   {
     "id": 320,
-    "question": "LA PROTECCIÓN POR CESE DE ACTIVIDAD DE LOS TRABAJADORES AUTÓNOMOS:",
+    "question": "320. LA PROTECCIÓN POR CESE DE ACTIVIDAD DE LOS TRABAJADORES AUTÓNOMOS:",
     "options": {
       "A": "No requiere periodo de carencia.",
       "B": "Requiere el mismo periodo de carencia que la IT de contingencias comunes.",
@@ -3524,7 +3524,7 @@ const questions = [
   },
   {
     "id": 321,
-    "question": "EN LA PROTECCIÓN POR CESE DE ACTIVIDAD DE LOS TRABAJADORES AUTÓNOMOS:",
+    "question": "321. EN LA PROTECCIÓN POR CESE DE ACTIVIDAD DE LOS TRABAJADORES AUTÓNOMOS:",
     "options": {
       "A": "La base reguladora es la misma del mes del cese de actividad.",
       "B": "La base reguladora es la del mes anterior al cese.",
@@ -3535,7 +3535,7 @@ const questions = [
   },
   {
     "id": 322,
-    "question": "EN LA PROTECCIÓN POR CESE DE ACTIVIDAD DE LOS TRABAJADORES AUTÓNOMOS:",
+    "question": "322. EN LA PROTECCIÓN POR CESE DE ACTIVIDAD DE LOS TRABAJADORES AUTÓNOMOS:",
     "options": {
       "A": "La cuantía de la prestación económica es del 100% de la base reguladora.",
       "B": "La cuantía de la prestación económica es del 75% de la base reguladora.",
@@ -3546,7 +3546,7 @@ const questions = [
   },
   {
     "id": 323,
-    "question": "LA PROTECCIÓN POR CESE DE ACTIVIDAD DE LOS TRABAJADORES AUTÓNOMOS, ¿ES COMPATIBLE CON LA REALIZACIÓN DE OTROS TRABAJOS POR CUENTA AJENA?",
+    "question": "323. LA PROTECCIÓN POR CESE DE ACTIVIDAD DE LOS TRABAJADORES AUTÓNOMOS, ¿ES COMPATIBLE CON LA REALIZACIÓN DE OTROS TRABAJOS POR CUENTA AJENA?",
     "options": {
       "A": "Sí.",
       "B": "No.",
@@ -3557,7 +3557,7 @@ const questions = [
   },
   {
     "id": 324,
-    "question": "LOS POSIBLES BENEFICIARIOS DE LA PRESTACIÓN POR CUIDADO DE HIJOS CON CÁNCER SERÁN ÚNICAMENTE:",
+    "question": "324. LOS POSIBLES BENEFICIARIOS DE LA PRESTACIÓN POR CUIDADO DE HIJOS CON CÁNCER SERÁN ÚNICAMENTE:",
     "options": {
       "A": "Sólo los progenitores y adoptantes",
       "B": "Sólo los progenitores",
@@ -3568,7 +3568,7 @@ const questions = [
   },
   {
     "id": 325,
-    "question": "PARA ACCEDER A LA PRESTACIÓN POR CUIDADO DE HIJOS AFECTADOS CON CÁNCER U OTRA ENFERMEDAD GRAVE, ¿CUÁLES DE LOS SIGUIENTES REQUISITOS DEBE CUMPLIR EL MENOR?",
+    "question": "325. PARA ACCEDER A LA PRESTACIÓN POR CUIDADO DE HIJOS AFECTADOS CON CÁNCER U OTRA ENFERMEDAD GRAVE, ¿CUÁLES DE LOS SIGUIENTES REQUISITOS DEBE CUMPLIR EL MENOR?",
     "options": {
       "A": "Ser mayor de 18 años",
       "B": "Basta con tener diagnosticado cáncer",
@@ -3579,7 +3579,7 @@ const questions = [
   },
   {
     "id": 326,
-    "question": "EN LA PRESTACIÓN POR CUIDADO DE HIJOS AFECTADOS CON CÁNCER U OTRA ENFERMEDAD GRAVE, CON EXCEPCIÓN DE LAS FAMILIAS MONOPARENTALES Y SITUACIONES SIMILARES ¿EN QUÉ\nSITUACIÓN DEBEN ESTAR LOS POSIBLES BENEFICIARIOS DE LA PRESTACIÓN?",
+    "question": "326. EN LA PRESTACIÓN POR CUIDADO DE HIJOS AFECTADOS CON CÁNCER U OTRA ENFERMEDAD GRAVE, CON EXCEPCIÓN DE LAS FAMILIAS MONOPARENTALES Y SITUACIONES SIMILARES ¿EN QUÉ SITUACIÓN DEBEN ESTAR LOS POSIBLES BENEFICIARIOS DE LA PRESTACIÓN?",
     "options": {
       "A": "Al menos uno de ellos debe estar afiliado y en situación de alta en la Seguridad Social en el momento de solicitar la prestación.",
       "B": "Únicamente se requiere que el solicitante de la prestación esté afiliados y en situación de alta en la Seguridad Social.",
@@ -3590,7 +3590,7 @@ const questions = [
   },
   {
     "id": 327,
-    "question": "EN LA PRESTACIÓN POR CUIDADO DE HIJOS AFECTADOS CON CÁNCER U OTRA ENFERMEDAD GRAVE, EL SOLICITANTE DEBE TENER CONCEDIDA LA REDUCCIÓN DE JORNADA LABORAL EN:",
+    "question": "327. EN LA PRESTACIÓN POR CUIDADO DE HIJOS AFECTADOS CON CÁNCER U OTRA ENFERMEDAD GRAVE, EL SOLICITANTE DEBE TENER CONCEDIDA LA REDUCCIÓN DE JORNADA LABORAL EN:",
     "options": {
       "A": "Al menos un 50% de su jornada de trabajo.",
       "B": "En el 100% de su jornada de trabajo",
@@ -3601,7 +3601,7 @@ const questions = [
   },
   {
     "id": 328,
-    "question": "EN LA PRESTACIÓN POR CUIDADO DE HIJOS AFECTADOS CON CÁNCER U OTRA ENFERMEDAD GRAVE, ¿EN QUÉ CONSISTIRÁ LA PRESTACIÓN PERCIBIDA POR EL SOLICITANTE?",
+    "question": "328. EN LA PRESTACIÓN POR CUIDADO DE HIJOS AFECTADOS CON CÁNCER U OTRA ENFERMEDAD GRAVE, ¿EN QUÉ CONSISTIRÁ LA PRESTACIÓN PERCIBIDA POR EL SOLICITANTE?",
     "options": {
       "A": "Equivalente al 100% de la base reguladora establecida para la prestación por Incapacidad Temporal, derivada de Contingencias Profesionales, aplicando el porcentaje de reducción que experimente la jornada de trabajo.",
       "B": "Equivalente al 75% de la base reguladora establecida para la prestación por Incapacidad Temporal, derivada de Contingencias Profesionales, aplicando el porcentaje de reducción que experimente la jornada de trabajo y con el tope máximo, en todo caso, del 75%.",
@@ -3612,7 +3612,7 @@ const questions = [
   },
   {
     "id": 329,
-    "question": "EN LA PRESTACIÓN POR CUIDADO DE HIJOS CON CÁNCER, ¿EN CUÁLES DE LOS SIGUIENTES SUPUESTOS QUEDARÁ SUSPENDIDA LA PERCEPCIÓN DEL SUBSIDIO?",
+    "question": "329. EN LA PRESTACIÓN POR CUIDADO DE HIJOS CON CÁNCER, ¿EN CUÁLES DE LOS SIGUIENTES SUPUESTOS QUEDARÁ SUSPENDIDA LA PERCEPCIÓN DEL SUBSIDIO?",
     "options": {
       "A": "En las situaciones de IT, maternidad/paternidad, riesgo durante el embarazo/lactancia y, en general, cuando la reducción de la jornada de trabajo por cuidado de menores afectados por cáncer concurra con cualquier causa de suspensión de la relación laboral.",
       "B": "Únicamente en la situación de IT.",
@@ -3623,7 +3623,7 @@ const questions = [
   },
   {
     "id": 330,
-    "question": "EN LA PRESTACIÓN POR CUIDADO DE HIJOS CON CÁNCER, ¿EN CUÁLES DE LOS SIGUIENTES SUPUESTOS SE EXTINGUIRÁ EL SUBSIDIO?",
+    "question": "330. EN LA PRESTACIÓN POR CUIDADO DE HIJOS CON CÁNCER, ¿EN CUÁLES DE LOS SIGUIENTES SUPUESTOS SE EXTINGUIRÁ EL SUBSIDIO?",
     "options": {
       "A": "Por la reincorporación plena al trabajo o reanudación total de la actividad laboral del beneficiario",
       "B": "Por finalizar alguno de los dos cónyuges la relación laboral.",
@@ -3634,7 +3634,7 @@ const questions = [
   },
   {
     "id": 331,
-    "question": "SEGÚN ESTABLECE EL RD 625/2014, DE 18 DE JULIO ¿CON QUE ANTELACIÓN MÍNIMA DEBE CITARSE A UN TRABAJADOR DE BAJA POR CONTINGENCIAS COMUNES?",
+    "question": "331. SEGÚN ESTABLECE EL RD 625/2014, DE 18 DE JULIO ¿CON QUE ANTELACIÓN MÍNIMA DEBE CITARSE A UN TRABAJADOR DE BAJA POR CONTINGENCIAS COMUNES?",
     "options": {
       "A": "Con una semana, como mínimo.",
       "B": "Con una antelación mínima de 4 días naturales.",
@@ -3645,7 +3645,7 @@ const questions = [
   },
   {
     "id": 332,
-    "question": "CUANDO UN TRABAJADOR POR CUENTA AJENA, EN BAJA POR CONTINGENCIAS COMUNES, INCOMPARECE A UNA CITA DE CONTROL Y SEGUIMIENTO DEBIDAMENTE NOTIFICADA…",
+    "question": "332. CUANDO UN TRABAJADOR POR CUENTA AJENA, EN BAJA POR CONTINGENCIAS COMUNES, INCOMPARECE A UNA CITA DE CONTROL Y SEGUIMIENTO DEBIDAMENTE NOTIFICADA…",
     "options": {
       "A": "Se debe notificar al trabajador la suspensión de la prestación y habilitarle un plazo de 10 días para justificar la incomparecencia.",
       "B": "Se debe notificar al trabajador la extinción de la prestación y habilitarle un plazo de 10 días para justificar la incomparecencia, así mismo se debe notificar dicha extinción a su empresa (siempre que el trabajador sigua dado de alta en la misma).",
@@ -3656,7 +3656,7 @@ const questions = [
   },
   {
     "id": 333,
-    "question": "¿SE PUEDE EMITIR UNA BAJA MÉDICA Y UN ALTA MÉDICA EN UN MISMO ACTO MÉDICO?",
+    "question": "333. ¿SE PUEDE EMITIR UNA BAJA MÉDICA Y UN ALTA MÉDICA EN UN MISMO ACTO MÉDICO?",
     "options": {
       "A": "Sí, siempre que se trate de una patología de duración inferior a 5 días naturales",
       "B": "No, nunca.",
@@ -3667,10 +3667,10 @@ const questions = [
   },
   {
     "id": 334,
-    "question": "SI EN UNA CONTINGENCIA PROFESIONAL SE EMITIERA UN PARTE MÉDICO DE BAJA (PMB) Y UN PARTE MÉDICO DE ALTA (PMA) CON LA MISMA FECHA DE EFECTOS…",
+    "question": "334. SI EN UNA CONTINGENCIA PROFESIONAL SE EMITIERA UN PARTE MÉDICO DE BAJA (PMB) Y UN PARTE MÉDICO DE ALTA (PMA) CON LA MISMA FECHA DE EFECTOS…",
     "options": {
-      "A": "No es posible emitir un PMB y PMA con la misma fecha de efectos en contingencias profesionales. Se debe emitir siempre un Parte Sin Baja Médica",
-      "B": "La empresa debe incluir ese proceso en la relación de accidentes de trabajo sin baja médica de Delt@.",
+      "A": "CON LA MISMA FECHA DE EFECTOS…",
+      "B": "Y UN PARTE MÉDICO DE ALTA (PMA) CON LA MISMA FECHA DE EFECTOS…",
       "C": "La empresa debe remitir el correspondiente parte de accidente de trabajo a través de Delt@.",
       "D": "La empresa no debe ni remitir ninguna información de ese proceso a través de Delt@."
     },
@@ -3678,7 +3678,7 @@ const questions = [
   },
   {
     "id": 335,
-    "question": "A PARTIR DE LA LEY 35/2014, ¿SE PUEDE INCLUIR EN LA PROVISIÓN DE CONTINGENCIAS EN TRAMITACIÓN UNA INCAPACIDAD PERMANENTE PARCIAL DERIVADA DE CONTINGENCIA PROFESIONAL.?",
+    "question": "335. A PARTIR DE LA LEY 35/2014, ¿SE PUEDE INCLUIR EN LA PROVISIÓN DE CONTINGENCIAS EN TRAMITACIÓN UNA INCAPACIDAD PERMANENTE PARCIAL DERIVADA DE CONTINGENCIA PROFESIONAL.?",
     "options": {
       "A": "Sí, la Ley 35/2014 no ha modificado los conceptos provisionables.",
       "B": "No, desde la entrada en vigor de la Ley 35/2014 sólo son provisionables los capitales coste renta.",
@@ -3689,7 +3689,7 @@ const questions = [
   },
   {
     "id": 336,
-    "question": "PARA TRABAJADORES DEL REGIMEN GENERAL: EL CÁLCULO DE LA BASE REGULADORA, PARA ESTABLECER LA CUANTÍA DE LA\nPENSIÓN DE INCAPACIDAD PERMANENTE DERIVADA DE ACCIDENTE DE TRABAJO O ENFERMEDAD PROFESIONAL, SE REALIZA:",
+    "question": "336. PARA TRABAJADORES DEL REGIMEN GENERAL: EL CÁLCULO DE LA BASE REGULADORA, PARA ESTABLECER LA CUANTÍA DE LA PENSIÓN DE INCAPACIDAD PERMANENTE DERIVADA DE ACCIDENTE DE TRABAJO O ENFERMEDAD PROFESIONAL, SE REALIZA:",
     "options": {
       "A": "Sumando las bases de cotización de los 12 meses anteriores a la baja.",
       "B": "Tomando para dicho cálculo los salarios reales percibidos por el trabajador en los 12 meses anteriores a la baja.",
@@ -3700,7 +3700,7 @@ const questions = [
   },
   {
     "id": 337,
-    "question": "EN CASO DE BAJA MÉDICA POR CONTINGENCIAS COMUNES UN AUTÓNOMO QUE TENGA LAS CONTINGENCIAS COMUNES CON LA MUTUA, COMIENZA A COBRAR EL SUBSIDIO DE IT:",
+    "question": "337. EN CASO DE BAJA MÉDICA POR CONTINGENCIAS COMUNES UN AUTÓNOMO QUE TENGA LAS CONTINGENCIAS COMUNES CON LA MUTUA, COMIENZA A COBRAR EL SUBSIDIO DE IT:",
     "options": {
       "A": "Desde el cuarto día de la baja al 75% de su base reguladora.",
       "B": "Desde el decimoquinto día de la baja, siempre y cuando ese día presente la declaración de Actividad",
@@ -3711,7 +3711,7 @@ const questions = [
   },
   {
     "id": 338,
-    "question": "LA PRESTACIÓN DE IT Y LA DE IT-DESEMPLEO EN CONTINGENCIAS COMUNES:",
+    "question": "338. LA PRESTACIÓN DE IT Y LA DE IT-DESEMPLEO EN CONTINGENCIAS COMUNES:",
     "options": {
       "A": "Son iguales las bases reguladoras (mes anterior a la baja) y el porcentaje (75%).",
       "B": "Son iguales las bases reguladoras, pero en Desempleo se cobra el 70% los primeros 180 días y el 60% en el resto.",
@@ -3722,10 +3722,10 @@ const questions = [
   },
   {
     "id": 339,
-    "question": "¿QUÉ TIPO DE ACCIDENTES SE DEBEN NOTIFICAR DE MANERA URGENTE?",
+    "question": "339. ¿QUÉ TIPO DE ACCIDENTES SE DEBEN NOTIFICAR DE MANERA URGENTE?",
     "options": {
       "A": "Los que provoquen fallecimiento del trabajador y los que sean considerados graves o muy graves por el facultativo.",
-      "B": "Los que provoquen fallecimiento del trabajador, los que sean considerados graves o muy graves por el facultativo y los que afecten a más de 4\ntrabajadores (pertenezcan o no en su totalidad a la plantilla de la empresa). Siempre excluyendo los accidentes in-itinere.",
+      "B": "Los que provoquen fallecimiento del trabajador, los que sean considerados graves o muy graves por el facultativo y los que afecten a más de 4 trabajadores (pertenezcan o no en su totalidad a la plantilla de la empresa). Siempre excluyendo los accidentes in-itinere.",
       "C": "Los que provoquen fallecimiento del trabajador, los que sean considerados graves o muy graves por el facultativo y los que afecten a más de 4 trabajadores (pertenezcan o no en su totalidad a la plantilla de la empresa).",
       "D": "Los que provoquen fallecimiento del trabajador, los que sean considerados graves o muy graves por el facultativo y los que afecten a más de 4 trabajadores de la empresa."
     },
@@ -3733,7 +3733,7 @@ const questions = [
   },
   {
     "id": 340,
-    "question": "CAUSADO EL DERECHO A UNA PRESTACIÓN ECONÓMICA DE INCAPACIDAD PERMANENTE, LA DETERMINACIÓN DE RESPONSABILIDAD EN ORDEN A LAS PRESTACIONES, SE INICIA DE OFICIO:",
+    "question": "340. CAUSADO EL DERECHO A UNA PRESTACIÓN ECONÓMICA DE INCAPACIDAD PERMANENTE, LA DETERMINACIÓN DE RESPONSABILIDAD EN ORDEN A LAS PRESTACIONES, SE INICIA DE OFICIO:",
     "options": {
       "A": "Por las Mutuas Colaboradoras con la Seguridad Social.",
       "B": "Por el Servicio Público de Salud.",
@@ -3744,7 +3744,7 @@ const questions = [
   },
   {
     "id": 341,
-    "question": "LA VALORACIÓN Y ESTABLECIMIENTO DE LAS SECUELAS Y, EN SU CASO, EL GRADO DE INCAPACIDAD, O INDEMNIZACIÓN A PERCIBIR, CORRESPONDE A:",
+    "question": "341. LA VALORACIÓN Y ESTABLECIMIENTO DE LAS SECUELAS Y, EN SU CASO, EL GRADO DE INCAPACIDAD, O INDEMNIZACIÓN A PERCIBIR, CORRESPONDE A:",
     "options": {
       "A": "A la C.I.P (Comisión Interna de Prestaciones de la Mutua).",
       "B": "Al Coordinador de Valoración de Secuelas y los Responsables de IMS y AJ.",
@@ -3755,7 +3755,7 @@ const questions = [
   },
   {
     "id": 342,
-    "question": "ES INCAPACIDAD PERMANENTE PARCIAL PARA LA PROFESIÓN HABITUAL, EN EL REGIMEN ESPECIAL DE TRABAJADORES AUTONOMOS:",
+    "question": "342. ES INCAPACIDAD PERMANENTE PARCIAL PARA LA PROFESIÓN HABITUAL, EN EL REGIMEN ESPECIAL DE TRABAJADORES AUTONOMOS:",
     "options": {
       "A": "La que inhabilite al trabajador para la realización de todas o las fundamentales tareas de dicha profesión, siempre que pueda dedicarse a otra distinta.",
       "B": "Aquella que, sin alcanzar el grado de total, ocasione al trabajador una disminución no inferior al 33% en su rendimiento normal para dicha profesión, sin impedirle la realización de las tareas fundamentales de la misma.",
@@ -3766,7 +3766,7 @@ const questions = [
   },
   {
     "id": 343,
-    "question": "EL PLAZO LEGAL PARA PRESENTAR EL PARTE DE ACCIDENTE DE TRABAJO A TRAVÉS DE DELTA ES DE:",
+    "question": "343. EL PLAZO LEGAL PARA PRESENTAR EL PARTE DE ACCIDENTE DE TRABAJO A TRAVÉS DE DELTA ES DE:",
     "options": {
       "A": "5 días hábiles desde la fecha de la baja médica.",
       "B": "5 días hábiles desde la fecha del accidente",
@@ -3777,7 +3777,7 @@ const questions = [
   },
   {
     "id": 344,
-    "question": "LA PRESTACIÓN ECONÓMICA CORRESPONDIENTE A LA INCAPACIDAD PERMANENTE ABSOLUTA, CONSISTE EN:",
+    "question": "344. LA PRESTACIÓN ECONÓMICA CORRESPONDIENTE A LA INCAPACIDAD PERMANENTE ABSOLUTA, CONSISTE EN:",
     "options": {
       "A": "Pensión vitalicia cuya cuantía es equivalente al 100% de su base reguladora.",
       "B": "Pensión vitalicia cuya cuantía es equivalente al 75 por 100 de su base reguladora.",
@@ -3788,7 +3788,7 @@ const questions = [
   },
   {
     "id": 345,
-    "question": "UN TRABAJADOR POR CUENTA AJENA QUE CESA LA RELACIÓN LABORAL AL MES DE CAUSAR BAJA MÉDICA PASA A PAGO DIRECTO POR LA MUTUA. AL SUPERAR LOS 365 DÍAS DE BAJA ¿DEBE LA MUTUA RETENER LA CUOTA OBRERA DEL PAGO DE LA PRESTACIÓN?",
+    "question": "345. UN TRABAJADOR POR CUENTA AJENA QUE CESA LA RELACIÓN LABORAL AL MES DE CAUSAR BAJA MÉDICA PASA A PAGO DIRECTO POR LA MUTUA. AL SUPERAR LOS 365 DÍAS DE BAJA ¿DEBE LA MUTUA RETENER LA CUOTA OBRERA DEL PAGO DE LA PRESTACIÓN?",
     "options": {
       "A": "Sí, pero solo si la baja es derivada de contingencia profesional.",
       "B": "Sí, en cualquier caso.",
@@ -3799,7 +3799,7 @@ const questions = [
   },
   {
     "id": 346,
-    "question": "DURANTE LA PRESTACIÓN POR RIESGO DURANTE LA LACTANCIA NATURAL…",
+    "question": "346. DURANTE LA PRESTACIÓN POR RIESGO DURANTE LA LACTANCIA NATURAL…",
     "options": {
       "A": "La empresa está exenta de cotizar el 100% de la cuota de contingencias comunes de la trabajadora en riesgo.",
       "B": "La empresa está exenta de cotizar el 100% de la cuota de contingencias profesionales de la trabajadora en riesgo.",
@@ -3810,7 +3810,7 @@ const questions = [
   },
   {
     "id": 347,
-    "question": "LAS MUTUAS COLABORADORAS CON LA SEGURIDAD SOCIAL PODRÁN RECLAMAR:",
+    "question": "347. LAS MUTUAS COLABORADORAS CON LA SEGURIDAD SOCIAL PODRÁN RECLAMAR:",
     "options": {
       "A": "El importe bruto cuando se haya producido una prestación indebida al trabajador",
       "B": "Únicamente las reclamaciones de tráfico y prestaciones indebidas",
@@ -3821,7 +3821,7 @@ const questions = [
   },
   {
     "id": 348,
-    "question": "EN RELACIÓN A LAS PRESTACIONES ESPECIALES:",
+    "question": "348. EN RELACIÓN A LAS PRESTACIONES ESPECIALES:",
     "options": {
       "A": "Son un conjunto de ayudas de asistencia social consistente en la concesión de servicios y auxilios económicos que, en atención a estados y situaciones concretas de necesidad, se consideren precisos. Solo podrán ser solicitadas por trabajadores que hayan sufrido una contingencia profesional (o sus causahabientes)",
       "B": "La normativa reguladora se contempla en el Real Decreto 1993/1995 de 7 de diciembre, por el que se aprueba el Reglamento de Colaboración de Mutuas de Accidente de Trabajo y Enfermedades Profesionales de la Seguridad Social y el Real Decreto 1300/1995 de 21 de julio, sobre incapacidades laborales del sistema de la Seguridad Social.",
@@ -3832,7 +3832,7 @@ const questions = [
   },
   {
     "id": 349,
-    "question": "LA PROTECCIÓN POR CESE DE ACTIVIDAD:",
+    "question": "349. LA PROTECCIÓN POR CESE DE ACTIVIDAD:",
     "options": {
       "A": "Forma parte de la acción protectora del sistema de la Seguridad Social y es obligatoria para todos los trabajadores agrarios por cuenta propia que tengan concertada la cobertura de IMS con una Mutua.",
       "B": "En un período de cotización de 48 meses anterior a la situación legal de cese de actividad, el período de protección de la prestación es de 12 meses.",
@@ -3843,7 +3843,7 @@ const questions = [
   },
   {
     "id": 350,
-    "question": "PARA PODER ACCEDER A LA PRESTACIÓN DE CESE DE ACTIVIDAD DE TRABAJADORES AUTÓNOMOS:",
+    "question": "350. PARA PODER ACCEDER A LA PRESTACIÓN DE CESE DE ACTIVIDAD DE TRABAJADORES AUTÓNOMOS:",
     "options": {
       "A": "El trabajador autónomo debe hallarse al corriente en el pago de cuotas de la Seguridad Social, al menos 6 meses de manera continuada e inmediatamente anteriores a la situación legal del cese.",
       "B": "En caso de haber cuotas debidas en los 24 meses anteriores al hecho causante, el órgano gestor invitará al pago al trabajador autónomo para que en el plazo de 30 días naturales proceda a su ingreso. Si se realiza en plazo, se da por cumplido el requisito de hallarse al corriente del pago aunque las cuotas debidas sean superiores a 12 meses.",
@@ -3854,7 +3854,7 @@ const questions = [
   },
   {
     "id": 351,
-    "question": "A RAÍZ DE LA ENTRADA EN VIGOR DEL RDL 28/2018 DE 28 DE DICIEMBRE:",
+    "question": "351. A RAÍZ DE LA ENTRADA EN VIGOR DEL RDL 28/2018 DE 28 DE DICIEMBRE:",
     "options": {
       "A": "Si un trabajador autónomo se encuentra en situación de incapacidad temporal con derecho a prestación económica, transcurridos 60 días, debe hacer efectivo el pago de las cuotas al INSS, sin perjuicio de su reintegro posterior.",
       "B": "Si un trabajador autónomo se encuentra en situación de incapacidad temporal con derecho a prestación económica, transcurridos 60 días, corresponderá hacer efectivo el pago de las cuotas a la Mutua aseguradora.",
@@ -3865,7 +3865,7 @@ const questions = [
   },
   {
     "id": 352,
-    "question": "LAS PRESTACIONES DE LAS NUEVAS SITUACIONES DE INCAPACIDAD TEMPORAL REGULADAS EN LA LEY ORGÁNICA 1/2023, DE 28 DE FEBRERO:",
+    "question": "352. LAS PRESTACIONES DE LAS NUEVAS SITUACIONES DE INCAPACIDAD TEMPORAL REGULADAS EN LA LEY ORGÁNICA 1/2023, DE 28 DE FEBRERO:",
     "options": {
       "A": "Nacen el mismo día de la baja.",
       "B": "Nacen al día siguiente de la baja.",
@@ -3876,7 +3876,7 @@ const questions = [
   },
   {
     "id": 353,
-    "question": "PARA ACCEDER A LAS PRESTACIONES DE LAS NUEVAS SITUACIONES DE INCAPACIDAD TEMPORAL REGULADAS EN LA LEY ORGÁNICA 1/2023, DE 28 DE FEBRERO:",
+    "question": "353. PARA ACCEDER A LAS PRESTACIONES DE LAS NUEVAS SITUACIONES DE INCAPACIDAD TEMPORAL REGULADAS EN LA LEY ORGÁNICA 1/2023, DE 28 DE FEBRERO:",
     "options": {
       "A": "Se exige carencia en todos los casos.",
       "B": "No se exige carencia en ningún caso.",
@@ -3887,7 +3887,7 @@ const questions = [
   },
   {
     "id": 354,
-    "question": "UN PROCESO DE BAJA POR COVID-19 QUE SE INICIE EN 2024:",
+    "question": "354. UN PROCESO DE BAJA POR COVID-19 QUE SE INICIE EN 2024:",
     "options": {
       "A": "Tendrá derecho a una prestación de IT equivalente a la de un accidente de trabajo si pertenece al colectivo sanitario o socio-sanitario.",
       "B": "Tendrá derecho a una prestación de IT por CC con carácter general, con la excepción de una recaída de un proceso anterior que hubiera generado derecho a una prestación en cuantía AT, en cuyo caso seguiría teniendo derecho a la prestación calculada como AT.",
@@ -3898,7 +3898,7 @@ const questions = [
   },
   {
     "id": 355,
-    "question": "TRAS LA ENTRADA EN VIGOR DEL RD-LEY 677/2023 DE 18 DE JULIO, LA PERIODICIDAD DE LA CONFIRMACIÓN DE LAS PRESTACIONES CUME SE HA MODIFICADO:",
+    "question": "355. TRAS LA ENTRADA EN VIGOR DEL RD-LEY 677/2023 DE 18 DE JULIO, LA PERIODICIDAD DE LA CONFIRMACIÓN DE LAS PRESTACIONES CUME SE HA MODIFICADO:",
     "options": {
       "A": "Pasando a confirmarse cada tres meses.",
       "B": "Pasando a confirmarse con periodicidad mensual.",
@@ -3909,7 +3909,7 @@ const questions = [
   },
   {
     "id": 356,
-    "question": "EN LAS PRESTACIONES DE RIESGO EN EL EMBARAZO Y LACTANCIA, LA EMPRESA ADEMÁS DE DECLARAR LOS RIESGOS:",
+    "question": "356. EN LAS PRESTACIONES DE RIESGO EN EL EMBARAZO Y LACTANCIA, LA EMPRESA ADEMÁS DE DECLARAR LOS RIESGOS:",
     "options": {
       "A": "Debe manifestar la imposibilidad de reubicación en otro puesto de trabajo compatible con la situación de embarazo de la trabajadora, pudiendo aplicarse una bonificación de 138 € en las cotizaciones sociales si realiza la reubicación.",
       "B": "Debe suspender el contrato de trabajo de la trabajadora siempre que se evidencie el más mínimo riesgo para el feto.",
@@ -3920,7 +3920,7 @@ const questions = [
   },
   {
     "id": 357,
-    "question": "UN TRABAJADOR QUE SE ENCUENTRA EN UNA JORNADA TELE- TRABAJANDO:",
+    "question": "357. UN TRABAJADOR QUE SE ENCUENTRA EN UNA JORNADA TELE- TRABAJANDO:",
     "options": {
       "A": "No puede tener un accidente de trabajo in-itínere.",
       "B": "Puede tener un accidente de trabajo In-misión si se ha tenido que trasladar desde su domicilio debido a un encargo de su responsable.",
@@ -3931,7 +3931,7 @@ const questions = [
   },
   {
     "id": 358,
-    "question": "¿A QUÉ SE REFIERE LA LEY 31/1995?",
+    "question": "358. ¿A QUÉ SE REFIERE LA LEY 31/1995?",
     "options": {
       "A": "Es aquella por la que se regula el régimen de funcionamiento de las mutuas colaboradoras con la Seguridad Social como Servicio de Prevención Ajeno.",
       "B": "Es aquella que regula las actividades preventivas en el ámbito de la Seguridad Social.",
@@ -3942,7 +3942,7 @@ const questions = [
   },
   {
     "id": 359,
-    "question": "ENTRE LAS ACTIVIDADES PREVENTIVAS QUE DESARROLLA LA MUTUA COMO COLABORACIÓN EN LA GESTIÓN DE LA SEGURIDAD SOCIAL, ¿SE INCLUYEN AQUELLAS QUE SON OBLIGACIÓN DEL EMPRESARIO?",
+    "question": "359. ENTRE LAS ACTIVIDADES PREVENTIVAS QUE DESARROLLA LA MUTUA COMO COLABORACIÓN EN LA GESTIÓN DE LA SEGURIDAD SOCIAL, ¿SE INCLUYEN AQUELLAS QUE SON OBLIGACIÓN DEL EMPRESARIO?",
     "options": {
       "A": "Incluye cualquier tipo de actividad preventiva sea o no obligación del empresario.",
       "B": "No, según apartado 1 del artículo 13 del reglamento de colaboración de las mutuas colaboradoras con la Seguridad Social, quedarán excluidas de las funciones que las mutuas pueden desarrollar en colaboración con la Seguridad Social, aquellas obligaciones que los empresarios deban desarrollar en cumplimiento de la Ley 31/95 de Prevención de Riesgos Laborales.",
@@ -3953,7 +3953,7 @@ const questions = [
   },
   {
     "id": 360,
-    "question": "¿PUEDEN LAS MUTUAS DESARROLLAR ACTIVIDADES PARA LA PREVENCIÓN DE LOS ACCIDENTES DE TRABAJO Y ENFERMEDADES PROFESIONALES A FAVOR DE LAS EMPRESAS ASOCIADAS Y DE SUS TRABAJADORES DEPENDIENTES Y DE LOS TRABAJADORES POR CUENTA PROPIA ADHERIDOS QUE TENGAN CUBIERTAS LAS CONTINGENCIAS CITADAS?",
+    "question": "360. ¿PUEDEN LAS MUTUAS DESARROLLAR ACTIVIDADES PARA LA PREVENCIÓN DE LOS ACCIDENTES DE TRABAJO Y ENFERMEDADES PROFESIONALES A FAVOR DE LAS EMPRESAS ASOCIADAS Y DE SUS TRABAJADORES DEPENDIENTES Y DE LOS TRABAJADORES POR CUENTA PROPIA ADHERIDOS QUE TENGAN CUBIERTAS LAS CONTINGENCIAS CITADAS?",
     "options": {
       "A": "No, nunca han podido.",
       "B": "Sí, mientras que la empresa pague por este servicio.",
@@ -3964,7 +3964,7 @@ const questions = [
   },
   {
     "id": 361,
-    "question": "¿POR QUÉ EXISTE EN FRATERNIDAD-MUPRESPA UN DEPARTAMENTO DE PREVENCIÓN Y DESARROLLO DE CULTURA DE LA SALUD Y UN SERVICIO DE PREVENCIÓN PROPIO?",
+    "question": "361. ¿POR QUÉ EXISTE EN FRATERNIDAD-MUPRESPA UN DEPARTAMENTO DE PREVENCIÓN Y DESARROLLO DE CULTURA DE LA SALUD Y UN SERVICIO DE PREVENCIÓN PROPIO?",
     "options": {
       "A": "Realmente es el mismo departamento llamado de forma diferente.",
       "B": "El departamento de Prevención Y Desarrollo de Cultura de la Salud asesora a las empresas asociadas sobre prevención de accidentes de trabajo y enfermedades profesionales según el RD 860/2018, de 13 de julio y el Servicio de Prevención Propio se encarga de la prevención de los riesgos laborales de trabajadores de Fraternidad- Muprespa.",
@@ -3975,7 +3975,7 @@ const questions = [
   },
   {
     "id": 362,
-    "question": "¿PUEDE LA MUTUA REALIZAR ACTIVIDADES PREVENTIVAS A SUS EMPRESAS ASOCIADAS?",
+    "question": "362. ¿PUEDE LA MUTUA REALIZAR ACTIVIDADES PREVENTIVAS A SUS EMPRESAS ASOCIADAS?",
     "options": {
       "A": "No nunca.",
       "B": "Sí, si lo pagan.",
@@ -3986,7 +3986,7 @@ const questions = [
   },
   {
     "id": 363,
-    "question": "¿QUÉ COSTE REPRESENTA A LAS EMPRESAS ASOCIADAS, LAS ACTIVIDADES PREVENTIVAS REALIZADAS POR LA MUTUA?",
+    "question": "363. ¿QUÉ COSTE REPRESENTA A LAS EMPRESAS ASOCIADAS, LAS ACTIVIDADES PREVENTIVAS REALIZADAS POR LA MUTUA?",
     "options": {
       "A": "Es un pequeño coste adicional a las cuotas que pagan en función el número de trabajadores y de la actividad de la empresa. No existe obligación de que la empresa acepte este servicio.",
       "B": "Es un pequeño coste adicional a las cuotas que pagan en función el número de trabajadores y de la actividad de la empresa. Existe obligación de que la empresa acepte este servicio.",
@@ -3997,7 +3997,7 @@ const questions = [
   },
   {
     "id": 364,
-    "question": "¿PODEMOS LAS MUTUAS COMO ENTIDADES COLABORADORAS DE LA SEGURIDAD SOCIAL REALIZAR ACTIVIDADES PREVENTIVAS CON CARGO A CUOTAS A EMPRESAS NO ASOCIADAS CON NOSOTROS?",
+    "question": "364. ¿PODEMOS LAS MUTUAS COMO ENTIDADES COLABORADORAS DE LA SEGURIDAD SOCIAL REALIZAR ACTIVIDADES PREVENTIVAS CON CARGO A CUOTAS A EMPRESAS NO ASOCIADAS CON NOSOTROS?",
     "options": {
       "A": "Sólo en caso de que la empresa no esté asociada con ninguna mutua.",
       "B": "No, sólo podemos realizar actividades preventivas reguladas por RD 860/2018, de 13 de julio sobre nuestras empresas y trabajadores asociados.",
@@ -4008,7 +4008,7 @@ const questions = [
   },
   {
     "id": 365,
-    "question": "UNO DE LOS OBJETIVOS DE FRATERNIDAD-MUPRESPA EN SU ACTUACIÓN EN PREVENCIÓN CON CARGO A CUOTAS ES:",
+    "question": "365. UNO DE LOS OBJETIVOS DE FRATERNIDAD-MUPRESPA EN SU ACTUACIÓN EN PREVENCIÓN CON CARGO A CUOTAS ES:",
     "options": {
       "A": "Reducir la siniestralidad en las empresas y crear una cultura de prevención.",
       "B": "Realización de los planes de emergencia.",
@@ -4019,7 +4019,7 @@ const questions = [
   },
   {
     "id": 366,
-    "question": "¿A QUIÉN CORRESPONDE APROBAR LA PLANIFICACIÓN ANUAL DE LAS ACTIVIDADES PREVENTIVAS A DESARROLLAR POR LAS MUTUAS A LAS EMPRESAS ASOCIADAS?",
+    "question": "366. ¿A QUIÉN CORRESPONDE APROBAR LA PLANIFICACIÓN ANUAL DE LAS ACTIVIDADES PREVENTIVAS A DESARROLLAR POR LAS MUTUAS A LAS EMPRESAS ASOCIADAS?",
     "options": {
       "A": "Al Servicio de Prevención Propio.",
       "B": "A los Servicios de Prevención Ajenos.",
@@ -4030,7 +4030,7 @@ const questions = [
   },
   {
     "id": 367,
-    "question": "LAS ACTIVIDADES PARA LA PREVENCIÓN DE LA SINIESTRALIDAD QUE LAS MUTUAS COLABORADORAS CON LA SEGURIDAD SOCIAL PUEDEN DESARROLLAR…",
+    "question": "367. LAS ACTIVIDADES PARA LA PREVENCIÓN DE LA SINIESTRALIDAD QUE LAS MUTUAS COLABORADORAS CON LA SEGURIDAD SOCIAL PUEDEN DESARROLLAR…",
     "options": {
       "A": "Son de carácter voluntario para las empresas y los criterios están marcadas por la seguridad social.",
       "B": "Son las mismas que realiza nuestra Sociedad de Prevención.",
@@ -4041,7 +4041,7 @@ const questions = [
   },
   {
     "id": 368,
-    "question": "¿A QUÉ SE REFIERE EL RD 860/2018, DE 13 DE JULIO?",
+    "question": "368. ¿A QUÉ SE REFIERE EL RD 860/2018, DE 13 DE JULIO?",
     "options": {
       "A": "Es el que regula el régimen de funcionamiento de las mutuas colaboradoras con la Seguridad Social como Servicio de Prevención Ajeno.",
       "B": "Es el que regula las actividades preventivas de las mutuas en el ámbito de la Seguridad Social.",
@@ -4052,7 +4052,7 @@ const questions = [
   },
   {
     "id": 369,
-    "question": "¿QUÉ TIPO DE ACTIVIDADES PREVENTIVAS DESARROLLA EL DEPARTAMENTO DE PREVENCIÓN Y DESARROLLO DE LA CULTURA DE LA SALUD?",
+    "question": "369. ¿QUÉ TIPO DE ACTIVIDADES PREVENTIVAS DESARROLLA EL DEPARTAMENTO DE PREVENCIÓN Y DESARROLLO DE LA CULTURA DE LA SALUD?",
     "options": {
       "A": "Planes de emergencia.",
       "B": "Evaluaciones de riesgos.",
@@ -4063,7 +4063,7 @@ const questions = [
   },
   {
     "id": 370,
-    "question": "¿QUÉ TIPO DE ACTIVIDADES PREVENTIVAS PUEDEN DESARROLLAR LAS MUTUAS EN EL ÁMBITO DE LA SEGURIDAD SOCIAL?",
+    "question": "370. ¿QUÉ TIPO DE ACTIVIDADES PREVENTIVAS PUEDEN DESARROLLAR LAS MUTUAS EN EL ÁMBITO DE LA SEGURIDAD SOCIAL?",
     "options": {
       "A": "Programas de asesoramiento técnico prioritariamente a pymes y empresas de sectores de mayor siniestralidad",
       "B": "Evaluaciones de riesgos.",
@@ -4074,7 +4074,7 @@ const questions = [
   },
   {
     "id": 371,
-    "question": "¿QUÉ TIPO DE ACTIVIDADES PREVENTIVAS NO PUEDEN DESARROLLAR LAS MUTUAS EN EL ÁMBITO DE LA SEGURIDAD SOCIAL?",
+    "question": "371. ¿QUÉ TIPO DE ACTIVIDADES PREVENTIVAS NO PUEDEN DESARROLLAR LAS MUTUAS EN EL ÁMBITO DE LA SEGURIDAD SOCIAL?",
     "options": {
       "A": "Actividades de divulgación, educación y sensibilización en prevención.",
       "B": "Reconocimientos médicos.",
@@ -4085,7 +4085,7 @@ const questions = [
   },
   {
     "id": 372,
-    "question": "ENTRE LOS INFORMES QUE LOS TÉCNICOS DEL DEPARTAMENTO DE PREVENCIÓN Y DESARROLLO DE LA CULTURA DE LA SALUD ENTREGAN EN SUS VISITAS A LAS EMPRESAS PARA INFORMAR SOBRE SU SINIESTRALIDAD, SE ENCUENTRAN:",
+    "question": "372. ENTRE LOS INFORMES QUE LOS TÉCNICOS DEL DEPARTAMENTO DE PREVENCIÓN Y DESARROLLO DE LA CULTURA DE LA SALUD ENTREGAN EN SUS VISITAS A LAS EMPRESAS PARA INFORMAR SOBRE SU SINIESTRALIDAD, SE ENCUENTRAN:",
     "options": {
       "A": "Informes sobre el análisis de siniestralidad, evolución de la siniestralidad y estimación de costes derivados de esa siniestralidad para las empresas.",
       "B": "Informes sobre la seguridad de los equipos de trabajo de la empresa.",
@@ -4096,7 +4096,7 @@ const questions = [
   },
   {
     "id": 373,
-    "question": "¿QUÉ TIPO DE ACTIVIDADES PUEDE REALIZAR EL DEPARTAMENTO DE PREVENCIÓN Y DESARROLLO DE LA CULTURA DE LA SALUD?",
+    "question": "373. ¿QUÉ TIPO DE ACTIVIDADES PUEDE REALIZAR EL DEPARTAMENTO DE PREVENCIÓN Y DESARROLLO DE LA CULTURA DE LA SALUD?",
     "options": {
       "A": "Actividades orientadas preferentemente al desarrollo de la I+D+i, a la divulgación, educación y sensibilización en prevención de accidentes de trabajo y enfermedades profesionales.",
       "B": "Las mismas que el Servicio de Prevención Propio.",
@@ -4107,7 +4107,7 @@ const questions = [
   },
   {
     "id": 374,
-    "question": "¿QUÉ EMPRESAS SON PRINCIPALMENTE DESTINATARIAS DE LAS ACTIVIDADES PREVENTIVAS DE LA MUTUA?",
+    "question": "374. ¿QUÉ EMPRESAS SON PRINCIPALMENTE DESTINATARIAS DE LAS ACTIVIDADES PREVENTIVAS DE LA MUTUA?",
     "options": {
       "A": "Empresas de más de 250 trabajadores con siniestralidad media.",
       "B": "Empresas pequeñas y empresas pertenecientes a sectores de mayor siniestralidad",
@@ -4118,7 +4118,7 @@ const questions = [
   },
   {
     "id": 375,
-    "question": "UNO DE LOS OBJETIVOS FRATERNIDAD-MUPRESPA EN SU ACTUACIÓN EN PREVENCIÓN CON CARGO A CUOTAS ES:",
+    "question": "375. UNO DE LOS OBJETIVOS FRATERNIDAD-MUPRESPA EN SU ACTUACIÓN EN PREVENCIÓN CON CARGO A CUOTAS ES:",
     "options": {
       "A": "Reducir la siniestralidad en las empresas.",
       "B": "Creación de cultura de prevención.",
@@ -4129,7 +4129,7 @@ const questions = [
   },
   {
     "id": 376,
-    "question": "LAS ACTIVIDADES PARA LA PREVENCIÓN DE LA SINIESTRALIDAD LABORAL QUE LAS MUTUAS COLABORADORAS CON LA SEGURIDAD SOCIAL PUEDEN DESARROLLAR.",
+    "question": "376. LAS ACTIVIDADES PARA LA PREVENCIÓN DE LA SINIESTRALIDAD LABORAL QUE LAS MUTUAS COLABORADORAS CON LA SEGURIDAD SOCIAL PUEDEN DESARROLLAR.",
     "options": {
       "A": "Son de carácter voluntario para las empresas",
       "B": "Son las mismas que realiza la Sociedad de Prevención.",
@@ -4140,7 +4140,7 @@ const questions = [
   },
   {
     "id": 377,
-    "question": "LAS ACTIVIDADES PARA LA PREVENCIÓN DE LA SINIESTRALIDAD LABORAL QUE LAS MUTUAS COLABORADORAS CON LA SEGURIDAD SOCIAL PUEDEN DESARROLLAR, SON LAS QUE SE REALICEN DE CONFORMIDAD CON: (eliminada)",
+    "question": "377. LAS ACTIVIDADES PARA LA PREVENCIÓN DE LA SINIESTRALIDAD LABORAL QUE LAS MUTUAS COLABORADORAS CON LA SEGURIDAD SOCIAL PUEDEN DESARROLLAR, SON LAS QUE SE REALICEN DE CONFORMIDAD CON: (eliminada)",
     "options": {
       "A": "a) Lo establecido en el artículo 68.3.c) del texto refundido de la Ley General de la Seguridad Social, aprobado por el Real Decreto legislativo 1/1994, de 20 de junio.",
       "B": "La Ley 35/2014, 26 diciembre.",
@@ -4151,7 +4151,7 @@ const questions = [
   },
   {
     "id": 378,
-    "question": "¿QUÉ TIPO DE ACTIVIDADES REALIZA LA MUTUA COMO ACCIONES DE DIVULGACIÓN?",
+    "question": "378. ¿QUÉ TIPO DE ACTIVIDADES REALIZA LA MUTUA COMO ACCIONES DE DIVULGACIÓN?",
     "options": {
       "A": "Análisis de tareas del puesto de trabajo",
       "B": "Evaluaciones de riesgos.",
@@ -4162,7 +4162,7 @@ const questions = [
   },
   {
     "id": 379,
-    "question": "¿QUÉ TIPO DE INFORMES REALIZA LA MUTUA PARA REDUCIR LA SINIESTRALIDAD DE LAS EMPRESAS Y MEJORAR LA GESTION DE LA ACCIDENTALIDAD?",
+    "question": "379. ¿QUÉ TIPO DE INFORMES REALIZA LA MUTUA PARA REDUCIR LA SINIESTRALIDAD DE LAS EMPRESAS Y MEJORAR LA GESTION DE LA ACCIDENTALIDAD?",
     "options": {
       "A": "El informe de evaluación de riesgos de los trabajadores de la empresa.",
       "B": "Plan de emergencia",
@@ -4173,7 +4173,7 @@ const questions = [
   },
   {
     "id": 380,
-    "question": "EN LA EJECUCIÓN DE SU PRESUPUESTO ANUAL, LAS MUTUAS COLABORADORAS CON LA SEGURIDAD SOCIAL PODRÁN DESTINAR, DENTRO DE LAS DISPONIBILIDADES PRESUPUESTARIAS QUE SE LES AUTORICEN,",
+    "question": "380. EN LA EJECUCIÓN DE SU PRESUPUESTO ANUAL, LAS MUTUAS COLABORADORAS CON LA SEGURIDAD SOCIAL PODRÁN DESTINAR, DENTRO DE LAS DISPONIBILIDADES PRESUPUESTARIAS QUE SE LES AUTORICEN,",
     "options": {
       "A": "Hasta un máximo de un uno por ciento de sus ingresos por las cuotas relativas a las contingencias profesionales, a la realización de las actividades preventivas permitidas.",
       "B": "Un mínimo de un uno por ciento de sus ingresos por las cuotas relativas a las contingencias profesionales, a la realización de las actividades preventivas permitidas.",
@@ -4184,7 +4184,7 @@ const questions = [
   },
   {
     "id": 381,
-    "question": "¿PUEDE LA MUTUA REALIZAR ACTIVIDADES PARA LAS EMPRESAS COMO SERVICIO DE PREVENCIÓN AJENO?",
+    "question": "381. ¿PUEDE LA MUTUA REALIZAR ACTIVIDADES PARA LAS EMPRESAS COMO SERVICIO DE PREVENCIÓN AJENO?",
     "options": {
       "A": "Pueden desarrollarse a través de una sociedad anónima o de responsabilidad limitada, denominada sociedad de prevención, que se rige por lo dispuesto en la legislación mercantil.",
       "B": "Sí pueden hacerlo perfectamente.",
@@ -4195,7 +4195,7 @@ const questions = [
   },
   {
     "id": 382,
-    "question": "¿QUÉ ES EL AULA PREVENCION?",
+    "question": "382. ¿QUÉ ES EL AULA PREVENCION?",
     "options": {
       "A": "Son las aulas de cada centro donde se imparten cursos",
       "B": "Es el servicio de cursos online gratuito de Fraternidad-Muprespa para incrementar la cultura preventiva de los trabajadores de las empresas asociadas con el fin de reducir la siniestralidad.",
@@ -4206,7 +4206,7 @@ const questions = [
   },
   {
     "id": 383,
-    "question": "¿QUÉ ES PREVENCION10.ES?",
+    "question": "383. ¿QUÉ ES PREVENCION10.ES?",
     "options": {
       "A": "Es la web que conmemora el 10º aniversario de la Ley de Prevención de Riesgos Laborales.",
       "B": "Es un portal de prevención con 10 medidas preventivas.",
@@ -4217,7 +4217,7 @@ const questions = [
   },
   {
     "id": 384,
-    "question": "¿CÓMO SE LLAMA EL DOCUMENTO DE FRATERNIDAD-MUPRESPA DONDE SE PUEDE ENCONTRAR UN RESUMEN DE LAS ACTIVIDADES PREVENTIVAS DE LA MUTUA?",
+    "question": "384. ¿CÓMO SE LLAMA EL DOCUMENTO DE FRATERNIDAD-MUPRESPA DONDE SE PUEDE ENCONTRAR UN RESUMEN DE LAS ACTIVIDADES PREVENTIVAS DE LA MUTUA?",
     "options": {
       "A": "Guía Bonus",
       "B": "Planificación de Actividades Preventivas",
@@ -4228,9 +4228,9 @@ const questions = [
   },
   {
     "id": 385,
-    "question": "¿QUÉ ES PREVIENE?",
+    "question": "385. ¿QUÉ ES PREVIENE?",
     "options": {
-      "A": "El portal de prevención de Fraternidad-Muprespa de acceso público donde se puede encontrar documentación de prevención (manuales, carteles,\ntrípticos, campus de prevención, etc…",
+      "A": "El portal de prevención de Fraternidad-Muprespa de acceso público donde se puede encontrar documentación de prevención (manuales, carteles, trípticos, campus de prevención, etc…",
       "B": "Es el plan de reducción de la siniestralidad de Fraternidad-Muprespa",
       "C": "Es el portal de prevención del Ministerio de Trabajo, Migraciones y Seguridad Social.",
       "D": "Es lo mismo que PCAE."
@@ -4239,7 +4239,7 @@ const questions = [
   },
   {
     "id": 386,
-    "question": "¿A QUÉ TIPO DE EMPRESAS VAN DIRIGIDAS LAS ACTUACIONES DE REDUCCION DE LA SINIESTRALIDAD?",
+    "question": "386. ¿A QUÉ TIPO DE EMPRESAS VAN DIRIGIDAS LAS ACTUACIONES DE REDUCCION DE LA SINIESTRALIDAD?",
     "options": {
       "A": "A las grandes empresas",
       "B": "A las pymes y empresas de sectores de siniestralidad preferente",
@@ -4250,7 +4250,7 @@ const questions = [
   },
   {
     "id": 387,
-    "question": "¿QUÉ ASESORAMIETNO PROPORCIONA EL TÉCNICO DE PREVENCION DE MUTUA ANTE UN ACCIDENTE GRAVE DE UN TRABAJADOR ASOCIADO?",
+    "question": "387. ¿QUÉ ASESORAMIETNO PROPORCIONA EL TÉCNICO DE PREVENCION DE MUTUA ANTE UN ACCIDENTE GRAVE DE UN TRABAJADOR ASOCIADO?",
     "options": {
       "A": "Solo en caso de ser necesario, proporcionará asesoramiento sobre la documentación necesaria en caso de inspección, y colaboración en la implantación de las medidas correctoras derivadas de la investigación del accidente realizada por el SPA",
       "B": "Informará sobre la cumplimentación del PAT",
@@ -4261,7 +4261,7 @@ const questions = [
   },
   {
     "id": 388,
-    "question": "¿CÓMO PUEDE AYUDAR EL TECNICO DE MUTUA A UNA EMPRESA ASOCIADA CUANDO SUS TRABAJADORES COINCIDEN CON TRABAJADORES DE OTRAS EMPRESAS?",
+    "question": "388. ¿CÓMO PUEDE AYUDAR EL TECNICO DE MUTUA A UNA EMPRESA ASOCIADA CUANDO SUS TRABAJADORES COINCIDEN CON TRABAJADORES DE OTRAS EMPRESAS?",
     "options": {
       "A": "No se puede hacer nada",
       "B": "Realizando la evaluación de riesgos de los puestos de trabajo e informando sobre: obligaciones legales, revisando los accidentes ocurridos en centros compartidos y asesorando sobre la aplicación de los medios y herramientas de coordinación existentes.",
@@ -4272,7 +4272,7 @@ const questions = [
   },
   {
     "id": 389,
-    "question": "¿QUÉ ACTIVIDADES DE PREVENCION VINCULADAS A LA GESTION DE LAS CONTINGENCIAS DE ACCIDENTES DE TRABAJO Y ENFERMEDADES PROFESIONALES REALIZAN LOS TECNICOS PARA APOYAR Y RESPALDAR DECISIONES RELACIONADAS CON LAS PRESTACIONES DE INCAPACIDAD TEMPORAL, INVALIDEZ Y RIESGO EN EL EMBARAZO/LACTANCIA?",
+    "question": "389. ¿QUÉ ACTIVIDADES DE PREVENCION VINCULADAS A LA GESTION DE LAS CONTINGENCIAS DE ACCIDENTES DE TRABAJO Y ENFERMEDADES PROFESIONALES REALIZAN LOS TECNICOS PARA APOYAR Y RESPALDAR DECISIONES RELACIONADAS CON LAS PRESTACIONES DE INCAPACIDAD TEMPORAL, INVALIDEZ Y RIESGO EN EL EMBARAZO/LACTANCIA?",
     "options": {
       "A": "Bonus",
       "B": "Análisis de accidentes, análisis de enfermedad profesional, análisis de tareas de puesto de trabajo y análisis de riesgo para situaciones de embarazo y/o lactancia.",
@@ -4283,7 +4283,7 @@ const questions = [
   },
   {
     "id": 390,
-    "question": "¿QUÉ ACCIONES DE DIVULGACIÓN, EDUCACIÓN Y SENSIBILIZACIÓN DE ACCIDENTES Y ENFERMEDADES PROFESIONALES REALIZAN LOS TECNICOS?",
+    "question": "390. ¿QUÉ ACCIONES DE DIVULGACIÓN, EDUCACIÓN Y SENSIBILIZACIÓN DE ACCIDENTES Y ENFERMEDADES PROFESIONALES REALIZAN LOS TECNICOS?",
     "options": {
       "A": "Eventos para la divulgación del incentivo por reducción de la siniestralidad (Bonus) y fomento de hábitos saludables, prevención de riesgos para autónomos, semana de sensibilización en prevención y seguridad vial y ponencias técnicas.",
       "B": "Jornadas sobre prestaciones",
@@ -4294,7 +4294,7 @@ const questions = [
   },
   {
     "id": 391,
-    "question": "¿EN QUÉ CONSISTE EL PLAN DE REDUCCIÓN DE LA SINIESTRALIDAD ACTIVANDO VISIÓN ZERO?",
+    "question": "391. ¿EN QUÉ CONSISTE EL PLAN DE REDUCCIÓN DE LA SINIESTRALIDAD ACTIVANDO VISIÓN ZERO?",
     "options": {
       "A": "Asesoramiento técnico de acuerdo con la campaña internacional de la AISS con el fin de activar a la empresa hacia la no siniestralidad, fomentando la cultura preventiva, generando confianza en los trabajadores y aprendiendo de los errores.",
       "B": "En empresas de sectores de mayor accidentalidad y preferentemente menores de 50 trabajadores se realizará análisis de tareas.",
@@ -4305,7 +4305,7 @@ const questions = [
   },
   {
     "id": 392,
-    "question": "LAS ACTIVIDADES PREVENTIVAS QUE REALIZA LA MUTUA ESTÁN REGULADAS POR:",
+    "question": "392. LAS ACTIVIDADES PREVENTIVAS QUE REALIZA LA MUTUA ESTÁN REGULADAS POR:",
     "options": {
       "A": "RD 860/2018, de 13 de julio",
       "B": "Ley 31/1995, de 8 de noviembre.",
@@ -4316,7 +4316,7 @@ const questions = [
   },
   {
     "id": 393,
-    "question": "¿QUÉ NUEVA ACTIVIDAD PREVENTIVA HA INCORPORADO LA LEY 35/2014 EN LAS ACTUACIONES DE MUTUA?",
+    "question": "393. ¿QUÉ NUEVA ACTIVIDAD PREVENTIVA HA INCORPORADO LA LEY 35/2014 EN LAS ACTUACIONES DE MUTUA?",
     "options": {
       "A": "La evaluación de los factores de riesgo.",
       "B": "Planes de movilidad",
@@ -4327,7 +4327,7 @@ const questions = [
   },
   {
     "id": 394,
-    "question": "EN SU COMPROMISO PARA REDUCIR LA SINIESTRALIDAD VIAL FM CELEBRA DESDE EL AÑO 2018:",
+    "question": "394. EN SU COMPROMISO PARA REDUCIR LA SINIESTRALIDAD VIAL FM CELEBRA DESDE EL AÑO 2018:",
     "options": {
       "A": "El Día de la seguridad vial",
       "B": "La Semana de la Seguridad Vial",
@@ -4338,7 +4338,7 @@ const questions = [
   },
   {
     "id": 395,
-    "question": "EN QUE MES FM ORGANIZA UN EVENTO PARA PROMOVER LA SEGURIDAD VIAL",
+    "question": "395. EN QUE MES FM ORGANIZA UN EVENTO PARA PROMOVER LA SEGURIDAD VIAL",
     "options": {
       "A": "En mayo, con motivo del Día del trabajador",
       "B": "En abril con motivo del Día de la seguridad en el trabajo",
@@ -4349,7 +4349,7 @@ const questions = [
   },
   {
     "id": 396,
-    "question": "DENTRO DE SU PROYECTO DE I+D FM UTILIZA LA REALIDAD VITUAL INMERSIVA EN:",
+    "question": "396. DENTRO DE SU PROYECTO DE I+D FM UTILIZA LA REALIDAD VITUAL INMERSIVA EN:",
     "options": {
       "A": "En su taller de seguridad vial",
       "B": "En los análisis de accidentes",
@@ -4360,7 +4360,7 @@ const questions = [
   },
   {
     "id": 397,
-    "question": "EL TALLER DE SEGURIDAD VIAL CON REALIDAD VIRTUAL ES:",
+    "question": "397. EL TALLER DE SEGURIDAD VIAL CON REALIDAD VIRTUAL ES:",
     "options": {
       "A": "Una de las acciones realizadas por mutua para mejorar la seguridad vial en nuestros asociados",
       "B": "Un taller para mejorar las habilidades de conducción de los conductores noveles",
@@ -4371,7 +4371,7 @@ const questions = [
   },
   {
     "id": 398,
-    "question": "EN MATERIA DE SEGURIDAD VIAL COMO HERRAMIENTA DE SENSIBILIZACION PARA EMPRESAS DENTRO DE NUESTRO PORTAL PREVIENE DISPONEMOS DE:",
+    "question": "398. EN MATERIA DE SEGURIDAD VIAL COMO HERRAMIENTA DE SENSIBILIZACION PARA EMPRESAS DENTRO DE NUESTRO PORTAL PREVIENE DISPONEMOS DE:",
     "options": {
       "A": "Infografías y trípticos.",
       "B": "Videos y artículos.",
@@ -4382,7 +4382,7 @@ const questions = [
   },
   {
     "id": 399,
-    "question": "¿QUÉ VENTAJAS APORTA EL USO DE LA REALIDAD VIRTUAL COMO HERRAMIENTA DE CONCIENCIACION FRENTE A LOS RIESGOS DE SEGURIDAD VIAL?",
+    "question": "399. ¿QUÉ VENTAJAS APORTA EL USO DE LA REALIDAD VIRTUAL COMO HERRAMIENTA DE CONCIENCIACION FRENTE A LOS RIESGOS DE SEGURIDAD VIAL?",
     "options": {
       "A": "El alumno vive la experiencia de la conducción frente a diferentes factores de riesgo",
       "B": "Elimina la frontera alumno-ordenador, haciendo protagonista del aprendizaje al alumno.",
@@ -4393,7 +4393,7 @@ const questions = [
   },
   {
     "id": 400,
-    "question": "¿QUÉ ES LA AISS?",
+    "question": "400. ¿QUÉ ES LA AISS?",
     "options": {
       "A": "Una asociación que promueve: la excelencia en la administración de la seguridad social, a través de normas profesionales, conocimientos de expertos, servicios y apoyo en todo el mundo.",
       "B": "La agencia internacional de la seguridad y salud",
@@ -4404,7 +4404,7 @@ const questions = [
   },
   {
     "id": 401,
-    "question": "¿QUÉ ES VISION ZERO?",
+    "question": "401. ¿QUÉ ES VISION ZERO?",
     "options": {
       "A": "Campaña de la AISS a favor de cero accidentes, enfermedades y daños en el entorno de trabajo, orientada a fomentar la cultura preventiva.",
       "B": "Es el programa de la ONCE para sus afiliados.",
@@ -4415,7 +4415,7 @@ const questions = [
   },
   {
     "id": 402,
-    "question": "VISIÓN ZERO SE SITUA EN LA TERCERA OLEADA DEL ESFUERZO PREVENTIVO QUE SE CENTRA EN:",
+    "question": "402. VISIÓN ZERO SE SITUA EN LA TERCERA OLEADA DEL ESFUERZO PREVENTIVO QUE SE CENTRA EN:",
     "options": {
       "A": "La tecnología",
       "B": "Las personas",
@@ -4426,7 +4426,7 @@ const questions = [
   },
   {
     "id": 403,
-    "question": "¿A QUÉ EMPRESAS VA DIRIGIDO VISION ZERO?",
+    "question": "403. ¿A QUÉ EMPRESAS VA DIRIGIDO VISION ZERO?",
     "options": {
       "A": "Grandes empresas",
       "B": "Empresas pertenecientes a sectores de mayor siniestralidad",
@@ -4437,7 +4437,7 @@ const questions = [
   },
   {
     "id": 404,
-    "question": "LA ESTRATEGIA DE VISION ZERO SE BASA EN:",
+    "question": "404. LA ESTRATEGIA DE VISION ZERO SE BASA EN:",
     "options": {
       "A": "La integración de dos dimensiones: salud y bienestar enfocados al trabajador",
       "B": "La integración de una visión de seguridad en las relaciones entre los trabajadores, mandos intermedios, clientes y proveedores",
@@ -4448,7 +4448,7 @@ const questions = [
   },
   {
     "id": 405,
-    "question": "EN LA FILOSOFIA DE VISION ZERO CUANDO SUCEDE UN ACCIDENTE LABORAL LO IMPORTANTE ES:",
+    "question": "405. EN LA FILOSOFIA DE VISION ZERO CUANDO SUCEDE UN ACCIDENTE LABORAL LO IMPORTANTE ES:",
     "options": {
       "A": "Aprovechar la oportunidad de aprendizaje que este nos ofrece, centrando la atención en las causas y no en buscar culpables",
       "B": "Disponer las medidas correctoras lo antes posible y evitar que nadie se entere",
@@ -4459,7 +4459,7 @@ const questions = [
   },
   {
     "id": 406,
-    "question": "A LARGO PLAZO LA CAMPAÑA VISIÓN ZERO NOS ACERCA A HACIA LA IDEA DE QUE:",
+    "question": "406. A LARGO PLAZO LA CAMPAÑA VISIÓN ZERO NOS ACERCA A HACIA LA IDEA DE QUE:",
     "options": {
       "A": "Todos los accidentes son inevitables",
       "B": "Los accidentes son cuestión de suerte",
@@ -4470,7 +4470,7 @@ const questions = [
   },
   {
     "id": 407,
-    "question": "VISIÓN ZERO NO ESTABLECE:",
+    "question": "407. VISIÓN ZERO NO ESTABLECE:",
     "options": {
       "A": "Plazos, auditorias, acciones, obligaciones ni responsabilidades",
       "B": "Auditorias",
@@ -4481,7 +4481,7 @@ const questions = [
   },
   {
     "id": 408,
-    "question": "EN VISION ZERO LAS PERSONAS SON LA CLAVE ¿POR QUE?",
+    "question": "408. EN VISION ZERO LAS PERSONAS SON LA CLAVE ¿POR QUE?",
     "options": {
       "A": "Son los que producen, hablan con los clientes, transmiten los valores y aprenden de los errores",
       "B": "Suponen el mayor gasto para la empresa",
@@ -4492,7 +4492,7 @@ const questions = [
   },
   {
     "id": 409,
-    "question": "¿CUÁLES SON LOS FACTORES PARA EL ÉXITO DE VISION ZERO?",
+    "question": "409. ¿CUÁLES SON LOS FACTORES PARA EL ÉXITO DE VISION ZERO?",
     "options": {
       "A": "Comunicación",
       "B": "Compromiso",
@@ -4503,7 +4503,7 @@ const questions = [
   },
   {
     "id": 410,
-    "question": "¿CUÁL DE LAS SIGUIENTES NO ES UNA DE LAS 7 REGLAS DE ORO?",
+    "question": "410. ¿CUÁL DE LAS SIGUIENTES NO ES UNA DE LAS 7 REGLAS DE ORO?",
     "options": {
       "A": "Asumir el liderazgo, identificar peligros, definir metas, asegurar un sistema confiable",
       "B": "Usar tecnología seguras y saludables, mejorar las competencias e",
@@ -4514,7 +4514,7 @@ const questions = [
   },
   {
     "id": 411,
-    "question": "¿EL CERTIFICADO DE VISION ZERO ES UNA CERTIFICACION SIMILAR A LA ISO?",
+    "question": "411. ¿EL CERTIFICADO DE VISION ZERO ES UNA CERTIFICACION SIMILAR A LA ISO?",
     "options": {
       "A": "No, el documento que recibes por inscribirte en la campaña solo acredita tu adhesión",
       "B": "Si, es totalmente equivalente a la certificación ISO",
@@ -4525,7 +4525,7 @@ const questions = [
   },
   {
     "id": 412,
-    "question": "¿CUÁL ES EL COSTE DE LA ADHESIÓN A VISIÓN ZERO?",
+    "question": "412. ¿CUÁL ES EL COSTE DE LA ADHESIÓN A VISIÓN ZERO?",
     "options": {
       "A": "El coste lo descuenta la Seguridad Social en función de las contingencias profesionales",
       "B": "Ninguno, es gratuito",
@@ -4536,7 +4536,7 @@ const questions = [
   },
   {
     "id": 413,
-    "question": "¿LA ADHESION A VISION ZERO EXIME DEL CUMPLIMIENTO DE LA LEY DE PREVENCION DE RIESGOS LABORALES?",
+    "question": "413. ¿LA ADHESION A VISION ZERO EXIME DEL CUMPLIMIENTO DE LA LEY DE PREVENCION DE RIESGOS LABORALES?",
     "options": {
       "A": "Si, la empresa puede decidir entre cumplir con Visión Zero o la Ley de Prevención de Riesgos Laborales.",
       "B": "No, no se exime del cumplimiento. La Ley de Prevención de Riesgos Laborales es de obligado cumplimiento para las empresas.",
@@ -4547,7 +4547,7 @@ const questions = [
   },
   {
     "id": 414,
-    "question": "ACTIVANDO VISION ZERO ES EL PROGRAMA DE REDUCCION DE SINIESTRALIDAD PROMOVIDO POR FM PARA DAR A CONOCER A NUESTROS MUTUALISTAS LA CAMPAÑA VISION ZERO. ¿QUE ACTUACIONES REALIZARAN LOS TECNICOS EN LAS EMPRESAS?",
+    "question": "414. ACTIVANDO VISION ZERO ES EL PROGRAMA DE REDUCCION DE SINIESTRALIDAD PROMOVIDO POR FM PARA DAR A CONOCER A NUESTROS MUTUALISTAS LA CAMPAÑA VISION ZERO. ¿QUE ACTUACIONES REALIZARAN LOS TECNICOS EN LAS EMPRESAS?",
     "options": {
       "A": "La evaluación de riesgos",
       "B": "Sensibilizar, ayudar a integrar la prevención y verificar los logros",
@@ -4558,7 +4558,7 @@ const questions = [
   },
   {
     "id": 415,
-    "question": "LA FORMACIÓN PROPORCIONADA POR LOS TECNICOS DE PREVENCION DE MUTUA CON CARGO A CUOTAS:",
+    "question": "415. LA FORMACIÓN PROPORCIONADA POR LOS TECNICOS DE PREVENCION DE MUTUA CON CARGO A CUOTAS:",
     "options": {
       "A": "Cumple con la Ley de Prevención de Riesgos Laborales.",
       "B": "El empresario puede utilizarla para cumplir con la Ley de Prevención de Riesgos Laborales.",
@@ -4569,7 +4569,7 @@ const questions = [
   },
   {
     "id": 416,
-    "question": "¿QUÉ ES EL CAMPUS DE PREVENCIÓN?",
+    "question": "416. ¿QUÉ ES EL CAMPUS DE PREVENCIÓN?",
     "options": {
       "A": "Aplicación de formación interna de la mutua",
       "B": "Lugar de encuentro de múltiples acciones formativas gratuitas de sensibilización y concienciación en seguridad, salud y bienestar laboral para mutualistas.",
@@ -4580,7 +4580,7 @@ const questions = [
   },
   {
     "id": 417,
-    "question": "¿A QUIÉN ESTA DIRIGIDO EL CAMPUS DE PREVENCIÓN DE FM?",
+    "question": "417. ¿A QUIÉN ESTA DIRIGIDO EL CAMPUS DE PREVENCIÓN DE FM?",
     "options": {
       "A": "Está dirigida, preferentemente, aunque no de manera exclusiva a nuestras empresas asociadas de menos de 50 trabajadores.",
       "B": "Grandes empresas",
@@ -4591,7 +4591,7 @@ const questions = [
   },
   {
     "id": 418,
-    "question": "¿DÓNDE SE PUEDE ACCEDER AL CAMPUS DE PREVENCIÓN?",
+    "question": "418. ¿DÓNDE SE PUEDE ACCEDER AL CAMPUS DE PREVENCIÓN?",
     "options": {
       "A": "En la web de Fraternidad, dentro del portal del PORTAL DEL PACIENTE",
       "B": "En Fragua",
@@ -4602,7 +4602,7 @@ const questions = [
   },
   {
     "id": 419,
-    "question": "¿QUÉ INFORMACIÓN SOBRE CAMPUS DE PREVENCIÓN PUEDO ENCONTRAR EN PREVIENE?",
+    "question": "419. ¿QUÉ INFORMACIÓN SOBRE CAMPUS DE PREVENCIÓN PUEDO ENCONTRAR EN PREVIENE?",
     "options": {
       "A": "Sobre las empresas que acuden a los cursos",
       "B": "Sobre la propuesta de nuevos cursos",
@@ -4613,7 +4613,7 @@ const questions = [
   },
   {
     "id": 420,
-    "question": "¿DÓNDE SE IMPARTE LA FORMACIÓN DE CAMPUS PREVENCIÓN?",
+    "question": "420. ¿DÓNDE SE IMPARTE LA FORMACIÓN DE CAMPUS PREVENCIÓN?",
     "options": {
       "A": "En las instalaciones de Mutua",
       "B": "En la empresa cliente",
@@ -4624,7 +4624,7 @@ const questions = [
   },
   {
     "id": 421,
-    "question": "¿CÓMO SE LLAMA EL CURSO DE CAMPUS PREVENCIÓN DIRIGIDO A REDUCIR LOS RIESGOS DE SEGURIDAD VIAL?",
+    "question": "421. ¿CÓMO SE LLAMA EL CURSO DE CAMPUS PREVENCIÓN DIRIGIDO A REDUCIR LOS RIESGOS DE SEGURIDAD VIAL?",
     "options": {
       "A": "Fitness emocional",
       "B": "Generando seguridad vial: Accidente de tráfico en el ámbito laboral.",
@@ -4635,7 +4635,7 @@ const questions = [
   },
   {
     "id": 422,
-    "question": "¿QUÉ ES EL RINCON DE LA SALUD?",
+    "question": "422. ¿QUÉ ES EL RINCON DE LA SALUD?",
     "options": {
       "A": "Una revista sobre la salud en la mutua",
       "B": "El nuevo departamento de Salud y Bienestar de la Mutua",
@@ -4646,7 +4646,7 @@ const questions = [
   },
   {
     "id": 423,
-    "question": "¿QUÉ PODEMOS ENCONTRAR EN EL RINCON DE LA SALUD?",
+    "question": "423. ¿QUÉ PODEMOS ENCONTRAR EN EL RINCON DE LA SALUD?",
     "options": {
       "A": "Material divulgativo relacionado exclusivamente con prevención de riesgos laborales.",
       "B": "Noticias, publicaciones e infografías",
@@ -4657,7 +4657,7 @@ const questions = [
   },
   {
     "id": 424,
-    "question": "¿EL ACCESO AL PORTAL WEB EL RINCON DE LA SALUD ESTÁ RESTRINGIDO A MUTUALISTAS?",
+    "question": "424. ¿EL ACCESO AL PORTAL WEB EL RINCON DE LA SALUD ESTÁ RESTRINGIDO A MUTUALISTAS?",
     "options": {
       "A": "El portal web Rincón de la Salud está abierto a cualquier a empresa, pero ciertos contenidos como Fitness emocional o Activando Salud son exclusivos para mutualistas.",
       "B": "No es de libre acceso para cualquier empresa o persona.",
@@ -4668,7 +4668,7 @@ const questions = [
   },
   {
     "id": 425,
-    "question": "¿CUÁLES SON LOS CONTENIDOS EXCLUSIVOS PARA MUTUALISTAS DEL RINCON DE LA SALUD?",
+    "question": "425. ¿CUÁLES SON LOS CONTENIDOS EXCLUSIVOS PARA MUTUALISTAS DEL RINCON DE LA SALUD?",
     "options": {
       "A": "Las infografías",
       "B": "Fitness emocional",
@@ -4679,7 +4679,7 @@ const questions = [
   },
   {
     "id": 426,
-    "question": "¿EN QUÉ PUEDE SER UTIL A LA EMPRESA EL APARTADO DE EMPRESA SALUDABLE?",
+    "question": "426. ¿EN QUÉ PUEDE SER UTIL A LA EMPRESA EL APARTADO DE EMPRESA SALUDABLE?",
     "options": {
       "A": "Para instalar máquinas que venden fruta en lugar de bollería",
       "B": "Para obtener la certificación de empresa saludable",
@@ -4690,7 +4690,7 @@ const questions = [
   },
   {
     "id": 427,
-    "question": "ACTIVANDO SALUD ES UN RECURSO DEL RINCON DE LA SALUD DIRIGIDO A REDUCIR EL ABSENTISMO MEJORANDO LA SALUD DE LOS EMPLEADOS, CONOCIENDO:",
+    "question": "427. ACTIVANDO SALUD ES UN RECURSO DEL RINCON DE LA SALUD DIRIGIDO A REDUCIR EL ABSENTISMO MEJORANDO LA SALUD DE LOS EMPLEADOS, CONOCIENDO:",
     "options": {
       "A": "Como funciona nuestro cuerpo",
       "B": "Características de una nutrición óptima",
@@ -4701,7 +4701,7 @@ const questions = [
   },
   {
     "id": 428,
-    "question": "¿QUÉ ES CAMINANDO HACIA EL BIENESTAR?",
+    "question": "428. ¿QUÉ ES CAMINANDO HACIA EL BIENESTAR?",
     "options": {
       "A": "Es el itinerario de Mutua enfocado a fomentar los hábitos saludables",
       "B": "Es el nuevo proyecto de reducción de siniestralidad",
@@ -4712,7 +4712,7 @@ const questions = [
   },
   {
     "id": 429,
-    "question": "¡PONTE LAS ZAPATILLAS!, ¡VENCE EL ESTRÉS! Y ALIMENTARSE BIEN, SENTIRSE MEJOR... FORMAN PARTE DE:",
+    "question": "429. ¡PONTE LAS ZAPATILLAS!, ¡VENCE EL ESTRÉS! Y ALIMENTARSE BIEN, SENTIRSE MEJOR... FORMAN PARTE DE:",
     "options": {
       "A": "Caminando hacia el bienestar",
       "B": "Campus de Prevención",
@@ -4723,7 +4723,7 @@ const questions = [
   },
   {
     "id": 430,
-    "question": "LA EMPRESA QUE ESTE INTERESADA EN CAMINANDO HACIA EL BIENESTAR PUEDE ELEGIR:",
+    "question": "430. LA EMPRESA QUE ESTE INTERESADA EN CAMINANDO HACIA EL BIENESTAR PUEDE ELEGIR:",
     "options": {
       "A": "Las temáticas a las que suscribirse.",
       "B": "La frecuencia con la que los trabajadores recibirán los contenidos.",
@@ -4734,7 +4734,7 @@ const questions = [
   },
   {
     "id": 431,
-    "question": "¿CUÁLES DE LOS SIGUIENTES SON OBJETIVOS DE CAMINANDO HACIA EL BIENESTAR?",
+    "question": "431. ¿CUÁLES DE LOS SIGUIENTES SON OBJETIVOS DE CAMINANDO HACIA EL BIENESTAR?",
     "options": {
       "A": "Realizar una alimentación sana y equilibrada",
       "B": "Mejorar nuestra gestión de las emociones y control del estrés",
@@ -4745,7 +4745,7 @@ const questions = [
   },
   {
     "id": 432,
-    "question": "¿QUÉ ES EL AULA DE PREVENCION ONLINE?",
+    "question": "432. ¿QUÉ ES EL AULA DE PREVENCION ONLINE?",
     "options": {
       "A": "Es una plataforma de formación e-learning y talleres audiovisuales.",
       "B": "Es el portal de prevención de FM.",
@@ -4756,7 +4756,7 @@ const questions = [
   },
   {
     "id": 433,
-    "question": "¿DÓNDE SE PUEDE ACCEDER AL AULA DE PREVENCION ONLINE?",
+    "question": "433. ¿DÓNDE SE PUEDE ACCEDER AL AULA DE PREVENCION ONLINE?",
     "options": {
       "A": "Remo",
       "B": "Fragua",
@@ -4767,7 +4767,7 @@ const questions = [
   },
   {
     "id": 434,
-    "question": "¿QUÉ VENTAJAS OFRECE EL AULA DE PREVENCION ONLINE?",
+    "question": "434. ¿QUÉ VENTAJAS OFRECE EL AULA DE PREVENCION ONLINE?",
     "options": {
       "A": "Flexibilidad en la elección del lugar y el momento para realizar la formación",
       "B": "Disponibilidad de un gran número de cursos y un tutor virtual que va guiando al alumno",
@@ -4778,7 +4778,7 @@ const questions = [
   },
   {
     "id": 435,
-    "question": "LA FORMACIÓN PROPORCIONADA A TRAVES DEL AULA DE PREVENCION ONLINE:",
+    "question": "435. LA FORMACIÓN PROPORCIONADA A TRAVES DEL AULA DE PREVENCION ONLINE:",
     "options": {
       "A": "Sustituye la obligación del empresario de formar a los trabajadores derivada del artículo 19 de la Ley de Prevención de Riesgos Laborales",
       "B": "Cumple con la Ley de Prevención de Riesgos Laborales, excepto el artículo 19 de Formación.",
@@ -4789,7 +4789,7 @@ const questions = [
   },
   {
     "id": 436,
-    "question": "¿QUÉ EMPRESAS PUEDEN ACCEDER AL AULA DE PREVENCION ONLINE?",
+    "question": "436. ¿QUÉ EMPRESAS PUEDEN ACCEDER AL AULA DE PREVENCION ONLINE?",
     "options": {
       "A": "Las empresas de más de 250 trabajadores",
       "B": "Las empresas de menos de 50 trabajadores",
@@ -4800,7 +4800,7 @@ const questions = [
   },
   {
     "id": 437,
-    "question": "EL TALLER DE PUESTA A PUNTO PARA EVITAR LESIONES MUSCULOESQUELETICAS ES:",
+    "question": "437. EL TALLER DE PUESTA A PUNTO PARA EVITAR LESIONES MUSCULOESQUELETICAS ES:",
     "options": {
       "A": "Un taller de Aula de prevención online",
       "B": "Un curso de Campus Prevención",
@@ -4811,7 +4811,7 @@ const questions = [
   },
   {
     "id": 438,
-    "question": "EL TALLER DE VOZ ES:",
+    "question": "438. EL TALLER DE VOZ ES:",
     "options": {
       "A": "Un curso de Campus Prevención",
       "B": "Un taller de Aula de prevención online",
@@ -4822,7 +4822,7 @@ const questions = [
   },
   {
     "id": 439,
-    "question": "FITNESS EMOCIONAL ES:",
+    "question": "439. FITNESS EMOCIONAL ES:",
     "options": {
       "A": "Un curso de Campus Prevención",
       "B": "Una sesión de psicología",
@@ -4833,7 +4833,7 @@ const questions = [
   },
   {
     "id": 440,
-    "question": "EL ACCESO A ACTIVANDO SALUD SE PUEDE REALIZAR DESDE:",
+    "question": "440. EL ACCESO A ACTIVANDO SALUD SE PUEDE REALIZAR DESDE:",
     "options": {
       "A": "El Aula de prevención online",
       "B": "El portal Rincón de la Salud",
@@ -4844,7 +4844,7 @@ const questions = [
   },
   {
     "id": 441,
-    "question": "¿QUÉ LOGRARÁN LOS TRABAJADORES QUE REALICEN EL CURSO DE FITNESS EMOCIONAL?",
+    "question": "441. ¿QUÉ LOGRARÁN LOS TRABAJADORES QUE REALICEN EL CURSO DE FITNESS EMOCIONAL?",
     "options": {
       "A": "Afrontar mejor las adversidades y cambiar hábitos tóxicos por otros más saludables",
       "B": "Establecer una comunicación saludable",
@@ -4855,7 +4855,7 @@ const questions = [
   },
   {
     "id": 442,
-    "question": "¿QUÉ ES PREVIENE?",
+    "question": "442. ¿QUÉ ES PREVIENE?",
     "options": {
       "A": "El portal web de prevención de riesgos laborales y desarrollo de la cultura de la salud de FM",
       "B": "El portal de prevención de riesgos laborales y desarrollo de la cultura de la salud del Ministerio",
@@ -4866,7 +4866,7 @@ const questions = [
   },
   {
     "id": 443,
-    "question": "¿DÓNDE SE PUEDE ACCEDER A PREVIENE?",
+    "question": "443. ¿DÓNDE SE PUEDE ACCEDER A PREVIENE?",
     "options": {
       "A": "Desde la página web del Ministerio",
       "B": "En la página web de FM fraternidad.com/Previene",
@@ -4877,7 +4877,7 @@ const questions = [
   },
   {
     "id": 444,
-    "question": "¿QUÉ MATERIAL DIVULGATIVO DE PREVENCION PODEMOS ENCONTRAR EN PREVIENE?",
+    "question": "444. ¿QUÉ MATERIAL DIVULGATIVO DE PREVENCION PODEMOS ENCONTRAR EN PREVIENE?",
     "options": {
       "A": "Sólo manuales",
       "B": "Trípticos, manuales, posters, infografías, vídeos y noticias",
@@ -4888,7 +4888,7 @@ const questions = [
   },
   {
     "id": 445,
-    "question": "DESDE PREVIENE TENEMOS ACCESO A:",
+    "question": "445. DESDE PREVIENE TENEMOS ACCESO A:",
     "options": {
       "A": "Material sobre Vision Zero",
       "B": "Campus de Prevención y el Aula de prevención online",
@@ -4899,7 +4899,7 @@ const questions = [
   },
   {
     "id": 446,
-    "question": "¿QUÉ ACTIVIDADES ALTERNATIVAS Y DIFERENTES SE ORGANIZAN DESDE MUTUA PARA LA GENERACION DE CULTURA PREVENTIVA ENTRE NUESTRAS EMPRESAS?",
+    "question": "446. ¿QUÉ ACTIVIDADES ALTERNATIVAS Y DIFERENTES SE ORGANIZAN DESDE MUTUA PARA LA GENERACION DE CULTURA PREVENTIVA ENTRE NUESTRAS EMPRESAS?",
     "options": {
       "A": "Semana de la Sociedad, Semana de la Seguridad Vial, Premios Escolástico Zaldívar, Exposición de Carteles de prevención y los foros, jornadas o debates de Hablando de prevención.",
       "B": "Premios Escolástico Zaldívar y Exposiciones de carteles",
@@ -4910,7 +4910,7 @@ const questions = [
   },
   {
     "id": 447,
-    "question": "¿QUÉ ES LA EXPOSICION DE CARTELES DE PREVENCION?",
+    "question": "447. ¿QUÉ ES LA EXPOSICION DE CARTELES DE PREVENCION?",
     "options": {
       "A": "Son los carteles de prevención que se editan cada año con motivo del Día 28 de Abril, de la Seguridad y Salud en el Trabajo.",
       "B": "Son los carteles editados por el Ministerio en cada una de sus campañas de seguridad vial",
@@ -4921,7 +4921,7 @@ const questions = [
   },
   {
     "id": 448,
-    "question": "¿CUÁLES SON LOS DOCUMENTOS QUE INFORMAN A LA EMPRESA SOBRE SUS ACCIDENTES Y ENFERMEDADES PROFESIONALES?",
+    "question": "448. ¿CUÁLES SON LOS DOCUMENTOS QUE INFORMAN A LA EMPRESA SOBRE SUS ACCIDENTES Y ENFERMEDADES PROFESIONALES?",
     "options": {
       "A": "Son los informes de análisis, evolución y coste de la siniestralidad y el Certificado de Siniestralidad",
       "B": "El análisis de tareas del puesto de trabajo",
@@ -4932,7 +4932,7 @@ const questions = [
   },
   {
     "id": 449,
-    "question": "¿DÓNDE SE PUEDE DESCARGAR EL INFORME CON LOS DATOS DE ACCIDENTES Y ENFERMEDADES PROFESIONALES DE UNA EMPRESA?",
+    "question": "449. ¿DÓNDE SE PUEDE DESCARGAR EL INFORME CON LOS DATOS DE ACCIDENTES Y ENFERMEDADES PROFESIONALES DE UNA EMPRESA?",
     "options": {
       "A": "En Fragua",
       "B": "En Previene",
@@ -4943,7 +4943,7 @@ const questions = [
   },
   {
     "id": 450,
-    "question": "¿QUÉ ES UN INFORME DE ANALISIS DE SINIESTRALIDAD?",
+    "question": "450. ¿QUÉ ES UN INFORME DE ANALISIS DE SINIESTRALIDAD?",
     "options": {
       "A": "Es un informe de la provincia con los datos de siniestralidad de todas sus empresas",
       "B": "Es el informe de siniestralidad para una empresa con el detalle de accidentes con o sin baja, in-itinere y enfermedades profesionales.",
@@ -4954,7 +4954,7 @@ const questions = [
   },
   {
     "id": 451,
-    "question": "SI UNA EMPRESA DESEA CONOCER SUS ACCIDENTES EN LOS ULTIMOS TRES AÑOS, ¿QUÉ INFORME DE FRATERDATA SOLICITAREMOS?",
+    "question": "451. SI UNA EMPRESA DESEA CONOCER SUS ACCIDENTES EN LOS ULTIMOS TRES AÑOS, ¿QUÉ INFORME DE FRATERDATA SOLICITAREMOS?",
     "options": {
       "A": "El análisis de siniestralidad",
       "B": "El informe de Estimación de costes de la siniestralidad",
@@ -4965,7 +4965,7 @@ const questions = [
   },
   {
     "id": 452,
-    "question": "SI UNA EMPRESA SOLO DESEA CONOCER LA ESTIMACIÓN DEL COSTE DE SUS ACCIDENTES Y ENFERMEDADES PROFESIONALES,\n¿QUÉ INFORME DE FRATERDATA SOLICITAREMOS?",
+    "question": "452. SI UNA EMPRESA SOLO DESEA CONOCER LA ESTIMACIÓN DEL COSTE DE SUS ACCIDENTES Y ENFERMEDADES PROFESIONALES, ¿QUÉ INFORME DE FRATERDATA SOLICITAREMOS?",
     "options": {
       "A": "El análisis de siniestralidad",
       "B": "El informe de Estimación de costes de la siniestralidad",
@@ -4976,7 +4976,7 @@ const questions = [
   },
   {
     "id": 453,
-    "question": "¿CUÁL DE LAS ACTIVIDADES PREVENTIVAS REALIZADAS POR LA MUTUA TIENEN COSTE?",
+    "question": "453. ¿CUÁL DE LAS ACTIVIDADES PREVENTIVAS REALIZADAS POR LA MUTUA TIENEN COSTE?",
     "options": {
       "A": "Caminando hacia el bienestar",
       "B": "El Campus de Prevención",
@@ -4987,7 +4987,7 @@ const questions = [
   },
   {
     "id": 454,
-    "question": "EL COMITE DE SEGURIDAD Y SALUD DE UN CENTRO",
+    "question": "454. EL COMITE DE SEGURIDAD Y SALUD DE UN CENTRO",
     "options": {
       "A": "Debe constituirse siempre.",
       "B": "No puede constituirse si la empresa no lo permite.",
@@ -4998,7 +4998,7 @@ const questions = [
   },
   {
     "id": 455,
-    "question": "¿QUÉ ES LA ORGANIZACIÓN PREVENTIVA DE UNA EMPRESA?",
+    "question": "455. ¿QUÉ ES LA ORGANIZACIÓN PREVENTIVA DE UNA EMPRESA?",
     "options": {
       "A": "La manera en que se deben realizar los simulacros en caso de incendio.",
       "B": "La manera en que se desarrollan los cursos de prevención de riesgos laborales para los trabajadores.",
@@ -5009,7 +5009,7 @@ const questions = [
   },
   {
     "id": 456,
-    "question": "¿QUÉ ES UNA EVALUACIÓN DE RIESGOS LABORALES?",
+    "question": "456. ¿QUÉ ES UNA EVALUACIÓN DE RIESGOS LABORALES?",
     "options": {
       "A": "No existe dicho documento.",
       "B": "La evaluación de los riesgos laborales es el proceso dirigido a estimar la magnitud de aquellos riesgos que no hayan podido evitarse, obteniendo la información necesaria para que el empresario esté en condiciones de tomar una decisión apropiada sobre la necesidad de adoptar medidas preventivas y, en tal caso, sobre el tipo de medidas que deben adoptar.",
@@ -5020,7 +5020,7 @@ const questions = [
   },
   {
     "id": 457,
-    "question": "¿DÓNDE PODEMOS ENCONTRAR EL COMPROMISO DE LA EMPRESA DE INTEGRAR LA PREVENCIÓN EN LA ESTRUCTURA ORGANIZATIVA?",
+    "question": "457. ¿DÓNDE PODEMOS ENCONTRAR EL COMPROMISO DE LA EMPRESA DE INTEGRAR LA PREVENCIÓN EN LA ESTRUCTURA ORGANIZATIVA?",
     "options": {
       "A": "En la política de seguridad y salud laboral.",
       "B": "En el plan de emergencia del centro de trabajo.",
@@ -5031,7 +5031,7 @@ const questions = [
   },
   {
     "id": 458,
-    "question": "¿CUÁLES SON LOS PRINCIPALES TEMAS A TENER EN CUENTA A LA HORA DE REALIZAR LA PLANIFICACIÓN DE LA IMPLANTACIÓN DE UN SISTEMA DE GESTIÓN?",
+    "question": "458. ¿CUÁLES SON LOS PRINCIPALES TEMAS A TENER EN CUENTA A LA HORA DE REALIZAR LA PLANIFICACIÓN DE LA IMPLANTACIÓN DE UN SISTEMA DE GESTIÓN?",
     "options": {
       "A": "La peligrosidad de las instalaciones y la ubicación del centro",
       "B": "Objetivos e indicadores del grado de implantación, Responsables, Plazos de la implantación, Registros a generar.",
@@ -5042,7 +5042,7 @@ const questions = [
   },
   {
     "id": 459,
-    "question": "¿QUIÉN ES EL ENCARGADO DE LA FASE DE INFORMACIÓN EN MATERIA DE PREVENCIÓN?",
+    "question": "459. ¿QUIÉN ES EL ENCARGADO DE LA FASE DE INFORMACIÓN EN MATERIA DE PREVENCIÓN?",
     "options": {
       "A": "El Servicio de Prevención Propio.",
       "B": "Departamento de Relaciones Laborales y Desarrollo de RRHH.",
@@ -5053,7 +5053,7 @@ const questions = [
   },
   {
     "id": 460,
-    "question": "LA INTEGRACIÓN DE LA PREVENCIÓN:",
+    "question": "460. LA INTEGRACIÓN DE LA PREVENCIÓN:",
     "options": {
       "A": "Está presente en la política de seguridad y salud de Fraternidad-Muprespa e Implica tu aceptación de incluir la prevención de riesgos laborales en cualquier actividad que realices u órdenes y en todas las decisiones que adoptes.",
       "B": "Que debemos conocer los riesgos de nuestro puesto de trabajo.",
@@ -5064,7 +5064,7 @@ const questions = [
   },
   {
     "id": 461,
-    "question": "¿QUÉ INFORMACIÓN Y FORMACIÓN EN MATERIA DE PREVENCIÓN DE RIESGOS LABORALES SE DEBE DAR?",
+    "question": "461. ¿QUÉ INFORMACIÓN Y FORMACIÓN EN MATERIA DE PREVENCIÓN DE RIESGOS LABORALES SE DEBE DAR?",
     "options": {
       "A": "De los riesgos específicos.",
       "B": "Del conjunto de riesgos generales de la empresa.",
@@ -5075,7 +5075,7 @@ const questions = [
   },
   {
     "id": 462,
-    "question": "CUÁL ES EL OBJETIVO DE LA PREVENCIÓN DE RIESGOS LABORALES",
+    "question": "462. CUÁL ES EL OBJETIVO DE LA PREVENCIÓN DE RIESGOS LABORALES",
     "options": {
       "A": "Disminuir los riesgos derivados del trabajo.",
       "B": "Cumplir con la ley 31/1995.",
@@ -5086,7 +5086,7 @@ const questions = [
   },
   {
     "id": 463,
-    "question": "¿QUÉ ES UN RIESGO LABORAL?",
+    "question": "463. ¿QUÉ ES UN RIESGO LABORAL?",
     "options": {
       "A": "Posibilidad de que una persona sufra un determinado daño como consecuencia de su actividad laboral.",
       "B": "El peligro de que te despidan si realizas mal tu trabajo.",
@@ -5097,7 +5097,7 @@ const questions = [
   },
   {
     "id": 464,
-    "question": "¿QUÉ SE CONSIDERA UN ACCIDENTE DE TRABAJO?",
+    "question": "464. ¿QUÉ SE CONSIDERA UN ACCIDENTE DE TRABAJO?",
     "options": {
       "A": "Toda lesión corporal que el trabajador sufra con ocasión o por consecuencia del trabajo, tanto accidentes producidos en el centro de trabajo, como a los producidos en el trayecto habitual entre éste y el domicilio de trabajador, denominados in itinere.",
       "B": "Toda lesión corporal que el trabajador sufra con ocasión o por consecuencia del trabajo, sin incluir accidentes producidos en el centro de trabajo, como a los producidos en el trayecto habitual entre éste y el domicilio de trabajador, denominados in itinere.",
@@ -5108,7 +5108,7 @@ const questions = [
   },
   {
     "id": 465,
-    "question": "LAS CAUSAS QUE ORIGINAN LOS ACCIDENTES DE TRABAJO:",
+    "question": "465. LAS CAUSAS QUE ORIGINAN LOS ACCIDENTES DE TRABAJO:",
     "options": {
       "A": "Son exclusivamente técnicas (fallos en maquinaria, herramientas, mal estado de equipos e instalaciones, etc.).",
       "B": "Se deben tener en cuenta las causas técnicas y las organizativas: turnos de trabajo, asignación de tareas, etc.",
@@ -5119,7 +5119,7 @@ const questions = [
   },
   {
     "id": 466,
-    "question": "CON RESPECTO A LA COORDINACIÓN DE ACTIVIDADES EMPRESARIALES LA LEY DE PREVENCION DE RIESGOS LABORALES:",
+    "question": "466. CON RESPECTO A LA COORDINACIÓN DE ACTIVIDADES EMPRESARIALES LA LEY DE PREVENCION DE RIESGOS LABORALES:",
     "options": {
       "A": "No establece nada, no trata este tema.",
       "B": "Establece que cuando en un mismo centro de trabajo desarrollen actividades trabajadores de dos o más empresas, éstas deberán cooperar en la aplicación de la normativa de prevención de riesgos laborales.",
@@ -5130,7 +5130,7 @@ const questions = [
   },
   {
     "id": 467,
-    "question": "¿QUÉ SE ENTIENDE POR ACCIDENTE DE TRABAJO?",
+    "question": "467. ¿QUÉ SE ENTIENDE POR ACCIDENTE DE TRABAJO?",
     "options": {
       "A": "Los que sufra el trabajador al ir o al volver del lugar de trabajo.",
       "B": "Los que sufra el trabajador como consecuencia de las tareas que desempeña.",
@@ -5141,7 +5141,7 @@ const questions = [
   },
   {
     "id": 468,
-    "question": "DEL INCUMPLIMIENTO POR EL EMPRESARIO DE LA NORMATIVA DE PREVENCIÓN DE RIESGOS LABORALES, PUEDEN DERIVARSE LAS SIGUIENTES RESPONSABILIDADES:",
+    "question": "468. DEL INCUMPLIMIENTO POR EL EMPRESARIO DE LA NORMATIVA DE PREVENCIÓN DE RIESGOS LABORALES, PUEDEN DERIVARSE LAS SIGUIENTES RESPONSABILIDADES:",
     "options": {
       "A": "Sólo responsabilidades administrativas, penales y civiles.",
       "B": "Nunca puede derivarse responsabilidad penal.",
@@ -5152,7 +5152,7 @@ const questions = [
   },
   {
     "id": 469,
-    "question": "COMO TRABAJADOR DE FRATERNIDAD- MUPRESPA TIENES DERECHO A:",
+    "question": "469. COMO TRABAJADOR DE FRATERNIDAD- MUPRESPA TIENES DERECHO A:",
     "options": {
       "A": "Una protección eficaz en materia de seguridad y salud en el trabajo.",
       "B": "Velar por su propia seguridad y salud en el trabajo y por la de aquellas otras personas a las que pueda afectar su actividad profesional, a causa de sus actos y omisiones en el trabajo, según sus posibilidades y mediante el cumplimiento de las medidas de prevención que en cada caso sean adoptadas.",
@@ -5163,7 +5163,7 @@ const questions = [
   },
   {
     "id": 470,
-    "question": "ES UNA OBLIGACIÓN DE LOS TRABAJADORES:",
+    "question": "470. ES UNA OBLIGACIÓN DE LOS TRABAJADORES:",
     "options": {
       "A": "No poner fuera de funcionamiento y utilizar correctamente los dispositivos de seguridad existentes.",
       "B": "Disponer de los equipos de trabajo adecuados para las tareas que deba realizar.",
@@ -5174,7 +5174,7 @@ const questions = [
   },
   {
     "id": 471,
-    "question": "LA EMPRESA TIENE LA OBLIGACIÓN DE",
+    "question": "471. LA EMPRESA TIENE LA OBLIGACIÓN DE",
     "options": {
       "A": "Ofrecer el Reconocimiento Médico a todos sus trabajadores.",
       "B": "Ofrecer el reconocimiento médico sólo a los trabajadores con Pantallas de Visualización de Datos",
@@ -5185,7 +5185,7 @@ const questions = [
   },
   {
     "id": 472,
-    "question": "ADEMÁS DE EMPRESARIOS Y TRABAJADORES, TAMBIÉN EXISTEN OBLIGACIONES IMPUESTAS POR LA LEY DE PREVENCIÓN A:",
+    "question": "472. ADEMÁS DE EMPRESARIOS Y TRABAJADORES, TAMBIÉN EXISTEN OBLIGACIONES IMPUESTAS POR LA LEY DE PREVENCIÓN A:",
     "options": {
       "A": "Fabricantes.",
       "B": "Suministradores.",
@@ -5196,7 +5196,7 @@ const questions = [
   },
   {
     "id": 473,
-    "question": "EN CUANTO A LA LEY DE PREVENCIÓN DE RIESGOS LABORALES:",
+    "question": "473. EN CUANTO A LA LEY DE PREVENCIÓN DE RIESGOS LABORALES:",
     "options": {
       "A": "No impone ninguna obligación para los trabajadores.",
       "B": "Expone las obligaciones de los empresarios y trabajadores.",
@@ -5207,7 +5207,7 @@ const questions = [
   },
   {
     "id": 474,
-    "question": "LA LEY DE PREVENCION DE RIESGOS LABORALES:",
+    "question": "474. LA LEY DE PREVENCION DE RIESGOS LABORALES:",
     "options": {
       "A": "Establece una protección para todos los trabajadores por igual.",
       "B": "Establece una mayor protección para los trabajadores que han sufrido un accidente laboral.",
@@ -5218,7 +5218,7 @@ const questions = [
   },
   {
     "id": 475,
-    "question": "EL EMPRESARIO DEBE GARANTIZAR A SUS TRABAJADORES LA FORMACIÓN EN PRL EN FUNCIÓN DE SU PUESTO DE TRABAJO",
+    "question": "475. EL EMPRESARIO DEBE GARANTIZAR A SUS TRABAJADORES LA FORMACIÓN EN PRL EN FUNCIÓN DE SU PUESTO DE TRABAJO",
     "options": {
       "A": "Siempre",
       "B": "Sólo en ocasiones de riesgo grave o inminente",
@@ -5229,7 +5229,7 @@ const questions = [
   },
   {
     "id": 476,
-    "question": "SOBRE EL DEBER DEL EMPRESARIO DE FORMACIÓN EN MATERIA DE PREVENCIÓN A LOS TRABAJADORES…",
+    "question": "476. SOBRE EL DEBER DEL EMPRESARIO DE FORMACIÓN EN MATERIA DE PREVENCIÓN A LOS TRABAJADORES…",
     "options": {
       "A": "Sólo tiene que dar formación a los trabajadores fijos de la empresa, no a los temporales",
       "B": "El tiempo de formación en materia preventiva se considera a todos los efectos como horas de trabajo.",
@@ -5240,7 +5240,7 @@ const questions = [
   },
   {
     "id": 477,
-    "question": "SOBRE QUÉ CUESTIONES DEBE CONSULTAR EL EMPRESARIO Y A QUIÉN DEBE HACER TAL CONSULTA:",
+    "question": "477. SOBRE QUÉ CUESTIONES DEBE CONSULTAR EL EMPRESARIO Y A QUIÉN DEBE HACER TAL CONSULTA:",
     "options": {
       "A": "Debe consultar al Comité de Seguridad y Salud sobre aspectos relativos al calendario laboral.",
       "B": "No tiene por qué consultar ninguna de las actividades que se regulan en la LPRL a los Delegados de Prevención.",
@@ -5251,7 +5251,7 @@ const questions = [
   },
   {
     "id": 478,
-    "question": "¿A QUIÉN CORRESPONDE LA DESIGNACIÓN DE LOS DELEGADOS DE PREVENCIÓN?",
+    "question": "478. ¿A QUIÉN CORRESPONDE LA DESIGNACIÓN DE LOS DELEGADOS DE PREVENCIÓN?",
     "options": {
       "A": "A la Inspección de Trabajo.",
       "B": "Al empresario.",
@@ -5262,7 +5262,7 @@ const questions = [
   },
   {
     "id": 479,
-    "question": "¿QUIÉNES SON LOS DELEGADOS DE PREVENCIÓN?",
+    "question": "479. ¿QUIÉNES SON LOS DELEGADOS DE PREVENCIÓN?",
     "options": {
       "A": "Personal de Fraternidad-Muprespa encargado de realizar actividades preventivas.",
       "B": "Representantes de los trabajadores con funciones específicas en materia de prevención de riesgos en el trabajo.",
@@ -5273,7 +5273,7 @@ const questions = [
   },
   {
     "id": 480,
-    "question": "¿PUEDO REALIZAR PROPUESTAS DE MEJORA EN MATERIA DE PREVENCIÓN? SEÑALE LA RESPUESTA INCORRECTA:",
+    "question": "480. ¿PUEDO REALIZAR PROPUESTAS DE MEJORA EN MATERIA DE PREVENCIÓN? SEÑALE LA RESPUESTA INCORRECTA:",
     "options": {
       "A": "No puedo.",
       "B": "Sí a través de mi jefe directo.",
@@ -5284,7 +5284,7 @@ const questions = [
   },
   {
     "id": 481,
-    "question": "¿PUEDO REALIZAR PROPUESTAS DE MEJORA EN MATERIA DE PREVENCIÓN A LOS DELEGADOS DE PERSONAL?",
+    "question": "481. ¿PUEDO REALIZAR PROPUESTAS DE MEJORA EN MATERIA DE PREVENCIÓN A LOS DELEGADOS DE PERSONAL?",
     "options": {
       "A": "Sí, a través del tablón de anuncios de la empresa.",
       "B": "Lo debo realizar a través de los delegados de prevención o delegados de personal.",
@@ -5295,7 +5295,7 @@ const questions = [
   },
   {
     "id": 482,
-    "question": "Competencias de los Delegados de Prevención:",
+    "question": "482. Competencias de los Delegados de Prevención:",
     "options": {
       "A": "Ser consultados por el empresario, con carácter previo a su ejecución, acerca de las decisiones a que se refiere el art. 33 LPRL: como Planificación y organización del trabajo en la empresa y la introducción de nuevas tecnologías; Organización y desarrollo de las actividades de protección de la salud y prevención de los riesgos profesionales en la empresa. O designación de los trabajadores encargados de las medidas de emergencia entre otros.",
       "B": "Colaborar con la dirección de empresa en la mejora de la acción preventiva: Los delegados de prevención tienen el derecho, pero también el deber, de colaborar tanto con el empresario, como con los mandos intermedios para incluir mejoras en la acción preventiva.",
@@ -5306,7 +5306,7 @@ const questions = [
   },
   {
     "id": 483,
-    "question": "UNA DE LAS TAREAS DEL SERVICIO DE PREVENCIÓN PROPIO EN LOS COMITÉS DE SEGURIDAD Y SALUD ES",
+    "question": "483. UNA DE LAS TAREAS DEL SERVICIO DE PREVENCIÓN PROPIO EN LOS COMITÉS DE SEGURIDAD Y SALUD ES",
     "options": {
       "A": "Constituir el Comité se Seguridad y Salud",
       "B": "Decidir en todo momento las acciones preventivas a adoptar",
@@ -5317,7 +5317,7 @@ const questions = [
   },
   {
     "id": 484,
-    "question": "¿ES UNA OBLIGACIÓN LEGAL LA ORGANIZACIÓN DE RECURSOS PARA LAS ACTIVIDADES PREVENTIVAS?",
+    "question": "484. ¿ES UNA OBLIGACIÓN LEGAL LA ORGANIZACIÓN DE RECURSOS PARA LAS ACTIVIDADES PREVENTIVAS?",
     "options": {
       "A": "No siempre.",
       "B": "Sí, es una obligación definida en el Real Decreto 39/1997 por el que se aprueba el Reglamento de los Servicios de Prevención y posteriores modificaciones.",
@@ -5328,7 +5328,7 @@ const questions = [
   },
   {
     "id": 485,
-    "question": "EL SERVICIO DE PREVENCIÓN PROPIO DE FRATERNIDAD– MUPRESPA:",
+    "question": "485. EL SERVICIO DE PREVENCIÓN PROPIO DE FRATERNIDAD– MUPRESPA:",
     "options": {
       "A": "Asume las actividades preventivas correspondientes a las especialidades de: Medicina del Trabajo, Seguridad en el Trabajo, Higiene Industrial y Ergonomía y Psicosociología aplicada.",
       "B": "Asume las actividades preventivas correspondientes a la especialidad de Medicina del Trabajo y contrata el resto de actividades correspondientes a otras especialidades.",
@@ -5339,7 +5339,7 @@ const questions = [
   },
   {
     "id": 486,
-    "question": "CON RESPECTO AL SERVICIO DE PREVENCIÓN PROPIO DE FRATERNIDAD–MUPRESPA:",
+    "question": "486. CON RESPECTO AL SERVICIO DE PREVENCIÓN PROPIO DE FRATERNIDAD–MUPRESPA:",
     "options": {
       "A": "Es la modalidad de organización preventiva por la que ha optado la Mutua.",
       "B": "Está formado por los delegados de prevención.",
@@ -5350,7 +5350,7 @@ const questions = [
   },
   {
     "id": 487,
-    "question": "CUANDO SE TRATA DE ESTABLECER UNA MEJORA DE LAS CONDICIONES DE TRABAJO SE DEBE UTILIZAR:",
+    "question": "487. CUANDO SE TRATA DE ESTABLECER UNA MEJORA DE LAS CONDICIONES DE TRABAJO SE DEBE UTILIZAR:",
     "options": {
       "A": "Técnicas de Higiene Industrial, exclusivamente.",
       "B": "Técnicas de Ergonomía y Psicosociología, Higiene Industrial, Seguridad en el Trabajo y Medicina del Trabajo.",
@@ -5361,7 +5361,7 @@ const questions = [
   },
   {
     "id": 488,
-    "question": "LA ESPECIALIDAD DE SEGURIDAD EN EL TRABAJO:",
+    "question": "488. LA ESPECIALIDAD DE SEGURIDAD EN EL TRABAJO:",
     "options": {
       "A": "Estudia las condiciones materiales que ponen en peligro la integridad física de los trabajadores, a causa de los accidentes de trabajo. Un claro ejemplo lo representa la evaluación de los riesgos debidos a las condiciones de los lugares de trabajo.",
       "B": "Estudia los contaminantes físicos, químicos y biológicos presentes en el medio de trabajo, que pueden causar alteraciones reversibles o permanentes en la salud de los trabajadores.",
@@ -5372,7 +5372,7 @@ const questions = [
   },
   {
     "id": 489,
-    "question": "LA ESPECIALIDAD DE HIGIENE INDUSTRIAL:",
+    "question": "489. LA ESPECIALIDAD DE HIGIENE INDUSTRIAL:",
     "options": {
       "A": "Estudia las consecuencias de las condiciones materiales y ambientales sobre los trabajadores.",
       "B": "Estudia los contaminantes físicos, químicos y biológicos presentes en el medio de trabajo, que pueden causar alteraciones reversibles o permanentes en la salud de los trabajadores.",
@@ -5383,7 +5383,7 @@ const questions = [
   },
   {
     "id": 490,
-    "question": "LA ESPECIALIDAD DE ERGONOMÍA:",
+    "question": "490. LA ESPECIALIDAD DE ERGONOMÍA:",
     "options": {
       "A": "No es ninguna especialidad preventiva.",
       "B": "Estudia los contaminantes físicos, químicos y biológicos presentes en el medio de trabajo, que pueden causar alteraciones reversibles o permanentes en la salud de los trabajadores.",
@@ -5394,7 +5394,7 @@ const questions = [
   },
   {
     "id": 491,
-    "question": "EL SERVICIO DE PREVENCIÓN PROPIO DA EL ASESORAMIENTO Y APOYO QUE SE PRECISE EN FUNCIÓN DE LOS TIPOS DE RIESGO EXISTENTES Y EN LO REFERENTE A:",
+    "question": "491. EL SERVICIO DE PREVENCIÓN PROPIO DA EL ASESORAMIENTO Y APOYO QUE SE PRECISE EN FUNCIÓN DE LOS TIPOS DE RIESGO EXISTENTES Y EN LO REFERENTE A:",
     "options": {
       "A": "El diseño, implantación y aplicación de un plan de prevención de riesgos laborales que permita la integración de la prevención en la empresa; La evaluación de los factores de riesgo que puedan afectar a la seguridad y la salud de los trabajadores y la planificación de la actividad preventiva y la determinación de las prioridades en la adopción de las medidas preventivas y la vigilancia de su eficacia.",
       "B": "A las empresas asociadas a la mutua.",
@@ -5405,7 +5405,7 @@ const questions = [
   },
   {
     "id": 492,
-    "question": "EL SERVICIO DE PREVENCIÓN PROPIO DA EL ASESORAMIENTO Y APOYO QUE SE PRECISE EN FUNCIÓN DE LOS TIPOS DE RIESGO EXISTENTES Y EN LO REFERENTE A:",
+    "question": "492. EL SERVICIO DE PREVENCIÓN PROPIO DA EL ASESORAMIENTO Y APOYO QUE SE PRECISE EN FUNCIÓN DE LOS TIPOS DE RIESGO EXISTENTES Y EN LO REFERENTE A:",
     "options": {
       "A": "A la propia empresa en la prestación de los primeros auxilios y planes de emergencia; La vigilancia de la salud de los trabajadores en relación con los riesgos derivados del trabajo y el diseño, implantación y aplicación de un plan de prevención de riesgos laborales que permita la integración de la prevención en la empresa.",
       "B": "A las empresas asociadas a la mutua.",
@@ -5416,7 +5416,7 @@ const questions = [
   },
   {
     "id": 493,
-    "question": "EL SERVICIO DE PREVENCIÓN PROPIO DA EL ASESORAMIENTO Y APOYO QUE SE PRECISE EN FUNCIÓN DE LOS TIPOS DE RIESGO EXISTENTES Y EN LO REFERENTE A:",
+    "question": "493. EL SERVICIO DE PREVENCIÓN PROPIO DA EL ASESORAMIENTO Y APOYO QUE SE PRECISE EN FUNCIÓN DE LOS TIPOS DE RIESGO EXISTENTES Y EN LO REFERENTE A:",
     "options": {
       "A": "El diseño, implantación y aplicación de un plan de prevención de riesgos laborales que permita la integración de la prevención en la empresa.",
       "B": "La evaluación de los factores de riesgo que puedan afectar a la seguridad y la salud de los trabajadores.",
@@ -5427,7 +5427,7 @@ const questions = [
   },
   {
     "id": 494,
-    "question": "EN RELACIÓN A LOS RECONOCIMIENTOS MÉDICOS QUE SE REALIZAN A LOS EMPLEADOS DE LA MUTUA",
+    "question": "494. EN RELACIÓN A LOS RECONOCIMIENTOS MÉDICOS QUE SE REALIZAN A LOS EMPLEADOS DE LA MUTUA",
     "options": {
       "A": "Son obligatorios para todo el personal",
       "B": "No son obligatorios para ninguna persona de la plantilla",
@@ -5438,7 +5438,7 @@ const questions = [
   },
   {
     "id": 495,
-    "question": "¿CÓMO INTEGRA FRATERNIDAD-MUPRESPA LA PREVENCIÓN DE RIESGOS LABORALES EN EL SISTEMA GENERAL DE GESTIÓN?",
+    "question": "495. ¿CÓMO INTEGRA FRATERNIDAD-MUPRESPA LA PREVENCIÓN DE RIESGOS LABORALES EN EL SISTEMA GENERAL DE GESTIÓN?",
     "options": {
       "A": "A través de la implantación y aplicación de nuestro plan de prevención de riesgos laborales.",
       "B": "A través de la implantación y aplicación de nuestro plan de emergencias.",
@@ -5449,7 +5449,7 @@ const questions = [
   },
   {
     "id": 496,
-    "question": "¿DÓNDE PODEMOS ENCONTRAR LA SECUENCIA DE ACTUACIONES QUE SE SIGUE PARA LA REALIZACIÓN DE LAS ACTIVIDADES PREVENTIVAS?",
+    "question": "496. ¿DÓNDE PODEMOS ENCONTRAR LA SECUENCIA DE ACTUACIONES QUE SE SIGUE PARA LA REALIZACIÓN DE LAS ACTIVIDADES PREVENTIVAS?",
     "options": {
       "A": "En la política de seguridad y salud laboral.",
       "B": "En el plan de prevención.",
@@ -5460,7 +5460,7 @@ const questions = [
   },
   {
     "id": 497,
-    "question": "EL PLAN DE PREVENCION",
+    "question": "497. EL PLAN DE PREVENCION",
     "options": {
       "A": "Debe estar firmado por el gerente",
       "B": "Debe ser conocido por todos los empleados de la mutua",
@@ -5471,7 +5471,7 @@ const questions = [
   },
   {
     "id": 498,
-    "question": "RESPECTO A LA POLÍTICA DE SEGURIDAD Y SALUD LABORAL DE FRATERNIDAD-MUPRESPA…",
+    "question": "498. RESPECTO A LA POLÍTICA DE SEGURIDAD Y SALUD LABORAL DE FRATERNIDAD-MUPRESPA…",
     "options": {
       "A": "No existe dicha política como tal.",
       "B": "Es un compromiso de que no se producirán accidentes.",
@@ -5482,7 +5482,7 @@ const questions = [
   },
   {
     "id": 499,
-    "question": "DENTRO DEL PLAN DE PREVENCIÓN SE INCLUYEN LOS PROCEDIMIENTOS DE ACTUACIÓN EN MATERIA DE PREVENCIÓN DE RIESGOS LABORALES. ¿CUAL NO SE INCLUYE?",
+    "question": "499. DENTRO DEL PLAN DE PREVENCIÓN SE INCLUYEN LOS PROCEDIMIENTOS DE ACTUACIÓN EN MATERIA DE PREVENCIÓN DE RIESGOS LABORALES. ¿CUAL NO SE INCLUYE?",
     "options": {
       "A": "Procedimientos de Coordinación de Actividades Empresarias",
       "B": "Procedimiento de Accidentes de Trabajo y Enfermedades Profesionales",
@@ -5493,7 +5493,7 @@ const questions = [
   },
   {
     "id": 500,
-    "question": "¿ES CONFIDENCIAL LA POLÍTICA DE SEGURIDAD Y SALUD LABORAL DE LA EMPRESA?",
+    "question": "500. ¿ES CONFIDENCIAL LA POLÍTICA DE SEGURIDAD Y SALUD LABORAL DE LA EMPRESA?",
     "options": {
       "A": "No existe dicha política como tal.",
       "B": "Es confidencial, solamente disponible para la dirección de la empresa.",
@@ -5504,7 +5504,7 @@ const questions = [
   },
   {
     "id": 501,
-    "question": "¿QUÉ EXPRESA LA POLÍTICA DE SEGURIDAD Y SALUD LABORAL?",
+    "question": "501. ¿QUÉ EXPRESA LA POLÍTICA DE SEGURIDAD Y SALUD LABORAL?",
     "options": {
       "A": "Las creencias, expectativas y metas de la organización en cuanto a la mejora de las condiciones de trabajo y reducción de riesgos.",
       "B": "La secuencia de actuaciones que se sigue para la realización de las actividades preventivas. Así como la definición y explicación de los contenidos de cada una de estas actividades preventivas. Y por último, los procedimientos del sistema de gestión de la prevención implantados.",
@@ -5515,7 +5515,7 @@ const questions = [
   },
   {
     "id": 502,
-    "question": "¿QUÉ COLECTIVOS ESPECÍFICOS REQUIEREN UNA ESPECIAL PROTECCIÓN SEGÚN LA LEY DE PREVENCION DE RIESGOS LABORALES?:",
+    "question": "502. ¿QUÉ COLECTIVOS ESPECÍFICOS REQUIEREN UNA ESPECIAL PROTECCIÓN SEGÚN LA LEY DE PREVENCION DE RIESGOS LABORALES?:",
     "options": {
       "A": "Los trabajadores de la Construcción.",
       "B": "Los trabajadores especialmente sensibles a los riesgos existentes en el trabajo, las mujeres en situación de maternidad y lactancia y los menores de 18 años.",
@@ -5526,7 +5526,7 @@ const questions = [
   },
   {
     "id": 503,
-    "question": "¿CUÁL DE LAS SIGUIENTES AFIRMACIONES CREES QUE PUEDE FIGURAR EN LA POLÍTICA DE SEGURIDAD Y SALUDO LABORAL?",
+    "question": "503. ¿CUÁL DE LAS SIGUIENTES AFIRMACIONES CREES QUE PUEDE FIGURAR EN LA POLÍTICA DE SEGURIDAD Y SALUDO LABORAL?",
     "options": {
       "A": "Las personas constituyen el elemento básico y fundamental de la organización. Garantizar la salud y el bienestar de las personas, articulando mecanismos de prevención, es una obligación de la empresa, que debe actuar realizando todos los esfuerzos a su alcance para desarrollar políticas eficaces frente a los riesgos laborales.",
       "B": "La Dirección se compromete a la prevención de los daños y del deterioro de la salud, para ello se adoptarán las medidas necesarias para eliminar o reducir al máximo posible los riesgos laborales generados en el desarrollo de nuestras actividades, siempre teniendo en cuenta las diferencias individuales de los trabajadores de Fraternidad-Muprespa.",
@@ -5537,7 +5537,7 @@ const questions = [
   },
   {
     "id": 504,
-    "question": "ES OBLIGATORIO QUE LA EMPRESA DISPONGA DE:",
+    "question": "504. ES OBLIGATORIO QUE LA EMPRESA DISPONGA DE:",
     "options": {
       "A": "Plan de Prevención",
       "B": "Política de Prevención",
@@ -5548,7 +5548,7 @@ const questions = [
   },
   {
     "id": 505,
-    "question": "EN UN SISTEMA DE GESTIÓN DE SEGURIDAD Y SALUD EN EL TRABAJO LA REVISIÓN POR LA DIRECCIÓN",
+    "question": "505. EN UN SISTEMA DE GESTIÓN DE SEGURIDAD Y SALUD EN EL TRABAJO LA REVISIÓN POR LA DIRECCIÓN",
     "options": {
       "A": "Debe realizarse como mínimo una vez cada 3 años",
       "B": "Es imprescindible la asistencia de un consultor externo o interno de la organización, para poder dirigir la reunión.",
@@ -5559,7 +5559,7 @@ const questions = [
   },
   {
     "id": 506,
-    "question": "EL SISTEMA DE GESTIÓN DE SEGURIDAD Y SALUD EN EL TRABAJO DISPONE DEL PROCEDIMIENTO DE COMUNICACIÓN, INFORMACIÓN, CONSULTA Y PARTICIPACIÓN",
+    "question": "506. EL SISTEMA DE GESTIÓN DE SEGURIDAD Y SALUD EN EL TRABAJO DISPONE DEL PROCEDIMIENTO DE COMUNICACIÓN, INFORMACIÓN, CONSULTA Y PARTICIPACIÓN",
     "options": {
       "A": "El objeto de este procedimiento es establecer los mecanismos de comunicación, información participación y consulta de los trabajadores de Fraternidad-Muprespa en materia de prevención de riesgos laborales en complementación con lo establecido en el resto de procedimientos del ámbito, según corresponda",
       "B": "El objeto de este procedimiento es simplemente informar a los trabajadores de los canales de comunicación que existen en la Mutua.",
@@ -5570,7 +5570,7 @@ const questions = [
   },
   {
     "id": 507,
-    "question": "FICHA DE PREVENCIÓN DE FRATERNET",
+    "question": "507. FICHA DE PREVENCIÓN DE FRATERNET",
     "options": {
       "A": "Icono de la intranet propia de Fraternidad-Muprespa (Fraternet) mediante el cual el personal de la mutua accede a la información que le corresponde a cada uno relacionada con la prevención de riesgos laborales",
       "B": "Contiene información sobre los riesgos de su centro y de su puesto de trabajo.",
@@ -5581,7 +5581,7 @@ const questions = [
   },
   {
     "id": 508,
-    "question": "FRATERNIDAD-MUPRESPA DEBE CONSULTAR A LOS TRABAJADORES TODAS AQUELLAS CUESTIONES QUE PUEDAN AFECTAR A LA SEGURIDAD Y SALUD EN EL TRABAJO.",
+    "question": "508. FRATERNIDAD-MUPRESPA DEBE CONSULTAR A LOS TRABAJADORES TODAS AQUELLAS CUESTIONES QUE PUEDAN AFECTAR A LA SEGURIDAD Y SALUD EN EL TRABAJO.",
     "options": {
       "A": "La consulta a los trabajadores se realizará a través del responsable directo del trabajador.",
       "B": "La consulta a los trabajadores, con carácter general, se llevará a cabo a través de sus representantes, en el Comité de Seguridad y Salud (CSS) de los centros de trabajo y en aquellos casos en los que no exista tal CSS se realizará directamente con los delegados de prevención del centro. En caso de no haber delegados de prevención ni CSS la consulta se realizará a través del Comité Estatal de Seguridad y Salud (CESS).",
@@ -5592,7 +5592,7 @@ const questions = [
   },
   {
     "id": 509,
-    "question": "TODO TRABAJADOR TIENE OBLIGACIÓN DE:",
+    "question": "509. TODO TRABAJADOR TIENE OBLIGACIÓN DE:",
     "options": {
       "A": "Informar de inmediato a su superior jerárquico directo y al Servicio de Prevención Propio, acerca de cualquier situación que, a su juicio, entrañe, por motivos razonables, un riesgo para la seguridad y la salud de los trabajadores.",
       "B": "Una protección eficaz en materia de seguridad y salud en el trabajo.",
@@ -5603,7 +5603,7 @@ const questions = [
   },
   {
     "id": 510,
-    "question": "RESPECTO AL COMITÉ DE SEGURIDAD Y SALUD:",
+    "question": "510. RESPECTO AL COMITÉ DE SEGURIDAD Y SALUD:",
     "options": {
       "A": "Es obligatoria su formación en todos los centros de trabajo, independientemente del número de trabajadores.",
       "B": "Debe reunirse una vez al mes.",
@@ -5614,7 +5614,7 @@ const questions = [
   },
   {
     "id": 511,
-    "question": "¿QUÉ ES UN E.P.I.?",
+    "question": "511. ¿QUÉ ES UN E.P.I.?",
     "options": {
       "A": "Un equipo de medición de condiciones ambientales",
       "B": "Una clase de riesgo laboral",
@@ -5625,7 +5625,7 @@ const questions = [
   },
   {
     "id": 512,
-    "question": "¿QUIÉNES SON LAS FIGURAS CLAVES EN EL ÁMBITO DEL SISTEMA DE GESTIÓN DE SEGURIDAD Y SALUD EN EL TRABAJO IMPLANTADO EN FRATERNIDAD-MUPRESPA?",
+    "question": "512. ¿QUIÉNES SON LAS FIGURAS CLAVES EN EL ÁMBITO DEL SISTEMA DE GESTIÓN DE SEGURIDAD Y SALUD EN EL TRABAJO IMPLANTADO EN FRATERNIDAD-MUPRESPA?",
     "options": {
       "A": "1) Representante de la Dirección: Secretario General 2) Responsable del Sistema de Gestión: Director del SPP. 3) Técnico del Sistema de Gestión: miembro del SPP",
       "B": "1) Representante de la Dirección: Gerente 2) Responsable del Sistema de Gestión: Secretario General.",
@@ -5636,7 +5636,7 @@ const questions = [
   },
   {
     "id": 513,
-    "question": "¿QUÉ ACTUACIÓN PREVENTIVA SE EMPLEA PARA EVALUAR LA EFICACIA DE LOS PLANES DE EMERGENCIA?",
+    "question": "513. ¿QUÉ ACTUACIÓN PREVENTIVA SE EMPLEA PARA EVALUAR LA EFICACIA DE LOS PLANES DE EMERGENCIA?",
     "options": {
       "A": "Los Simulacros",
       "B": "No hay ninguna actuación específica.",
@@ -5647,7 +5647,7 @@ const questions = [
   },
   {
     "id": 514,
-    "question": "¿QUIÉN DEBE PROPORCIONAR LOS EPIS A LOS TRABAJADORES?",
+    "question": "514. ¿QUIÉN DEBE PROPORCIONAR LOS EPIS A LOS TRABAJADORES?",
     "options": {
       "A": "Los propios trabajadores",
       "B": "La Empresa",
@@ -5658,7 +5658,7 @@ const questions = [
   },
   {
     "id": 515,
-    "question": "FORMACIÓN DE LOS TRABAJADORES:",
+    "question": "515. FORMACIÓN DE LOS TRABAJADORES:",
     "options": {
       "A": "El empresario debe garantizar que cada trabajador recibe una formación teórica y práctica suficiente y adecuada en materia preventiva.",
       "B": "La formación deberá estar centrada específicamente en el puesto de trabajo o función de cada trabajador.",
@@ -5669,7 +5669,7 @@ const questions = [
   },
   {
     "id": 516,
-    "question": "¿QUÉ HACE UN TECNICO DE PREVENCIÓN DEL SERVICIO DE PREVENCIÓN PROPIO, PARA IDENTIFICAR LOS RIESGOS DEL PUESTO DE TRABAJO?",
+    "question": "516. ¿QUÉ HACE UN TECNICO DE PREVENCIÓN DEL SERVICIO DE PREVENCIÓN PROPIO, PARA IDENTIFICAR LOS RIESGOS DEL PUESTO DE TRABAJO?",
     "options": {
       "A": "Realiza evaluaciones de Riesgos laborales de equipos y lugares de trabajo.",
       "B": "Hace evaluación de riesgos de los puestos de trabajo.",
@@ -5680,7 +5680,7 @@ const questions = [
   },
   {
     "id": 517,
-    "question": "¿CUÁL DE ESTOS RIESGOS LABORALES SE ENCUENTRA EN EL HOSPITAL DE NUESTRA ENTIDAD?",
+    "question": "517. ¿CUÁL DE ESTOS RIESGOS LABORALES SE ENCUENTRA EN EL HOSPITAL DE NUESTRA ENTIDAD?",
     "options": {
       "A": "Exposición a Rx",
       "B": "Manipulación manual de cargas",
@@ -5691,7 +5691,7 @@ const questions = [
   },
   {
     "id": 518,
-    "question": "LA FORMACIÓN EN MATERIA DE SEGURIDAD Y SALUD A LOS TRABAJADORES CONSISTIRÁ EN:",
+    "question": "518. LA FORMACIÓN EN MATERIA DE SEGURIDAD Y SALUD A LOS TRABAJADORES CONSISTIRÁ EN:",
     "options": {
       "A": "Una formación inicial, para conocer los riesgos inherentes a su puesto de trabajo.",
       "B": "Una formación periódica sobre los riesgos y medidas de prevención en su puesto de trabajo",
@@ -5702,7 +5702,7 @@ const questions = [
   },
   {
     "id": 519,
-    "question": "FRATERNIDAD-MUPRESPA PONE A DISPOSICIÓN DE LOS EMPLEADOS Y PERSONAL EXTERNO TODA UNA SERIE DE COMPONENTES DE COMUNICACIÓN INTEGRADOS EN FRATERNET QUE BUSCA LA PARTICIPACIÓN DE TODA LA ORGANIZACIÓN. RESPECTO A SU USO:",
+    "question": "519. FRATERNIDAD-MUPRESPA PONE A DISPOSICIÓN DE LOS EMPLEADOS Y PERSONAL EXTERNO TODA UNA SERIE DE COMPONENTES DE COMUNICACIÓN INTEGRADOS EN FRATERNET QUE BUSCA LA PARTICIPACIÓN DE TODA LA ORGANIZACIÓN. RESPECTO A SU USO:",
     "options": {
       "A": "Será exclusivo para cuestiones que se refieran a la propia Mutua, a su marco de actividad y a los grupos de interés con que se relacione la Mutua.",
       "B": "Puede usarse con fines particulares siempre que se respeten las condiciones y criterios establecidos en la Política de uso.",
@@ -5713,7 +5713,7 @@ const questions = [
   },
   {
     "id": 520,
-    "question": "NECESITAS CONSULTAR EL DOCUMENTO “01/070 - ORGANIZACIÓN DE LA MUTUA” EN EL QUE SE DESCRIBE LA ESTRUCTURA ORGANIZATIVA DE NUESTRA ENTIDAD, ¿CÓMO LO HARÍAS?",
+    "question": "520. NECESITAS CONSULTAR EL DOCUMENTO “01/070 - ORGANIZACIÓN DE LA MUTUA” EN EL QUE SE DESCRIBE LA ESTRUCTURA ORGANIZATIVA DE NUESTRA ENTIDAD, ¿CÓMO LO HARÍAS?",
     "options": {
       "A": "Localizándolo por el nombre en el directorio K: Correo.",
       "B": "Pidiéndoselos a un compañero.",
@@ -5724,7 +5724,7 @@ const questions = [
   },
   {
     "id": 521,
-    "question": "¿CÓMO SE PUEDEN HACER LLEGAR DENUNCIAS AL ÓRGANO DE ANÁLISIS DE CONDUCTAS?",
+    "question": "521. ¿CÓMO SE PUEDEN HACER LLEGAR DENUNCIAS AL ÓRGANO DE ANÁLISIS DE CONDUCTAS?",
     "options": {
       "A": "A través de correo electrónico certificado.",
       "B": "A través de la aplicación Canal en la pestaña del empleado de FraterNet.",
@@ -5735,7 +5735,7 @@ const questions = [
   },
   {
     "id": 522,
-    "question": "LA BUENA COMUNICACIÓN FAVORECE LAS BUENAS RELACIONES Y ESTAS NOS AYUDAN A TRABAJAR DE FORMA MÁS COHESIONADA.\n¿QUÉ ACCIONES PUEDEN FACILITAN DICHA COMUNICACIÓN?",
+    "question": "522. LA BUENA COMUNICACIÓN FAVORECE LAS BUENAS RELACIONES Y ESTAS NOS AYUDAN A TRABAJAR DE FORMA MÁS COHESIONADA. ¿QUÉ ACCIONES PUEDEN FACILITAN DICHA COMUNICACIÓN?",
     "options": {
       "A": "Subir una foto de perfil profesional a nuestra ficha personal de FraterNet",
       "B": "Indicar nuestro nombre coloquial, si es el caso, en la ficha personal de FraterNet.",
@@ -5746,7 +5746,7 @@ const questions = [
   },
   {
     "id": 523,
-    "question": "¿CUÁL ES LA FINALIDAD DE ÁGORA?",
+    "question": "523. ¿CUÁL ES LA FINALIDAD DE ÁGORA?",
     "options": {
       "A": "Habilitar un espacio donde los miembros de la organización obtengan respuestas a sus dudas funcionales para realizar de manera más eficaz y eficiente su trabajo.",
       "B": "Atesorar conocimiento y ponerlo a disposición de los miembros de la organización, pudiendo estos llegar a ser autónomos para responderse a sus cuestiones.",
@@ -5757,7 +5757,7 @@ const questions = [
   },
   {
     "id": 524,
-    "question": "¿QUÉ ÁMBITOS ABARCA LA COMUNICACIÓN INTERNA DE LA ORGANIZACIÓN?",
+    "question": "524. ¿QUÉ ÁMBITOS ABARCA LA COMUNICACIÓN INTERNA DE LA ORGANIZACIÓN?",
     "options": {
       "A": "La comunicación entre la organización y los trabajadores para alinearlos en la consecución de los objetivos y en sentido contrario para alimentar los mecanismos de mejora de la entidad.",
       "B": "La comunicación entre los propios trabajadores.",
@@ -5768,7 +5768,7 @@ const questions = [
   },
   {
     "id": 525,
-    "question": "¿CÓMO SE PUEDE ESTAR INFORMADO DE LO QUE SE DICE EN ÁGORA?",
+    "question": "525. ¿CÓMO SE PUEDE ESTAR INFORMADO DE LO QUE SE DICE EN ÁGORA?",
     "options": {
       "A": "Suscribiéndome desde la propia aplicación a la sala de Ágora que me interese y recibiendo los inicios de cada conversación en el e-mail.",
       "B": "Suscribiéndome desde la propia aplicación a las conversaciones que me interesen y recibiendo cada intervención de estas en el e-mail.",
@@ -5779,7 +5779,7 @@ const questions = [
   },
   {
     "id": 526,
-    "question": "¿SOBRE QUÉ MECANISMOS DE FRATERNET SE APOYA LA COMUNICACIÓN INTERNA?",
+    "question": "526. ¿SOBRE QUÉ MECANISMOS DE FRATERNET SE APOYA LA COMUNICACIÓN INTERNA?",
     "options": {
       "A": "Noticias, avisos, blogs, Fratertube, boletines y correos electrónicos.",
       "B": "Ágora, tablón de anuncios, los comentarios (en noticias y blogs), Conocimiento (gestión documental), la bandeja de entrada y los indicadores.",
@@ -5790,7 +5790,7 @@ const questions = [
   },
   {
     "id": 527,
-    "question": "¿QUÉ DOCUMENTO ELABORADO DESDE COMUNICACIÓN INTERNA INFORMA SOBRE LA GESTIÓN DE LA MUTUA DURANTE CADA EJERCICIO?",
+    "question": "527. ¿QUÉ DOCUMENTO ELABORADO DESDE COMUNICACIÓN INTERNA INFORMA SOBRE LA GESTIÓN DE LA MUTUA DURANTE CADA EJERCICIO?",
     "options": {
       "A": "Informe de sostenibilidad.",
       "B": "Informe de gestión.",
@@ -5801,7 +5801,7 @@ const questions = [
   },
   {
     "id": 528,
-    "question": "¿EN QUÉ 2 ÁMBITOS SE DIVIDE LA INFORMACIÓN DIFUNDIDA A TRAVÉS DE FRATERNET?",
+    "question": "528. ¿EN QUÉ 2 ÁMBITOS SE DIVIDE LA INFORMACIÓN DIFUNDIDA A TRAVÉS DE FRATERNET?",
     "options": {
       "A": "Negocio y Corporativo.",
       "B": "Negocio e interno.",
@@ -5812,7 +5812,7 @@ const questions = [
   },
   {
     "id": 529,
-    "question": "¿BAJO QUÉ TERMINO SE DIFUNDE LA INFORMACIÓN RELATIVA AL PLAN ESTRATÉGICO CORPORATIVO?",
+    "question": "529. ¿BAJO QUÉ TERMINO SE DIFUNDE LA INFORMACIÓN RELATIVA AL PLAN ESTRATÉGICO CORPORATIVO?",
     "options": {
       "A": "PEC.",
       "B": "Evolución digital.",
@@ -5823,7 +5823,7 @@ const questions = [
   },
   {
     "id": 530,
-    "question": "¿QUÉ ES CONOCIMIENTO?",
+    "question": "530. ¿QUÉ ES CONOCIMIENTO?",
     "options": {
       "A": "La herramienta de FraterNet en la que se recoge gran parte de la documentación corporativa que marca el funcionamiento de la entidad.",
       "B": "La herramienta que da soporte a la gestión documental.",
@@ -5834,7 +5834,7 @@ const questions = [
   },
   {
     "id": 531,
-    "question": "¿QUÉ BOLETINES ELECTRÓNICOS DE USO INTERNO REMITE ACTUALMENTE NUESTRA MUTUA?",
+    "question": "531. ¿QUÉ BOLETINES ELECTRÓNICOS DE USO INTERNO REMITE ACTUALMENTE NUESTRA MUTUA?",
     "options": {
       "A": "3; Dirigir FM para directivos, FMExcelencia sanitaria para sanitarios y Pioneros Digitales para toda la plantilla.",
       "B": "2; Boletín de empleados para toda la plantilla y Boletín de atención al cliente para todo el personal de admisión.",
@@ -5845,7 +5845,7 @@ const questions = [
   },
   {
     "id": 532,
-    "question": "NUESTRA ESTRATEGIA DE COMUNICACIÓN INTERNA SE ARTICULA DE ACUERDO A…",
+    "question": "532. NUESTRA ESTRATEGIA DE COMUNICACIÓN INTERNA SE ARTICULA DE ACUERDO A…",
     "options": {
       "A": "La instrucción de comunicación interna.",
       "B": "Un plan de comunicación interna que abarca a todos los empleados de acuerdo a sus funciones y ámbitos de actuación.",
@@ -5856,7 +5856,7 @@ const questions = [
   },
   {
     "id": 533,
-    "question": "CONOCIMIENTO ES LA APLICACIÓN DE FRATERNET DONDE SE CONCENTRA TODA LA DOCUMENTACIÓN CORPORATIVA; ¿CUÁL DE ESTAS AFIRMACIONES NO ES CIERTA?",
+    "question": "533. CONOCIMIENTO ES LA APLICACIÓN DE FRATERNET DONDE SE CONCENTRA TODA LA DOCUMENTACIÓN CORPORATIVA; ¿CUÁL DE ESTAS AFIRMACIONES NO ES CIERTA?",
     "options": {
       "A": "Puedo enviar el enlace a un documento por correo electrónico a mí o a otras personas.",
       "B": "Puedo renombrar cualquiera de los documentos para darle un nombre que me resulte familiar y fácil de entender.",
@@ -5867,7 +5867,7 @@ const questions = [
   },
   {
     "id": 534,
-    "question": "QUÉ ES LO QUE DISTINGUE A FRATERNIDAD-MUPRESPA DEL RESTO DE MUTUAS",
+    "question": "534. QUÉ ES LO QUE DISTINGUE A FRATERNIDAD-MUPRESPA DEL RESTO DE MUTUAS",
     "options": {
       "A": "Cercanía",
       "B": "Rentabilidad",
@@ -5878,7 +5878,7 @@ const questions = [
   },
   {
     "id": 535,
-    "question": "¿QUIÉN APRUEBA EL PLAN ESTRATÉGICO?",
+    "question": "535. ¿QUIÉN APRUEBA EL PLAN ESTRATÉGICO?",
     "options": {
       "A": "La Junta Directiva",
       "B": "La Reunión Anual de Directivos",
@@ -5889,7 +5889,7 @@ const questions = [
   },
   {
     "id": 536,
-    "question": "¿PARA QUÉ SIRVE EL PLAN ESTRATÉGICO?",
+    "question": "536. ¿PARA QUÉ SIRVE EL PLAN ESTRATÉGICO?",
     "options": {
       "A": "Sirve como guía y orientación clara para el desarrollo de todas las actividades y tareas necesarias para alcanzar la visión de la Mutua",
       "B": "Sirve para desempeñar la misión en el día a día",
@@ -5900,7 +5900,7 @@ const questions = [
   },
   {
     "id": 537,
-    "question": "APLICAR EL PLAN ESTRATÉGICO SUPONE:",
+    "question": "537. APLICAR EL PLAN ESTRATÉGICO SUPONE:",
     "options": {
       "A": "Que cada uno desempeña su trabajo según lo entienda",
       "B": "No cambia nada",
@@ -5911,7 +5911,7 @@ const questions = [
   },
   {
     "id": 538,
-    "question": "¿QUIÉN TOMÓ LA DECISIÓN DE ELABORAR EL PLAN ESTRATÉGICO?",
+    "question": "538. ¿QUIÉN TOMÓ LA DECISIÓN DE ELABORAR EL PLAN ESTRATÉGICO?",
     "options": {
       "A": "La Junta Directiva",
       "B": "Los empleados",
@@ -5922,7 +5922,7 @@ const questions = [
   },
   {
     "id": 539,
-    "question": "¿CUÁL DE ESTOS VALORES NO PERTENECE A FRATERNIDAD- MUPRESPA?",
+    "question": "539. ¿CUÁL DE ESTOS VALORES NO PERTENECE A FRATERNIDAD- MUPRESPA?",
     "options": {
       "A": "Servicio a los clientes",
       "B": "Sentido de lo público",
@@ -5933,7 +5933,7 @@ const questions = [
   },
   {
     "id": 540,
-    "question": "¿QUIÉN APROBÓ DEFINITAVENTE EL PLAN ESTRATÉGICO DE LA MUTUA?",
+    "question": "540. ¿QUIÉN APROBÓ DEFINITAVENTE EL PLAN ESTRATÉGICO DE LA MUTUA?",
     "options": {
       "A": "El Director Gerente",
       "B": "Los empleados por votación",
@@ -5944,7 +5944,7 @@ const questions = [
   },
   {
     "id": 541,
-    "question": "¿QUÉ DEPARTAMENTO SE ENCARGA DEL SEGUIMIENTO DEL PLAN ESTRATÉGICO?",
+    "question": "541. ¿QUÉ DEPARTAMENTO SE ENCARGA DEL SEGUIMIENTO DEL PLAN ESTRATÉGICO?",
     "options": {
       "A": "Departamento de Prestaciones Económicas",
       "B": "Departamento de Organización y Planificación",
@@ -5955,7 +5955,7 @@ const questions = [
   },
   {
     "id": 542,
-    "question": "¿CUÁLES SON LOS ELEMENTOS BÁSICOS DEL PLAN ESTRATÉGICO?",
+    "question": "542. ¿CUÁLES SON LOS ELEMENTOS BÁSICOS DEL PLAN ESTRATÉGICO?",
     "options": {
       "A": "Los valores corporativos",
       "B": "El Comité de Dirección",
@@ -5966,7 +5966,7 @@ const questions = [
   },
   {
     "id": 543,
-    "question": "EL PLAN ESTRATÉGICO SE ARTICULA EN:",
+    "question": "543. EL PLAN ESTRATÉGICO SE ARTICULA EN:",
     "options": {
       "A": "Capítulos",
       "B": "Perspectivas",
@@ -5977,7 +5977,7 @@ const questions = [
   },
   {
     "id": 544,
-    "question": "EL SEGUIMIENTO DEL PLAN ESTRATÉGICO SE REALIZA MEDIANTE:",
+    "question": "544. EL SEGUIMIENTO DEL PLAN ESTRATÉGICO SE REALIZA MEDIANTE:",
     "options": {
       "A": "Indicadores",
       "B": "Encuestas",
@@ -5988,7 +5988,7 @@ const questions = [
   },
   {
     "id": 545,
-    "question": "CUÁL DE ESTOS CONCEPTOS NO ESTÁ PRESENTE EN LA MISIÓN DE FRATERNIDAD-MUPRESPA:",
+    "question": "545. CUÁL DE ESTOS CONCEPTOS NO ESTÁ PRESENTE EN LA MISIÓN DE FRATERNIDAD-MUPRESPA:",
     "options": {
       "A": "Restablecer",
       "B": "Atención",
@@ -5999,7 +5999,7 @@ const questions = [
   },
   {
     "id": 546,
-    "question": "CUÁL DE ESTOS CONCEPTOS NO ESTÁ PRESENTE EN LA VISIÓN DE FRATERNIDAD-MUPRESPA:",
+    "question": "546. CUÁL DE ESTOS CONCEPTOS NO ESTÁ PRESENTE EN LA VISIÓN DE FRATERNIDAD-MUPRESPA:",
     "options": {
       "A": "Agilidad",
       "B": "Innovación",
@@ -6010,7 +6010,7 @@ const questions = [
   },
   {
     "id": 547,
-    "question": "UNA DE LAS PRINCIPALES CARACTERÍSTICAS DEL VALOR FUNDAMENTAL “SENTIDO DE LO PÚBLICO” INHERENTE EN LA ACTIVIDAD DE FRATERNIDAD-MUPRESPA ES:",
+    "question": "547. UNA DE LAS PRINCIPALES CARACTERÍSTICAS DEL VALOR FUNDAMENTAL “SENTIDO DE LO PÚBLICO” INHERENTE EN LA ACTIVIDAD DE FRATERNIDAD-MUPRESPA ES:",
     "options": {
       "A": "Ágil aplicación de las normas y políticas dictadas por la Seguridad Social",
       "B": "Impulsar las tecnologías mediante la implantación y uso generalizado de las mismas por sus empleados",
@@ -6021,7 +6021,7 @@ const questions = [
   },
   {
     "id": 548,
-    "question": "A TRAVÉS DE LA EFICIENCIA SE GARANTIZA:",
+    "question": "548. A TRAVÉS DE LA EFICIENCIA SE GARANTIZA:",
     "options": {
       "A": "El cumplimiento de los objetivos marcados",
       "B": "La transparencia en la gestión",
@@ -6032,7 +6032,7 @@ const questions = [
   },
   {
     "id": 549,
-    "question": "EN EL PLAN ESTRATÉGICO, ¿QUÉ SE ENTIENDE POR CLIENTE?",
+    "question": "549. EN EL PLAN ESTRATÉGICO, ¿QUÉ SE ENTIENDE POR CLIENTE?",
     "options": {
       "A": "Solo las empresas",
       "B": "Empresas y autónomos",
@@ -6043,7 +6043,7 @@ const questions = [
   },
   {
     "id": 550,
-    "question": "¿QUIÉN DEBE CONOCER EL PLAN ESTRATÉGICO CORPORATIVO?",
+    "question": "550. ¿QUIÉN DEBE CONOCER EL PLAN ESTRATÉGICO CORPORATIVO?",
     "options": {
       "A": "Los Órganos de Gobierno y los Directivos de la Mutua",
       "B": "La Alta Dirección",
@@ -6054,7 +6054,7 @@ const questions = [
   },
   {
     "id": 551,
-    "question": "¿ES NECESARIO REVISAR EL PLAN ESTRATÉGICO (PEC)?",
+    "question": "551. ¿ES NECESARIO REVISAR EL PLAN ESTRATÉGICO (PEC)?",
     "options": {
       "A": "No. El PEC fue un trabajo colectivo y está bien enfocado para dos años y la posible ampliación a un tercero",
       "B": "Sí, debe revisarse periódicamente",
@@ -6065,7 +6065,7 @@ const questions = [
   },
   {
     "id": 552,
-    "question": "LAS MODIFICACIONES DE OBJETIVOS ESTRATÉGICOS CONTENIDOS EN EL PLAN ESTRATÉGICO CORPORATIVO LAS VALIDA",
+    "question": "552. LAS MODIFICACIONES DE OBJETIVOS ESTRATÉGICOS CONTENIDOS EN EL PLAN ESTRATÉGICO CORPORATIVO LAS VALIDA",
     "options": {
       "A": "La Junta Directiva",
       "B": "El Director Gerente",
@@ -6076,7 +6076,7 @@ const questions = [
   },
   {
     "id": 553,
-    "question": "EL COMITÉ ENCARGADO DE ANALIZAR, CONTROLAR Y HACER EL SEGUIMIENTO DEL PLAN ESTRATÉGICO CORPORATIVO ES:",
+    "question": "553. EL COMITÉ ENCARGADO DE ANALIZAR, CONTROLAR Y HACER EL SEGUIMIENTO DEL PLAN ESTRATÉGICO CORPORATIVO ES:",
     "options": {
       "A": "Comité de RRHH",
       "B": "Comité de Tecnología, Información y Comunicaciones (TIC)",
@@ -6087,7 +6087,7 @@ const questions = [
   },
   {
     "id": 554,
-    "question": "PARA CONSULTAR LOS PLANES CORPORATIVOS DE FRATERNIDAD-MUPRESPA",
+    "question": "554. PARA CONSULTAR LOS PLANES CORPORATIVOS DE FRATERNIDAD-MUPRESPA",
     "options": {
       "A": "Hay que pedirlos a los departamentos que los elaboran",
       "B": "Hay que pedirlos al Departamento de Organización y Planificación, que se encarga de su seguimiento",
@@ -6098,7 +6098,7 @@ const questions = [
   },
   {
     "id": 555,
-    "question": "¿CUÁLES DE LOS SIGUIENTES SON VALORES DEL HOSPITAL FRATERNIDAD-MUPRESPA HABANA?",
+    "question": "555. ¿CUÁLES DE LOS SIGUIENTES SON VALORES DEL HOSPITAL FRATERNIDAD-MUPRESPA HABANA?",
     "options": {
       "A": "Orientación al paciente",
       "B": "Integración con la Red",
@@ -6109,7 +6109,7 @@ const questions = [
   },
   {
     "id": 556,
-    "question": "¿QUÉ HAGO SI ME LLEGA UNA PETICIÓN SOBRE ALGÚN ASPECTO DE FUNCIONAMIENTO DE LA MUTUA EN GENERAL?",
+    "question": "556. ¿QUÉ HAGO SI ME LLEGA UNA PETICIÓN SOBRE ALGÚN ASPECTO DE FUNCIONAMIENTO DE LA MUTUA EN GENERAL?",
     "options": {
       "A": "Si cumple los requisitos de la Ley de Transparencia, se remitirá al Centro de Asesoría y Servicios Jurídicos para su tramitación",
       "B": "Responder con todos los datos que pueda tener a mi disposición",
@@ -6120,7 +6120,7 @@ const questions = [
   },
   {
     "id": 557,
-    "question": "¿CUÁNTO TIEMPO HAY DE PLAZO PARA GRABAR LOS GASTOS GENERADOS POR RAZÓN DE SERVICIO EN UNA LIQUIDACIÓN DE GASTOS?",
+    "question": "557. ¿CUÁNTO TIEMPO HAY DE PLAZO PARA GRABAR LOS GASTOS GENERADOS POR RAZÓN DE SERVICIO EN UNA LIQUIDACIÓN DE GASTOS?",
     "options": {
       "A": "No se pueden liquidar los gastos generados",
       "B": "No hay ningún plazo",
@@ -6131,7 +6131,7 @@ const questions = [
   },
   {
     "id": 558,
-    "question": "¿DÓNDE PUEDO LOCALIZAR LOS PLANES QUE AFECTAN A TODA LA MUTUA?",
+    "question": "558. ¿DÓNDE PUEDO LOCALIZAR LOS PLANES QUE AFECTAN A TODA LA MUTUA?",
     "options": {
       "A": "No hay ningún Plan que afecte a toda la mutua",
       "B": "Los Planes son de acceso restringido y solo los directivos tienen acceso a ellos",
@@ -6142,9 +6142,9 @@ const questions = [
   },
   {
     "id": 559,
-    "question": "¿DÓNDE PUEDO LOCALIZAR LOS PRINCIPALES ESTUDIOS DE FRATERNIDAD-MUPRESPA COMO CUOTA DE MERCADO, INFORME DE GESTIÓN Y COMPARACIÓN CON EL SECTOR?",
+    "question": "559. ¿DÓNDE PUEDO LOCALIZAR LOS PRINCIPALES ESTUDIOS DE FRATERNIDAD-MUPRESPA COMO CUOTA DE MERCADO, INFORME DE GESTIÓN Y COMPARACIÓN CON EL SECTOR?",
     "options": {
-      "A": "En Conocimiento, dentro de Documentación Funcional - Estudios – Estu-\nInformes periódicos",
+      "A": "En Conocimiento, dentro de Documentación Funcional - Estudios – Estu- Informes periódicos",
       "B": "Fraternidad-Muprespa no puede, por Ley, compararse con el sector",
       "C": "Es información restringida a la que solo tienen acceso los directivos",
       "D": "A principio de mes, cuando se entra en FRAGUA"
@@ -6153,7 +6153,7 @@ const questions = [
   },
   {
     "id": 560,
-    "question": "¿QUÉ TENGO QUE HACER CON LOS JUSTIFICANTES DE GASTOS CUANDO VOY A DAR DE ALTA LOS GASTOS?",
+    "question": "560. ¿QUÉ TENGO QUE HACER CON LOS JUSTIFICANTES DE GASTOS CUANDO VOY A DAR DE ALTA LOS GASTOS?",
     "options": {
       "A": "Guardarlos en un cajón por si alguna vez me los pide alguien",
       "B": "Tirarlos, una vez aprobada la liquidación no hacen falta",
@@ -6164,7 +6164,7 @@ const questions = [
   },
   {
     "id": 561,
-    "question": "LA DIRECCIÓN GENERAL DE LA MUTUA SE COMPONE:",
+    "question": "561. LA DIRECCIÓN GENERAL DE LA MUTUA SE COMPONE:",
     "options": {
       "A": "Director Gerente y Subdirectores Generales",
       "B": "Director Gerente y Secretario General",
@@ -6175,7 +6175,7 @@ const questions = [
   },
   {
     "id": 562,
-    "question": "EL NÚMERO ACTUAL DE SUBDIRECCIONES GENERALES ES DE:",
+    "question": "562. EL NÚMERO ACTUAL DE SUBDIRECCIONES GENERALES ES DE:",
     "options": {
       "A": "Tres: Subdirección General de Prevención, Calidad y Comunicación, Subdirección General de Gestión y Subdirección General de Sistemas de Información y Servicios",
       "B": "Cuatro: Subdirección General de Prevención, Calidad y Comunicación, Subdirección General de Gestión, Subdirección General de Sistemas de Información y Servicios, Subdirección General de Recursos Humanos",
@@ -6186,7 +6186,7 @@ const questions = [
   },
   {
     "id": 563,
-    "question": "LA ORGANIZACIÓN TERRITORIAL DE LA MUTUA SE DIVIDE EN:",
+    "question": "563. LA ORGANIZACIÓN TERRITORIAL DE LA MUTUA SE DIVIDE EN:",
     "options": {
       "A": "15 Comunidades Autónomas y 50 Provincias",
       "B": "6 Direcciones Territoriales y 50 Direcciones Provinciales",
@@ -6197,7 +6197,7 @@ const questions = [
   },
   {
     "id": 564,
-    "question": "¿EN QUÉ SE HA DE DIFERENCIAR FRATERNIDAD-MUPRESPA DEL RESTO DE MUTUAS?",
+    "question": "564. ¿EN QUÉ SE HA DE DIFERENCIAR FRATERNIDAD-MUPRESPA DEL RESTO DE MUTUAS?",
     "options": {
       "A": "En darme trabajo a mí",
       "B": "En dar el mejor trato y servicio a los trabajadores y mutualistas que acuden a sus centros",
@@ -6208,7 +6208,7 @@ const questions = [
   },
   {
     "id": 565,
-    "question": "SOBRE MI PUESTO DE TRABAJO Y EL ASPECTO DEL MISMO",
+    "question": "565. SOBRE MI PUESTO DE TRABAJO Y EL ASPECTO DEL MISMO",
     "options": {
       "A": "El orden y aspecto del puesto de trabajo no importa, lo único importante es cómo se trabaja",
       "B": "Mi puesto de trabajo debe estar ordenado evitando, en lo posible, los papeles sobre la mesa",
@@ -6219,7 +6219,7 @@ const questions = [
   },
   {
     "id": 566,
-    "question": "¿CUÁLES SON LOS TIPOS DE NORMAS INTERNAS QUE REGULAN LA ACTIVIDAD DE LA MUTUA?",
+    "question": "566. ¿CUÁLES SON LOS TIPOS DE NORMAS INTERNAS QUE REGULAN LA ACTIVIDAD DE LA MUTUA?",
     "options": {
       "A": "Leyes, reglamentos e instrucciones",
       "B": "Instrucciones de gerencia, instrucciones operativas y normas funcionales",
@@ -6230,7 +6230,7 @@ const questions = [
   },
   {
     "id": 567,
-    "question": "¿DÓNDE PUEDE CONSULTARSE LA NORMATIVA INTERNA REGULADORA DE FRATERNIDAD-MUPRESPA?",
+    "question": "567. ¿DÓNDE PUEDE CONSULTARSE LA NORMATIVA INTERNA REGULADORA DE FRATERNIDAD-MUPRESPA?",
     "options": {
       "A": "En Fraternet - Conocimiento",
       "B": "En Fraternet - Aplicaciones",
@@ -6241,7 +6241,7 @@ const questions = [
   },
   {
     "id": 568,
-    "question": "EL DEPARTAMENTO DE ORGANIZACIÓN Y PLANIFICACIÓN ELABORA LAS NORMAS…",
+    "question": "568. EL DEPARTAMENTO DE ORGANIZACIÓN Y PLANIFICACIÓN ELABORA LAS NORMAS…",
     "options": {
       "A": "Sólo las que le afectan por razón de la materia",
       "B": "Ninguna, no es competencia del Departamento de Organización y Planificación",
@@ -6252,7 +6252,7 @@ const questions = [
   },
   {
     "id": 569,
-    "question": "LA CODIFICACIÓN DE CUALQUIER CENTRO FÍSICO DE LA RED NACIONAL DE LA MUTUA SE COMPONE DE:",
+    "question": "569. LA CODIFICACIÓN DE CUALQUIER CENTRO FÍSICO DE LA RED NACIONAL DE LA MUTUA SE COMPONE DE:",
     "options": {
       "A": "Combinación de dos letras y dos números: las dos letras correspondientes a las iniciales de la provincia y los dos números a los del centro dentro de cada provincia",
       "B": "Cuatro dígitos, los dos primeros correspondientes al código de la provincia y los dos siguientes a los del centro dentro de la provincia",
@@ -6263,7 +6263,7 @@ const questions = [
   },
   {
     "id": 570,
-    "question": "LA FIGURA COMPETENTE PARA DICTAR LAS INSTRUCCIONES QUE REGULAN LOS PROCEDIMIENTOS QUE RIGEN LA MUTUA ES:",
+    "question": "570. LA FIGURA COMPETENTE PARA DICTAR LAS INSTRUCCIONES QUE REGULAN LOS PROCEDIMIENTOS QUE RIGEN LA MUTUA ES:",
     "options": {
       "A": "El Director Gerente en el caso de Instrucciones de Gerencia y el Secretario General o los Subdirectores Generales en el caso de Instrucciones Operativas dentro del ámbito de sus respectivas competencias",
       "B": "Únicamente el Director Gerente para cualquier tipo de instrucción",
@@ -6274,7 +6274,7 @@ const questions = [
   },
   {
     "id": 571,
-    "question": "PARA LA APROBACIÓN DE UNA INSTRUCCIÓN DE GERENCIA:",
+    "question": "571. PARA LA APROBACIÓN DE UNA INSTRUCCIÓN DE GERENCIA:",
     "options": {
       "A": "Basta con que el departamento competente elabore un texto y lo publique en Fraternet",
       "B": "Es suficiente con que se pongan de acuerdo el departamento competente y el departamento de Organización y Planificación",
@@ -6285,7 +6285,7 @@ const questions = [
   },
   {
     "id": 572,
-    "question": "PARA LA APROBACIÓN DE UNA INSTRUCCIÓN OPERATIVA:",
+    "question": "572. PARA LA APROBACIÓN DE UNA INSTRUCCIÓN OPERATIVA:",
     "options": {
       "A": "Basta con que la Subdirección competente elabore un texto y lo publique en Fraternet",
       "B": "Es suficiente con que se pongan de acuerdo la Subdirección competente y el departamento de Organización y Planificación. Y lo cuelguen en Fraternet",
@@ -6296,7 +6296,7 @@ const questions = [
   },
   {
     "id": 573,
-    "question": "LA INFORMACIÓN SOBRE PROCEDIMIENTOS Y DATOS ESTADÍSTICOS QUE PÚBLICA CADA DEPARTAMENTO DE SERVICIOS CENTRALES EN EL ÁMBITO DE SUS COMPETENCIAS SE PUEDE CONSULTAR EN:",
+    "question": "573. LA INFORMACIÓN SOBRE PROCEDIMIENTOS Y DATOS ESTADÍSTICOS QUE PÚBLICA CADA DEPARTAMENTO DE SERVICIOS CENTRALES EN EL ÁMBITO DE SUS COMPETENCIAS SE PUEDE CONSULTAR EN:",
     "options": {
       "A": "Se encuentran disponibles en sus apartados correspondientes dentro del Área Funcional de la Gestión Documental de Fraternet",
       "B": "Se remiten a los Directores Provinciales por correo interno para su transmisión al resto del personal",
@@ -6307,7 +6307,7 @@ const questions = [
   },
   {
     "id": 574,
-    "question": "CUANDO A UN EMPLEADO LE APARECE ALGÚN PROBLEMA CON CUALQUIERA DE LOS APLICATIVOS INFORMÁTICOS O TIENE DUDAS ACERCA DE SU FUNCIONAMIENTO, LA MANERA CORRECTA DE ACTUAR SERÁ:",
+    "question": "574. CUANDO A UN EMPLEADO LE APARECE ALGÚN PROBLEMA CON CUALQUIERA DE LOS APLICATIVOS INFORMÁTICOS O TIENE DUDAS ACERCA DE SU FUNCIONAMIENTO, LA MANERA CORRECTA DE ACTUAR SERÁ:",
     "options": {
       "A": "Informar a su responsable jerárquico inmediatamente superior",
       "B": "Transmitir una incidencia a través del Centro de Atención al Usuario",
@@ -6318,7 +6318,7 @@ const questions = [
   },
   {
     "id": 575,
-    "question": "TODO EMPLEADO QUE INCURRE EN UN GASTO A FAVOR DE LA MUTUA MOTIVADO POR EL DESEMPEÑO DE SU PUESTO DE TRABAJO PODRÁ RECUPERAR EL IMPORTE DE DICHO GASTO…",
+    "question": "575. TODO EMPLEADO QUE INCURRE EN UN GASTO A FAVOR DE LA MUTUA MOTIVADO POR EL DESEMPEÑO DE SU PUESTO DE TRABAJO PODRÁ RECUPERAR EL IMPORTE DE DICHO GASTO…",
     "options": {
       "A": "Nunca",
       "B": "Siempre que presente el justificante o factura del mismo y sea autorizado por el superior jerárquico correspondiente a través del aplicativo informático de “liquidación de gastos”",
@@ -6329,7 +6329,7 @@ const questions = [
   },
   {
     "id": 576,
-    "question": "TODO EMPLEADO QUE SE VE EN LA NECESIDAD DE REALIZAR UN DESPLAZAMIENTO DE SU CENTRO DE TRABAJO CON SU VEHÍCULO PROPIO MOTIVADO POR EL DESEMPEÑO DE SU PUESTO DE TRABAJO PODRÁ SOLICITAR EL ABONO DEL COSTE DE DICHO DESPLAZAMIENTO…",
+    "question": "576. TODO EMPLEADO QUE SE VE EN LA NECESIDAD DE REALIZAR UN DESPLAZAMIENTO DE SU CENTRO DE TRABAJO CON SU VEHÍCULO PROPIO MOTIVADO POR EL DESEMPEÑO DE SU PUESTO DE TRABAJO PODRÁ SOLICITAR EL ABONO DEL COSTE DE DICHO DESPLAZAMIENTO…",
     "options": {
       "A": "Nunca",
       "B": "Sólo en los casos en que pueda justificarlo mediante un justificante o factura del mismo y sea autorizado por el superior jerárquico correspondiente a través del aplicativo informático de “liquidación de gastos”",
@@ -6340,7 +6340,7 @@ const questions = [
   },
   {
     "id": 577,
-    "question": "CUANDO UN EMPLEADO GENERA UNA LIQUIDACIÓN DE GASTOS, PUEDE SOLICITAR SU RECUPERACIÓN DE MODO QUE:",
+    "question": "577. CUANDO UN EMPLEADO GENERA UNA LIQUIDACIÓN DE GASTOS, PUEDE SOLICITAR SU RECUPERACIÓN DE MODO QUE:",
     "options": {
       "A": "Todos los gastos le sean abonados por transferencia bancaria o dinero en efectivo",
       "B": "Todos los gastos le serán abonados por transferencia bancaria, con excepción de las dietas y el kilometraje que obligatoriamente serán abonadas a través de la nómina de retribuciones del mes siguiente a su autorización",
@@ -6351,7 +6351,7 @@ const questions = [
   },
   {
     "id": 578,
-    "question": "DESDE DÓNDE SE ACCEDE A LA APLICACIÓN DE LIQUIDACIÓN DE GASTOS…",
+    "question": "578. DESDE DÓNDE SE ACCEDE A LA APLICACIÓN DE LIQUIDACIÓN DE GASTOS…",
     "options": {
       "A": "FRAGUA",
       "B": "FRATERNET",
@@ -6362,7 +6362,7 @@ const questions = [
   },
   {
     "id": 579,
-    "question": "CADA EMPLEADO DE FRATERNIDAD-MUPRESPA PUEDE ACCEDER A DISTINTAS OPCIONES DENTRO DE LOS DIFERENTES APLICATIVOS INFORMÁTICOS EN FUNCIÓN DE SU CARGO Y FUNCIONES. EN CASO DE QUE RESULTE NECESARIO AMPLIAR LAS OPCIONES A LAS QUE DEBE ACCEDER UN USUARIO EL PROCEDIMIENTO DEBERÁ SER EL SIGUIENTE:",
+    "question": "579. CADA EMPLEADO DE FRATERNIDAD-MUPRESPA PUEDE ACCEDER A DISTINTAS OPCIONES DENTRO DE LOS DIFERENTES APLICATIVOS INFORMÁTICOS EN FUNCIÓN DE SU CARGO Y FUNCIONES. EN CASO DE QUE RESULTE NECESARIO AMPLIAR LAS OPCIONES A LAS QUE DEBE ACCEDER UN USUARIO EL PROCEDIMIENTO DEBERÁ SER EL SIGUIENTE:",
     "options": {
       "A": "El propio empleado se lo deberá solicitar a su Director Provincial o Director de Departamento para que éste abra una incidencia a través del Centro de Atención al Usuario (CAU)",
       "B": "El propio empleado deberá solicitarlo directamente tramitando una incidencia a través del Centro de Atención al Usuario (CAU)",
@@ -6373,7 +6373,7 @@ const questions = [
   },
   {
     "id": 580,
-    "question": "¿CÓMO PUEDO CONOCER EL PERSONAL ADSCRITO A UN CENTRO?",
+    "question": "580. ¿CÓMO PUEDO CONOCER EL PERSONAL ADSCRITO A UN CENTRO?",
     "options": {
       "A": "A través de la aplicación Centrix de Fraternet",
       "B": "A través del Directorio de Unidades Organizativas",
@@ -6384,7 +6384,7 @@ const questions = [
   },
   {
     "id": 581,
-    "question": "SI UN EMPLEADO TRABAJA EN UN CENTRO DE TRABAJO QUE NO COINCIDE CON EL QUE SE ESPECIFICA EN SU FICHA DE FRATERNET,\n¿CÓMO SE DEBE PROCEDER?",
+    "question": "581. SI UN EMPLEADO TRABAJA EN UN CENTRO DE TRABAJO QUE NO COINCIDE CON EL QUE SE ESPECIFICA EN SU FICHA DE FRATERNET, ¿CÓMO SE DEBE PROCEDER?",
     "options": {
       "A": "Hablará con el Director Provincial para que este contacte con el Centro de Recursos Humanos y RSC y revisen / actualicen el centro de trabajo del empleado",
       "B": "No hace falta actualizar el centro de trabajo",
@@ -6395,7 +6395,7 @@ const questions = [
   },
   {
     "id": 582,
-    "question": "CUANDO HE OLVIDADO FICHAR, ¿QUÉ DEBO HACER PARA JUSTIFICAR QUE HE TRABAJADO?",
+    "question": "582. CUANDO HE OLVIDADO FICHAR, ¿QUÉ DEBO HACER PARA JUSTIFICAR QUE HE TRABAJADO?",
     "options": {
       "A": "Debo decírselo a mi responsable para que lo anote en su libreta",
       "B": "Debo escribir un correo electrónico al Centro de Recursos Humanos y RSC informando de la situación",
@@ -6406,7 +6406,7 @@ const questions = [
   },
   {
     "id": 583,
-    "question": "CÓMO HE DE SOLICITAR LAS VACACIONES Y LOS DÍAS DE LIBRE DISPOSICIÓN",
+    "question": "583. CÓMO HE DE SOLICITAR LAS VACACIONES Y LOS DÍAS DE LIBRE DISPOSICIÓN",
     "options": {
       "A": "Por correo electrónico a mi responsable",
       "B": "Por correo electrónico al Centro de Recursos Humanos y RSC",
@@ -6417,7 +6417,7 @@ const questions = [
   },
   {
     "id": 584,
-    "question": "EL TABLÓN DE ANUNCIOS DE FRATERNET SIRVE:",
+    "question": "584. EL TABLÓN DE ANUNCIOS DE FRATERNET SIRVE:",
     "options": {
       "A": "Para comunicar a los empleados las novedades en materia de procedimientos y/o cambios organizativos, tanto de la Mutua en particular como de todo el sector de mutuas en general",
       "B": "Para comunicar a los empleados las novedades en materias no consideradas dentro de los procedimientos y/o cambios organizativos, tanto para la Mutua en particular como para todo el sector de mutuas en general",
@@ -6428,7 +6428,7 @@ const questions = [
   },
   {
     "id": 585,
-    "question": "¿QUIÉN NO FORMA PARTE DEL COMITÉ DE DIRECCIÓN?",
+    "question": "585. ¿QUIÉN NO FORMA PARTE DEL COMITÉ DE DIRECCIÓN?",
     "options": {
       "A": "Director Gerente",
       "B": "Secretario General",
@@ -6439,7 +6439,7 @@ const questions = [
   },
   {
     "id": 586,
-    "question": "¿CUÁNTO TIEMPO DE VIGENCIA TIENE UNA INSTRUCCIÓN DE GERENCIA?",
+    "question": "586. ¿CUÁNTO TIEMPO DE VIGENCIA TIENE UNA INSTRUCCIÓN DE GERENCIA?",
     "options": {
       "A": "Tienen un tiempo de vigencia de 2 años desde su publicación",
       "B": "Sigue vigente hasta que no se deroga explícitamente",
@@ -6450,7 +6450,7 @@ const questions = [
   },
   {
     "id": 587,
-    "question": "¿QUIÉN UTILIZA LA APLICACIÓN INVENTARIA?",
+    "question": "587. ¿QUIÉN UTILIZA LA APLICACIÓN INVENTARIA?",
     "options": {
       "A": "Los responsables de inventario de cada centro",
       "B": "Los directores de departamento, directores provinciales o directores de delegación",
@@ -6461,7 +6461,7 @@ const questions = [
   },
   {
     "id": 588,
-    "question": "¿QUIÉN SE VE AFECTADO POR EL FUNCIONAMIENTO DEL DEFENSOR DEL MUTUALISTA?",
+    "question": "588. ¿QUIÉN SE VE AFECTADO POR EL FUNCIONAMIENTO DEL DEFENSOR DEL MUTUALISTA?",
     "options": {
       "A": "No afecta a ningún departamento, el Defensor del Mutualista gestiona independientemente cualquier queja que pueda recibir",
       "B": "El personal sanitario, ya que solo trata quejas de carácter médico",
@@ -6472,7 +6472,7 @@ const questions = [
   },
   {
     "id": 589,
-    "question": "¿DE QUÉ UNIDAD DEPENDE JERARQUICAMENTE EL DEPARTAMENTO DE CONTROL DE GESTIÓN Y AUDITORÍA?",
+    "question": "589. ¿DE QUÉ UNIDAD DEPENDE JERARQUICAMENTE EL DEPARTAMENTO DE CONTROL DE GESTIÓN Y AUDITORÍA?",
     "options": {
       "A": "Gerencia",
       "B": "Secretaría General",
@@ -6483,7 +6483,7 @@ const questions = [
   },
   {
     "id": 590,
-    "question": "¿CUÁLES SON LOS DOS ÁMBITOS POR LOS QUE SE PUEDE CLASIFICAR LA INFORMACIÓN DE LA MUTUA?",
+    "question": "590. ¿CUÁLES SON LOS DOS ÁMBITOS POR LOS QUE SE PUEDE CLASIFICAR LA INFORMACIÓN DE LA MUTUA?",
     "options": {
       "A": "La información de la mutua no se clasifica según el ámbito al que hace referencia",
       "B": "Negocio y Sectorial",
@@ -6494,7 +6494,7 @@ const questions = [
   },
   {
     "id": 591,
-    "question": "¿PUEDE LA MUTUA EMITIR RECETAS MÉDICAS PARA PROCESOS POR CONTINGENCIA COMÚN?",
+    "question": "591. ¿PUEDE LA MUTUA EMITIR RECETAS MÉDICAS PARA PROCESOS POR CONTINGENCIA COMÚN?",
     "options": {
       "A": "Sí, el médico recetará el medicamento que crea necesario",
       "B": "Sí, si la baja se debe a un proceso de especial seguimiento",
@@ -6505,7 +6505,7 @@ const questions = [
   },
   {
     "id": 592,
-    "question": "¿QUÉ CARGOS PUEDEN EJERCER LA PRESIDENCIA DEL ÓRGANO DE ASISTENCIA DE LA CONTRATACIÓN?",
+    "question": "592. ¿QUÉ CARGOS PUEDEN EJERCER LA PRESIDENCIA DEL ÓRGANO DE ASISTENCIA DE LA CONTRATACIÓN?",
     "options": {
       "A": "Gerente y, en su ausencia, Secretario General",
       "B": "Secretario General, Subdirector General y Director de Centro",
@@ -6516,7 +6516,7 @@ const questions = [
   },
   {
     "id": 593,
-    "question": "¿CÚANDO PUEDE PRORROGARSE UN CONTRATO?",
+    "question": "593. ¿CÚANDO PUEDE PRORROGARSE UN CONTRATO?",
     "options": {
       "A": "Nunca, la Mutua no puede prorrogar contratos",
       "B": "Se pueden prorrogar todos los contratos a criterio del responsable del contrato",
@@ -6527,7 +6527,7 @@ const questions = [
   },
   {
     "id": 594,
-    "question": "¿QUÉ SON LOS DERECHOS PLARSO?",
+    "question": "594. ¿QUÉ SON LOS DERECHOS PLARSO?",
     "options": {
       "A": "Los derechos de portabilidad, acceso, rectificación y oposición a los datos",
       "B": "Los derechos de portabilidad, limitación del tratamiento, acceso, rectificación, supresión y oposición a los datos",
@@ -6538,7 +6538,7 @@ const questions = [
   },
   {
     "id": 595,
-    "question": "¿POR QUÉ CANALES PUEDE UNA PERSONA EJERCER SUS DERECHOS PLARSO?",
+    "question": "595. ¿POR QUÉ CANALES PUEDE UNA PERSONA EJERCER SUS DERECHOS PLARSO?",
     "options": {
       "A": "En cualquier centro de Fraternidad-Muprespa",
       "B": "Por cualquier medio que acredite el envío y recepción de la solicitud como correo electrónico, certificado con acuse de recibo o burofax",
@@ -6549,7 +6549,7 @@ const questions = [
   },
   {
     "id": 596,
-    "question": "¿CUÁLES SON LAS CARACTERÍSTICAS DE LOS CONTRATOS MENORES?",
+    "question": "596. ¿CUÁLES SON LAS CARACTERÍSTICAS DE LOS CONTRATOS MENORES?",
     "options": {
       "A": "Responden a una necesidad puntual que no se ha podido planificar",
       "B": "No pueden tener una duración superior a un año ni ser objeto de prórroga",
@@ -6560,7 +6560,7 @@ const questions = [
   },
   {
     "id": 597,
-    "question": "¿CUÁLES DE LAS SIGUIENTES ACTUACIONES NO PUEDE REALIZAR UN EMPLEADO CON UN MUTUALISTA?",
+    "question": "597. ¿CUÁLES DE LAS SIGUIENTES ACTUACIONES NO PUEDE REALIZAR UN EMPLEADO CON UN MUTUALISTA?",
     "options": {
       "A": "Ofrecer sesiones formativas en el uso de herramientas on line que la Mutua pone a su disposición",
       "B": "Facilitar información, cuando lo demande, para que puedan ejercer su derecho de elección y opción en relación con las coberturas de las contingencias que gestiona la Mutua",
@@ -6571,7 +6571,7 @@ const questions = [
   },
   {
     "id": 598,
-    "question": "EL CÓDIGO ÉTICO Y DE CONDUCTA DE FRATERNIDAD-MUPRESPA AFECTA A…",
+    "question": "598. EL CÓDIGO ÉTICO Y DE CONDUCTA DE FRATERNIDAD-MUPRESPA AFECTA A…",
     "options": {
       "A": "La Gerencia y los Órganos de Control",
       "B": "La Alta Dirección",
@@ -6582,7 +6582,7 @@ const questions = [
   },
   {
     "id": 599,
-    "question": "¿PARA QUÉ SIRVE EL CÓDIGO ÉTICO Y DE CONDUCTA?",
+    "question": "599. ¿PARA QUÉ SIRVE EL CÓDIGO ÉTICO Y DE CONDUCTA?",
     "options": {
       "A": "Para informar, exclusivamente, la posible responsabilidad penal de las actuaciones de los empleados de la Mutua",
       "B": "Para conocer: los valores corporativos y los principios éticos de la Mutua; las pautas y normas de conducta que deben cumplirse. Y para detectar y evitar riesgos de incumplimiento legal",
@@ -6593,7 +6593,7 @@ const questions = [
   },
   {
     "id": 600,
-    "question": "¿EXISTE ALGÚN ÓRGANO EN FM PARA ANALIZAR LAS CONDUCTAS CON RIESGO PENAL?",
+    "question": "600. ¿EXISTE ALGÚN ÓRGANO EN FM PARA ANALIZAR LAS CONDUCTAS CON RIESGO PENAL?",
     "options": {
       "A": "Sí, el Centro de Recursos Humanos y RSC",
       "B": "No, para eso está el criterio del Gerente",
@@ -6604,7 +6604,7 @@ const questions = [
   },
   {
     "id": 601,
-    "question": "¿CUÁL DE LOS SIGUIENTES COMPROMISOS DE CUMPLIMIENTO ES ESPECÍFICAMENTE RELEVANTE PARA LA MUTUA?",
+    "question": "601. ¿CUÁL DE LOS SIGUIENTES COMPROMISOS DE CUMPLIMIENTO ES ESPECÍFICAMENTE RELEVANTE PARA LA MUTUA?",
     "options": {
       "A": "Escuchar las necesidades de las empresas y procurar un trato personalizado, adaptando la oferta de servicios a sus demandas y ofreciendo un alto nivel de digitalización para generar propuestas diferenciales y personalizadas",
       "B": "Asegurar con los asesores la confidencialidad de la información en el intercambio y acceso a los datos y el respeto a las normas de aplicación en materia de protección de datos",
@@ -6615,7 +6615,7 @@ const questions = [
   },
   {
     "id": 602,
-    "question": "¿CUÁL DE LAS SIGUIENTES OBLIGACIONES EN RELACIÓN CON LOS CONFLICTOS DE INTERESES ES INCORRECTA?",
+    "question": "602. ¿CUÁL DE LAS SIGUIENTES OBLIGACIONES EN RELACIÓN CON LOS CONFLICTOS DE INTERESES ES INCORRECTA?",
     "options": {
       "A": "No debo utilizar los recursos de la Mutua en provecho propio",
       "B": "Deberé informa a RRHH cuando tenga una participación directa o indirecta superior al 50% en sociedades que puedan encontrarse vinculadas a la Mutua o con la que exista algún tipo de conflicto de interés",
@@ -6626,7 +6626,7 @@ const questions = [
   },
   {
     "id": 603,
-    "question": "SI UNA PERSONA FÍSICA O ENTIDAD PRIVADA ME OFRECE CUALQUIER REGALO, FAVOR O SERVICIO:",
+    "question": "603. SI UNA PERSONA FÍSICA O ENTIDAD PRIVADA ME OFRECE CUALQUIER REGALO, FAVOR O SERVICIO:",
     "options": {
       "A": "Lo rechazo en cualquier caso",
       "B": "Lo acepto porque no llega a 100 euros, al igual que el que les ha ofrecido a todos los compañeros de mi unidad por Navidad",
@@ -6637,7 +6637,7 @@ const questions = [
   },
   {
     "id": 604,
-    "question": "COMO EMPLEADO DE FRATERNIDAD-MUPRESPA:",
+    "question": "604. COMO EMPLEADO DE FRATERNIDAD-MUPRESPA:",
     "options": {
       "A": "Puedo participar voluntariamente en las acciones formativas que la Mutua pone a mi disposición",
       "B": "Debo mantener actualizados mis conocimientos y competencias y propiciar mi desarrollo y progreso profesional",
@@ -6648,7 +6648,7 @@ const questions = [
   },
   {
     "id": 605,
-    "question": "¿CUÁL DE LAS SIGUIENTES OBLIGACIONES NO ES ESPECÍFICA DEL ÁMBITO DE LA PROTECCIÓN DE DATOS?",
+    "question": "605. ¿CUÁL DE LAS SIGUIENTES OBLIGACIONES NO ES ESPECÍFICA DEL ÁMBITO DE LA PROTECCIÓN DE DATOS?",
     "options": {
       "A": "Debo tratar con toda reserva la información confidencial a las que tenga acceso, sin poder facilitarla a terceros",
       "B": "Tengo la obligación de tratar de forma justa y respetuosa a todos mis interlocutores. Debo respetar los derechos de las personas, evitando cualquier tipo de discriminación",
@@ -6659,7 +6659,7 @@ const questions = [
   },
   {
     "id": 606,
-    "question": "¿CUÁL DE LAS SIGUIENTES ES UNA OBLIGACIÓN ESPECÍFICAMENTE RELEVANTE DEL PERSONAL SANITARIO?",
+    "question": "606. ¿CUÁL DE LAS SIGUIENTES ES UNA OBLIGACIÓN ESPECÍFICAMENTE RELEVANTE DEL PERSONAL SANITARIO?",
     "options": {
       "A": "Asegurase de que se cumple la normativa vigente sobre conservación, almacenamiento, caducidad, etc. de los medicamentos",
       "B": "Contribuir a garantizar un entorno de trabajo seguro y saludable",
@@ -6670,7 +6670,7 @@ const questions = [
   },
   {
     "id": 607,
-    "question": "ACTUAR CON TRANSPARENCIA, IMPARCIALIDAD Y OBJETIVIDAD; ABSTENIÉNDOSE DE INTERVENIR CUANDO TENGA RELACIÓN PERSONAL O FAMILIAR HASTA CUARTO GRADO CON UN TERCERO... SON CONDUCTAS PROPIAS DE:",
+    "question": "607. ACTUAR CON TRANSPARENCIA, IMPARCIALIDAD Y OBJETIVIDAD; ABSTENIÉNDOSE DE INTERVENIR CUANDO TENGA RELACIÓN PERSONAL O FAMILIAR HASTA CUARTO GRADO CON UN TERCERO... SON CONDUCTAS PROPIAS DE:",
     "options": {
       "A": "La alta dirección y personal directivo de servicios centrales",
       "B": "Los directores territoriales, provinciales y de delegación",
@@ -6681,7 +6681,7 @@ const questions = [
   },
   {
     "id": 608,
-    "question": "¿CUÁL DE ESTAS AFIRMACIONES SOBRE LA AGENDA RESPONSABLE DE LA MUTUA NO ES CIERTA?",
+    "question": "608. ¿CUÁL DE ESTAS AFIRMACIONES SOBRE LA AGENDA RESPONSABLE DE LA MUTUA NO ES CIERTA?",
     "options": {
       "A": "Se trata de un plan de acción que persigue que se asiente en la Mutua una dinámica recurrente de atención a los ODS relacionados esta con esta, para tomar conciencia y avanzar en su cumplimiento, difundiendo información y realizando acciones.",
       "B": "Se trata de la agenda de sobre mesa a disposición de todos los empleados para anotar las ideas responsables y ayudar en el cumplimiento de la Agenda 2030 de Naciones Unidas.",
@@ -6692,7 +6692,7 @@ const questions = [
   },
   {
     "id": 609,
-    "question": "EL OBJETIVO PRINCIPAL DE LOS INFORMES DE PROGRESO, ENVIADOS AL PACTO MUNDIAL, ES:",
+    "question": "609. EL OBJETIVO PRINCIPAL DE LOS INFORMES DE PROGRESO, ENVIADOS AL PACTO MUNDIAL, ES:",
     "options": {
       "A": "Dar cuenta a todos los Grupos de Interés, con transparencia, de los progresos que la Mutua realiza en el proceso de implantación de los compromisos adquiridos con la adhesión al Pacto Mundial.",
       "B": "Informar a los empleados los acuerdos a los que se ha llegado en el pacto laboral.",
@@ -6703,7 +6703,7 @@ const questions = [
   },
   {
     "id": 610,
-    "question": "¿QUÉ IMPLICA EL TÉRMINO DE RESPONSABILIDAD SOCIAL CORPORATIVA?",
+    "question": "610. ¿QUÉ IMPLICA EL TÉRMINO DE RESPONSABILIDAD SOCIAL CORPORATIVA?",
     "options": {
       "A": "Legislaciones de temas sociales.",
       "B": "Responsabilidades de los ciudadanos.",
@@ -6714,7 +6714,7 @@ const questions = [
   },
   {
     "id": 611,
-    "question": "¿QUÉ IMPLICA LA RSC EN LAS EMPRESAS?",
+    "question": "611. ¿QUÉ IMPLICA LA RSC EN LAS EMPRESAS?",
     "options": {
       "A": "Una nueva forma de entender la empresa, centrada en valores para, a través de la ética y la responsabilidad, generar valor corporativo",
       "B": "Un sistema de gestión integral, que comprende todas las áreas funcionales de la Mutua.",
@@ -6725,7 +6725,7 @@ const questions = [
   },
   {
     "id": 612,
-    "question": "EL CONCEPTO DE RSC, TAL COMO LO ENTENDEMOS HOY EN DÍA, SE DA A CONOCER A TRAVÉS DE:",
+    "question": "612. EL CONCEPTO DE RSC, TAL COMO LO ENTENDEMOS HOY EN DÍA, SE DA A CONOCER A TRAVÉS DE:",
     "options": {
       "A": "Pacto Mundial de las Naciones Unidas.",
       "B": "Foro de Expertos en materia de RSC del Ministerio de Trabajo.",
@@ -6736,7 +6736,7 @@ const questions = [
   },
   {
     "id": 613,
-    "question": "¿EN QUÉ AÑO SUSCRIBE LA MUTUA POR PRIMERA VEZ SU ADHESIÓN AL PACTO MUNDIAL DE NACIONES UNIDAS, COMPROMETIÉNDOSE A CUMPLIR, RESPETAR, PROMOVER Y DIFUNDIR SUS 10 PRINCIPIOS, AVANZANDO EN DISTINTOS OBJETIVOS QUE APOYAN SU CUMPLIMIENTO?",
+    "question": "613. ¿EN QUÉ AÑO SUSCRIBE LA MUTUA POR PRIMERA VEZ SU ADHESIÓN AL PACTO MUNDIAL DE NACIONES UNIDAS, COMPROMETIÉNDOSE A CUMPLIR, RESPETAR, PROMOVER Y DIFUNDIR SUS 10 PRINCIPIOS, AVANZANDO EN DISTINTOS OBJETIVOS QUE APOYAN SU CUMPLIMIENTO?",
     "options": {
       "A": "2017",
       "B": "2016",
@@ -6747,10 +6747,10 @@ const questions = [
   },
   {
     "id": 614,
-    "question": "¿QUÉ BENEFICIOS PUEDE APORTAR LA RSC A UNA EMPRESA?",
+    "question": "614. ¿QUÉ BENEFICIOS PUEDE APORTAR LA RSC A UNA EMPRESA?",
     "options": {
       "A": "Mejora la captación y fidelización de las empresas asociadas. Una entidad considerada socialmente responsable aumenta su imagen y prestigio.",
-      "B": "Mejora la relación con el entorno e incrementa la influencia de la empresa en la sociedad. Publicar información honesta y precisa y emprender acciones\nsocialmente comprometidas mejora la imagen de la entidad frente a la sociedad.",
+      "B": "Mejora la relación con el entorno e incrementa la influencia de la empresa en la sociedad. Publicar información honesta y precisa y emprender acciones socialmente comprometidas mejora la imagen de la entidad frente a la sociedad.",
       "C": "Posiciona y diferencia la marca frente a la competencia. Una entidad que destine recursos en realizar emprendimientos sociales, o bien que realice acciones destinadas a beneficiar a sus grupos de interés, le otorgará un valor añadido sobre su competencia.",
       "D": "Todas las respuestas son correctas."
     },
@@ -6758,7 +6758,7 @@ const questions = [
   },
   {
     "id": 615,
-    "question": "EL PLAN DE RSC DE FRATERNIDAD-MUPRESPA ¿CÓMO ESTÁ ESTRUCTURADO?",
+    "question": "615. EL PLAN DE RSC DE FRATERNIDAD-MUPRESPA ¿CÓMO ESTÁ ESTRUCTURADO?",
     "options": {
       "A": "Solamente marca objetivos para los Mutualistas.",
       "B": "Solamente marca objetivos para los Empleados.",
@@ -6769,7 +6769,7 @@ const questions = [
   },
   {
     "id": 616,
-    "question": "EN EL APARTADO CORRESPONDIENTE A LOS “EMPLEADOS” DE LAS MEMORIAS DE SOSTENIBILIDAD, ¿QUÉ INFORMACIÓN ES IMPRESCINDIBLE REFLEJAR?",
+    "question": "616. EN EL APARTADO CORRESPONDIENTE A LOS “EMPLEADOS” DE LAS MEMORIAS DE SOSTENIBILIDAD, ¿QUÉ INFORMACIÓN ES IMPRESCINDIBLE REFLEJAR?",
     "options": {
       "A": "La relación de la Empresa con los trabajadores.",
       "B": "La formación que se ha realizado durante el ejercicio.",
@@ -6780,7 +6780,7 @@ const questions = [
   },
   {
     "id": 617,
-    "question": "INDICA QUE NO ES CORRECTO EN RELACIÓN A LA RESPONSABILIDAD SOCIAL CORPORATIVA",
+    "question": "617. INDICA QUE NO ES CORRECTO EN RELACIÓN A LA RESPONSABILIDAD SOCIAL CORPORATIVA",
     "options": {
       "A": "Está ligada básicamente a la filantropía y a la acción social.",
       "B": "Está ligada al concepto de sostenibilidad.",
@@ -6791,7 +6791,7 @@ const questions = [
   },
   {
     "id": 618,
-    "question": "¿CUÁLES SON LAS DIMENSIONES DE LA RSC?",
+    "question": "618. ¿CUÁLES SON LAS DIMENSIONES DE LA RSC?",
     "options": {
       "A": "Dimensión económica.",
       "B": "Dimensión medioambiental.",
@@ -6802,7 +6802,7 @@ const questions = [
   },
   {
     "id": 619,
-    "question": "ESTAR ADHERIDO AL PACTO MUNDIAL SIGNIFICA…",
+    "question": "619. ESTAR ADHERIDO AL PACTO MUNDIAL SIGNIFICA…",
     "options": {
       "A": "Asumir el compromiso de ir implantando los Diez Principios de conducta y acción en materia de derechos humanos, derechos laborales, medio ambiente y lucha contra la corrupción.",
       "B": "Integrar en la estrategia de la empresa sus objetivos y principios.",
@@ -6813,7 +6813,7 @@ const questions = [
   },
   {
     "id": 620,
-    "question": "EN RELACIÓN AL INFORME O MEMORIA DE SOSTENIBILIDAD:",
+    "question": "620. EN RELACIÓN AL INFORME O MEMORIA DE SOSTENIBILIDAD:",
     "options": {
       "A": "Es un documento voluntario que busca favorecer la transparencia en relación a las actividades de la empresa, para contribuir al desarrollo sostenible.",
       "B": "Es un documento dónde se han de reflejar las acciones llevadas a cabo por la Mutua, durante el ejercicio, y en beneficio de sus grupos de interés.",
@@ -6824,7 +6824,7 @@ const questions = [
   },
   {
     "id": 621,
-    "question": "¿CUÁL ES EL PRINCIPAL DOCUMENTO EUROPEO EN MATERIA DE RSC?",
+    "question": "621. ¿CUÁL ES EL PRINCIPAL DOCUMENTO EUROPEO EN MATERIA DE RSC?",
     "options": {
       "A": "Libro Verde.",
       "B": "The Global Compact.",
@@ -6835,7 +6835,7 @@ const questions = [
   },
   {
     "id": 622,
-    "question": "¿QUÉ ES UN “GRUPO DE INTERÉS”?",
+    "question": "622. ¿QUÉ ES UN “GRUPO DE INTERÉS”?",
     "options": {
       "A": "Son grupos de individuos que trabajan o forman parte de una organización y tienen interés en la misma.",
       "B": "Son individuos, entornos o públicos que afectan o se ven afectados por una organización y sus actividades.",
@@ -6846,7 +6846,7 @@ const questions = [
   },
   {
     "id": 623,
-    "question": "¿CUÁL DE LAS SIGUIENTES MEDIDAS NO FORMA PARTE DE LA DIMENSIÓN SOCIAL INTERNA?",
+    "question": "623. ¿CUÁL DE LAS SIGUIENTES MEDIDAS NO FORMA PARTE DE LA DIMENSIÓN SOCIAL INTERNA?",
     "options": {
       "A": "Flexibilidad Laboral.",
       "B": "Formación para empleados.",
@@ -6857,7 +6857,7 @@ const questions = [
   },
   {
     "id": 624,
-    "question": "¿QUÉ MEDIDA DE LAS QUE ENUMERAMOS, NO PUEDE SER CONSIDERADA UNA MEDIDA DE CONCILIACIÓN?",
+    "question": "624. ¿QUÉ MEDIDA DE LAS QUE ENUMERAMOS, NO PUEDE SER CONSIDERADA UNA MEDIDA DE CONCILIACIÓN?",
     "options": {
       "A": "Guardería y/o ayuda económica por cuidado de hijos o personas dependientes.",
       "B": "Vigilancia de la Salud.",
@@ -6868,7 +6868,7 @@ const questions = [
   },
   {
     "id": 625,
-    "question": "¿QUÉ ES EL VOLUNTARIADO CORPORATIVO?",
+    "question": "625. ¿QUÉ ES EL VOLUNTARIADO CORPORATIVO?",
     "options": {
       "A": "Acciones voluntarias de los proveedores.",
       "B": "Acciones dirigidas solamente para los mutualistas.",
@@ -6879,7 +6879,7 @@ const questions = [
   },
   {
     "id": 626,
-    "question": "¿QUÉ ES EL CODIGO ÉTICO DE FRATERNIDAD-MUPRESPA?",
+    "question": "626. ¿QUÉ ES EL CODIGO ÉTICO DE FRATERNIDAD-MUPRESPA?",
     "options": {
       "A": "Un documento cuya función es la de establecer normas que comprometan las acciones y el comportamiento de la Mutua.",
       "B": "Es una estrategia de la cultura de la Mutua.",
@@ -6890,7 +6890,7 @@ const questions = [
   },
   {
     "id": 627,
-    "question": "¿QUÉ ES LA ISO - 14001?",
+    "question": "627. ¿QUÉ ES LA ISO - 14001?",
     "options": {
       "A": "Sistema de gestión de calidad.",
       "B": "Sistema de Gestión Básico basado en el principio de mejora continúa a nivel medioambiental.",
@@ -6901,7 +6901,7 @@ const questions = [
   },
   {
     "id": 628,
-    "question": "LA PRIMERA NORMA DEL ÁMBITO MUNDIAL PARA LA CERTIFICACIÓN DE SISTEMAS DE GESTIÓN DE SEGURIDAD Y SALUD EN EL TRABAJO",
+    "question": "628. LA PRIMERA NORMA DEL ÁMBITO MUNDIAL PARA LA CERTIFICACIÓN DE SISTEMAS DE GESTIÓN DE SEGURIDAD Y SALUD EN EL TRABAJO",
     "options": {
       "A": "AS 8000.",
       "B": "ISO 14000.",
@@ -6912,7 +6912,7 @@ const questions = [
   },
   {
     "id": 629,
-    "question": "EL PLAN DE RSC DE LA MUTUA EN RELACIÓN A LA GESTION MEDIOAMBIENTAL…",
+    "question": "629. EL PLAN DE RSC DE LA MUTUA EN RELACIÓN A LA GESTION MEDIOAMBIENTAL…",
     "options": {
       "A": "Recoge el fomento de las acciones de la Mutua dirigidas a reforzar el compromiso de la plantilla con el respeto a la calidad ambiental más allá del cumplimiento de las obligaciones legales que le afectan.",
       "B": "Recoge únicamente el compromiso de la Mutua en el cumplimiento mínimo de las obligaciones legales.",
@@ -6923,7 +6923,7 @@ const questions = [
   },
   {
     "id": 630,
-    "question": "LA PARTICIPACIÓN EN PROGRAMAS PARA LA REALIZACIÓN DE ESTANCIAS EDUCATIVAS EN LAS EMPRESAS ES UNA MANERA DE FOMENTAR LA FORMACIÓN RESPONSABLE...",
+    "question": "630. LA PARTICIPACIÓN EN PROGRAMAS PARA LA REALIZACIÓN DE ESTANCIAS EDUCATIVAS EN LAS EMPRESAS ES UNA MANERA DE FOMENTAR LA FORMACIÓN RESPONSABLE...",
     "options": {
       "A": "Sí, pero la Mutua no tiene posibilidad de participar en este tipo de programas.",
       "B": "No, las estancias educativas de alumnos no son de utilidad en términos formativos.",
@@ -6934,7 +6934,7 @@ const questions = [
   },
   {
     "id": 631,
-    "question": "LA LEY GENERAL DE DERECHOS DE LAS PERSONAS CON DISCAPACIDAD Y DE SU INCLUSIÓN SOCIAL, APROBADA MEDIANTE REAL DECRETO LEGISLATIVO 1/2013 DE 29 DE NOVIEMBRE, HA INTEGRADO EN UNA SOLA NORMA LA LEY DE INTEGRACIÓN SOCIAL DE PERSONAS CON DISCAPACIDAD (LISMI), DE 1982; LA LEY DE IGUALDAD DE OPORTUNIDADES, NO DISCRIMINACIÓN Y ACCESIBILIDAD UNIVERSAL DE LAS PERSONAS CON DISCAPACIDAD, DE 2003, Y LA LEY POR LA QUE SE ESTABLECE EL RÉGIMEN DE\nINFRACCIONES Y SANCIONES EN MATERIA DE IGUALDAD DE OPORTUNIDADES, NO DISCRIMINACIÓN Y ACCESIBILIDAD UNIVERSAL DE LAS PERSONAS CON DISCAPACIDAD DE 2007",
+    "question": "631. LA LEY GENERAL DE DERECHOS DE LAS PERSONAS CON DISCAPACIDAD Y DE SU INCLUSIÓN SOCIAL, APROBADA MEDIANTE REAL DECRETO LEGISLATIVO 1/2013 DE 29 DE NOVIEMBRE, HA INTEGRADO EN UNA SOLA NORMA LA LEY DE INTEGRACIÓN SOCIAL DE PERSONAS CON DISCAPACIDAD (LISMI), DE 1982; LA LEY DE IGUALDAD DE OPORTUNIDADES, NO DISCRIMINACIÓN Y ACCESIBILIDAD UNIVERSAL DE LAS PERSONAS CON DISCAPACIDAD, DE 2003, Y LA LEY POR LA QUE SE ESTABLECE EL RÉGIMEN DE INFRACCIONES Y SANCIONES EN MATERIA DE IGUALDAD DE OPORTUNIDADES, NO DISCRIMINACIÓN Y ACCESIBILIDAD UNIVERSAL DE LAS PERSONAS CON DISCAPACIDAD DE 2007",
     "options": {
       "A": "En su artículo 42.1 sigue estableciendo la obligación de las empresas públicas y privadas que tengan un número de 50 o más trabajadores a que, de entre ellos, al menos, el 2 por 100 sean trabajadores con discapacidad. Continúa también en vigor para las medidas alternativas el RD 364/2005 de 8 de abril por el que se regula el cumplimiento alternativo con carácter excepcional de la cuota de reserva en favor de los trabajadores con discapacidad.",
       "B": "En su artículo 42.1 se establece la obligación de las empresas públicas y privadas a que tengan e al menos el 2 por 100 de trabajadores con discapacidad independientemente del tamaño de la empresa.",
@@ -6945,7 +6945,7 @@ const questions = [
   },
   {
     "id": 632,
-    "question": "¿QUÉ ES LA #COMUNIDAD POR EL CLIMA?",
+    "question": "632. ¿QUÉ ES LA #COMUNIDAD POR EL CLIMA?",
     "options": {
       "A": "Una iniciativa pionera de personas, empresas, organizaciones y Administraciones Públicas el objetivo común de luchar contra el cambio climático.",
       "B": "Una certificación Mediomabiental.",
@@ -6956,7 +6956,7 @@ const questions = [
   },
   {
     "id": 633,
-    "question": "LA ADHESIÓN DE FM AL PROYECTO MAS MUJERES, MEJORES EMPRESAS SUPONE",
+    "question": "633. LA ADHESIÓN DE FM AL PROYECTO MAS MUJERES, MEJORES EMPRESAS SUPONE",
     "options": {
       "A": "El compromiso de la Mutua de contratar mujeres en puestos de Dirección",
       "B": "Una campaña para dar a conocer el trabajo de las mujeres en FM",
@@ -6967,7 +6967,7 @@ const questions = [
   },
   {
     "id": 634,
-    "question": "LA AGENDA 2030 PARA EL DESRROLLO SOSTENIBLE ESTABLECE",
+    "question": "634. LA AGENDA 2030 PARA EL DESRROLLO SOSTENIBLE ESTABLECE",
     "options": {
       "A": "Un calendario para el reciclaje del tóner en FM.",
       "B": "Pautas para construir un mundo más justo y equitativo.",
@@ -6978,7 +6978,7 @@ const questions = [
   },
   {
     "id": 635,
-    "question": "¿QUÉ ES GECV?",
+    "question": "635. ¿QUÉ ES GECV?",
     "options": {
       "A": "Es una Asociación Independiente de empresas y entidades que impulsa el cumplimiento de los objetivos climáticos y de desarrollo Sostenible.",
       "B": "Se corresponde con las siglas de GreenPeace.",
@@ -6989,7 +6989,7 @@ const questions = [
   },
   {
     "id": 636,
-    "question": "¿A QUÉ SE REFIERE LA DECLARACIÓN DE LUXEMBURGO?",
+    "question": "636. ¿A QUÉ SE REFIERE LA DECLARACIÓN DE LUXEMBURGO?",
     "options": {
       "A": "A la Promoción de la Salud en el Trabajo.",
       "B": "A la prevención de Accidentes In Itinere.",
@@ -7000,7 +7000,7 @@ const questions = [
   },
   {
     "id": 637,
-    "question": "EL DISTINTIVO DE IGUALDAD EN LA EMPRESA",
+    "question": "637. EL DISTINTIVO DE IGUALDAD EN LA EMPRESA",
     "options": {
       "A": "Sólo lo tienen las empresas de más de 250 trabajadores.",
       "B": "Es un distintivo que reconoce la excelencia de las empresas en la promoción de la igualdad de oportunidades entre mujeres y hombres.",
@@ -7011,7 +7011,7 @@ const questions = [
   },
   {
     "id": 638,
-    "question": "FRATERNIDAD-MUPRESPA",
+    "question": "638. FRATERNIDAD-MUPRESPA",
     "options": {
       "A": "Obtuvo el Distintivo de Igualdad en la Empresa en 2016 y ha obtenido su segunda renovación en 2023.",
       "B": "Carece del Distintivo pero forma parte de la RED DIE.",
@@ -7022,7 +7022,7 @@ const questions = [
   },
   {
     "id": 639,
-    "question": "¿POR QUÉ EL HOSPITAL FRATERNIDAD-MUPRESPA HABANA ES UN CENTRO DE REFERENCIA?",
+    "question": "639. ¿POR QUÉ EL HOSPITAL FRATERNIDAD-MUPRESPA HABANA ES UN CENTRO DE REFERENCIA?",
     "options": {
       "A": "Porque se cumplen los más altos estándares de calidad",
       "B": "Porque prima la seguridad del paciente por encima de todo",
@@ -7033,7 +7033,7 @@ const questions = [
   },
   {
     "id": 640,
-    "question": "¿QUÉ NIVEL DE CERTIFICACIÓN LEED (EN DISEÑO Y CONSTRUCCIÓN) HA CONSEGUIDO EL HOSPITAL FRATERNIDAD- MUPRESPA HABANA?",
+    "question": "640. ¿QUÉ NIVEL DE CERTIFICACIÓN LEED (EN DISEÑO Y CONSTRUCCIÓN) HA CONSEGUIDO EL HOSPITAL FRATERNIDAD- MUPRESPA HABANA?",
     "options": {
       "A": "No ha conseguido ninguna certificación",
       "B": "Nivel plata",
@@ -7044,7 +7044,7 @@ const questions = [
   },
   {
     "id": 641,
-    "question": "EL SISTEMA DE CONTABILIDAD OFICIAL DE LA MUTUA SE DENOMINA:",
+    "question": "641. EL SISTEMA DE CONTABILIDAD OFICIAL DE LA MUTUA SE DENOMINA:",
     "options": {
       "A": "Contaweb",
       "B": "Pros@",
@@ -7055,7 +7055,7 @@ const questions = [
   },
   {
     "id": 642,
-    "question": "A TRAVÉS DEL FONDO DE MANIOBRA SE PUEDEN PAGAR:",
+    "question": "642. A TRAVÉS DEL FONDO DE MANIOBRA SE PUEDEN PAGAR:",
     "options": {
       "A": "Todo tipo de gastos",
       "B": "Sueldos y salarios del personal",
@@ -7066,7 +7066,7 @@ const questions = [
   },
   {
     "id": 643,
-    "question": "LA CONTABILIDAD DE LA MUTUA SE CIERRA CADA AÑO:",
+    "question": "643. LA CONTABILIDAD DE LA MUTUA SE CIERRA CADA AÑO:",
     "options": {
       "A": "En el 31 de diciembre",
       "B": "Cuando hayamos grabado en Servix y Mobiliaria las facturas que tengamos pendientes",
@@ -7077,7 +7077,7 @@ const questions = [
   },
   {
     "id": 644,
-    "question": "EL PLAN DE CUENTAS OFICIAL QUE UTILIZAN LAS MUTUAS DE ACCIDENTES DE TRABAJO ES:",
+    "question": "644. EL PLAN DE CUENTAS OFICIAL QUE UTILIZAN LAS MUTUAS DE ACCIDENTES DE TRABAJO ES:",
     "options": {
       "A": "El mismo que utilizan las Compañías de seguros actualizado para las Mutuas",
       "B": "El que utilizan las empresas privadas de gran volumen de facturación",
@@ -7088,7 +7088,7 @@ const questions = [
   },
   {
     "id": 645,
-    "question": "EL SISTEMA DE INFORMACIÓN DE CONTABILIDAD AUXILIAR DE LA MUTUA SE DENOMINA:",
+    "question": "645. EL SISTEMA DE INFORMACIÓN DE CONTABILIDAD AUXILIAR DE LA MUTUA SE DENOMINA:",
     "options": {
       "A": "Servix",
       "B": "Mobiliaria",
@@ -7099,7 +7099,7 @@ const questions = [
   },
   {
     "id": 646,
-    "question": "LA FIANZA QUE PRESTAN LAS MUTUAS PARA CONSTITUIRSE Y COLABORAR EN LA GESTIÓN DE LA SEGURIDAD SOCIAL SOLO SE DEVOLVERÁ EN CASO DE:",
+    "question": "646. LA FIANZA QUE PRESTAN LAS MUTUAS PARA CONSTITUIRSE Y COLABORAR EN LA GESTIÓN DE LA SEGURIDAD SOCIAL SOLO SE DEVOLVERÁ EN CASO DE:",
     "options": {
       "A": "Apuros económicos coyunturales de la Mutua",
       "B": "Disolución y Liquidación de la entidad.",
@@ -7110,7 +7110,7 @@ const questions = [
   },
   {
     "id": 647,
-    "question": "LAS MUTUAS VENDRÁN OBLIGADAS A LLEVAR LOS SIGUIENTES LIBROS Y REGISTROS:",
+    "question": "647. LAS MUTUAS VENDRÁN OBLIGADAS A LLEVAR LOS SIGUIENTES LIBROS Y REGISTROS:",
     "options": {
       "A": "Libros Oficiales de Contabilidad",
       "B": "Registro de entrada y salida de empleados",
@@ -7121,7 +7121,7 @@ const questions = [
   },
   {
     "id": 648,
-    "question": "LAS MUTUAS CONSTITUIRÁN OBLIGATORIAMENTE SUS PROVISIONES Y RESERVAS:",
+    "question": "648. LAS MUTUAS CONSTITUIRÁN OBLIGATORIAMENTE SUS PROVISIONES Y RESERVAS:",
     "options": {
       "A": "Cada dos años",
       "B": "Una vez al mes",
@@ -7132,7 +7132,7 @@ const questions = [
   },
   {
     "id": 649,
-    "question": "EL EXCEDENTE QUE RESULTE DESPUES DE DOTAR LA RESERVA DE ESTABILIZACIÓN DE CONTINGENCIAS COMUNES SE UTILIZARÁ PARA:",
+    "question": "649. EL EXCEDENTE QUE RESULTE DESPUES DE DOTAR LA RESERVA DE ESTABILIZACIÓN DE CONTINGENCIAS COMUNES SE UTILIZARÁ PARA:",
     "options": {
       "A": "Se ingresará en Fondo de Reserva de la Seguridad Social",
       "B": "Invertir en valores mobiliarios por la Mutua",
@@ -7143,7 +7143,7 @@ const questions = [
   },
   {
     "id": 650,
-    "question": "TODAS LAS FACTURAS CONTENDRÁN OBLIGATORIAMENTE ALGUNO DE LOS SIGUIENTES REQUISITOS:",
+    "question": "650. TODAS LAS FACTURAS CONTENDRÁN OBLIGATORIAMENTE ALGUNO DE LOS SIGUIENTES REQUISITOS:",
     "options": {
       "A": "La Cuota tributaria, el tipo impositivo y la descripción de las operaciones que se facturan",
       "B": "La dirección del banco al que se tiene que trasferir el importe de la factura",
@@ -7154,7 +7154,7 @@ const questions = [
   },
   {
     "id": 651,
-    "question": "EN LA CUENTA DE RESULTADOS DE LA MUTUA AL FINAL DEL EJERCICIO SE REFLEJAN:",
+    "question": "651. EN LA CUENTA DE RESULTADOS DE LA MUTUA AL FINAL DEL EJERCICIO SE REFLEJAN:",
     "options": {
       "A": "Las adquisiciones de inmuebles realizadas a lo largo de la vida de la Mutua",
       "B": "Los gastos e ingresos contabilizados durante el ejercicio económico anual",
@@ -7165,7 +7165,7 @@ const questions = [
   },
   {
     "id": 652,
-    "question": "LOS PATRIMONIOS QUE GESTIONA LA MUTUA SON :",
+    "question": "652. LOS PATRIMONIOS QUE GESTIONA LA MUTUA SON :",
     "options": {
       "A": "Patrimonio de la Gestión de la Seguridad Social y Patrimonio Histórico",
       "B": "Patrimonio de la Gestión de la Seguridad Social",
@@ -7176,7 +7176,7 @@ const questions = [
   },
   {
     "id": 653,
-    "question": "LAS MUTUAS CONSTITUIRÁN OBLIGATORIAMENTE LA RESERVA DE ESTABILIZACIÓN POR CONTINGENCIAS PROFESIONALES, LA CUANTÍA MINIMA DE ESTA RESERVA QUEDA FIJADA EN:",
+    "question": "653. LAS MUTUAS CONSTITUIRÁN OBLIGATORIAMENTE LA RESERVA DE ESTABILIZACIÓN POR CONTINGENCIAS PROFESIONALES, LA CUANTÍA MINIMA DE ESTA RESERVA QUEDA FIJADA EN:",
     "options": {
       "A": "Un 30% de la media anual de las cuotas percibidas en el último trienio por la Mutua",
       "B": "Un 20% de la media anual de las cuotas percibidas en el último trienio por la Mutua por las expresadas contingencias",
@@ -7187,7 +7187,7 @@ const questions = [
   },
   {
     "id": 654,
-    "question": "LOS RECURSOS FINANCIEROS DE LA SEGURIDAD SOCIAL ADMINISTRADOS POR LA MUTUA, SE GESTIONARÁN A TRAVÉS DE:",
+    "question": "654. LOS RECURSOS FINANCIEROS DE LA SEGURIDAD SOCIAL ADMINISTRADOS POR LA MUTUA, SE GESTIONARÁN A TRAVÉS DE:",
     "options": {
       "A": "Cualquier entidad financiera nacional",
       "B": "Solamente a través de bancos pero no de cajas de ahorros",
@@ -7198,7 +7198,7 @@ const questions = [
   },
   {
     "id": 655,
-    "question": "LOS SERVICIOS DE TESORERÍA DE LA MUTUA DEBERÁN MANTENER UN SALDO MEDIO ANUAL DENTRO DE LOS LIMITES MINIMO Y MAXIMO QUE ESTABLEZCA:",
+    "question": "655. LOS SERVICIOS DE TESORERÍA DE LA MUTUA DEBERÁN MANTENER UN SALDO MEDIO ANUAL DENTRO DE LOS LIMITES MINIMO Y MAXIMO QUE ESTABLEZCA:",
     "options": {
       "A": "La Tesorería General de la Seguridad Social",
       "B": "La Secretaria de Estado de la seguridad Social",
@@ -7209,7 +7209,7 @@ const questions = [
   },
   {
     "id": 656,
-    "question": "LA MUTUA DEBERÁ COMUNICAR A LA DIRECCIÓN GENERAL DE ORDENACIÓN DE LA SEGURIDAD SOCIAL LOS CONTRATOS DE CUENTAS CELEBRADOS CON LAS ENTIDADES FINANCIERAS:",
+    "question": "656. LA MUTUA DEBERÁ COMUNICAR A LA DIRECCIÓN GENERAL DE ORDENACIÓN DE LA SEGURIDAD SOCIAL LOS CONTRATOS DE CUENTAS CELEBRADOS CON LAS ENTIDADES FINANCIERAS:",
     "options": {
       "A": "En el plazo de 30 días desde su formalización",
       "B": "No existe plazo fijado de antemano, aunque es conveniente realizarlo en la primera semana del mes",
@@ -7220,7 +7220,7 @@ const questions = [
   },
   {
     "id": 657,
-    "question": "EL EXCEDENTE QUE RESULTE DESPUES DE DOTAR LA RESERVA DE ESTABILIZACIÓN DE CONTINGENCIAS PROFESIONALES SE INGRESARÁ:",
+    "question": "657. EL EXCEDENTE QUE RESULTE DESPUES DE DOTAR LA RESERVA DE ESTABILIZACIÓN DE CONTINGENCIAS PROFESIONALES SE INGRESARÁ:",
     "options": {
       "A": "El 80% se ingresará en el Banco de España, el 20% dotación de reserva complementaria",
       "B": "El 5 % se ingresará en el Banco de España, en la cuenta especial del Fondo de Contingencias Profesionales de la Seguridad Social. El 80 % se ingresará en el Banco de España en el Fondo de Reserva de la Seguridad Social.",
@@ -7231,7 +7231,7 @@ const questions = [
   },
   {
     "id": 658,
-    "question": "LAS CUENTAS ANUALES A RENDIR POR LAS MUTUAS COMPRENDERÁN ENTRE OTRAS:",
+    "question": "658. LAS CUENTAS ANUALES A RENDIR POR LAS MUTUAS COMPRENDERÁN ENTRE OTRAS:",
     "options": {
       "A": "Balance y Cuenta de Resultados",
       "B": "Arqueos de Caja",
@@ -7242,7 +7242,7 @@ const questions = [
   },
   {
     "id": 659,
-    "question": "LA RESERVA DE ESTABILIZACION DE INCAPACIDAD TEMPORAL POR CONTINGENCIAS COMUNES QUE LA MUTUA TIENE QUE CONSTITUIR TIENE UNA CUANTÍA MAXIMA DE:",
+    "question": "659. LA RESERVA DE ESTABILIZACION DE INCAPACIDAD TEMPORAL POR CONTINGENCIAS COMUNES QUE LA MUTUA TIENE QUE CONSTITUIR TIENE UNA CUANTÍA MAXIMA DE:",
     "options": {
       "A": "El 35% de las cuotas percibidas por la Mutua en el ejercicio",
       "B": "El 20% de las cuotas percibidas por la Mutua en los últimos 3 años",
@@ -7253,7 +7253,7 @@ const questions = [
   },
   {
     "id": 660,
-    "question": "LA INTERVENCIÓN GENERAL DE LA SEGURIDAD SOCIAL AUDITA LA GESTIÓN Y LAS CUENTAS DE LA MUTUA",
+    "question": "660. LA INTERVENCIÓN GENERAL DE LA SEGURIDAD SOCIAL AUDITA LA GESTIÓN Y LAS CUENTAS DE LA MUTUA",
     "options": {
       "A": "Cuando la Mutua lo requiere",
       "B": "Todos los ejercicios económicos",
@@ -7264,7 +7264,7 @@ const questions = [
   },
   {
     "id": 661,
-    "question": "LAS CUENTAS ANUALES DE LA MUTUA SON APROBADAS POR",
+    "question": "661. LAS CUENTAS ANUALES DE LA MUTUA SON APROBADAS POR",
     "options": {
       "A": "El Comité de dirección",
       "B": "El Gerente",
@@ -7275,7 +7275,7 @@ const questions = [
   },
   {
     "id": 662,
-    "question": "LAS RESERVAS COMPLEMENTARIA Y DE ASISTENCIA SOCIAL DE CONTINGENCIAS PROFESIONALES",
+    "question": "662. LAS RESERVAS COMPLEMENTARIA Y DE ASISTENCIA SOCIAL DE CONTINGENCIAS PROFESIONALES",
     "options": {
       "A": "Se pueden aplicar al pago de gastos indebidos que correspondan a prestaciones.",
       "B": "Se pueden aplicar a pagos de indemnizaciones al personal, solo en caso de que estas fueran superiores a las establecidas en la normativa.",
@@ -7286,7 +7286,7 @@ const questions = [
   },
   {
     "id": 663,
-    "question": "LAS FACTURAS DE GASTOS QUE RECIBE LA MUTUA SE DEBEN REGISTRAR EN LAS APLICACIONES DE GESTIÓN DE FACTURAS DE LA MUTUA",
+    "question": "663. LAS FACTURAS DE GASTOS QUE RECIBE LA MUTUA SE DEBEN REGISTRAR EN LAS APLICACIONES DE GESTIÓN DE FACTURAS DE LA MUTUA",
     "options": {
       "A": "Cuando se pueda.",
       "B": "En cuanto se reciban en la Mutua",
@@ -7297,7 +7297,7 @@ const questions = [
   },
   {
     "id": 664,
-    "question": "EN LA CONTABILIDAD, EN QUE CONSISTE EL PRINCIPIO DE DEVENGO DE GASTOS, INVERSIONES E INGRESOS",
+    "question": "664. EN LA CONTABILIDAD, EN QUE CONSISTE EL PRINCIPIO DE DEVENGO DE GASTOS, INVERSIONES E INGRESOS",
     "options": {
       "A": "En contabilizar las facturas de gastos, inversiones, ingresos solo cuando se vayan a pagar",
       "B": "En contabilizar cada ejercicio la mayoría (80 %) de las facturas recibidas en el mismo",
@@ -7308,9 +7308,9 @@ const questions = [
   },
   {
     "id": 665,
-    "question": "CUANDO EL RESULTADO GLOBAL DE LA MUTUA (SUMA DE LOS RESULTADOS DE CP+CC+CATA), ES POSITIVO:",
+    "question": "665. CUANDO EL RESULTADO GLOBAL DE LA MUTUA (SUMA DE LOS RESULTADOS DE CP+CC+CATA), ES POSITIVO:",
     "options": {
-      "A": "Los resultados de Contingencias Profesionales, Comunes y CATA, necesariamente tienen que ser positivos también.",
+      "A": ", ES POSITIVO:",
       "B": "El resultado de CATA no está incluido en el resultado global de la Mutua por lo que puede ser negativo ya que no afecta",
       "C": "No es necesario que los resultados individuales de las tres contingencias (CP, CC, CATA), sean todos positivos",
       "D": "Ninguna de las anteriores es correcta"
@@ -7319,7 +7319,7 @@ const questions = [
   },
   {
     "id": 666,
-    "question": "LAS CUENTAS DE LA MUTUA SE INTEGRAN EN:",
+    "question": "666. LAS CUENTAS DE LA MUTUA SE INTEGRAN EN:",
     "options": {
       "A": "La Cuenta General del Estado.",
       "B": "Las Cuentas de las mayores compañías de Seguros de España.",
@@ -7330,7 +7330,7 @@ const questions = [
   },
   {
     "id": 667,
-    "question": "LA INTERVENCIÓN GENERAL DE LA SEGURIDAD SOCIAL EN SUS AUDITORIAS ANUALES VERIFICA ALGUNA DE LAS SIGUIENTES ACTUACIONES DE LA MUTUA:",
+    "question": "667. LA INTERVENCIÓN GENERAL DE LA SEGURIDAD SOCIAL EN SUS AUDITORIAS ANUALES VERIFICA ALGUNA DE LAS SIGUIENTES ACTUACIONES DE LA MUTUA:",
     "options": {
       "A": "Confirmar el cumplimiento de las disposiciones que la vinculan específicamente en cuanto a entidad colaboradora en la gestión de la Seguridad Social contenidas en el Texto Refundido de la Ley General de la Seguridad Social (TRLGSS)",
       "B": "Comprobar el cumplimiento de la Ley de Contratos del Sector Público",
@@ -7341,7 +7341,7 @@ const questions = [
   },
   {
     "id": 668,
-    "question": "EN EL BALANCE DE SITUACIÓN DE LA MUTUA PODEMOS VER ENTRE OTROS ASPECTOS:",
+    "question": "668. EN EL BALANCE DE SITUACIÓN DE LA MUTUA PODEMOS VER ENTRE OTROS ASPECTOS:",
     "options": {
       "A": "El total del gasto por prestaciones de IT pagado durante el ejercicio.",
       "B": "El total de todos los ingresos del ejercicio y ejercicios anteriores.",
@@ -7352,7 +7352,7 @@ const questions = [
   },
   {
     "id": 669,
-    "question": "LOS INMUEBLES QUE ADQUIERE LA MUTUA, CON FONDOS PUBLICOS, PARA EL DESARROLLO DE SUS ACTIVIDADES COMO ENTIDAD COLABORADORA CON LA SEGURIDAD SOCIAL SE ESCRITURAN A NOMBRE DE:",
+    "question": "669. LOS INMUEBLES QUE ADQUIERE LA MUTUA, CON FONDOS PUBLICOS, PARA EL DESARROLLO DE SUS ACTIVIDADES COMO ENTIDAD COLABORADORA CON LA SEGURIDAD SOCIAL SE ESCRITURAN A NOMBRE DE:",
     "options": {
       "A": "Patrimonio Histórico",
       "B": "Tesorería General de la Seguridad Social",
@@ -7363,7 +7363,7 @@ const questions = [
   },
   {
     "id": 670,
-    "question": "LAS CUENTAS ANUALES A RENDIR POR LAS MUTUAS DE ACCIDENTES DE TRABAJO Y ENFERMEDADES PROFESIONALES DE LA SEGURIDAD SOCIAL COMPRENDERÁN, AL MENOS LA SIGUIENTE INFORMACIÓN:",
+    "question": "670. LAS CUENTAS ANUALES A RENDIR POR LAS MUTUAS DE ACCIDENTES DE TRABAJO Y ENFERMEDADES PROFESIONALES DE LA SEGURIDAD SOCIAL COMPRENDERÁN, AL MENOS LA SIGUIENTE INFORMACIÓN:",
     "options": {
       "A": "Relación de miembros de la Comisión de Control y Seguimiento.",
       "B": "El balance de situación, las cuentas de resultados, los estados de liquidación del presupuesto y la memoria, en la que se incluirá el cuadro de financiación.",
@@ -7374,7 +7374,7 @@ const questions = [
   },
   {
     "id": 671,
-    "question": "¿CUÁLES DE LOS SIGUIENTES SON LAS LÍNEAS ESTRATÉGICAS DEL HOSPITAL FRATERNIDAD-MUPRESPA HABANA?",
+    "question": "671. ¿CUÁLES DE LOS SIGUIENTES SON LAS LÍNEAS ESTRATÉGICAS DEL HOSPITAL FRATERNIDAD-MUPRESPA HABANA?",
     "options": {
       "A": "Compromiso con los clientes. Excelencia sanitaria. Cultura y sostenibilidad",
       "B": "Excelencia sanitaria. Orientación al paciente. Seguridad.",
@@ -7385,7 +7385,7 @@ const questions = [
   },
   {
     "id": 672,
-    "question": "LAS PRETENSIONES DE OBTENER LA RESTITUCIÓN DE SUS INTERESES O DERECHOS, ES UNA CARACTERÍSTICA DE:",
+    "question": "672. LAS PRETENSIONES DE OBTENER LA RESTITUCIÓN DE SUS INTERESES O DERECHOS, ES UNA CARACTERÍSTICA DE:",
     "options": {
       "A": "Queja.",
       "B": "Sugerencia",
@@ -7396,7 +7396,7 @@ const questions = [
   },
   {
     "id": 673,
-    "question": "¿QUIÉN ES EL RESPONSABLE DE RESPONDER A LAS SOLICITUDES DE INFORMACION DEL DEFENSOR DEL MUTUALISTA?.",
+    "question": "673. ¿QUIÉN ES EL RESPONSABLE DE RESPONDER A LAS SOLICITUDES DE INFORMACION DEL DEFENSOR DEL MUTUALISTA?.",
     "options": {
       "A": "Cualquier empleado que las reciba.",
       "B": "El responsable de Prestaciones",
@@ -7407,7 +7407,7 @@ const questions = [
   },
   {
     "id": 674,
-    "question": "¿QUIÉN PODRÁ REQUERIR AL DEFENSOR DEL MUTUALISTA INFORMACIÓN DE LOS ASUNTOS LIGADOS A SU FUNCIÓN?",
+    "question": "674. ¿QUIÉN PODRÁ REQUERIR AL DEFENSOR DEL MUTUALISTA INFORMACIÓN DE LOS ASUNTOS LIGADOS A SU FUNCIÓN?",
     "options": {
       "A": "Departamento de Calidad",
       "B": "El Comité de Dirección, el Director Gerente y el Secretario General.",
@@ -7418,7 +7418,7 @@ const questions = [
   },
   {
     "id": 675,
-    "question": "EL REGLAMENTO INTERNO PARA LA DEFENSA DEL MUTUALISTA, FIJA UN SISTEMA DE ATENCIÓN Y RESOLUCIÓN DE LAS QUEJAS Y RECLAMACIONES PLANTEADAS POR:",
+    "question": "675. EL REGLAMENTO INTERNO PARA LA DEFENSA DEL MUTUALISTA, FIJA UN SISTEMA DE ATENCIÓN Y RESOLUCIÓN DE LAS QUEJAS Y RECLAMACIONES PLANTEADAS POR:",
     "options": {
       "A": "Únicamente los pacientes.",
       "B": "Los pacientes y los trabajadores protegidos",
@@ -7429,7 +7429,7 @@ const questions = [
   },
   {
     "id": 676,
-    "question": "EN EL REGLAMENTO INTERNO PARA LA DEFENSA DEL MUTUALISTA SE FIJA UN SISTEMA DE ATENCIÓN Y RESOLUCIÓN DE:",
+    "question": "676. EN EL REGLAMENTO INTERNO PARA LA DEFENSA DEL MUTUALISTA SE FIJA UN SISTEMA DE ATENCIÓN Y RESOLUCIÓN DE:",
     "options": {
       "A": "Únicamente de quejas.",
       "B": "Solamente quejas y reclamaciones.",
@@ -7440,7 +7440,7 @@ const questions = [
   },
   {
     "id": 677,
-    "question": "¿DE QUIÉN DEPENDE DIRECTAMENTE EL DEFENSOR DEL MUTUALISTA?",
+    "question": "677. ¿DE QUIÉN DEPENDE DIRECTAMENTE EL DEFENSOR DEL MUTUALISTA?",
     "options": {
       "A": "Subdirección General de Gestión.",
       "B": "Departamento de Gestión Sanitaria",
@@ -7451,7 +7451,7 @@ const questions = [
   },
   {
     "id": 678,
-    "question": "¿QUIÉN DESIGNA AL DEFENSOR DEL MUTUALISTA?",
+    "question": "678. ¿QUIÉN DESIGNA AL DEFENSOR DEL MUTUALISTA?",
     "options": {
       "A": "La Subdirección General de Gestión.",
       "B": "El Departamento de Gestión Sanitaria",
@@ -7462,7 +7462,7 @@ const questions = [
   },
   {
     "id": 679,
-    "question": "¿CUÁL DE LAS SIGUIENTES OPCIONES SE PUEDE PRESENTAR DE FORMA ANÓNIMA?",
+    "question": "679. ¿CUÁL DE LAS SIGUIENTES OPCIONES SE PUEDE PRESENTAR DE FORMA ANÓNIMA?",
     "options": {
       "A": "Queja.",
       "B": "Reclamación.",
@@ -7473,7 +7473,7 @@ const questions = [
   },
   {
     "id": 680,
-    "question": "SI HUBIESE FALTA DE CLARIDAD EN LOS HECHOS OBJETO DE LA QUEJA O RECLAMACIÓN, ¿QUÉ PLAZO TIENE EL FIRMANTE PARA SUBSANAR EL DEFECTO?",
+    "question": "680. SI HUBIESE FALTA DE CLARIDAD EN LOS HECHOS OBJETO DE LA QUEJA O RECLAMACIÓN, ¿QUÉ PLAZO TIENE EL FIRMANTE PARA SUBSANAR EL DEFECTO?",
     "options": {
       "A": "Siete días naturales",
       "B": "Diez días naturales.",
@@ -7484,7 +7484,7 @@ const questions = [
   },
   {
     "id": 681,
-    "question": "EL PLAZO PARA TRAMITAR Y DICTAR UNA RESOLUCIÓN POR PARTE DEL DEFENSOR DEL MUTUALISTA ES DE UN MES NATURAL,\n¿EXISTE ALGUNA EXCEPCIÓN?",
+    "question": "681. EL PLAZO PARA TRAMITAR Y DICTAR UNA RESOLUCIÓN POR PARTE DEL DEFENSOR DEL MUTUALISTA ES DE UN MES NATURAL, ¿EXISTE ALGUNA EXCEPCIÓN?",
     "options": {
       "A": "Si, a petición del reclamante",
       "B": "Si, si la legislación estatal, autonómica o local marcara plazos más restrictivos.",
@@ -7495,7 +7495,7 @@ const questions = [
   },
   {
     "id": 682,
-    "question": "EN LA TRAMITACIÓN INTERNA DE LOS EXPEDIENTES ¿CUÁL ES EL PLAZO MÁXIMO PARA QUE LOS DEPARTAMENTOS, UNIDADES O PERSONAS DE LA ENTIDAD, CONTESTEN AL REQUERIMIENTO DE INFORMACIÓN EFECTUADO POR LA OFICINA DEL DEFENSOR DEL MUTUALISTA?",
+    "question": "682. EN LA TRAMITACIÓN INTERNA DE LOS EXPEDIENTES ¿CUÁL ES EL PLAZO MÁXIMO PARA QUE LOS DEPARTAMENTOS, UNIDADES O PERSONAS DE LA ENTIDAD, CONTESTEN AL REQUERIMIENTO DE INFORMACIÓN EFECTUADO POR LA OFICINA DEL DEFENSOR DEL MUTUALISTA?",
     "options": {
       "A": "3 días naturales",
       "B": "7 días naturales",
@@ -7506,7 +7506,7 @@ const questions = [
   },
   {
     "id": 683,
-    "question": "EN EL CASO DE QUE UN DEPARTAMENTO RECTIFIQUE SU POSTURA CON RESPECTO A LA RECLAMACIÓN, ¿CUÁL SERÍA EL PLAZO PARA PROCEDER A SATISFACER LAS PRETENSIONES DEL RECLAMANTE?",
+    "question": "683. EN EL CASO DE QUE UN DEPARTAMENTO RECTIFIQUE SU POSTURA CON RESPECTO A LA RECLAMACIÓN, ¿CUÁL SERÍA EL PLAZO PARA PROCEDER A SATISFACER LAS PRETENSIONES DEL RECLAMANTE?",
     "options": {
       "A": "En la fecha que marque el Defensor del Mutualista.",
       "B": "En el plazo de 15 días naturales.",
@@ -7517,7 +7517,7 @@ const questions = [
   },
   {
     "id": 684,
-    "question": "¿ EN QUÉ PLAZO SE NOTIFICARÁ POR EL DEFENSOR DEL MUTUALISTA LA RESOLUCIÓN A LOS AFECTADOS?",
+    "question": "684. ¿ EN QUÉ PLAZO SE NOTIFICARÁ POR EL DEFENSOR DEL MUTUALISTA LA RESOLUCIÓN A LOS AFECTADOS?",
     "options": {
       "A": "En el plazo de 7 días naturales a contar desde su fecha.",
       "B": "En el plazo de 10 días naturales a contar desde su fecha",
@@ -7528,7 +7528,7 @@ const questions = [
   },
   {
     "id": 685,
-    "question": "¿PUEDE EL DEFENSOR DEL MUTUALISTA REALIZAR RECOMENDACIONES Y PROPUESTAS DE MEJORA DE LA GESTION?.",
+    "question": "685. ¿PUEDE EL DEFENSOR DEL MUTUALISTA REALIZAR RECOMENDACIONES Y PROPUESTAS DE MEJORA DE LA GESTION?.",
     "options": {
       "A": "No entra dentro de sus competencias.",
       "B": "Únicamente a los Servicios Médicos.",
@@ -7539,7 +7539,7 @@ const questions = [
   },
   {
     "id": 686,
-    "question": "¿CON QUÉ PERIODICIDAD DEBE INFORMAR EL DEFENSOR DEL MUTUALISTA AL COMITÉ DE DIRECCION?.",
+    "question": "686. ¿CON QUÉ PERIODICIDAD DEBE INFORMAR EL DEFENSOR DEL MUTUALISTA AL COMITÉ DE DIRECCION?.",
     "options": {
       "A": "Cuando lo considere oportuno.",
       "B": "Una vez al año.",
@@ -7550,7 +7550,7 @@ const questions = [
   },
   {
     "id": 687,
-    "question": "¿ QUÉ NORMA AMPARA EL DERECHO A RECLAMAR A LAS EMPRESAS ASOCIADAS, Y/O TRABAJADORES PROTEGIDOS?",
+    "question": "687. ¿ QUÉ NORMA AMPARA EL DERECHO A RECLAMAR A LAS EMPRESAS ASOCIADAS, Y/O TRABAJADORES PROTEGIDOS?",
     "options": {
       "A": "La Ley General de Seguridad Social.",
       "B": "El Reglamento de Colaboración de las MACSS con la S.Social",
@@ -7561,7 +7561,7 @@ const questions = [
   },
   {
     "id": 688,
-    "question": "¿CUÁL ES EL PLAZO DE PRESENTACIÓN DE UNA QUEJA O RECLAMACIÓN DESDE EL DÍA QUE SE HUBIESE PRODUCIDO O CONOCIDO EL HECHO O HECHOS?",
+    "question": "688. ¿CUÁL ES EL PLAZO DE PRESENTACIÓN DE UNA QUEJA O RECLAMACIÓN DESDE EL DÍA QUE SE HUBIESE PRODUCIDO O CONOCIDO EL HECHO O HECHOS?",
     "options": {
       "A": "Dos meses.",
       "B": "Quince días",
@@ -7572,7 +7572,7 @@ const questions = [
   },
   {
     "id": 689,
-    "question": "EN EL EJERCICIO DE SUS FUNCIONES, EL DEFENSOR DEL MUTUALISTA…",
+    "question": "689. EN EL EJERCICIO DE SUS FUNCIONES, EL DEFENSOR DEL MUTUALISTA…",
     "options": {
       "A": "Seguirá las instrucciones del Secretario General",
       "B": "Seguirá las instrucciones del Director Gerente.",
@@ -7583,7 +7583,7 @@ const questions = [
   },
   {
     "id": 690,
-    "question": "DESDE CUÁNDO ESTÁ IMPLANTADA LA NORMA ISO 10002 DE SISTEMA DE GESTIÓN DE QUEJAS Y RECLAMACIONES EN FRATERNIDAD-MUPRESPA",
+    "question": "690. DESDE CUÁNDO ESTÁ IMPLANTADA LA NORMA ISO 10002 DE SISTEMA DE GESTIÓN DE QUEJAS Y RECLAMACIONES EN FRATERNIDAD-MUPRESPA",
     "options": {
       "A": "Desde julio de 2015",
       "B": "Desde agosto de 2018",
@@ -7594,7 +7594,7 @@ const questions = [
   },
   {
     "id": 691,
-    "question": "A TRAVÉS DE QUÉ CANALES SE PUEDE PRESENTAR UNA QUEJA O RECLA-MACIÓN?",
+    "question": "691. A TRAVÉS DE QUÉ CANALES SE PUEDE PRESENTAR UNA QUEJA O RECLA-MACIÓN?",
     "options": {
       "A": "Únicamente por correo electrónico dirigido al buzón del Defensor del Mutualista",
       "B": "Mediante las hojas oficiales e internas de reclamación en cualquiera de los centros de Fraternidad-Muprespa",
@@ -7605,7 +7605,7 @@ const questions = [
   },
   {
     "id": 692,
-    "question": "¿CUÁL ES EL PLAZO PARA DICTAR RESOLUCIÓN POR EL DEFENSOR DEL MUTUALISTA?",
+    "question": "692. ¿CUÁL ES EL PLAZO PARA DICTAR RESOLUCIÓN POR EL DEFENSOR DEL MUTUALISTA?",
     "options": {
       "A": "30 días hábiles desde la presentación de la reclamación",
       "B": "Un mes natural desde la presentación de la reclamación",
@@ -7616,7 +7616,7 @@ const questions = [
   },
   {
     "id": 693,
-    "question": "¿EN QUÉ DOCUMENTO DEL DEFENSOR DEL MUTUALISTA SE PUEDE CONS-TATAR QUE LA ALTA DIRECCIÓN ESTÁ COMPROMETIDA EN EL PROCESO DE QUEJAS Y RECLAMACIONES?",
+    "question": "693. ¿EN QUÉ DOCUMENTO DEL DEFENSOR DEL MUTUALISTA SE PUEDE CONS-TATAR QUE LA ALTA DIRECCIÓN ESTÁ COMPROMETIDA EN EL PROCESO DE QUEJAS Y RECLAMACIONES?",
     "options": {
       "A": "En el procedimiento de Gestión de las Reclamaciones al Defensor del Mutualista.",
       "B": "En la instrucción de organización vigente de F-M.",
@@ -7627,7 +7627,7 @@ const questions = [
   },
   {
     "id": 694,
-    "question": "F-M ESTÁ COMPROMETIDA CON EL MEDIO AMBIENTE, POR LO QUE CALCULAMOS NUESTRAS EMISIONES DE GASES DE EFECTO INVERNADERO, CON ELLO HEMOS….",
+    "question": "694. F-M ESTÁ COMPROMETIDA CON EL MEDIO AMBIENTE, POR LO QUE CALCULAMOS NUESTRAS EMISIONES DE GASES DE EFECTO INVERNADERO, CON ELLO HEMOS….",
     "options": {
       "A": "Analizado los datos",
       "B": "Implantado un Plan de Reducción de emisiones, que nos ha permitido reducirlas significativamente",
@@ -7638,7 +7638,7 @@ const questions = [
   },
   {
     "id": 695,
-    "question": "¿CÓMO PODEMOS REDUCIR EL CONSUMO DE PAPEL EN NUESTRO CENTRO DE TRABAJO?",
+    "question": "695. ¿CÓMO PODEMOS REDUCIR EL CONSUMO DE PAPEL EN NUESTRO CENTRO DE TRABAJO?",
     "options": {
       "A": "Imprimiendo a doble cara",
       "B": "Reutilizando el papel impreso solo por una cara",
@@ -7649,7 +7649,7 @@ const questions = [
   },
   {
     "id": 696,
-    "question": "LOS RESIDUOS QUE GENERAMOS EN NUESTROS CENTROS ASISTENCIALES LOS PODEMOS CLASIFICAR EN",
+    "question": "696. LOS RESIDUOS QUE GENERAMOS EN NUESTROS CENTROS ASISTENCIALES LOS PODEMOS CLASIFICAR EN",
     "options": {
       "A": "Peligrosos y no peligrosos",
       "B": "De alta y baja categoría",
@@ -7660,7 +7660,7 @@ const questions = [
   },
   {
     "id": 697,
-    "question": "EL ÁREA SANITARIA POR LO GENERAL DISPONE DE UNOS CONTENEDORES ESPECÍFICOS UNO NEGRO Y OTRO AMARILLO, ¿QUÉ RESIDUOS DEBEN IR A ESTOS CONTENEDORES?",
+    "question": "697. EL ÁREA SANITARIA POR LO GENERAL DISPONE DE UNOS CONTENEDORES ESPECÍFICOS UNO NEGRO Y OTRO AMARILLO, ¿QUÉ RESIDUOS DEBEN IR A ESTOS CONTENEDORES?",
     "options": {
       "A": "Cortantes y punzantes (amarillo) Infecciosos (negro)",
       "B": "Cubo de biosanitarios (negro) Restos generales (amarillo)",
@@ -7671,7 +7671,7 @@ const questions = [
   },
   {
     "id": 698,
-    "question": "¿CUÁL ES LA FUNCIÓN DE RESPONSABLE DE RESIDUOS?",
+    "question": "698. ¿CUÁL ES LA FUNCIÓN DE RESPONSABLE DE RESIDUOS?",
     "options": {
       "A": "Vigilar que se dé cumplimiento a la normativa en materia de residuos",
       "B": "Contratar a una empresa para que se lleve los residuos",
@@ -7682,7 +7682,7 @@ const questions = [
   },
   {
     "id": 699,
-    "question": "¿CUÁLES SON OBLIGACIONES DE LA ORGANIZACIÓN, RESPECTO A LOS PLANES DE EMERGENCIA AMBIENTALES?",
+    "question": "699. ¿CUÁLES SON OBLIGACIONES DE LA ORGANIZACIÓN, RESPECTO A LOS PLANES DE EMERGENCIA AMBIENTALES?",
     "options": {
       "A": "Establecer, implementar y mantener",
       "B": "Dar a conocer",
@@ -7693,7 +7693,7 @@ const questions = [
   },
   {
     "id": 700,
-    "question": "¿QUÉ ENTENDEMOS POR IMPACTO AMBIENTAL?",
+    "question": "700. ¿QUÉ ENTENDEMOS POR IMPACTO AMBIENTAL?",
     "options": {
       "A": "El impacto que produce la actividad humana en el medio ambiente, ya sea negativo o positivo",
       "B": "Elemento de la organización que interactúa con el medio ambiente",
@@ -7704,7 +7704,7 @@ const questions = [
   },
   {
     "id": 701,
-    "question": "DENTRO DE LOS OBJETIVOS MEDIAMBIENTALES, PODEMOS ENCONTRAR",
+    "question": "701. DENTRO DE LOS OBJETIVOS MEDIAMBIENTALES, PODEMOS ENCONTRAR",
     "options": {
       "A": "Reducción de consumos, eléctricos, agua, papel",
       "B": "Reducción del absentismo",
@@ -7715,7 +7715,7 @@ const questions = [
   },
   {
     "id": 702,
-    "question": "LOS OBJETIVOS DE NUESTRO SISTEMA DE CALIDAD Y MEDIO AMBIENTE COMPRENDEN",
+    "question": "702. LOS OBJETIVOS DE NUESTRO SISTEMA DE CALIDAD Y MEDIO AMBIENTE COMPRENDEN",
     "options": {
       "A": "Objetivos de Calidad",
       "B": "Objetivos de Medio Ambiente",
@@ -7726,7 +7726,7 @@ const questions = [
   },
   {
     "id": 703,
-    "question": "EL MAXIMO RESPONSABLE DE LA POLITICA DE CALIDAD Y MEDIO AMBIENTE DE F-M, ES…",
+    "question": "703. EL MAXIMO RESPONSABLE DE LA POLITICA DE CALIDAD Y MEDIO AMBIENTE DE F-M, ES…",
     "options": {
       "A": "El Secretario General",
       "B": "El Comité de Dirección",
@@ -7737,7 +7737,7 @@ const questions = [
   },
   {
     "id": 704,
-    "question": "LA POLITICA DE CALIDAD Y MEDIOAMBIENTE SE PUEDE CONSULTAR",
+    "question": "704. LA POLITICA DE CALIDAD Y MEDIOAMBIENTE SE PUEDE CONSULTAR",
     "options": {
       "A": "En la Web de F-M",
       "B": "En gestión documental de Fraternet",
@@ -7748,7 +7748,7 @@ const questions = [
   },
   {
     "id": 705,
-    "question": "¿PARA ESTAR CERTIFICADOS ES OBLIGATORIO QUE NOS AUDITEN?",
+    "question": "705. ¿PARA ESTAR CERTIFICADOS ES OBLIGATORIO QUE NOS AUDITEN?",
     "options": {
       "A": "Sí, por una empresa acreditada",
       "B": "Sí, y no es necesario que la empresa esté acreditada",
@@ -7759,7 +7759,7 @@ const questions = [
   },
   {
     "id": 706,
-    "question": "NUESTRO SISTEMA DE GESTIÓN SE BASA EN LA MEDICIÓN Y SEGUIENTO DE",
+    "question": "706. NUESTRO SISTEMA DE GESTIÓN SE BASA EN LA MEDICIÓN Y SEGUIENTO DE",
     "options": {
       "A": "indicadores",
       "B": "objetivos",
@@ -7770,7 +7770,7 @@ const questions = [
   },
   {
     "id": 707,
-    "question": "¿QUÉ MEDIOS UTILIZAMOS PARA CONOCER LA OPINIÓN DE NUESTROS PACIENTES?",
+    "question": "707. ¿QUÉ MEDIOS UTILIZAMOS PARA CONOCER LA OPINIÓN DE NUESTROS PACIENTES?",
     "options": {
       "A": "Realizamos encuestas de satisfacción",
       "B": "Tenemos en cuenta las felicitaciones",
@@ -7781,7 +7781,7 @@ const questions = [
   },
   {
     "id": 708,
-    "question": "¿QUÉ CERTIFICACIÓN, ENTRE OTRAS TIENE F-M?",
+    "question": "708. ¿QUÉ CERTIFICACIÓN, ENTRE OTRAS TIENE F-M?",
     "options": {
       "A": "ISO 27001 Seguridad de la Información.",
       "B": "QH de. Excelencia Sanitaria.",
@@ -7792,7 +7792,7 @@ const questions = [
   },
   {
     "id": 709,
-    "question": "¿SOBRE QUÉ TRATA LA NORMA ISO 10002?",
+    "question": "709. ¿SOBRE QUÉ TRATA LA NORMA ISO 10002?",
     "options": {
       "A": "Sobre el tratamiento de las quejas en las organizaciones.",
       "B": "Sobre la seguridad del paciente",
@@ -7803,7 +7803,7 @@ const questions = [
   },
   {
     "id": 710,
-    "question": "LA ACREDITACIÓN QH RECONOCE",
+    "question": "710. LA ACREDITACIÓN QH RECONOCE",
     "options": {
       "A": "La excelencia en calidad asistencial de las organizaciones sanitarias preocupadas por obtener los mejores resultados de salud para sus pacientes, en las mejores condiciones y con los mejores procedimientos.",
       "B": "La Calidad en la Atención al Paciente",
@@ -7814,7 +7814,7 @@ const questions = [
   },
   {
     "id": 711,
-    "question": "EN UN SISTEMA DE GESTIÓN SE TIENE QUE...",
+    "question": "711. EN UN SISTEMA DE GESTIÓN SE TIENE QUE...",
     "options": {
       "A": "Escribir lo que se hace o lo que se va a hacer.",
       "B": "Hacer lo que se ha escrito.",
@@ -7825,7 +7825,7 @@ const questions = [
   },
   {
     "id": 712,
-    "question": "¿CUÁLES SON LOS RESIDUOS PELIGROSOS MÁS HABITUALES QUE SE GENERAN EN UN CENTRO ASISTENCIAL?",
+    "question": "712. ¿CUÁLES SON LOS RESIDUOS PELIGROSOS MÁS HABITUALES QUE SE GENERAN EN UN CENTRO ASISTENCIAL?",
     "options": {
       "A": "Residuos sanitarios peligrosos cortantes.",
       "B": "Plásticos.",
