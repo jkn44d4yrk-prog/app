@@ -2237,12 +2237,12 @@ const questions = [
   },
   {
     "id": 204,
-    "question": "POR EL SISTEMA DE LIQUIDACIÓN DIRECTA (SLD) DE CUOTAS, EL SUJETO RESPONSABLE DEBERÁ SOLICITAR A LA TGSS EL CÁLCULO DE LA LIQUIDACIÓN DE CADA TRABAJADOR Y TRANSMITIR POR MEDIOS ELECTRÓNICOS LOS DATOS QUE PERMITAN REALIZAR DICHO CÁLCULO:",
+    "question": "204.	POR EL SISTEMA DE LIQUIDACIÓN DIRECTA (SLD) DE CUOTAS, EL SUJETO RESPONSABLE DEBERÁ SOLICITAR A LA TGSS EL CÁLCULO DE LA LIQUIDACIÓN DE CADA TRABAJADOR Y TRANSMITIR POR MEDIOS ELECTRÓNICOS LOS DATOS QUE PERMITAN REALIZAR DICHO CÁLCULO:",
     "options": {
       "A": "A partir del día 20 de cada mes.",
       "B": "El último día natural del mes.",
       "C": "Antes del penúltimo día natural del mes.",
-      "D": "DE CUOTAS, EL SUJETO RESPONSABLE DEBERÁ SOLICITAR A LA TGSS EL CÁLCULO DE LA LIQUIDACIÓN DE CADA TRABAJADOR Y TRANSMITIR POR MEDIOS ELECTRÓNICOS LOS DATOS QUE PERMITAN REALIZAR DICHO CÁLCULO:"
+      "D": "Hasta el penúltimo día natural del mes."
     },
     "correct": "D"
   },
@@ -3372,7 +3372,7 @@ const questions = [
     "id": 307,
     "question": "LA AUSENCIA AL TRABAJO SIN ENCONTRARSE EN SITUACIÓN DE BAJA MÉDICA (CONSULTA MÉDICA, REALIZACIÓN DE PRUEBAS AMBULATORIAS, ACOMPAÑAR A FAMILIARES A CONSULTA)….",
     "options": {
-      "A": "….",
+      "A": "Siempre debe justificarse con una baja laboral.",
       "B": "Nunca debe justificarse con una baja laboral.",
       "C": "Debe justificarse con un documento del centro donde asiste.",
       "D": "Son ciertas la B y la C."
@@ -3669,8 +3669,8 @@ const questions = [
     "id": 334,
     "question": "SI EN UNA CONTINGENCIA PROFESIONAL SE EMITIERA UN PARTE MÉDICO DE BAJA (PMB) Y UN PARTE MÉDICO DE ALTA (PMA) CON LA MISMA FECHA DE EFECTOS…",
     "options": {
-      "A": "CON LA MISMA FECHA DE EFECTOS…",
-      "B": "Y UN PARTE MÉDICO DE ALTA (PMA) CON LA MISMA FECHA DE EFECTOS…",
+      "A": "No es posible emitir un PMB y PMA con la misma fecha de efectos en contingencias profesionales. Se debe emitir siempre un Parte Sin Baja Médica",
+      "B": "La empresa debe incluir ese proceso en la relación de accidentes de trabajo sin baja médica de Delt@.",
       "C": "La empresa debe remitir el correspondiente parte de accidente de trabajo a través de Delt@.",
       "D": "La empresa no debe ni remitir ninguna información de ese proceso a través de Delt@."
     },
@@ -7310,7 +7310,7 @@ const questions = [
     "id": 665,
     "question": "CUANDO EL RESULTADO GLOBAL DE LA MUTUA (SUMA DE LOS RESULTADOS DE CP+CC+CATA), ES POSITIVO:",
     "options": {
-      "A": ", ES POSITIVO:",
+      "A": "Los resultados de Contingencias Profesionales, Comunes y CATA, necesariamente tienen que ser positivos también.",
       "B": "El resultado de CATA no está incluido en el resultado global de la Mutua por lo que puede ser negativo ya que no afecta",
       "C": "No es necesario que los resultados individuales de las tres contingencias (CP, CC, CATA), sean todos positivos",
       "D": "Ninguna de las anteriores es correcta"
