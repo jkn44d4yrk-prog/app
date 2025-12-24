@@ -4,7 +4,6 @@
   --panel: rgba(255,255,255,0.06);
   --stroke: rgba(255,255,255,0.10);
   --text: rgba(255,255,255,0.92);
-  --muted: rgba(255,255,255,0.70);
   --shadow: 0 16px 50px rgba(0,0,0,0.45);
   --radius: 16px;
 }
@@ -148,9 +147,7 @@ button:disabled{
   border-color: rgba(239,68,68,0.42);
 }
 
-.block-mini{
-  white-space: nowrap;
-}
+.block-mini{ white-space: nowrap; }
 
 /* Responsive: apila en móvil */
 @media (max-width: 720px){
@@ -164,6 +161,16 @@ button:disabled{
 }
 
 /* ============ Test ============ */
+.test-topbar{
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+
+#backToMenuBtn{
+  background: rgba(255,255,255,0.08);
+}
+
 #question{
   font-size: 20px;
   line-height: 1.25;
@@ -212,9 +219,7 @@ button.incorrect{
 }
 
 /* Fin de bloque */
-#blockMsg h2{
-  margin: 0 0 12px;
-}
+#blockMsg h2{ margin: 0 0 12px; }
 #blockMsg button{
   width: 100%;
   padding: 12px;
