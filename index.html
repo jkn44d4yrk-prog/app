@@ -4,8 +4,6 @@
   <meta charset="UTF-8">
   <title>Cuestionario tipo test</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- NOMBRE REAL -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,8 +12,24 @@
 
 <!-- LOGIN -->
 <div id="login">
-  <input id="email" placeholder="Email">
-  <input id="password" type="password" placeholder="Contraseña">
+  <input
+    id="email"
+    type="email"
+    placeholder="Email"
+    autocomplete="email"
+    autocapitalize="none"
+    autocorrect="off"
+    spellcheck="false"
+  >
+  <input
+    id="password"
+    type="password"
+    placeholder="Contraseña"
+    autocomplete="current-password"
+  >
+
+  <div id="loginError" style="margin-top:10px; color:#ffb4b4; display:none;"></div>
+
   <button onclick="register()">Registrarse</button>
   <button onclick="login()">Entrar</button>
 </div>
@@ -25,6 +39,10 @@
 
 <!-- TEST -->
 <div id="test" style="display:none">
+  <div class="test-topbar">
+    <button id="backToMenuBtn" type="button">← Menú</button>
+  </div>
+
   <h2 id="question"></h2>
   <div id="options"></div>
   <button id="nextBtn" disabled>Siguiente</button>
@@ -53,10 +71,7 @@
   const db = firebase.firestore();
 </script>
 
-<!-- IMPORTANTÍSIMO: questions antes de app -->
 <script src="questions.js"></script>
-
-<!-- NOMBRE REAL -->
 <script src="app.js"></script>
 
 </body>
