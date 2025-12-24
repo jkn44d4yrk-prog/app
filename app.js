@@ -17,7 +17,6 @@ document.addEventListener("DOMContentLoaded", () => {
       .catch(e => alert(e.message));
   }
 
-  // 👇 necesario para los botones inline del HTML
   window.register = register;
   window.login = login;
 
@@ -111,54 +110,4 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (selected === correct) {
       clickedButton.classList.add("correct");
-      correctCount++;
-      correctCountEl.textContent = correctCount;
-    } else {
-      clickedButton.classList.add("incorrect");
-      failedQuestions.push({
-        ...blockQuestions[currentIndex],
-        __failed: true
-      });
-    }
-
-    nextBtn.disabled = false;
-  }
-
-  nextBtn.onclick = async () => {
-    currentIndex++;
-
-    const user = auth.currentUser;
-    if (user) await saveProgress(user);
-
-    if (currentIndex < blockQuestions.length) {
-      loadQuestion();
-    } else {
-      endBlock();
-    }
-  };
-
-  function endBlock() {
-    if (failedQuestions.length > 0) {
-      blockQuestions = [...failedQuestions];
-      failedQuestions = [];
-      currentIndex = 0;
-      loadQuestion();
-    } else {
-      currentBlock++;
-      currentIndex = 0;
-      loadBlock();
-    }
-  }
-
-  // ===== AUTH =====
-  auth.onAuthStateChanged(async user => {
-    if (!user) return;
-
-    document.getElementById("login").style.display = "none";
-    document.getElementById("test").style.display = "block";
-
-    await loadProgress(user);
-    loadBlock();
-  });
-
-});
+      correct
