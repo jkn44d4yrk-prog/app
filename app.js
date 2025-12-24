@@ -1,30 +1,34 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-  // 🔐 FORZAR PERSISTENCIA DE SESIÓN
-  auth.setPersistence(firebase.auth.Auth.Persistence.LOCAL)
-    .catch(err => {
-      console.error("Error al establecer persistencia:", err);
-    });
-
   // ===== LOGIN =====
-  function register() {
+  async function login() {
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
 
-    auth.createUserWithEmailAndPassword(email, password)
-      .catch(e => alert(e.message));
+    try {
+      // 🔐 IMPORTANTE: esperar a la persistencia ANTES de loguear
+      await auth.setPersistence(firebase.auth.Auth.Persistence.LOCAL);
+      await auth.signInWithEmailAndPassword(email, password);
+    } catch (e) {
+      alert(e.message);
+    }
   }
 
-  function login() {
+  async function register() {
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
 
-    auth.signInWithEmailAndPassword(email, password)
-      .catch(e => alert(e.message));
+    try {
+      await auth.setPersistence(firebase.auth.Auth.Persistence.LOCAL);
+      await auth.createUserWithEmailAndPassword(email, password);
+    } catch (e) {
+      alert(e.message);
+    }
   }
 
-  window.register = register;
+  // necesarios para los botones inline
   window.login = login;
+  window.register = register;
 
   // ===== TEST =====
   const BLOCK_SIZE = 30;
