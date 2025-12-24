@@ -31,13 +31,14 @@ document.addEventListener("DOMContentLoaded", () => {
   // ================= CONFIG =================
   const BLOCK_SIZE = 10;
 
-  // ================= STATE (ÚNICA FUENTE DE VERDAD) =================
+  // ================= STATE =================
   let state = {
     phase: "BLOCK",       // "BLOCK" | "RETRY" | "FINISHED"
     block: 0,
     index: 0,
-    failed: [],
-    correctCount: 0
+    failed: [],           // Preguntas falladas para repasar
+    attempts: {},         // { questionId: nIntentos }
+    history: []           // [{questionId, selected, correct, date}]
   };
 
   let answered = false;
@@ -46,17 +47,24 @@ document.addEventListener("DOMContentLoaded", () => {
   const questionEl = document.getElementById("question");
   const optionsEl = document.getElementById("options");
   const nextBtn = document.getElementById("nextBtn");
-  const correctCountEl = document.getElementById("correctCount");
 
   // ================= FIRESTORE =================
-  function saveProgress(user) {
-    return db.collection("progress").doc(user.uid).set(state);
+  async function saveProgress(user) {
+    try {
+      await db.collection("progress").doc(user.uid).set(state);
+    } catch (e) {
+      console.error("Error saving progress:", e);
+    }
   }
 
   async function loadProgress(user) {
-    const doc = await db.collection("progress").doc(user.uid).get();
-    if (doc.exists) {
-      state = doc.data();
+    try {
+      const doc = await db.collection("progress").doc(user.uid).get();
+      if (doc.exists) {
+        state = doc.data();
+      }
+    } catch (e) {
+      console.error("Error loading progress:", e);
     }
   }
 
@@ -69,7 +77,10 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     if (state.phase === "RETRY") {
-      return state.failed;
+      // Priorizar preguntas con más intentos
+      return state.failed.sort((a, b) => {
+        return (state.attempts[b.id] || 0) - (state.attempts[a.id] || 0);
+      }).slice(0, BLOCK_SIZE);
     }
 
     return [];
@@ -98,18 +109,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
     questionEl.textContent = q.question;
     questionEl.style.color = q.__failed ? "red" : "black";
-    correctCountEl.textContent = state.correctCount;
 
     Object.entries(q.options).forEach(([letter, text]) => {
       const btn = document.createElement("button");
       btn.textContent = `${letter}) ${text}`;
-      btn.onclick = (e) => answer(e, letter, q.correct);
+      btn.onclick = (e) => answer(e, letter, q.correct, q.id);
       optionsEl.appendChild(btn);
     });
   }
 
   // ================= ANSWER =================
-  function answer(event, selected, correct) {
+  function answer(event, selected, correct, qId) {
     if (answered) return;
     answered = true;
 
@@ -121,16 +131,27 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
 
-    if (selected === correct) {
-      state.correctCount++;
-      event.target.classList.add("correct");
-    } else {
+    if (selected !== correct) {
       event.target.classList.add("incorrect");
-      state.failed.push({
-        ...getQuestionsForState()[state.index],
-        __failed: true
-      });
+
+      // Añadir a failed si no está ya
+      const currentQuestions = getQuestionsForState();
+      const q = currentQuestions[state.index];
+      if (!state.failed.find(f => f.id === q.id)) {
+        state.failed.push({ ...q, __failed: true });
+      }
     }
+
+    // Registrar intentos
+    state.attempts[qId] = (state.attempts[qId] || 0) + 1;
+
+    // Registrar historial
+    state.history.push({
+      questionId: qId,
+      selected,
+      correct,
+      date: new Date().toISOString()
+    });
 
     nextBtn.disabled = false;
   }
@@ -155,21 +176,20 @@ document.addEventListener("DOMContentLoaded", () => {
         state.block++;
         state.index = 0;
       }
-    }
-    else if (state.phase === "RETRY") {
+    } else if (state.phase === "RETRY") {
       state.phase = "BLOCK";
       state.block++;
       state.index = 0;
       state.failed = [];
     }
 
-    // ¿Quedan bloques?
+    // Comprobar si quedan bloques
     const nextBlock = questions.slice(
       state.block * BLOCK_SIZE,
       (state.block + 1) * BLOCK_SIZE
     );
 
-    if (nextBlock.length === 0) {
+    if (nextBlock.length === 0 && state.failed.length === 0) {
       state.phase = "FINISHED";
     }
 
