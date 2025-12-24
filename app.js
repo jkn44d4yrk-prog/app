@@ -1,5 +1,15 @@
 document.addEventListener("DOMContentLoaded", () => {
 
+  // =================== SOLO TÚ ===================
+  // ✅ Pon aquí TU email (el que usa tu cuenta de Firebase Auth)
+  const ALLOWED_EMAIL = "robertobacallado@gmail.com";
+
+  function isAuthorized(user) {
+    if (!user || !user.email) return false;
+    return user.email.toLowerCase() === ALLOWED_EMAIL.toLowerCase();
+  }
+  // ==============================================
+
   // ================= DOM =================
   const loginEl = document.getElementById("login");
   const menuEl = document.getElementById("menu");
@@ -10,6 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const blockMsgEl = document.getElementById("blockMsg");
 
   const backToMenuBtn = document.getElementById("backToMenuBtn");
+  const logoutBtnTest = document.getElementById("logoutBtnTest");
 
   const emailEl = document.getElementById("email");
   const passwordEl = document.getElementById("password");
@@ -20,8 +31,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // ================= STATE =================
   let state = {
-    history: [],        // {questionId, selected, correct, date}
-    attempts: {},       // {questionId: nIntentos}
+    history: [],
+    attempts: {},
   };
 
   let currentBlock = [];
@@ -29,10 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // ================= UI HELPERS =================
   function showLoginError(msg) {
-    if (!loginErrorEl) {
-      alert(msg);
-      return;
-    }
+    if (!loginErrorEl) return alert(msg);
     loginErrorEl.style.display = "block";
     loginErrorEl.textContent = msg;
   }
@@ -52,7 +60,6 @@ document.addEventListener("DOMContentLoaded", () => {
     };
   }
 
-  // Primer intento por pregunta
   function getFirstAttemptsMap() {
     const first = new Map();
     for (const h of state.history) {
@@ -88,16 +95,12 @@ document.addEventListener("DOMContentLoaded", () => {
     return [];
   }
 
-  // ✅ Resetear un bloque: elimina historial e intentos de esas preguntas
   function resetBlockData(startIndex) {
     const blockQuestions = getBlockQuestions(startIndex);
     const ids = new Set(blockQuestions.map(q => q.id));
 
     state.history = state.history.filter(h => !ids.has(h.questionId));
-
-    for (const id of ids) {
-      delete state.attempts[id];
-    }
+    for (const id of ids) delete state.attempts[id];
   }
 
   // ================= FIRESTORE =================
@@ -112,28 +115,27 @@ document.addEventListener("DOMContentLoaded", () => {
   async function loadProgress(user) {
     try {
       const doc = await db.collection("progress").doc(user.uid).get();
-      if (doc.exists) state = normalizeState(doc.data());
-      else state = normalizeState(state);
+      state = doc.exists ? normalizeState(doc.data()) : normalizeState(state);
     } catch (e) {
       console.error("Error loading progress:", e);
       state = normalizeState(state);
     }
   }
 
-  // ================= AUTH (móvil friendly) =================
+  // ================= AUTH =================
   async function ensurePersistence() {
     const tries = [
       firebase.auth.Auth.Persistence.LOCAL,
       firebase.auth.Auth.Persistence.SESSION,
       firebase.auth.Auth.Persistence.NONE,
     ];
-
     for (const p of tries) {
-      try {
-        await auth.setPersistence(p);
-        return;
-      } catch (e) { /* seguimos probando */ }
+      try { await auth.setPersistence(p); return; } catch (_) {}
     }
+  }
+
+  async function logout() {
+    try { await auth.signOut(); } catch (e) { console.error(e); }
   }
 
   async function login() {
@@ -143,29 +145,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
     try {
       await ensurePersistence();
-      await auth.signInWithEmailAndPassword(email, password);
+      const cred = await auth.signInWithEmailAndPassword(email, password);
+
+      // ✅ Bloqueo “solo yo”
+      if (!isAuthorized(cred.user)) {
+        await auth.signOut();
+        showLoginError("No autorizado.");
+      }
     } catch (e) {
       console.error(e);
       showLoginError(e.message || "No se pudo iniciar sesión.");
     }
   }
 
-  async function register() {
-    clearLoginError();
-    const email = (emailEl?.value || "").trim();
-    const password = (passwordEl?.value || "");
-
-    try {
-      await ensurePersistence();
-      await auth.createUserWithEmailAndPassword(email, password);
-    } catch (e) {
-      console.error(e);
-      showLoginError(e.message || "No se pudo registrar.");
-    }
-  }
-
   window.login = login;
-  window.register = register;
 
   [emailEl, passwordEl].filter(Boolean).forEach(el => {
     el.addEventListener("keydown", (ev) => {
@@ -173,14 +166,51 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  if (logoutBtnTest) logoutBtnTest.onclick = logout;
+
   // ================= MENU =================
+  function renderMenuTopbar(userEmail) {
+    const top = document.createElement("div");
+    top.className = "menu-topbar";
+
+    const h2 = document.createElement("h2");
+    h2.textContent = "Selecciona un bloque";
+
+    const right = document.createElement("div");
+    right.style.display = "flex";
+    right.style.gap = "10px";
+    right.style.alignItems = "center";
+
+    const who = document.createElement("span");
+    who.style.opacity = "0.8";
+    who.style.fontSize = "14px";
+    who.textContent = userEmail || "";
+
+    const logoutBtn = document.createElement("button");
+    logoutBtn.id = "logoutBtn";
+    logoutBtn.type = "button";
+    logoutBtn.textContent = "Cerrar sesión";
+    logoutBtn.onclick = logout;
+
+    right.appendChild(who);
+    right.appendChild(logoutBtn);
+
+    top.appendChild(h2);
+    top.appendChild(right);
+
+    return top;
+  }
+
   function showMenu() {
     loginEl.style.display = "none";
     testEl.style.display = "none";
     blockMsgEl.style.display = "none";
     menuEl.style.display = "block";
 
-    menuEl.innerHTML = "<h2>Selecciona un bloque</h2>";
+    menuEl.innerHTML = "";
+
+    const user = auth.currentUser;
+    menuEl.appendChild(renderMenuTopbar(user?.email));
 
     const numBlocks = Math.ceil(questions.length / BLOCK_SIZE);
     const first = getFirstAttemptsMap();
@@ -194,7 +224,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       let correctCount = 0;
       let failedCount = 0;
-      let answeredCount = 0; // ✅ cuántas tienen “primer intento”
+      let answeredCount = 0;
 
       for (const q of blockQuestions) {
         const a = first.get(q.id);
@@ -218,16 +248,11 @@ document.addEventListener("DOMContentLoaded", () => {
       percentEl.className = "block-percent";
       percentEl.textContent = `${correctCount}/${blockQuestions.length} (${percent}%)`;
 
-      // ✅ Color del chip: si no hay intentos, neutral (no rojo)
-      if (answeredCount === 0) {
-        percentEl.classList.add("pct-none");
-      } else if (percent >= 80) {
-        percentEl.classList.add("pct-good");
-      } else if (percent >= 50) {
-        percentEl.classList.add("pct-mid");
-      } else {
-        percentEl.classList.add("pct-bad");
-      }
+      // ✅ Neutral si aún no se ha empezado
+      if (answeredCount === 0) percentEl.classList.add("pct-none");
+      else if (percent >= 80) percentEl.classList.add("pct-good");
+      else if (percent >= 50) percentEl.classList.add("pct-mid");
+      else percentEl.classList.add("pct-bad");
 
       const failedBtn = document.createElement("button");
       failedBtn.className = "block-mini";
@@ -241,7 +266,6 @@ document.addEventListener("DOMContentLoaded", () => {
       firstOkBtn.disabled = correctCount === 0;
       firstOkBtn.onclick = () => startBlock(startIndex, "FIRST_OK");
 
-      // ✅ NUEVO: Reset bloque y empezar de nuevo
       const resetBtn = document.createElement("button");
       resetBtn.className = "block-reset";
       resetBtn.textContent = "Reset";
@@ -252,8 +276,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
         resetBlockData(startIndex);
 
-        const user = auth.currentUser;
-        if (user) await saveProgress(user);
+        const u = auth.currentUser;
+        if (u) await saveProgress(u);
 
         startBlock(startIndex, "NORMAL");
       };
@@ -301,7 +325,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Marca la correcta siempre; si fallas, tu elección en rojo
   function answer(event, selected, correct, qId) {
     const buttons = optionsEl.querySelectorAll("button");
     buttons.forEach(btn => btn.disabled = true);
@@ -327,7 +350,6 @@ document.addEventListener("DOMContentLoaded", () => {
     nextBtn.disabled = false;
   }
 
-  // Botón volver al menú durante el bloque
   if (backToMenuBtn) {
     backToMenuBtn.onclick = async () => {
       const user = auth.currentUser;
@@ -363,6 +385,13 @@ document.addEventListener("DOMContentLoaded", () => {
       testEl.style.display = "none";
       menuEl.style.display = "none";
       blockMsgEl.style.display = "none";
+      return;
+    }
+
+    // ✅ Bloqueo “solo yo” también aquí (por si alguien entra por sesión vieja)
+    if (!isAuthorized(user)) {
+      await auth.signOut();
+      showLoginError("No autorizado.");
       return;
     }
 
