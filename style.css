@@ -1,77 +1,167 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <title>Cuestionario tipo test</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+:root{
+  --bg: #f4f6fb;
+  --panel: rgba(255,255,255,0.86);
+  --stroke: rgba(15,23,42,0.10);
+  --text: rgba(15,23,42,0.92);
+  --muted: rgba(15,23,42,0.65);
+  --shadow: 0 18px 50px rgba(2,6,23,0.10);
+  --radius: 16px;
+}
 
-  <!-- LOGIN -->
-  <div id="login">
-    <div class="menu-topbar">
-      <div class="app-title">Cuestionario tipo test</div>
-    </div>
+*{ box-sizing:border-box; }
 
-    <input id="email" placeholder="Email" />
-    <input id="password" type="password" placeholder="Contraseña" />
-    <button onclick="register()">Registrarse</button>
-    <button onclick="login()">Entrar</button>
-  </div>
+body{
+  margin:0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: var(--text);
+  background:
+    radial-gradient(900px 650px at 15% 10%, rgba(99,102,241,0.22), transparent 60%),
+    radial-gradient(900px 650px at 90% 20%, rgba(16,185,129,0.18), transparent 55%),
+    radial-gradient(800px 650px at 40% 95%, rgba(236,72,153,0.12), transparent 55%),
+    var(--bg);
+  min-height:100vh;
+  padding: 18px;
+}
 
-  <!-- MENÚ DE BLOQUES -->
-  <div id="menu" style="display:none">
-    <div class="menu-topbar">
-      <div class="app-title">Cuestionario tipo test</div>
-    </div>
+/* Animación suave de entrada (funciona bien con display:block/none) */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
 
-    <h2>Selecciona un bloque</h2>
-    <div id="menuBlocks"></div>
+h1{
+  text-align: center;
+  margin: 10px 0 18px;
+  font-size: clamp(22px, 2.6vw, 30px);
+  letter-spacing: 0.2px;
+  color: rgba(17,24,39,0.92);
+}
 
-    <div class="menu-footer">
-      <button id="failedBtn" class="block-mini">Responder preguntas falladas</button>
-      <button id="firstOkBtn" class="block-mini">Responder preguntas acertadas a la primera</button>
-    </div>
-  </div>
+/* Contenedores */
+#login, #menu, #test, #blockMsg{
+  max-width: 860px;
+  margin: 0 auto 16px;
+  background: var(--panel);
+  border: 1px solid var(--stroke);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 18px;
+  backdrop-filter: blur(10px);
+}
 
-  <!-- TEST -->
-  <div id="test" style="display:none">
-    <div class="test-topbar">
-      <button id="backToMenuBtn">Menú</button>
-      <div class="app-title">Cuestionario tipo test</div>
-    </div>
+h2{
+  margin: 12px 0;
+  font-size: 18px;
+  color: var(--text);
+}
 
-    <h2 id="question"></h2>
-    <div id="options"></div>
-    <button id="nextBtn" disabled>Siguiente</button>
-  </div>
+input{
+  width:100%;
+  padding: 12px 12px;
+  border-radius: 12px;
+  border: 1px solid var(--stroke);
+  background: rgba(255,255,255,0.70);
+  color: var(--text);
+  outline:none;
+  margin: 6px 0;
+}
 
-  <!-- PANTALLA BLOQUE SUPERADO -->
-  <div id="blockMsg" style="display:none"></div>
+input::placeholder{ color: rgba(15,23,42,0.45); }
 
-  <!-- FIREBASE (SIN NPM) -->
-  <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-app-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-auth-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-firestore-compat.js"></script>
+input:focus{
+  border-color: rgba(99,102,241,0.55);
+  box-shadow: 0 0 0 4px rgba(99,102,241,0.16);
+}
 
-  <script>
-    const firebaseConfig = {
-      apiKey: "AIzaSyBg6x6x0BS1m9ysIsk-ADAn0QM_8z0dddI",
-      authDomain: "test-2026-d2d80.firebaseapp.com",
-      projectId: "test-2026-d2d80",
-      storageBucket: "test-2026-d2d80.firebasestorage.app",
-      messagingSenderId: "711197555818",
-      appId: "1:711197555818:web:76cc8993337e1085b09e13"
-    };
+button{
+  border: 1px solid var(--stroke);
+  background: rgba(255,255,255,0.85);
+  color: var(--text);
+  padding: 11px 12px;
+  border-radius: 12px;
+  cursor:pointer;
+  transition: transform .08s ease, filter .2s ease, background .2s ease;
+  font-weight: 650;
+}
 
-    firebase.initializeApp(firebaseConfig);
-    const auth = firebase.auth();
-    const db = firebase.firestore();
-  </script>
+button:hover{ filter: brightness(0.98); }
+button:active{ transform: translateY(1px); }
+button:disabled{ opacity: .55; cursor: not-allowed; }
 
-  <script src="questions.js"></script>
-  <script src="app.js"></script>
+/* ===== TOPBARS ===== */
+.menu-topbar, .test-topbar{
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+  gap: 10px;
+  margin: -18px -18px 12px;
+  padding: 14px 18px;
+  background: rgba(255,255,255,0.82);
+  border-bottom: 1px solid rgba(17,24,39,0.08);
+  backdrop-filter: blur(10px);
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+  flex-wrap: wrap;
+}
 
-</body>
-</html>
+.app-title{
+  font-size: 16px;
+  font-weight: 850;
+  letter-spacing: .2px;
+  color: var(--text);
+}
+
+.menu-footer{
+  margin-top: 14px;
+  display: grid;
+  gap: 10px;
+}
+
+.block-main{
+  width: 100%;
+  text-align: left;
+  margin: 8px 0;
+}
+
+#question{
+  font-size: 20px;
+  line-height: 1.25;
+}
+
+#options{
+  display:grid;
+  gap:10px;
+}
+
+#options button{
+  width:100%;
+  text-align:left;
+  padding: 12px 12px;
+  background: rgba(255,255,255,0.92);
+}
+
+#nextBtn{
+  margin-top: 14px;
+  width:100%;
+  padding: 12px;
+  background: rgba(99,102,241,0.18);
+  border-color: rgba(99,102,241,0.25);
+}
+
+button.correct{
+  background: rgba(16,185,129,0.20) !important;
+  border: 1px solid rgba(16,185,129,0.45) !important;
+}
+
+button.incorrect{
+  background: rgba(239,68,68,0.18) !important;
+  border: 1px solid rgba(239,68,68,0.45) !important;
+}
+
+@media (max-width: 520px){
+  .menu-topbar, .test-topbar{ flex-wrap: wrap; }
+  #backToMenuBtn{ width: 100%; }
+}
