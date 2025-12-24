@@ -7,13 +7,17 @@
   --radius: 16px;
 }
 
-*{ box-sizing: border-box; }
+* { box-sizing: border-box; }
 
 body{
-  margin:0;
+  margin: 0;
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   color: var(--text);
-  background: radial-gradient(1200px 800px at 15% 10%, rgba(99,102,241,0.35), transparent 60%), radial-gradient(900px 700px at 90% 20%, rgba(16,185,129,0.28), transparent 55%), radial-gradient(800px 700px at 40% 95%, rgba(236,72,153,0.20), transparent 55%), var(--bg);
+  background:
+    radial-gradient(1200px 800px at 15% 10%, rgba(99,102,241,0.35), transparent 60%),
+    radial-gradient(900px 700px at 90% 20%, rgba(16,185,129,0.28), transparent 55%),
+    radial-gradient(800px 700px at 40% 95%, rgba(236,72,153,0.20), transparent 55%),
+    var(--bg);
   min-height: 100vh;
   padding: 18px;
 }
@@ -70,16 +74,32 @@ button{
   font-weight: 600;
 }
 
-button:hover{ background: rgba(255,255,255,0.14); border-color: rgba(255,255,255,0.18); }
-button:active{ transform: translateY(1px); }
-button:disabled{ opacity: 0.55; cursor: not-allowed; }
+button:hover{
+  background: rgba(255,255,255,0.14);
+  border-color: rgba(255,255,255,0.18);
+}
 
+button:active{ transform: translateY(1px); }
+
+button:disabled{
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+/* Login: un solo botón */
+#login button{
+  width: 100%;
+  margin-top: 8px;
+}
+
+/* ===== Menú header ===== */
 .menu-topbar{
   display: flex;
   gap: 10px;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 12px;
+  flex-wrap: wrap;
 }
 
 #logoutBtn{
@@ -87,9 +107,28 @@ button:disabled{ opacity: 0.55; cursor: not-allowed; }
   background: rgba(255,255,255,0.08);
 }
 
+@media (max-width: 520px){
+  #logoutBtn{ width: 100%; }
+}
+
+/* ✅ Footer del menú (botón global) */
+.menu-footer{
+  margin-top: 14px;
+}
+
+#repeatMostFailedBtn{
+  width: 100%;
+  background: rgba(99,102,241,0.22);
+  border-color: rgba(99,102,241,0.40);
+}
+#repeatMostFailedBtn:hover{
+  background: rgba(99,102,241,0.30);
+}
+
+/* ===== Menú por bloque ===== */
 .block-row{
   display: grid;
-  grid-template-columns: 1fr auto auto auto auto;
+  grid-template-columns: 1fr auto auto auto auto; /* + reset */
   gap: 10px;
   align-items: center;
   margin: 10px 0;
@@ -105,9 +144,74 @@ button:disabled{ opacity: 0.55; cursor: not-allowed; }
   background: rgba(255,255,255,0.10);
 }
 
+.block-percent{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 130px;
+  padding: 10px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(255,255,255,0.06);
+  font-weight: 800;
+  color: var(--text);
+}
+
+.block-percent.pct-good{
+  background: rgba(16,185,129,0.18);
+  border-color: rgba(16,185,129,0.40);
+}
+.block-percent.pct-mid{
+  background: rgba(245,158,11,0.16);
+  border-color: rgba(245,158,11,0.40);
+}
+.block-percent.pct-bad{
+  background: rgba(239,68,68,0.16);
+  border-color: rgba(239,68,68,0.42);
+}
+.block-percent.pct-none{
+  background: rgba(255,255,255,0.06);
+  border-color: rgba(255,255,255,0.12);
+}
+
+.block-mini{ white-space: nowrap; }
+
+.block-reset{
+  white-space: nowrap;
+  background: rgba(255,255,255,0.08);
+}
+
+@media (max-width: 840px){
+  .block-row{ grid-template-columns: 1fr 1fr; }
+  .block-percent{
+    grid-column: 1 / -1;
+    justify-self: start;
+  }
+}
+
+/* ===== Test ===== */
+.test-topbar{
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+#backToMenuBtn,
+#logoutBtnTest{
+  background: rgba(255,255,255,0.08);
+  white-space: nowrap;
+}
+
+@media (max-width: 520px){
+  #backToMenuBtn, #logoutBtnTest{ width: 100%; }
+}
+
 #question{
   font-size: 20px;
   line-height: 1.25;
+  margin: 0 0 14px;
 }
 
 #options{
@@ -115,11 +219,27 @@ button:disabled{ opacity: 0.55; cursor: not-allowed; }
   gap: 10px;
 }
 
+#options button{
+  width: 100%;
+  text-align: left;
+  padding: 12px 12px;
+  background: rgba(255,255,255,0.08);
+}
+
+#options button:hover{
+  background: rgba(255,255,255,0.12);
+}
+
 #nextBtn{
   margin-top: 14px;
   width: 100%;
   padding: 12px;
   background: rgba(99,102,241,0.26);
+  border-color: rgba(99,102,241,0.40);
+}
+
+#nextBtn:hover{
+  background: rgba(99,102,241,0.33);
 }
 
 button.correct{
@@ -134,10 +254,17 @@ button.incorrect{
   color: rgba(254,242,242,0.98) !important;
 }
 
+#blockMsg h2{
+  margin: 0 0 12px;
+}
+
 #blockMsg button{
   width: 100%;
   padding: 12px;
   background: rgba(16,185,129,0.18);
+  border-color: rgba(16,185,129,0.38);
 }
 
-#blockMsg button:hover{ background: rgba(16,185,129,0.24); }
+#blockMsg button:hover{
+  background: rgba(16,185,129,0.24);
+}
