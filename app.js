@@ -22,12 +22,12 @@ const backToMenuBtn = document.getElementById("backToMenuBtn");
 const logoutBtnTest = document.getElementById("logoutBtnTest");
 const logoutBtn = document.getElementById("logoutBtn");
 
-// Variables globales para manejar las preguntas
+// Variable para manejar las preguntas
 let currentQuestion = 0;
-let questions = [];
+let questions = []; // Aquí solo se declara una vez la variable `questions`
 
 // Función para manejar el login
-function login() {
+function handleLogin() {  // Cambié el nombre de la función a handleLogin para evitar conflicto
   const email = document.getElementById("email").value;
   const password = document.getElementById("password").value;
 
@@ -53,7 +53,7 @@ function login() {
 function loadQuestions() {
   db.collection("questions").get().then(snapshot => {
     snapshot.forEach(doc => {
-      questions.push(doc.data());
+      questions.push(doc.data()); // Guardar las preguntas en la variable `questions`
     });
     showQuestion();
   });
