@@ -213,7 +213,7 @@ button:disabled {
   text-align: left;
   padding: 12px 12px;
   background: rgba(255, 255, 255, 0.08);
-  font-size: 19px; /* Cambié el tamaño de la letra a 17px */
+  font-size: 18px; /* Cambié el tamaño de la letra a 17px */
 }
 
 #options button:hover {
