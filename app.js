@@ -12,7 +12,7 @@ const auth = firebase.auth();
 const db = firebase.firestore();
 
 // Variables para el control de la interfaz
-const loginForm = document.getElementById("login");
+const loginForm = document.getElementById("login"); // Formulario de login
 const menu = document.getElementById("menu");
 const test = document.getElementById("test");
 const questionElement = document.getElementById("question");
