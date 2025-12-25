@@ -24,7 +24,7 @@ const logoutBtn = document.getElementById("logoutBtn");
 
 // Variables globales para manejar las preguntas
 let currentQuestion = 0;
-let questions = []; // Solo se declara una vez
+let questions = []; // Aquí solo se declara una vez la variable `questions`
 
 // Función para manejar el login
 function handleLogin() {  // Cambié el nombre de la función a handleLogin para evitar conflicto
@@ -41,6 +41,7 @@ function handleLogin() {  // Cambié el nombre de la función a handleLogin para
   auth.signInWithEmailAndPassword(email, password).then(() => {
     loginForm.style.display = "none";
     menu.style.display = "block";
+    loadQuestions(); // Cargar preguntas al iniciar sesión
   }).catch((error) => {
     // Manejo de errores
     const errorMessage = error.message;
@@ -55,7 +56,12 @@ function loadQuestions() {
     snapshot.forEach(doc => {
       questions.push(doc.data()); // Guardar las preguntas en la variable `questions`
     });
-    showQuestion();
+    if (questions.length > 0) {
+      showQuestion();  // Mostrar la primera pregunta si las preguntas existen
+    }
+    test.style.display = "block";  // Mostrar el bloque de preguntas
+  }).catch(error => {
+    console.error("Error al cargar las preguntas: ", error);
   });
 }
 
@@ -154,7 +160,7 @@ auth.onAuthStateChanged(user => {
   if (user) {
     menu.style.display = "block";
     loginForm.style.display = "none";
-    loadQuestions();
+    loadQuestions(); // Cargar preguntas cuando el usuario haya iniciado sesión
   } else {
     menu.style.display = "none";
     loginForm.style.display = "block";
