@@ -232,18 +232,20 @@ button:disabled {
   background: rgba(34, 193, 195, 0.33);
 }
 
-/* Respuesta correcta (azul con borde verde neón) */
+/* Respuesta correcta (azul con borde verde neón y sombra) */
 button.correct {
-  background: rgba(59, 130, 246, 0.3) !important; /* Azul claro */
+  background: rgba(59, 130, 246, 0.6) !important; /* Azul brillante */
   border: 2px solid rgba(34, 193, 195, 1) !important; /* Verde neón */
   color: rgba(255, 255, 255, 0.98) !important; /* Texto blanco */
+  box-shadow: 0 0 8px rgba(34, 193, 195, 0.6); /* Sombra verde */
 }
 
-/* Respuesta incorrecta (rojo más intenso) */
+/* Respuesta incorrecta (rojo brillante con borde rojo intenso y sombra) */
 button.incorrect {
-  background: rgba(239, 68, 68, 0.3) !important; /* Rojo más intenso */
-  border: 2px solid rgba(239, 68, 68, 1) !important; /* Rojo más intenso */
+  background: rgba(239, 68, 68, 0.6) !important; /* Rojo brillante */
+  border: 2px solid rgba(239, 68, 68, 1) !important; /* Rojo intenso */
   color: rgba(255, 255, 255, 0.98) !important; /* Texto blanco */
+  box-shadow: 0 0 8px rgba(239, 68, 68, 0.6); /* Sombra roja */
 }
 
 #blockMsg h2 {
