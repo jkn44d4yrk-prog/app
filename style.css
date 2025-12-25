@@ -236,7 +236,7 @@ button:disabled {
 button.correct {
   background: rgba(59, 130, 246, 0.6) !important; /* Azul brillante */
   border: 2px solid rgba(34, 193, 195, 1) !important; /* Verde neón */
-  color: rgba(255, 255, 255, 0.98) !important; /* Texto blanco */
+  color: #FFFFFF !important; /* Texto blanco sin transparencia */
   box-shadow: 0 0 8px rgba(34, 193, 195, 0.6); /* Sombra verde */
 }
 
