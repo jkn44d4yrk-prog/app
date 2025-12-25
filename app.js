@@ -22,9 +22,9 @@ const backToMenuBtn = document.getElementById("backToMenuBtn");
 const logoutBtnTest = document.getElementById("logoutBtnTest");
 const logoutBtn = document.getElementById("logoutBtn");
 
-// Variable para manejar las preguntas
+// Variables globales para manejar las preguntas
 let currentQuestion = 0;
-let questions = []; // Aquí solo se declara una vez la variable `questions`
+let questions = []; // Solo se declara una vez
 
 // Función para manejar el login
 function handleLogin() {  // Cambié el nombre de la función a handleLogin para evitar conflicto
