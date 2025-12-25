@@ -52,14 +52,21 @@ function handleLogin() {  // Cambié el nombre de la función a handleLogin para
 
 // Función para cargar las preguntas
 function loadQuestions() {
+  // Limpiar las preguntas previas y asegurarse de que el bloque de preguntas se muestre
+  questions = [];
+  test.style.display = "block";  // Asegurarnos de mostrar el bloque de preguntas
+
   db.collection("questions").get().then(snapshot => {
     snapshot.forEach(doc => {
       questions.push(doc.data()); // Guardar las preguntas en la variable `questions`
     });
+    
+    // Verificar si las preguntas fueron cargadas
     if (questions.length > 0) {
       showQuestion();  // Mostrar la primera pregunta si las preguntas existen
+    } else {
+      console.log("No se han cargado preguntas.");
     }
-    test.style.display = "block";  // Mostrar el bloque de preguntas
   }).catch(error => {
     console.error("Error al cargar las preguntas: ", error);
   });
