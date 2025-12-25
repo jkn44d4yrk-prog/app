@@ -4,6 +4,16 @@
   <meta charset="UTF-8">
   <title>Cuestionario FM 2026</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Para cambiar el icono en la web (usado en navegadores) -->
+  <link rel="icon" href="apple-touch-icon.png" type="image/png">
+
+  <!-- Para cambiar el icono en dispositivos iOS -->
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <!-- Para cambiar el icono en dispositivos Android -->
+  <link rel="icon" sizes="192x192" href="apple-touch-icon.png">
+  
   <link rel="stylesheet" href="style.css?v=3">
 </head>
 <body>
@@ -45,6 +55,7 @@
     messagingSenderId: "711197555818",
     appId: "1:711197555818:web:76cc8993337e1085b09e13"
   };
+
   firebase.initializeApp(firebaseConfig);
   const auth = firebase.auth();
   const db = firebase.firestore();
