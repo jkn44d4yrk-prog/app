@@ -31,10 +31,18 @@ function login() {
   const email = document.getElementById("email").value;
   const password = document.getElementById("password").value;
 
+  // Verificar que los campos de email y password no estén vacíos
+  if (!email || !password) {
+    alert("Por favor ingrese su correo electrónico y contraseña.");
+    return;
+  }
+
+  // Iniciar sesión con Firebase
   auth.signInWithEmailAndPassword(email, password).then(() => {
     loginForm.style.display = "none";
     menu.style.display = "block";
   }).catch((error) => {
+    // Manejo de errores
     const errorMessage = error.message;
     document.getElementById("loginError").textContent = errorMessage;
     document.getElementById("loginError").style.display = "block";
