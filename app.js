@@ -344,7 +344,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     menuEl.appendChild(renderMenuFooter());
   }
-  
+
   // ================= SESIONES DE PREGUNTAS =================
   function startBlock(startIndex, mode) {
     currentSessionTitle = "BLOQUE";
