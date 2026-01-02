@@ -5,11 +5,18 @@
   <title>2026</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css?v=3">
+
+  <!-- Favicon and Apple icons: load PNG first and fall back to JPEG -->
+  <link rel="icon" href="apple-touch-icon.png" type="image/png">
+  <link rel="icon" href="apple-touch-icon.jpeg" type="image/jpeg">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.jpeg">
 </head>
 <body>
 
 <h1 class="title">
-  <img src="apple-touch-icon.png" alt="Logo" class="title-logo">
+  <!-- Intenta cargar el icono PNG; si no existe, usa el JPEG de fallback -->
+  <img src="apple-touch-icon.png" alt="Logo" class="title-logo" onerror="this.onerror=null;this.src='apple-touch-icon.jpeg';">
   2026
 </h1>
 
