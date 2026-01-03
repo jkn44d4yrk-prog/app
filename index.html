@@ -4,7 +4,12 @@
   <meta charset="UTF-8">
   <title>2026</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css?v=3">
+
+  <!-- Señales útiles para reducir falsos positivos (Safe Browsing) -->
+  <meta name="description" content="Proyecto educativo personal. Acceso restringido.">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+
+  <link rel="stylesheet" href="style.css?v=4">
 
   <!-- Favicon and Apple icons: load PNG first and fall back to JPEG -->
   <link rel="icon" href="apple-touch-icon.png" type="image/png">
@@ -20,11 +25,21 @@
   2026
 </h1>
 
+<p class="site-note">
+  Proyecto educativo personal. Acceso restringido. No es un servicio público ni comercial.
+</p>
+
 <div id="login">
   <input id="email" type="email" placeholder="Email" autocomplete="email">
   <input id="password" type="password" placeholder="Contraseña" autocomplete="current-password">
   <div id="loginError" style="margin-top:10px; color:#ffb4b4; display:none;"></div>
   <button onclick="login()">Entrar</button>
+
+  <div class="legal-links">
+    <a href="aviso-legal.html">Aviso legal</a>
+    <span>·</span>
+    <a href="politica-privacidad.html">Política de privacidad</a>
+  </div>
 </div>
 
 <div id="menu" style="display:none"></div>
@@ -38,6 +53,12 @@
   <h2 id="question"></h2>
   <div id="options"></div>
   <button id="nextBtn" disabled>Siguiente</button>
+
+  <div class="legal-links legal-links-inapp">
+    <a href="aviso-legal.html">Aviso legal</a>
+    <span>·</span>
+    <a href="politica-privacidad.html">Política de privacidad</a>
+  </div>
 </div>
 
 <div id="blockMsg" style="display:none"></div>
